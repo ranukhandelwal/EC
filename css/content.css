@@ -1,0 +1,262 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;background:#f5f5f5;height:auto;margin:0px;padding:0px;
+	}
+/* **************** CONTENT OBJECTS ***************** */
+/* ====== Default spacing ====== */
+h1, h2, h3, h4, h5, h6, ul, ol, dl, p, blockquote {
+	padding:10px;
+}
+h1, h2, h3, h4, h5, h6, img {
+	padding-bottom:0px;
+}
+pre {
+	margin: 10px;
+}
+table h1, table h2, table h3, table h4, table h5, table h6, table p, table ul, table ol, table dl, ul h1, ul h2, ul h3, ul h4, ul h5, ul h6, ul p, ul ul, ul ol, ul dl, ol h1, ol h2, ol h3, ol h4, ol h5, ol h6, ol p, ol ul, ol ol, ol dl {
+	padding:0;
+}
+/* ====== Elements ====== */
+img {
+	display:block;
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-weight:bold;
+}
+hr {
+	border: 5px solid #e2e2e2;
+	border-width: 0 0 5px 0;
+	margin: 20px 10px 10px 10px;
+}
+code {
+	color:#0B8C8F;
+}
+/* ====== Headings ====== */
+/* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
+h1, .h1 {
+	font-size:196%;
+	font-weight:normal;
+	font-style: normal;
+	color:#AE0345;
+}
+h2, .h2 {
+	font-size:167%;
+	font-weight:normal;
+	font-style: normal;
+	color:#AE0345;
+}
+h3, .h3 {
+	font-size:146.5%;
+	font-weight:normal;
+	font-style: normal;
+	color:#DF2B72;
+}
+h4, .h4 {
+	font-size:123.1%;
+	font-weight:normal;
+	font-style: normal;
+	color: #333;
+}
+h5, .h5 {
+	font-size:108%;
+	font-weight:bold;
+	font-style: normal;
+	color:#AE0345;
+}
+h6, .h6 {
+	font-size:108%;
+	font-weight:normal;
+	font-style: italic;
+	color:#333;
+}
+/* links */
+a {
+	text-decoration: none
+}
+/*   Header   */
+
+.socailLinks{margin:0px;  padding:10px 10px 10px 110px;background:url(../img/followback.gif) repeat-x; height:16px;}
+.socailLinks a.fb{ background:url(../img/sprite.png) no-repeat; width:16px; height:16px; margin-left:5px;margin-right:3px;background-position:-24px -24px;float:left; cursor:pointer;}
+.socailLinks a.twit{ background:url(../img/sprite.png) no-repeat;  width:16px; height:16px; margin-left:5px;margin-right:3px;background-position:-56px -24px; float:left; cursor:pointer;}
+.socailLinks a.orkut{ background:url(../img/sprite.png) no-repeat; width:26px; height:16px; margin-left:5px;margin-right:0px;background-position:-88px -24px; float:left; cursor:pointer; border-right:2px solid #dbd9d9;}
+.socailLinks a.share{ background:url(../img/sprite.png) no-repeat; width:16px; height:16px; margin-left:10px;margin-right:3px;background-position:-121px -24px; float:left; cursor:pointer;}
+.socailLinks p{float:left; color:#494949; font-size:12px; font:Arial, Helvetica, sans-serif; font-weight:bold; padding:0px 10px 0px 0px;}
+
+
+.logo h1{background:url(../img/logo1.jpg) no-repeat; width:177px; height:39px; margin:30px 0px 30px 10px;}
+.logo h1 a{width:100%;height:100%;float:left;}
+
+.addvertise{ margin:15px 0px 0px 0px; padding:0px 10px;}
+
+.search{float:left;padding:35px 10px 35px 0px;}
+.search input{background:#FFF; border:2px solid #7e9db9; width:217px;padding:3px 3px 2px 3px; float:left;color:#7A7A7A;font-size:13px;font-family:Arial, Helvetica, sans-serif;}
+.search input.btn{float:left; background:url(../img/searchbtn.gif) no-repeat; width:66px; height:25px; margin-left:2px; padding:0px; border:none;;}
+
+/* top menus */
+.main-handle {
+	width: 980px;
+	padding:0px 10px;
+	float:left;
+     }
+.main-nav {
+	background:url(../img/navigationback.gif) repeat-x;
+	text-align: left;
+	position:relative;
+	padding:0px;
+}
+.main-nav li {
+	display: inline;
+	list-style: none;
+}
+.main-nav li a {
+	margin-right: 5px;
+	font-size: 12px;
+	text-decoration: none;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 10px 20px 10px 20px;
+	display:inline-block;
+	height:16px;
+	outline: 0;
+	}
+.main-nav li a:hover, .main-nav li a.active {
+	background: #70b0e0;
+	color:#FFF;
+}
+.sub-link-bar {
+	background: #514539;
+	min-height: 10px;
+	border-bottom: #645546 1px solid;
+}
+
+.sub-links {
+	background: #70b0e0;
+	display: none;
+	position: absolute;
+	color:#FFF;
+	width:980px;
+	text-align: left;
+	left: 0px;
+	top:36px;
+	padding:7px 0px;
+}
+.sub-links li a{ color:#FFF; padding:0px 20px;}
+.main-nav li .sub-links li a:hover{
+	color:#000;
+	background: #70b0e0;
+}
+.main-nav li .sub-links li a.active{
+	color:#000;
+	background: #70b0e0;
+}
+
+.topdropMenu{width:980px; height:31px; background: #70b0e0; margin-left:10px;}
+
+/* content */
+
+/* **************** LEFT COLOM START HERE ***************** */
+.dhih{ margin:0px;}
+.LeftColum{overflow:hidden; margin-right:5px;}
+.LeftPanelNav{}
+.LeftPanelNavigation{background:#fff;}
+.menutitle{cursor:pointer;background-color:#fff;color:#000000;text-align:left;font-weight:bold;}
+
+.LeftPanelNavigation ul{ margin:0px 0 1px 0px; padding:0px; float:left; width:100%;}
+.LeftPanelNavigation ul li{ background:url(../img/categorybackground.gif) repeat-x; list-style:none; padding:6px 0px 6px 0px; font-size:14px; font-weight:normal; color:#000; list-style:none; position:relative;}
+.LeftPanelNavigation ul li:hover{cursor:pointer;}
+.LeftPanelNavigation ul li a{ float:left; text-decoration:none;}
+.LeftPanelNavigation ul li span{ padding:6px 0px 0px 0px; margin-left:10px;}
+.LeftPanelNavigation ul li span.icon{ padding-right:8px;}
+.LeftPanelNavigation ul li span.iconArrow { background:url(../img/sprite.png) no-repeat; width:14px; height:14px; background-position:-87px -55px; position:absolute; right:5px; top:8px; cursor:pointer; margin-right:0px; }
+.LeftPanelNavigation ul li.active span.iconArrow{ float:right; background:url(../img/sprite.png) no-repeat; width:14px; height:14px; background-position:-52px -56px; position:absolute; right:5px; top:8px; cursor:pointer; margin-right:0px; }
+.LeftPanelNavigation ul li.active{cursor:pointer;}
+*+html .LeftPanelNavigation ul li span.iconArrow, *+html .LeftPanelNavigation ul li.active span.iconArrow {top:13px;}
+
+span.submenu{margin:0px !important; }
+.submenu ul {margin:0px; padding:0px; }
+.submenu ul li{ background:#f7f9fa; list-style:none; padding:6px 0px 6px 10px; margin: 0px 0px 1px 0px; font-size:12px; font-weight:normal; color:#000;}
+.submenu ul li a{color:#000; text-decoration:none;background:#f7f9fa; float:left; }
+.submenu ul li:hover{ background:#f4f4f4; cursor:pointer;  color:#000;}
+.submenu ul li span{padding:0px; margin:0px !important;}
+.submenu ul li span.icon{background:url(../img/sprite.png) no-repeat; width:16px; height:16px;margin-right:5px;background-position:-24px -54px; display:inline-block;}
+.submenu ul li.active{background-color:#f4f4f4; cursor:pointer; color:#000;}
+
+.leftSideAdd{ margin:10px 0px 0px;}
+
+
+.newRegister{ margin:10px 0px 0px; width:100%; background:#f7f9fa;}
+.newRegister h3{padding:5px 0px 5px 10px;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;background:#70b0e0;}
+.newRegister ul{ padding:0px 0px;}
+.newRegister ul li{ list-style:none; padding:5px 0px; border-bottom: 1px solid #dbd9d9;}
+.newRegister ul li a{ text-decoration:none; color:#494949;padding-left: 10px;}
+.newRegister ul li span{float:right; margin:0px 10px 0px 0px; color:#494949;; font-size:12px; *margin-top:-20px;}
+.newRegister ul li.last{ border:none;}
+.newRegister ul li.last span{float:right; margin:0px 10px 10px 0px; color:#F00;; font-size:12px; text-align:right;}
+/* **************** LEFT COLOM END HERE ***************** */
+/* **************** MIDDLE PART START HERE ***************** */
+
+
+.midddlePart{ padding:0px 5px 0px 5px; margin:0px;}
+.midddlePart h3{padding:5px 0px 5px 14px;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;background:#70b0e0; height:18px;}
+.midddlePart h3 span.arrows{ float:right;background:url(../img/sprite.png) no-repeat; width:14px; height:14px; margin-left:10px;margin-right:10px;background-position:-87px -54px;}
+
+.updateNews{ background:#dede00; margin:0px 0px 15px 5px; width:730px; height:30px; position:relative;}
+
+
+.updateNews ul li a:hover, .updateNews ul li a.active{color:#ff0000;}
+.news{ position:absolute; left:5px; top:-5px;}
+
+
+.announcement{ background:#fcfcfc; margin-bottom:10px;}
+
+.announcement ul{ padding:10px 25px;}
+.announcement ul li{ list-style:outside disc; padding:5px 0px; }
+.announcement ul li a{ text-decoration:none; color:#494949;}
+.announcement ul li span{float:right; color:#F00; font-size:12px;}
+
+.examCrazy{ background:#fcfcfc; margin-bottom: 10px; width:100%}
+.examCrazy h3{padding:5px 0px 5px 10px;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;background:#70b0e0;}
+.examCrazy h3 span.arrows{ float:right;background:url(../img/sprite.png) no-repeat; width:14px; height:14px; margin-left:10px;margin-right:10px;background-position:-87px -55px;}
+.products{ background:#fcfcfc; margin:0px 0px 10px 0px;} 
+.products h3{ background:#fcfcfc; font-size:14px; color:#336699;}
+.products ul{ }
+.products ul li{ list-style:none; padding:5px 0px; }
+.products ul li a{ text-decoration:none; color:#494949;}
+.products ul li span{float:left; margin:0px 10px 0px 0px; color:#F00; font-size:12px;}
+.products ul li span.icon{ float:left; background:url(../img/sprite.png) no-repeat; width:5px; height:5px;margin:5px;background-position:-124px -57px;}
+
+.education{ width:100%;}
+.education h4{padding:5px 0px 5px 10px;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;background:#70b0e0; height:18px; }
+.education h4 span.arrows{ float:right;background:url(../img/sprite.png) no-repeat;width:14px; height:14px; margin-left:10px;margin-right:10px;background-position:-87px -55px; }
+.addInMiddle{ padding:0px 0px 10px 35px;}
+.addvertiseBig{margin: 0px 0 10px 135px;}
+
+/* **************** MIDDLE PART START HERE ***************** */
+
+/* **************** RIGHT PART START HERE ***************** */
+.rightPanel{ padding:0px 0px 0px 5px; margin:0px;}
+.loginForm{ background:#f7f9fa; padding:0px 0px 20px 0px;}
+.loginForm label{ font-size:11px; color:#000; font-weight:bold; width:100%; float:left; margin:10px 10px 0px 10px;}
+.loginForm input{ float:left; margin:5px 10px 0px 10px; border:1px solid #94abc3; height:20px; }
+.loginForm input.button{ float:right; margin:5px 10px 0px 0px;}
+.loginForm label a{ color:#336699; text-decoration:none;}
+.rightAdd{ margin:10px 0px 0px; cursor:pointer;}
+
+
+
+
+/* **************** RIGHT PART START HERE ***************** */
+
+
+.footerNavigation{  border-left: 1px solid #000000;margin: 10px 0px 10px 50px;}
+.footerNavigation h3{font-size:14px; color:#494949; font-weight:bold; padding-left:35px;}
+.footerNavigation ul{}
+.footerNavigation ul li{ list-style:none; padding:5px 0px; width:100%; }
+.footerNavigation ul li a{ text-decoration:none; color:#494949;}
+.footerNavigation ul li span{float:left; margin:0px 10px 0px 25px; color:#F00; font-size:12px;}
+.footerNavigation ul li span.icon{ float:left; background:url(../img/sprite.png) no-repeat; width:16px; height:16px;margin-right:5px;background-position: -122px -52px;}
+.last{ border:none;}

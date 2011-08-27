@@ -1,0 +1,32 @@
+/* **************** TEMPLATE ***************** */
+/* ====== Page Head, Body, and Foot ====== */
+body {
+	_text-align:center;
+}/* IE5.5 */
+.body {
+	overflow:hidden;
+	_overflow:visible;
+	_zoom:1;
+}
+.wrapper {
+	margin: 0 auto;
+	background:url(../img/followback.gif) repeat-x;
+
+	_text-align:left;overflow: hidden;
+}
+.page {
+	margin:0px auto;
+	width:1000px;
+	 background:#FFF;
+	margin:0 auto;
+	_text-align:left;overflow: hidden;
+}
+
+
+
+.header{width:1000px;_text-align:left; background:#FFF;}
+ {margin:0px auto;_text-align:left;}
+
+.content{ padding:15px 10px 0px 10px; width:980px; background:#FFF; }
+.footer{margin:0px auto;_text-align:left;background:#e5e5e5;}
+.footerContent{ margin:0 auto; width:1000px;}

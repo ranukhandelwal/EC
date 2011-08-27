@@ -1,0 +1,5 @@
+D:\Manish\sample\ExamCrazy\bin\ExamCrazy.dll
+D:\Manish\sample\ExamCrazy\bin\ExamCrazy.pdb
+D:\Manish\sample\ExamCrazy\obj\Debug\ResolveAssemblyReference.cache
+D:\Manish\sample\ExamCrazy\obj\Debug\ExamCrazy.dll
+D:\Manish\sample\ExamCrazy\obj\Debug\ExamCrazy.pdb

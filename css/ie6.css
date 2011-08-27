@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+.page {
+	margin:0px 12px 0px 13px;
+}
+
+.logo h1{margin:28px 20px 0px 0px;padding:0px;}
+
+/*.newsdetails {padding:20px 0px 0px 20px;margin:0px 1px;position:relative;top:-29px;width:460px;}*/
+.signUp{margin-left:0px;height:300px;}
