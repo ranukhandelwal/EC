@@ -30,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="msmdvbanet, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -45,12 +46,151 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\adminlogin.aspx.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminlogin.aspx.designer.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\managermain.aspx.cs">
+      <DependentUpon>managermain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\managermain.aspx.designer.cs">
+      <DependentUpon>managermain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\membershipmanagers.aspx.cs">
+      <DependentUpon>membershipmanagers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\membershipmanagers.aspx.designer.cs">
+      <DependentUpon>membershipmanagers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\BasePageAdmin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\BLL\ActionStoredPrecedure.cs" />
+    <Compile Include="App_Code\BLL\ConstantVar.cs" />
+    <Compile Include="App_Code\BLL\EmailTemplates.cs" />
+    <Compile Include="App_Code\BLL\GetUserImage.cs" />
+    <Compile Include="App_Code\BLL\PagerLink.cs" />
+    <Compile Include="App_Code\BLL\PageTitle.cs" />
+    <Compile Include="App_Code\BLL\Providers\IRepository.cs" />
+    <Compile Include="App_Code\BLL\Providers\ProviderLostPassword.cs" />
+    <Compile Include="App_Code\BLL\Providers\ProviderSiteStatistics.cs" />
+    <Compile Include="App_Code\BLL\Providers\SiteConfiguration.cs" />
+    <Compile Include="App_Code\BLL\Providers\User\BaseUserObj.cs" />
+    <Compile Include="App_Code\BLL\Providers\User\ProviderShowAllUsersAdmin.cs" />
+    <Compile Include="App_Code\BLL\Providers\User\ProviderUserDetails.cs" />
+    <Compile Include="App_Code\BLL\Providers\User\ProviderUsersSearch.cs" />
+    <Compile Include="App_Code\BLL\Providers\User\UserFeaturesConfiguration.cs" />
+    <Compile Include="App_Code\BLL\Providers\User\UserIdentity.cs" />
+    <Compile Include="App_Code\BLL\Providers\User\UserRepository.cs" />
+    <Compile Include="App_Code\Common\BaseUrl.cs" />
+    <Content Include="App_Code\Common\BookmarkURL.cs" />
+    <Compile Include="App_Code\Common\BuildAlphabetLinks.cs" />
+    <Content Include="App_Code\Common\Cache.cs" />
+    <Content Include="App_Code\Common\DropdownListHelper.cs" />
+    <Compile Include="App_Code\Common\EmailHelper.cs" />
+    <Content Include="App_Code\Common\EventsCalendar.cs" />
+    <Compile Include="App_Code\Common\ExtendedCollection.cs" />
+    <Content Include="App_Code\Common\JavaScriptAlert.cs" />
+    <Compile Include="App_Code\Common\Utilities\Utility.cs" />
+    <Compile Include="App_Code\Common\Validator.cs" />
+    <Compile Include="App_Code\DAL\DataAccessObject.cs" />
+    <Compile Include="App_Code\Model\Comment.cs" />
+    <Compile Include="App_Code\Model\Configuration.cs" />
+    <Compile Include="App_Code\Model\DBObj.cs" />
+    <Compile Include="App_Code\Model\Email.cs" />
+    <Compile Include="App_Code\Model\ExamCategory.cs" />
+    <Compile Include="App_Code\Model\IDB.cs" />
+    <Compile Include="App_Code\Model\Pager.cs" />
+    <Compile Include="App_Code\Model\PrivateMessage.cs" />
+    <Compile Include="App_Code\Model\SiteStatistics.cs" />
+    <Compile Include="App_Code\Model\Users.cs" />
+    <Compile Include="App_Code\Security\Authentication.cs" />
+    <Compile Include="App_Code\Security\CookieloginHelper.cs" />
+    <Compile Include="App_Code\Security\Encryption.cs" />
+    <Compile Include="App_Code\Security\UserNameAndEmailValidation.cs" />
+    <Compile Include="App_Code\BLL\Providers\ExamCategory\BaseExamCategoryObj.cs" />
+    <Compile Include="App_Code\BLL\Providers\ExamCategory\ExamCategoryRepository.cs" />
+    <Compile Include="Control\DatePicker.ascx.cs">
+      <DependentUpon>DatePicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\DatePicker.ascx.designer.cs">
+      <DependentUpon>DatePicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\rsssidemenu.ascx.cs">
+      <DependentUpon>rsssidemenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\rsssidemenu.ascx.designer.cs">
+      <DependentUpon>rsssidemenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\searchtab.ascx.cs">
+      <DependentUpon>searchtab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\searchtab.ascx.designer.cs">
+      <DependentUpon>searchtab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\sidemenu.ascx.cs">
+      <DependentUpon>sidemenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\sidemenu.ascx.designer.cs">
+      <DependentUpon>sidemenu.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamCrazy-ErrorPage.aspx.cs">
+      <DependentUpon>ExamCrazy-ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamCrazy-ErrorPage.aspx.designer.cs">
+      <DependentUpon>ExamCrazy-ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamCrazy-FileNotFound.aspx.cs">
+      <DependentUpon>ExamCrazy-FileNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamCrazy-FileNotFound.aspx.designer.cs">
+      <DependentUpon>ExamCrazy-FileNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamCrazy-Main.master.cs">
+      <DependentUpon>ExamCrazy-Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamCrazy-Main.master.designer.cs">
+      <DependentUpon>ExamCrazy-Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="ExamCrazy-NoAccess.aspx.cs">
+      <DependentUpon>ExamCrazy-NoAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamCrazy-NoAccess.aspx.designer.cs">
+      <DependentUpon>ExamCrazy-NoAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamCrazy-Register.master.cs">
+      <DependentUpon>ExamCrazy-Register.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
@@ -59,7 +199,21 @@
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
+    <Compile Include="newrssxml.aspx.cs">
+      <DependentUpon>newrssxml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newrssxml.aspx.designer.cs">
+      <DependentUpon>newrssxml.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registration.aspx.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registration.aspx.designer.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SampleContent.aspx.cs">
       <DependentUpon>SampleContent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -67,8 +221,18 @@
     <Compile Include="SampleContent.aspx.designer.cs">
       <DependentUpon>SampleContent.aspx</DependentUpon>
     </Compile>
+    <Compile Include="toprssxml.aspx.cs">
+      <DependentUpon>toprssxml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="toprssxml.aspx.designer.cs">
+      <DependentUpon>toprssxml.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\adminlogin.aspx" />
+    <Content Include="admin\managermain.aspx" />
+    <Content Include="admin\membershipmanagers.aspx" />
     <Content Include="css\content.css" />
     <Content Include="css\grids.css" />
     <Content Include="css\ie6.css" />
@@ -76,6 +240,10 @@
     <Content Include="css\libraries.css" />
     <Content Include="css\mod.css" />
     <Content Include="css\template.css" />
+    <Content Include="ExamCrazy-ErrorPage.aspx" />
+    <Content Include="ExamCrazy-FileNotFound.aspx" />
+    <Content Include="ExamCrazy-FileNotFound.htm" />
+    <Content Include="ExamCrazy-NoAccess.aspx" />
     <Content Include="img\add1.gif" />
     <Content Include="img\add2.gif" />
     <Content Include="img\add3.gif" />
@@ -107,6 +275,95 @@
     <Content Include="js\jquery.syntax.min.js" />
     <Content Include="Master.Master" />
     <Content Include="SampleContent.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="admin\articlecommentconfirmation.aspx.exclude" />
+    <None Include="admin\articlecommentsmanager.aspx.cs.exclude" />
+    <None Include="admin\articlecommentsmanager.aspx.exclude" />
+    <None Include="admin\articlemanager.aspx.cs.exclude" />
+    <None Include="admin\articlemanager.aspx.exclude" />
+    <None Include="admin\articlepreview.aspx.cs.exclude" />
+    <None Include="admin\articlepreview.aspx.exclude" />
+    <None Include="admin\categorymanager.aspx.cs.exclude" />
+    <None Include="admin\categorymanager.aspx.exclude" />
+    <None Include="admin\commentsmanager.aspx.cs.exclude" />
+    <None Include="admin\commentsmanager.aspx.exclude" />
+    <None Include="admin\configuration.aspx.cs.exclude" />
+    <None Include="admin\configuration.aspx.exclude" />
+    <None Include="admin\confirmarticlecatedit.aspx.exclude" />
+    <None Include="admin\confirmarticlesubmission.aspx.exclude" />
+    <None Include="admin\confirmarticleupdate.aspx.exclude" />
+    <None Include="admin\confirmcatedit.aspx.exclude" />
+    <None Include="admin\confirmcommentenabled.aspx.exclude" />
+    <None Include="admin\confirmcommentupdate.aspx.exclude" />
+    <None Include="admin\confirmconfignumberofrecordsinCookBook.aspx.exclude" />
+    <None Include="admin\confirmconfignumberrecordsshowinFriendsList.aspx.exclude" />
+    <None Include="admin\confirmconfigprofilepage.aspx.exclude" />
+    <None Include="admin\confirmdel.aspx.exclude" />
+    <None Include="admin\confirmdupdate.aspx.exclude" />
+    <None Include="admin\confirmeditprofile.aspx.exclude" />
+    <None Include="admin\confirmemailupdate.aspx.exclude" />
+    <None Include="admin\confirmexceptiondelete.aspx.cs.exclude" />
+    <None Include="admin\confirmexceptiondelete.aspx.exclude" />
+    <None Include="admin\confirmmultiplecommentsdelete.aspx.cs.exclude" />
+    <None Include="admin\confirmmultiplecommentsdelete.aspx.exclude" />
+    <None Include="admin\confirmsendactivation.aspx.exclude" />
+    <None Include="admin\confirmupdatelastviewedhrs.aspx.exclude" />
+    <None Include="admin\confirmusersuspenddeleteedit.aspx.cs.exclude" />
+    <None Include="admin\confirmusersuspenddeleteedit.aspx.exclude" />
+    <None Include="admin\deleteduserlogview.aspx.cs.exclude" />
+    <None Include="admin\deleteduserlogview.aspx.exclude" />
+    <None Include="admin\deleteuser.aspx.cs.exclude" />
+    <None Include="admin\deleteuser.aspx.exclude" />
+    <None Include="admin\editing.aspx.cs.exclude" />
+    <None Include="admin\editing.aspx.exclude" />
+    <None Include="admin\editprofile.aspx.cs.exclude" />
+    <None Include="admin\editprofile.aspx.exclude" />
+    <None Include="admin\exceptionlogmanager.aspx.cs.exclude" />
+    <None Include="admin\exceptionlogmanager.aspx.exclude" />
+    <None Include="admin\getimagepopupajax.aspx.cs.exclude" />
+    <None Include="admin\getimagepopupajax.aspx.exclude" />
+    <None Include="admin\pagenotfound.aspx.exclude" />
+    <None Include="admin\popupgetuserswhohasnotactivatedaccount.aspx.cs.exclude" />
+    <None Include="admin\popupgetuserswhohasnotactivatedaccount.aspx.exclude" />
+    <None Include="admin\popuplast20userswhosubmittedarticle.aspx.cs.exclude" />
+    <None Include="admin\popuplast20userswhosubmittedarticle.aspx.exclude" />
+    <None Include="admin\popuplast20userswhosumittedrecipe.aspx.cs.exclude" />
+    <None Include="admin\popuplast20userswhosumittedrecipe.aspx.exclude" />
+    <None Include="admin\popuplast25userswhoaddafriend.aspx.cs.exclude" />
+    <None Include="admin\popuplast25userswhoaddafriend.aspx.exclude" />
+    <None Include="admin\popuplast25userswhoaddedrecipeincookbook.aspx.cs.exclude" />
+    <None Include="admin\popuplast25userswhoaddedrecipeincookbook.aspx.exclude" />
+    <None Include="admin\popuplast25userswhocommentedarecipe.aspx.cs.exclude" />
+    <None Include="admin\popuplast25userswhocommentedarecipe.aspx.exclude" />
+    <None Include="admin\popupviewusercookbook.aspx.cs.exclude" />
+    <None Include="admin\popupviewusercookbook.aspx.exclude" />
+    <None Include="admin\popupviewuserfriendslist.aspx.cs.exclude" />
+    <None Include="admin\popupviewuserfriendslist.aspx.exclude" />
+    <None Include="admin\popupviewusersuspenionnote.aspx.cs.exclude" />
+    <None Include="admin\popupviewusersuspenionnote.aspx.exclude" />
+    <None Include="admin\recipemanager.aspx.cs.exclude" />
+    <None Include="admin\recipemanager.aspx.exclude" />
+    <None Include="admin\rerecipeapprovalconfirmation.aspx.exclude" />
+    <None Include="admin\suspenduserwithnote.aspx.cs.exclude" />
+    <None Include="admin\suspenduserwithnote.aspx.exclude" />
+    <None Include="admin\updatearticle.aspx.cs.exclude" />
+    <None Include="admin\updatearticle.aspx.exclude" />
+    <None Include="admin\viewing.aspx.cs.exclude" />
+    <None Include="admin\viewing.aspx.exclude" />
+    <None Include="App_Code\BLL\ImageUploadManager.cs.exclude" />
+    <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
+    <Content Include="Control\DatePicker.ascx" />
+    <Content Include="Control\Login.ascx" />
+    <Content Include="Control\rsssidemenu.ascx" />
+    <Content Include="Control\searchtab.ascx" />
+    <Content Include="Control\sidemenu.ascx" />
+    <Content Include="Web.sitemap" />
+    <Content Include="ExamCrazy-Main.master" />
+    <Content Include="ExamCrazy-Register.master" />
+    <Content Include="newrssxml.aspx" />
+    <Content Include="registration.aspx" />
+    <Content Include="toprssxml.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
