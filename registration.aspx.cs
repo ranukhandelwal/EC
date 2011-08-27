@@ -43,12 +43,12 @@ public partial class registration : BasePage
         //Check whether user is login, if login, hide the registration form.
         //We don't want to allow users who are logon to register.
         //if they want to regsiter a new a count, they must logout first.
-        /*if (Authentication.IsUserAuthenticated)
+        if (Authentication.IsUserAuthenticated)
         {
             HideFormIfLogin.Visible = false;
             lblWarningMessage.Visible = true;
             lblWarningMessage.Text = "Sorry! You cannot register a new account when you are logon.<br>If you want to register for a new account, you must logout first.";
-        }*/
+        }
     }
 
     public void Add_User(object s, EventArgs e)
