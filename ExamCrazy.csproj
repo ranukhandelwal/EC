@@ -42,7 +42,6 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -154,8 +153,8 @@
       <DependentUpon>sidemenu.ascx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -192,12 +191,26 @@
       <DependentUpon>ExamCrazy-Register.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="HeaderFooter.Master.cs">
+      <DependentUpon>HeaderFooter.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HeaderFooter.Master.designer.cs">
+      <DependentUpon>HeaderFooter.Master</DependentUpon>
+    </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NestedRightPanel.master.cs">
+      <DependentUpon>NestedRightPanel.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedRightPanel.master.designer.cs">
+      <DependentUpon>NestedRightPanel.master</DependentUpon>
     </Compile>
     <Compile Include="newrssxml.aspx.cs">
       <DependentUpon>newrssxml.aspx</DependentUpon>
@@ -213,6 +226,13 @@
     </Compile>
     <Compile Include="registration.aspx.designer.cs">
       <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="registration1.aspx.cs">
+      <DependentUpon>registration1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registration1.aspx.designer.cs">
+      <DependentUpon>registration1.aspx</DependentUpon>
     </Compile>
     <Compile Include="SampleContent.aspx.cs">
       <DependentUpon>SampleContent.aspx</DependentUpon>
@@ -353,11 +373,271 @@
     <None Include="admin\viewing.aspx.exclude" />
     <None Include="App_Code\BLL\ImageUploadManager.cs.exclude" />
     <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
+    <Content Include="NestedRightPanel.master" />
+    <Content Include="HeaderFooter.Master" />
     <Content Include="Control\DatePicker.ascx" />
     <Content Include="Control\Login.ascx" />
     <Content Include="Control\rsssidemenu.ascx" />
     <Content Include="Control\searchtab.ascx" />
     <Content Include="Control\sidemenu.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\0.0.gif" />
+    <Content Include="images\0.5.gif" />
+    <Content Include="images\0.6.gif" />
+    <Content Include="images\0.7.gif" />
+    <Content Include="images\0.8.gif" />
+    <Content Include="images\0.9.gif" />
+    <Content Include="images\0.gif" />
+    <Content Include="images\1.0.gif" />
+    <Content Include="images\1.1.gif" />
+    <Content Include="images\1.2.gif" />
+    <Content Include="images\1.3.gif" />
+    <Content Include="images\1.4.gif" />
+    <Content Include="images\1.5.gif" />
+    <Content Include="images\1.6.gif" />
+    <Content Include="images\1.7.gif" />
+    <Content Include="images\1.8.gif" />
+    <Content Include="images\1.9.gif" />
+    <Content Include="images\1.gif" />
+    <Content Include="images\2.0.gif" />
+    <Content Include="images\2.1.gif" />
+    <Content Include="images\2.2.gif" />
+    <Content Include="images\2.3.gif" />
+    <Content Include="images\2.4.gif" />
+    <Content Include="images\2.5.gif" />
+    <Content Include="images\2.6.gif" />
+    <Content Include="images\2.7.gif" />
+    <Content Include="images\2.8.gif" />
+    <Content Include="images\2.9.gif" />
+    <Content Include="images\2.gif" />
+    <Content Include="images\3.0.gif" />
+    <Content Include="images\3.1.gif" />
+    <Content Include="images\3.2.gif" />
+    <Content Include="images\3.3.gif" />
+    <Content Include="images\3.4.gif" />
+    <Content Include="images\3.5.gif" />
+    <Content Include="images\3.6.gif" />
+    <Content Include="images\3.7.gif" />
+    <Content Include="images\3.8.gif" />
+    <Content Include="images\3.9.gif" />
+    <Content Include="images\3.gif" />
+    <Content Include="images\4.0.gif" />
+    <Content Include="images\4.1.gif" />
+    <Content Include="images\4.2.gif" />
+    <Content Include="images\4.3.gif" />
+    <Content Include="images\4.4.gif" />
+    <Content Include="images\4.5.gif" />
+    <Content Include="images\4.6.gif" />
+    <Content Include="images\4.7.gif" />
+    <Content Include="images\4.8.gif" />
+    <Content Include="images\4.9.gif" />
+    <Content Include="images\4.gif" />
+    <Content Include="images\5.0.gif" />
+    <Content Include="images\5.gif" />
+    <Content Include="images\activecheck_icon2.gif" />
+    <Content Include="images\addnewcategoryimg.gif" />
+    <Content Include="images\adminapproval_icon.gif" />
+    <Content Include="images\adminapproval_icon_smll.gif" />
+    <Content Include="images\admincategory_icon.gif" />
+    <Content Include="images\Anniversary.gif" />
+    <Content Include="images\Appointment.gif" />
+    <Content Include="images\AprilFoolsDay.gif" />
+    <Content Include="images\arrmenu1.gif" />
+    <Content Include="images\arrow.gif" />
+    <Content Include="images\arrow2.gif" />
+    <Content Include="images\arrow7.gif" />
+    <Content Include="images\arroworange.gif" />
+    <Content Include="images\arrow_down.gif" />
+    <Content Include="images\arrow_down2.gif" />
+    <Content Include="images\arrow_down3.gif" />
+    <Content Include="images\arrow_orange.gif" />
+    <Content Include="images\arrow_up.gif" />
+    <Content Include="images\arrow_up2.gif" />
+    <Content Include="images\arrow_up3.gif" />
+    <Content Include="images\article-post-edit-icon.jpg" />
+    <Content Include="images\availuname.gif" />
+    <Content Include="images\b.gif" />
+    <Content Include="images\background.gif" />
+    <Content Include="images\bbg.gif" />
+    <Content Include="images\bg-box-body.gif" />
+    <Content Include="images\bg-box-body.png" />
+    <Content Include="images\bg-box-bottom.gif" />
+    <Content Include="images\bg-box-bottom.png" />
+    <Content Include="images\bg-box-top.png" />
+    <Content Include="images\bgroundsidemenu1.gif" />
+    <Content Include="images\bg_roundgreen.gif" />
+    <Content Include="images\bg_rundorange.gif" />
+    <Content Include="images\bg_userprofilesidepanelconf.gif" />
+    <Content Include="images\Birthday.gif" />
+    <Content Include="images\bluearrow.gif" />
+    <Content Include="images\btnCurrentWeek.gif" />
+    <Content Include="images\btndaygo.gif" />
+    <Content Include="images\calendar2.gif" />
+    <Content Include="images\calendarview_icon.gif" />
+    <Content Include="images\categegory-folder-icon.jpg" />
+    <Content Include="images\close.gif" />
+    <Content Include="images\comment-edit-icon.jpg" />
+    <Content Include="images\commentadmin_icon.gif" />
+    <Content Include="images\community-users-icon.jpg" />
+    <Content Include="images\compose_icon1.gif" />
+    <Content Include="images\confirm_icon1.gif" />
+    <Content Include="images\cookbook.gif" />
+    <Content Include="images\cookbookicon.gif" />
+    <Content Include="images\cookbookicon2.gif" />
+    <Content Include="images\cookbookicon_smll.gif" />
+    <Content Include="images\cookbookicon_smll2.gif" />
+    <Content Include="images\corner.gif" />
+    <Content Include="images\cpbggreen6.gif" />
+    <Content Include="images\cpbgyel1.gif" />
+    <Content Include="images\detail_icon.gif" />
+    <Content Include="images\dialog-warning.png" />
+    <Content Include="images\discuss_icon.gif" />
+    <Content Include="images\divider.gif" />
+    <Content Include="images\drop1.gif" />
+    <Content Include="images\drop2.gif" />
+    <Content Include="images\EasterSunday.gif" />
+    <Content Include="images\editsmall.gif" />
+    <Content Include="images\email_icon.gif" />
+    <Content Include="images\error_icon.png" />
+    <Content Include="images\eventslistview_icon.gif" />
+    <Content Include="images\Examcrazy-logo.png" />
+    <Content Include="images\FathersDay.gif" />
+    <Content Include="images\firstpage.gif" />
+    <Content Include="images\fo1.gif" />
+    <Content Include="images\fo2.gif" />
+    <Content Include="images\fo3.gif" />
+    <Content Include="images\fo4.gif" />
+    <Content Include="images\fo5.gif" />
+    <Content Include="images\food-icon.png" />
+    <Content Include="images\friendlisticon-_smll3.gif" />
+    <Content Include="images\friendlisticon.gif" />
+    <Content Include="images\friendlisticon_myaccount.gif" />
+    <Content Include="images\friendlisticon_smll.gif" />
+    <Content Include="images\friendlisticon_smll2.gif" />
+    <Content Include="images\glogo.gif" />
+    <Content Include="images\gradientblue1.gif" />
+    <Content Include="images\grid2columns_large.gif" />
+    <Content Include="images\Halloween.gif" />
+    <Content Include="images\header_back.gif" />
+    <Content Include="images\help.gif" />
+    <Content Include="images\hleft.gif" />
+    <Content Include="images\hleft2.gif" />
+    <Content Include="images\hleft3.gif" />
+    <Content Include="images\Holiday.gif" />
+    <Content Include="images\home_icon.gif" />
+    <Content Include="images\hright.gif" />
+    <Content Include="images\hright2.gif" />
+    <Content Include="images\hright3.gif" />
+    <Content Include="images\icon-lock-user.gif" />
+    <Content Include="images\iconaddfriend.gif" />
+    <Content Include="images\iconlock_user.gif" />
+    <Content Include="images\iconlock_user_suspended.gif" />
+    <Content Include="images\iconuser.gif" />
+    <Content Include="images\iconuser2.gif" />
+    <Content Include="images\icon_confirm.gif" />
+    <Content Include="images\icon_delete.gif" />
+    <Content Include="images\icon_deluser.gif" />
+    <Content Include="images\icon_edit.gif" />
+    <Content Include="images\icon_inbox2.gif" />
+    <Content Include="images\icon_outbox2.gif" />
+    <Content Include="images\icon_pencil.gif" />
+    <Content Include="images\icon_sent_items2.gif" />
+    <Content Include="images\Icon_tools_large.png" />
+    <Content Include="images\icon_trashcan.gif" />
+    <Content Include="images\inbox_icon1.gif" />
+    <Content Include="images\inc_grencheck.gif" />
+    <Content Include="images\Info.gif" />
+    <Content Include="images\informationicon.gif" />
+    <Content Include="images\l.gif" />
+    <Content Include="images\lastpage.gif" />
+    <Content Include="images\lb.gif" />
+    <Content Include="images\lcircle.gif" />
+    <Content Include="images\left1.gif" />
+    <Content Include="images\left2.gif" />
+    <Content Include="images\link_icon.gif" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\loadingemail.gif" />
+    <Content Include="images\lock.gif" />
+    <Content Include="images\lock_user_icon.png" />
+    <Content Include="images\lt.gif" />
+    <Content Include="images\macFFBgHack.png" />
+    <Content Include="images\Meeting.gif" />
+    <Content Include="images\members-icon.gif" />
+    <Content Include="images\members_icon.gif" />
+    <Content Include="images\MothersDay.gif" />
+    <Content Include="images\movetoinboxicon.gif" />
+    <Content Include="images\mt_back.gif" />
+    <Content Include="images\new.gif" />
+    <Content Include="images\newmsg_icon.gif" />
+    <Content Include="images\newmsg_icon_smll2.gif" />
+    <Content Include="images\nextpage.gif" />
+    <Content Include="images\note_icon_smll1.gif" />
+    <Content Include="images\note_icon_smll22.gif" />
+    <Content Include="images\nxtdaybtn.gif" />
+    <Content Include="images\oldmsg_icon2.gif" />
+    <Content Include="images\orange1.gif" />
+    <Content Include="images\PMblockeduser_icon.png" />
+    <Content Include="images\pm_waiting.gif" />
+    <Content Include="images\prevdaybtn.gif" />
+    <Content Include="images\prevpage.gif" />
+    <Content Include="images\print_icon.gif" />
+    <Content Include="images\privatemessginz.gif" />
+    <Content Include="images\progressimgred.gif" />
+    <Content Include="images\questionmark.gif" />
+    <Content Include="images\r.gif" />
+    <Content Include="images\rb.gif" />
+    <Content Include="images\rbg1.gif" />
+    <Content Include="images\rbg3.gif" />
+    <Content Include="images\rcircle.gif" />
+    <Content Include="images\recipe-post-icon.jpg" />
+    <Content Include="images\recipelogo.gif" />
+    <Content Include="images\returntop.gif" />
+    <Content Include="images\right1.gif" />
+    <Content Include="images\right2.gif" />
+    <Content Include="images\roundblue3.png" />
+    <Content Include="images\roundbluesearchtab1.gif" />
+    <Content Include="images\roundbluesidemenu1.gif" />
+    <Content Include="images\roundbluesidemenu2.gif" />
+    <Content Include="images\roundcornerblue5.png" />
+    <Content Include="images\roundgreen1.gif" />
+    <Content Include="images\roundorange3.png" />
+    <Content Include="images\rt.gif" />
+    <Content Include="images\save_icon.gif" />
+    <Content Include="images\search.gif" />
+    <Content Include="images\search_icon.gif" />
+    <Content Include="images\sendpm_icon.gif" />
+    <Content Include="images\send_icon.gif" />
+    <Content Include="images\sent_icon1.gif" />
+    <Content Include="images\spritebg.png" />
+    <Content Include="images\star.gif" />
+    <Content Include="images\stats_icon.gif" />
+    <Content Include="images\stemb.gif" />
+    <Content Include="images\stemt.gif" />
+    <Content Include="images\StPatrick.gif" />
+    <Content Include="images\strating.gif" />
+    <Content Include="images\t.gif" />
+    <Content Include="images\takenuname.gif" />
+    <Content Include="images\thup.gif" />
+    <Content Include="images\tlcorner.gif" />
+    <Content Include="images\tools_icon.gif" />
+    <Content Include="images\topblue2.gif" />
+    <Content Include="images\trash_icon1.gif" />
+    <Content Include="images\trcorner.gif" />
+    <Content Include="images\up2.gif" />
+    <Content Include="images\user-icon.gif" />
+    <Content Include="images\user-icon2.gif" />
+    <Content Include="images\user-remove-icon.gif" />
+    <Content Include="images\user1_icon.gif" />
+    <Content Include="images\user_add.png" />
+    <Content Include="images\user_remove.png" />
+    <Content Include="images\user_user1.png" />
+    <Content Include="images\USHoliday.gif" />
+    <Content Include="images\Valentines.gif" />
+    <Content Include="images\xmlbtn.gif" />
+    <Content Include="images\xmlbtnbig.gif" />
+    <Content Include="images\yellowbg.gif" />
+    <Content Include="images\yellowgrd.gif" />
+    <Content Include="registration1.aspx" />
     <Content Include="Web.sitemap" />
     <Content Include="ExamCrazy-Main.master" />
     <Content Include="ExamCrazy-Register.master" />
@@ -383,7 +663,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50191</DevelopmentServerPort>
+          <DevelopmentServerPort>53260</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
