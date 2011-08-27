@@ -32,7 +32,7 @@ public partial class registration : BasePage
         {
             Country.Items.Add(country);
         }
-
+        
         /*string[] EC */
         ExamCategoryRepository ECList = new ExamCategoryRepository();
 
@@ -57,6 +57,7 @@ public partial class registration : BasePage
 
         if (!Page.IsValid)
         {
+            
             UserRepository User = new UserRepository();
 
             User.UserName = Util.FormatTextForInput(Request.Form[Username.UniqueID]);
@@ -67,12 +68,12 @@ public partial class registration : BasePage
             User.CityID = Int16.Parse(Request.Form[City.UniqueID]);
             User.StateID = Int16.Parse(Request.Form[State.UniqueID]);
             User.CountryID = Int16.Parse(Request.Form[Country.UniqueID]);
-            User.DOB = DateTime.Parse(Date1.CalendarDateString);
-            /*User.NewsLetter = Int32.Parse(Util.FormatTextForInput(Request.Form[Newsletter.UniqueID]));*/
-            /*User.ContactMe = Int32.Parse(Util.FormatTextForInput(Request.Form[ContactMe.UniqueID]));*/
+            //User.DOB = DateTime.Parse(Date1.CalendarDateString);
+            //User.NewsLetter = Int32.Parse(Util.FormatTextForInput(Request.Form[Newsletter.UniqueID]));
+            //User.ContactMe = Int32.Parse(Util.FormatTextForInput(Request.Form[ContactMe.UniqueID]));
             User.Website = Util.FormatTextForInput(Request.Form[Website.UniqueID]);
             User.AboutMe = Util.FormatTextForInput(Request.Form[AboutMe.UniqueID]);
-            /*User.GUID = Guid.NewGuid().ToString("N");*/
+            //User.GUID = Guid.NewGuid().ToString("N");
 
             //Prevent username and email duplication. Ensure that all username and email in the database are unique.
             //This initialize the value.
@@ -190,7 +191,7 @@ public partial class registration : BasePage
                 }
             }
 
-            /*ImageUploadManager.UploadUserImage(User, PlaceHolder1, GetUserImage.ImagePathForUserPhoto, constant.UserImageMaxSize);*/
+            //ImageUploadManager.UploadUserImage(User, PlaceHolder1, GetUserImage.ImagePathForUserPhoto, constant.UserImageMaxSize);
 
             if (User.Add(User) != 0)
             {
@@ -201,16 +202,18 @@ public partial class registration : BasePage
             //EmailAccountActivationLink(User);
 
             User = null;
-
-            Response.Redirect("redirectionpage.aspx?email=" + Request.Form[Email.UniqueID]);
+            //Ajay
+            //Response.Redirect("redirectionpage.aspx?email=" + Request.Form[Email.UniqueID]);
         }
         else
         {
+            
             JSLiteral.Text = Util.JSAlert("Invalid security code. Make sure you type it correctly.");
             return;
 
             lblinvalidsecode.Text = "Invalid security code. Make sure you type it correctly.";
             lblinvalidsecode.Visible = true;
+             
         }
 
         Util = null;

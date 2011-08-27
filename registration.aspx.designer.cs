@@ -13,15 +13,6 @@
 public partial class registration {
     
     /// <summary>
-    /// PlaceHolder1 control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolder1;
-    
-    /// <summary>
     /// lbvalenght control.
     /// </summary>
     /// <remarks>
@@ -218,24 +209,6 @@ public partial class registration {
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
     protected global::System.Web.UI.WebControls.Repeater ExamCategoryList;
-    
-    /// <summary>
-    /// FavoriteFoods2 control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlInputText FavoriteFoods2;
-    
-    /// <summary>
-    /// FavoriteFoods3 control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlInputText FavoriteFoods3;
     
     /// <summary>
     /// Newsletter control.

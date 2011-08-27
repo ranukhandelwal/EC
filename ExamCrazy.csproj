@@ -198,6 +198,10 @@
     <Compile Include="HeaderFooter.Master.designer.cs">
       <DependentUpon>HeaderFooter.Master</DependentUpon>
     </Compile>
+    <Compile Include="imgsecuritycode.aspx.cs">
+      <DependentUpon>imgsecuritycode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -227,13 +231,6 @@
     <Compile Include="registration.aspx.designer.cs">
       <DependentUpon>registration.aspx</DependentUpon>
     </Compile>
-    <Compile Include="registration1.aspx.cs">
-      <DependentUpon>registration1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="registration1.aspx.designer.cs">
-      <DependentUpon>registration1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="SampleContent.aspx.cs">
       <DependentUpon>SampleContent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -247,6 +244,13 @@
     </Compile>
     <Compile Include="toprssxml.aspx.designer.cs">
       <DependentUpon>toprssxml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -373,6 +377,17 @@
     <None Include="admin\viewing.aspx.exclude" />
     <None Include="App_Code\BLL\ImageUploadManager.cs.exclude" />
     <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
+    <Content Include="css\cssreciaspx.css" />
+    <Content Include="css\jquery.datepick.css" />
+    <Content Include="css\popupcalendarpicker.css" />
+    <Content Include="css\thickbox.css" />
+    <Content Include="imgsecuritycode.aspx" />
+    <Content Include="js\Ajaxrequest.js" />
+    <Content Include="js\jquery.datepick.js" />
+    <Content Include="js\jquery.timePicker.js" />
+    <Content Include="js\popupcalendarpicker.js" />
+    <Content Include="js\validator.js" />
+    <Content Include="js\wz_tooltip.js" />
     <Content Include="NestedRightPanel.master" />
     <Content Include="HeaderFooter.Master" />
     <Content Include="Control\DatePicker.ascx" />
@@ -637,13 +652,13 @@
     <Content Include="images\xmlbtnbig.gif" />
     <Content Include="images\yellowbg.gif" />
     <Content Include="images\yellowgrd.gif" />
-    <Content Include="registration1.aspx" />
     <Content Include="Web.sitemap" />
     <Content Include="ExamCrazy-Main.master" />
     <Content Include="ExamCrazy-Register.master" />
     <Content Include="newrssxml.aspx" />
     <Content Include="registration.aspx" />
     <Content Include="toprssxml.aspx" />
+    <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

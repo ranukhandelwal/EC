@@ -8,6 +8,12 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+    <script type="text/javascript" src="js/Ajaxrequest.js"></script>
+    <script type="text/javascript" src="js/validator.js"></script>
+    <link href="CSS/cssreciaspx.css" rel="stylesheet" type="text/css" /> 
+    <link href="CSS/thickbox.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/jquery.datepick.css" rel="stylesheet" type="text/css" />
     <link href="css/grids.css" rel="stylesheet" type="text/css" />
     <link href="css/libraries.css" rel="stylesheet" type="text/css" />
     <link href="css/mod.css" rel="stylesheet" type="text/css" />
@@ -44,7 +50,7 @@
 
     <script type="text/javascript">
         $(function() {
-            $("ul#ticker01").liScroll();f
+            $("ul#ticker01").liScroll();
             $("ul#ticker02").liScroll({ travelocity: 0.15 });
             //Syntax
 
@@ -53,6 +59,8 @@
 
 </head>
 <body>
+<script type="text/javascript" src="js/wz_tooltip.js"></script>
+    <form id="form1" runat="server">
     <div class="wrapper">
         <!-- ===== PAGE DIV START HERE===== -->
         <div class="page">
@@ -168,7 +176,7 @@
                     
                     <div class="size3of4 unit">
                         <div class="midddlePart">
-                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
                             </asp:ContentPlaceHolder>
                         </div>
                     </div>
@@ -222,5 +230,6 @@
             </div>
         </div>
     </div>
+    </form>
 </body>
 </html>
