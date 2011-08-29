@@ -14,6 +14,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
+using System.Collections.ObjectModel;
+using System.Collections.Generic;
 using EC.UI;
 using EC.BL;
 using EC.BL.Providers;
@@ -26,18 +28,23 @@ public partial class registration : BasePage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        string[] Countries = Utility.CountriesList;
-
-        foreach (string country in Countries)
-        {
-            Country.Items.Add(country);
-        }
+        /*Countries Drop Down List Generation*/
+        CountryRepository CntryList = new CountryRepository();
+        ExtendedCollection<Country> LC = CntryList.GetCountryList();
         
-        /*string[] EC */
+        Country[] Countries = new Country[LC.Count]; 
+        LC.CopyTo(Countries,0);
+        for (int i = 0; i < Countries.GetLength(0); i++)
+        {
+            Cntry.Items.Add(Countries[i].Name);
+        }
+               
+        
+        /*ExamCategory Repeater Bind */
         ExamCategoryRepository ECList = new ExamCategoryRepository();
-
         ExamCategoryList.DataSource = ECList.GetECList();
         ExamCategoryList.DataBind();
+
         HideFormIfLogin.Visible = true;
 
         //Check whether user is login, if login, hide the registration form.
@@ -67,7 +74,7 @@ public partial class registration : BasePage
             User.LastName = Util.FormatTextForInput(Request.Form[Lastname.UniqueID]);
             User.CityID = Int16.Parse(Request.Form[City.UniqueID]);
             User.StateID = Int16.Parse(Request.Form[State.UniqueID]);
-            User.CountryID = Int16.Parse(Request.Form[Country.UniqueID]);
+            //User.CountryID = Int16.Parse(Request.Form[Cntry.UniqueID]);
             //User.DOB = DateTime.Parse(Date1.CalendarDateString);
             //User.NewsLetter = Int32.Parse(Util.FormatTextForInput(Request.Form[Newsletter.UniqueID]));
             //User.ContactMe = Int32.Parse(Util.FormatTextForInput(Request.Form[ContactMe.UniqueID]));

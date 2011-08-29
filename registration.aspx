@@ -125,15 +125,19 @@
                                 <td width="15%" valign="top"><div style="margin-bottom: 6px"><span class="content12">Country:</span><span class="cred2">*</span></div></td>
                                 <td width="74%" valign="top">
                                     <div style="margin-bottom: 6px">
-                                        <asp:DropDownList id="Country" runat="server" onchange="ValLastname()" cssClass="ddl" AutoPostBack="false">
-                                            <asp:Listitem Value="none" Selected=True>Select a Country</asp:Listitem>
-                                        </asp:DropDownList>
-                                        <asp:RequiredFieldValidator runat="server"
-                                        id="RequiredFieldCountry" ControlToValidate="Country" SetFocusOnError="true"
-                                        cssClass="cred2"
-                                        InitialValue="none"
-                                        ErrorMessage = "Country is blank"
-                                        display="Dynamic"> </asp:RequiredFieldValidator>
+                                        
+                                                <asp:DropDownList id="Cntry" runat="server" onchange="ValLastname()" cssClass="ddl" AutoPostBack="false">
+                                                      
+                                                            <asp:Listitem Value="none" Selected=True>Select a Country</asp:Listitem>
+                                                    
+                                                </asp:DropDownList>
+                                                <asp:RequiredFieldValidator runat="server"
+                                                id="RequiredFieldCntry" ControlToValidate="Cntry" SetFocusOnError="true"
+                                                cssClass="cred2"
+                                                InitialValue="none"
+                                                ErrorMessage = "Country is blank"
+                                                display="Dynamic"> </asp:RequiredFieldValidator>
+                                            
                                     </div>
                                 </td>
                               </tr>
@@ -173,9 +177,7 @@
                                     <div style="margin-bottom: 6px">
                                         <asp:Repeater id="ExamCategoryList" runat="server">     
                                             <ItemTemplate>
-                                                <asp:CheckBoxList id="CheckBoxExamCategory" CellSpacing="5" CellPadding="2" RepeatColumns="2" RepeatDirection="Horizontal" runat="server">    
-                                                    <asp:ListItem Value="Ajay"/>
-                                                </asp:CheckBoxList>   
+                                                CheckBox<%#DataBinder.Eval(Container.DataItem,"ExamName")%><br>
                                             </ItemTemplate>
                                         </asp:Repeater>
                                     </div>

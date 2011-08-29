@@ -157,22 +157,22 @@ public partial class registration {
     protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonSex;
     
     /// <summary>
-    /// Country control.
+    /// Cntry control.
     /// </summary>
     /// <remarks>
     /// Auto-generated field.
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.DropDownList Country;
+    protected global::System.Web.UI.WebControls.DropDownList Cntry;
     
     /// <summary>
-    /// RequiredFieldCountry control.
+    /// RequiredFieldCntry control.
     /// </summary>
     /// <remarks>
     /// Auto-generated field.
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldCountry;
+    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldCntry;
     
     /// <summary>
     /// State control.
