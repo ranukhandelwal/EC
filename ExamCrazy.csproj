@@ -78,10 +78,14 @@
     <Compile Include="App_Code\BLL\GetUserImage.cs" />
     <Compile Include="App_Code\BLL\PagerLink.cs" />
     <Compile Include="App_Code\BLL\PageTitle.cs" />
+    <Compile Include="App_Code\BLL\Providers\Country\BaseCountryObj.cs" />
+    <Compile Include="App_Code\BLL\Providers\Country\CountryRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\IRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\ProviderLostPassword.cs" />
     <Compile Include="App_Code\BLL\Providers\ProviderSiteStatistics.cs" />
     <Compile Include="App_Code\BLL\Providers\SiteConfiguration.cs" />
+    <Compile Include="App_Code\BLL\Providers\State\BaseStateObj.cs" />
+    <Compile Include="App_Code\BLL\Providers\State\StateRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\User\BaseUserObj.cs" />
     <Compile Include="App_Code\BLL\Providers\User\ProviderShowAllUsersAdmin.cs" />
     <Compile Include="App_Code\BLL\Providers\User\ProviderUserDetails.cs" />
@@ -103,6 +107,7 @@
     <Compile Include="App_Code\DAL\DataAccessObject.cs" />
     <Compile Include="App_Code\Model\Comment.cs" />
     <Compile Include="App_Code\Model\Configuration.cs" />
+    <Compile Include="App_Code\Model\Country.cs" />
     <Compile Include="App_Code\Model\DBObj.cs" />
     <Compile Include="App_Code\Model\Email.cs" />
     <Compile Include="App_Code\Model\ExamCategory.cs" />
@@ -110,6 +115,7 @@
     <Compile Include="App_Code\Model\Pager.cs" />
     <Compile Include="App_Code\Model\PrivateMessage.cs" />
     <Compile Include="App_Code\Model\SiteStatistics.cs" />
+    <Compile Include="App_Code\Model\State.cs" />
     <Compile Include="App_Code\Model\Users.cs" />
     <Compile Include="App_Code\Security\Authentication.cs" />
     <Compile Include="App_Code\Security\CookieloginHelper.cs" />
