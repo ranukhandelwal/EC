@@ -81,7 +81,7 @@ public partial class registration : BasePage
             User.LastName = Util.FormatTextForInput(Request.Form[Lastname.UniqueID]);
             User.CityID = Int16.Parse(Request.Form[City.UniqueID]);
             User.StateID = Int16.Parse(Request.Form[State.UniqueID]);
-            //User.CountryID = Int16.Parse(Request.Form[Cntry.UniqueID]);
+            User.CountryID = Int16.Parse(Request.Form[Cntry.UniqueID]);
             //User.DOB = DateTime.Parse(Date1.CalendarDateString);
             //User.NewsLetter = Int32.Parse(Util.FormatTextForInput(Request.Form[Newsletter.UniqueID]));
             //User.ContactMe = Int32.Parse(Util.FormatTextForInput(Request.Form[ContactMe.UniqueID]));
