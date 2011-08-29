@@ -67,6 +67,18 @@ namespace EC.BL
         {
             return 0;
         }
+
+        public IDataReader GetCityList(int StateID)
+        {
+            SqlParameter prmID = new SqlParameter("@StateID", SqlDbType.Int, 4);
+            prmID.Value = StateID;
+            return DataAccess.GetFromReader("spSelectCityList", prmID);
+        }
+
+        public static int AddNewCity(string name, int CityID)
+        {
+            return 0;
+        }
         /// <summary>
         /// Execute retrieval of stored procedures in the database.
         /// </summary>
