@@ -46,6 +46,15 @@ namespace EC.BL
         {
             return 0;
         }
+        public IDataReader GetCountryList()
+        {
+            return DataAccess.GetFromReader("spSelectCountryList", null);
+        }
+
+        public static int AddNewCountry(string name)
+        {
+            return 0;
+        }
 
 
         /// <summary>
