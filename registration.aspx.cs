@@ -39,6 +39,9 @@ public partial class registration : BasePage
             Cntry.Items.Add(Countries[i].Name);
         }
                
+        /*State List - Sample Code*/
+        StateRepository StateList = new StateRepository();
+        ExtendedCollection<State> LS = StateList.GetStateList(97);
         
         /*ExamCategory Repeater Bind */
         ExamCategoryRepository ECList = new ExamCategoryRepository();
