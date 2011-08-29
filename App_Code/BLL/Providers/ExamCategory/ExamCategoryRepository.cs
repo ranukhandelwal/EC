@@ -56,21 +56,20 @@ namespace EC.BL
                 ExamCategory item = new ExamCategory();
                 if (dr["ECName"] != DBNull.Value)
                 {
-                    item.ExamName = "Ajay";
-                    //item.ExamName = (string)dr["ECName"];
+                    item.ExamName = (string)dr["ECName"];
                 }
                 if (dr["ECDesc"] != DBNull.Value)
                 {
-                    item.ExamDescription = "Khandelwal";
-                    //item.ExamDescription = (string)dr["ECDesc"];
+                    item.ExamDescription = (string)dr["ECDesc"];
                 }
-                item.ECID = 1;
-                //item.ECID = (int)dr["ECID"];
-                /*
+                if (dr["ECID"] != DBNull.Value)
+                {
+                    item.ECID = (byte)dr["ECID"];
+                }
                 if (dr["isActive"] != DBNull.Value)
                 {
-                    item.isActive = (int)dr["isActive"];
-                }*/
+                    item.isActive = (byte)dr["isActive"];
+                }
 
                 list.Add(item);
             }
