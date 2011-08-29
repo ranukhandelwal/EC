@@ -15,8 +15,6 @@ namespace EC.BL
     public interface IRepository
     {
         int Add(); //User Full registration
-        int ShortAdd();//Short registration with few fields
-        int QuickAdd();// Quick registration with Name, uname and email id only
         int Update();
         int Deactivate();
         void FillUp();
