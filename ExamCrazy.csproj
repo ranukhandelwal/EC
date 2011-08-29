@@ -78,6 +78,8 @@
     <Compile Include="App_Code\BLL\GetUserImage.cs" />
     <Compile Include="App_Code\BLL\PagerLink.cs" />
     <Compile Include="App_Code\BLL\PageTitle.cs" />
+    <Compile Include="App_Code\BLL\Providers\City\BaseCityObj.cs" />
+    <Compile Include="App_Code\BLL\Providers\City\CityRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\Country\BaseCountryObj.cs" />
     <Compile Include="App_Code\BLL\Providers\Country\CountryRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\IRepository.cs" />
@@ -105,6 +107,7 @@
     <Compile Include="App_Code\Common\Utilities\Utility.cs" />
     <Compile Include="App_Code\Common\Validator.cs" />
     <Compile Include="App_Code\DAL\DataAccessObject.cs" />
+    <Compile Include="App_Code\Model\City.cs" />
     <Compile Include="App_Code\Model\Comment.cs" />
     <Compile Include="App_Code\Model\Configuration.cs" />
     <Compile Include="App_Code\Model\Country.cs" />
