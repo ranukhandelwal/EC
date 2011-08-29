@@ -42,7 +42,11 @@ public partial class registration : BasePage
         /*State List - Sample Code*/
         StateRepository StateList = new StateRepository();
         ExtendedCollection<State> LS = StateList.GetStateList(97);
-        
+
+        /*City List - Sample Code*/
+        CityRepository CityList = new CityRepository();
+        ExtendedCollection<City> LCity = CityList.GetCityList(8);
+
         /*ExamCategory Repeater Bind */
         ExamCategoryRepository ECList = new ExamCategoryRepository();
         ExamCategoryList.DataSource = ECList.GetECList();
