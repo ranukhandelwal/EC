@@ -8,7 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-
-public partial class ExamCrazy_ErrorPage {
+namespace ExamCrazy.Error {
+    
+    
+    public partial class ExamCrazy_ErrorPage {
+    }
 }

@@ -41,14 +41,15 @@ namespace EC.UI
             Blogic.LogExceptionError(GetCurrentURL, GetExceptionError);
 
             //Instantiate email temple object
+            /*
             EmailTemplate SendEmailNotification = new EmailTemplate();
 
             SendEmailNotification.SendExceptionErrorNotification(GetCurrentURL, GetExceptionError);
 
             SendEmailNotification = null;
-
+            */
             //Redirect to the error page.
-            Server.Transfer("error.aspx");
+            Server.Transfer("Error/ExamCrazy-ErrorPage.aspx");
         }
 
         /// <summary>
