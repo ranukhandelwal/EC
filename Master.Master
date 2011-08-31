@@ -4,6 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Exam Crazy</title>
+    
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -13,7 +14,7 @@
     <link href="css/template.css" rel="stylesheet" type="text/css" />
     <link href="css/content.css" rel="stylesheet" type="text/css" />
 
-    <script type="text/javascript" src="js/drop_menu.js"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/drop_menu.js")%>"></script>
 
     <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
 
@@ -34,9 +35,9 @@
 
     </script>
 
-    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/jquery-1.6.1.min.js")%>"></script>
 
-    <script type="text/javascript" src="js/jquery.li-scroller.1.0.js"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/jquery.li-scroller.1.0.js")%>"></script>
 
     <!-- Syntax hl -->
     <link rel="stylesheet" href="css/li-scroller.css" type="text/css" media="screen" />
@@ -74,10 +75,10 @@
                 </div>
                 <div class="unit addvertise">
                     <a href="#" title="add">
-                        <img src="img/add1.gif" alt="Adds" title="adds" /></a></div>
+                        <img src="~/img/add1.gif" alt="Adds" title="adds" runat="server" /></a></div>
                 <div class="unit search">
                     <input type="text" name="search" value="Search" />
-                    <input type="image" src="img/searchbtn.gif" class="btn" value="" />
+                    <input type="image" src="~/img/searchbtn.gif" class="btn" value="" runat="server" />
                 </div>
                 <div class="main-handle">
                     <ul class="main-nav">
@@ -222,10 +223,10 @@
                         </div>
                         <div class="leftSideAdd unit">
                             <a href="#" title="add">
-                                <img src="img/left-side-add.gif" alt="" title="" /></a></div>
+                                <img src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
                         <div class="leftSideAdd unit">
                             <a href="#" title="add">
-                                <img src="img/addhre.gif" alt="" title="" /></a>
+                                <img src="~/img/addhre.gif" alt="" title="" runat="server" /></a>
                         </div>
                         <div class="newRegister unit">
                             <h3>
@@ -241,10 +242,10 @@
                         </div>
                         <div class="leftSideAdd unit">
                             <a href="#" title="add">
-                                <img src="img/addhre.gif" alt="" title="" /></a></div>
+                                <img src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
                         <div class="leftSideAdd unit">
                             <a href="#" title="add">
-                                <img src="img/addhre.gif" alt="" title="" /></a>
+                                <img src="~/img/addhre.gif" alt="" title="" runat="server" /></a>
                         </div>
                     </div>
                 </div>
@@ -252,7 +253,7 @@
                     <div class="updateNews unit">
                         <div class="unit news">
                             <a href="#" title="update">
-                                <img src="img/updates-News.png" alt="" title="update" /></a></div>
+                                <img src="~/img/updates-News.png" alt="" title="update" runat="server" /></a></div>
                         <ul id="ticker01">
                             <li><a href="#" title="">Freshers technical Jobs at ExamCrazy.Com</a></li>
                             <li><a href="#" title="">Freshers technical Jobs at ExamCrazy.Com</a></li>
@@ -281,27 +282,27 @@
                                     <a href="#" title="Forget pasword">Forgot password?</a></label>
                                 <label>
                                     <a href="#" title="Signup">New Registration?</a></label>
-                                <input type="image" class="button" src="img/loginbtn.gif" />
+                                <input type="image" class="button" src="~/img/loginbtn.gif" runat="server" />
                                 </form>
                             </div>
                             <div class="rightAdd unit">
-                                <img src="img/add2.gif" alt="" title="" />
+                                <img src="~/img/add2.gif" alt="" title="" runat="server" />
                             </div>
                             <div class="rightAdd unit">
-                                <img src="img/add2.gif" alt="" title="" />
+                                <img src="~/img/add2.gif" alt="" title="" runat="server" />
                             </div>
                             <div class="rightAdd unit">
-                                <img src="img/biyani.gif" title="" alt="" />
+                                <img src="~/img/biyani.gif" title="" alt="" runat="server" />
                             </div>
                             <div class="rightAdd unit">
-                                <img src="img/googleadd.gif" title="" alt="" />
+                                <img src="~/img/googleadd.gif" title="" alt="" runat="server" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="addvertiseBig unit">
                     <a href="#" title="add">
-                        <img src="img/add7.gif" alt="Adds" title="adds" /></a></div>
+                        <img src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a></div>
             </div>
         </div>
         <div class="footer line">

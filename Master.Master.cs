@@ -10,6 +10,9 @@ namespace ExamCrazy
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            /*
+            baseHref.Attributes["href"] = Request.Url.AbsolutePath;
+             * */
 
         }
     }
