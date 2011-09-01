@@ -82,10 +82,10 @@
                 </div>
                 <div class="unit addvertise">
                     <a href="#" title="add">
-                        <img src="img/add1.gif" alt="Adds" title="adds" /></a></div>
+                        <img src="~/img/add1.gif" alt="Adds" title="adds" runat="server"/></a></div>
                 <div class="unit search">
                     <input type="text" name="search" value="Search" />
-                    <input type="image" src="img/searchbtn.gif" class="btn" value="" />
+                    <input type="image" src="~/img/searchbtn.gif" class="btn" value="" runat="server"/>
                 </div>
                 <div class="main-handle">
                     <ul class="main-nav">
@@ -165,7 +165,7 @@
                     <div class="updateNews unit">
                         <div class="unit news">
                             <a href="#" title="update">
-                                <img src="img/updates-News.png" alt="" title="update" /></a></div>
+                                <img src="~/img/updates-News.png" alt="" title="update" runat="server"/></a></div>
                         <ul id="ticker01">
                             <li><a href="#" title="">Freshers technical Jobs at ExamCrazy.Com</a></li>
                             <li><a href="#" title="">Freshers technical Jobs at ExamCrazy.Com</a></li>
