@@ -73,16 +73,7 @@ public partial class Login {
     /// Auto-generated field.
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.Button usubmit;
-    
-    /// <summary>
-    /// rememberme control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox rememberme;
+    protected global::System.Web.UI.WebControls.ImageButton usubmit;
     
     /// <summary>
     /// DisplayUserInfo control.

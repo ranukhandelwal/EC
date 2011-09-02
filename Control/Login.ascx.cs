@@ -27,7 +27,7 @@ public partial class Login : System.Web.UI.UserControl
         ShowHideLoginControl(Authentication.Authenticate);
     }
 
-    public void Login_Click(object sender, EventArgs e)
+    public void Login_Click(object sender, ImageClickEventArgs e)
     {
         //Autheticate the username and password against the database record.
         if (Authentication.Validate(this.uname.Text, Encryption.Encrypt(this.upass.Text)))
@@ -50,7 +50,7 @@ public partial class Login : System.Web.UI.UserControl
 
                 this.Context.Response.Redirect("redirectionpage.aspx?mode=suspended&ReturnURL=" + this.Context.Request.Url.PathAndQuery);
             }
-
+            /*
             if ((this.rememberme.Checked))
             {
                 if ((Request.Browser.Cookies))
@@ -68,7 +68,7 @@ public partial class Login : System.Web.UI.UserControl
                 //If the users did not check the remember me checkbox, store login credential in session.
                 CookieLoginHelper.CreateLoginSession(this.uname.Text, this.upass.Text);
             }
-
+            */
             this.Context.Response.Redirect("redirectionpage.aspx?mode=welcome&username=" + this.uname.Text + "&ReturnURL=" + this.Context.Request.Url.PathAndQuery);
         }
         else
