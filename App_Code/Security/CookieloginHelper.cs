@@ -28,8 +28,8 @@ namespace EC.Security
         {
             get
             {
-                if (HttpContext.Current.Request.Cookies["XDWRUserInfo"] != null)
-                    return HttpContext.Current.Request.Cookies["XDWRUserInfo"];
+                if (HttpContext.Current.Request.Cookies["ECUserInfo"] != null)
+                    return HttpContext.Current.Request.Cookies["ECUserInfo"];
                 else
                     return null;
             }
@@ -40,15 +40,15 @@ namespace EC.Security
         /// </summary>
         public static void CreateLoginCookie(string UserName, string Password)
         {
-            HttpCookie UserInfo = new HttpCookie("XDWRUserInfo");
+            HttpCookie UserInfo = new HttpCookie("ECUserInfo");
 
             //Encrypt cookie username value
             //When we retrieve the username cookie value we will have to decrypt.
             //The decyption is done in the Athentication class.
-            UserInfo.Values["XDUsername"] = Encryption.Encrypt(UserName);
+            UserInfo.Values["ECUsername"] = Encryption.Encrypt(UserName);
 
             //Encrypt cookie password value
-            UserInfo.Values["XDUpass"] = Encryption.Encrypt(Password);
+            UserInfo.Values["ECUpass"] = Encryption.Encrypt(Password);
 
             UserInfo.Expires = DateTime.Now.AddDays(1);
             HttpContext.Current.Response.Cookies.Add(UserInfo);
@@ -59,10 +59,10 @@ namespace EC.Security
         /// </summary>
         public static void CreateLoginSession(string UserName, string Password)
         {
-            HttpContext.Current.Session.Add("XDUsername", UserName);
+            HttpContext.Current.Session.Add("ECUsername", UserName);
 
             //Encrypt password session value so it match to the database.
-            HttpContext.Current.Session.Add("XDUpass", Encryption.Encrypt(Password));
+            HttpContext.Current.Session.Add("ECUpass", Encryption.Encrypt(Password));
         }
 
         /// <summary>
@@ -81,7 +81,7 @@ namespace EC.Security
         {
             get
             {
-                if (HttpContext.Current.Request.Cookies["XDWRUserInfo"] != null)
+                if (HttpContext.Current.Request.Cookies["ECUserInfo"] != null)
                     return true;
                 else
                     return false;
@@ -95,7 +95,7 @@ namespace EC.Security
         {
             get
             {
-                if ((HttpContext.Current.Session["XDUsername"] != null) && (HttpContext.Current.Session["XDUpass"] != null))
+                if ((HttpContext.Current.Session["ECUsername"] != null) && (HttpContext.Current.Session["ECUpass"] != null))
                     return true;
                 else
                     return false;
@@ -138,7 +138,7 @@ namespace EC.Security
             get
             {
                 if (IsLoginSessionExists)
-                    return HttpContext.Current.Session["XDUsername"].ToString();
+                    return HttpContext.Current.Session["ECUsername"].ToString();
                 else
                     return string.Empty;
             }
@@ -152,7 +152,7 @@ namespace EC.Security
             get
             {
                 if (IsLoginSessionExists)
-                    return HttpContext.Current.Session["XDUpass"].ToString();
+                    return HttpContext.Current.Session["ECUpass"].ToString();
                 else
                     return string.Empty;
             }
@@ -166,7 +166,7 @@ namespace EC.Security
             if (IsLoginCookieExists)
             {
                 //Expire the cookie
-                HttpCookie UserInfo = new HttpCookie("XDWRUserInfo");
+                HttpCookie UserInfo = new HttpCookie("ECUserInfo");
                 UserInfo.Expires = DateTime.Now.AddDays(-31d);
                 HttpContext.Current.Response.Cookies.Add(UserInfo);
             }

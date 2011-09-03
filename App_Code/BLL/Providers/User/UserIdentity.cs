@@ -33,7 +33,7 @@ namespace EC.BL.Providers.User
             {
                 int UID = 0;
 
-                //Check if the cookies with name XDWRUserInfo exist on user's machine
+                //Check if the cookies with name ECUserInfo exist on user's machine
                 if (CookieLoginHelper.IsLoginCookieExists)
                 {
                     //Get int userid
@@ -61,7 +61,7 @@ namespace EC.BL.Providers.User
             {
                 string User_Name = "";
 
-                //Check if the cookies with name XDWRUserInfo exist on user's machine
+                //Check if the cookies with name ECUserInfo exist on user's machine
                 if (CookieLoginHelper.IsLoginCookieExists)
                 {
                     //Decrypt the username stored in the cookie so it will show the decrypted value.
@@ -91,7 +91,7 @@ namespace EC.BL.Providers.User
 
                 string UEmail = "";
 
-                //Check if the cookies with name XDWRUserInfo exist on user's machine
+                //Check if the cookies with name ECUserInfo exist on user's machine
                 if (CookieLoginHelper.IsLoginCookieExists)
                 {
                     UEmail = User.Email1;
@@ -125,7 +125,7 @@ namespace EC.BL.Providers.User
 
                 int URole = 0;
 
-                //Check if the cookies with name XDWRUserInfo exist on user's machine
+                //Check if the cookies with name ECUserInfo exist on user's machine
                 if (CookieLoginHelper.IsLoginCookieExists)
                 {
                     URole = User.UserType;

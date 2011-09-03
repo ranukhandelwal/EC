@@ -47,7 +47,7 @@ namespace EC.Security
                 //Check if the users browser support cookies
                 if (HttpContext.Current.Request.Browser.Cookies)
                 {
-                    //Check if the cookie with name "XDWRUserInfo" exist on the users machine
+                    //Check if the cookie with name "ECUserInfo" exist on the users machine
                     if (CookieLoginHelper.IsLoginCookieExists)
                     {
                         //Check user status. If the user account is suspended, then redirect. 
@@ -93,7 +93,7 @@ namespace EC.Security
             {
                 bool AllowAccess = false;
 
-                //Check if the cookies with name XDWRUserInfo exist on user's machine
+                //Check if the cookies with name ECUserInfo exist on user's machine
                 if (CookieLoginHelper.IsLoginCookieExists)
                 {
                     //If the login credential cookie found on the users machine. 
