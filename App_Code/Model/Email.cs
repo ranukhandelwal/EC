@@ -1,8 +1,8 @@
-#region XD World Recipe V 3
+#region ExamCrazy Portal
 // FileName: emailandsmtpconfig.cs
-// Author: Dexter Zafra
+
 // Date Created: 7/8/2008
-// Website: www.ex-designz.net
+// Website: www.examcrazy.com
 #endregion
 using System;
 using System.Data;

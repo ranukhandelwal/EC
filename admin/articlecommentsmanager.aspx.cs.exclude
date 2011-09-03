@@ -1,8 +1,8 @@
 #region XD World Recipe V 2.8
 // FileName: articlecommentsmanager.cs
-// Author: Dexter Zafra
+
 // Date Created: 7/3/2008
-// Website: www.ex-designz.net
+// Website: www.examcrazy.com
 #endregion
 using System;
 using System.Data;

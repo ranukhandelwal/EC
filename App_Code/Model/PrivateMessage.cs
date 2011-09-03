@@ -1,8 +1,8 @@
-#region XD World Recipe V 3
+#region ExamCrazy Portal
 // FileName: PrivateMessage.cs
-// Author: Dexter Zafra
+
 // Date Created: 3/8/2009
-// Website: www.ex-designz.net
+// Website: www.examcrazy.com
 #endregion
 using System;
 using System.Data;

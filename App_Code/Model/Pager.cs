@@ -1,8 +1,8 @@
-#region XD World Recipe V 3
+#region ExamCrazy Portal
 // FileName: pagerlink.cs
-// Author: Dexter Zafra
+
 // Date Created: 7/10/2008
-// Website: www.ex-designz.net
+// Website: www.examcrazy.com
 #endregion
 using System;
 

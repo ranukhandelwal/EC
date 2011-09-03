@@ -1,8 +1,8 @@
 #region XD World Recipe V 2.8
 // FileName: membershipmanagers.cs
-// Author: Dexter Zafra
+
 // Date Created: 3/15/2009
-// Website: www.ex-designz.net
+// Website: www.examcrazy.com
 #endregion
 using System;
 using System.Data;

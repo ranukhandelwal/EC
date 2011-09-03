@@ -1,8 +1,8 @@
-#region XD World Recipe V 3
+#region ExamCrazy Portal
 // FileName: ConstantVar.cs
-// Author: Dexter Zafra
+
 // Date Created: 12/29/2008
-// Website: www.ex-designz.net
+// Website: www.examcrazy.com
 #endregion
 using System;
 using System.Web;

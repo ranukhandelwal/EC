@@ -1,6 +1,0 @@
-D:\tutorials\web\asp.net\sample\ExamCrazy\ExamCrazy\obj\Debug\ResolveAssemblyReference.cache
-D:\tutorials\web\asp.net\sample\ExamCrazy\ExamCrazy\bin\ExamCrazy.dll
-D:\tutorials\web\asp.net\sample\ExamCrazy\ExamCrazy\bin\ExamCrazy.pdb
-D:\tutorials\web\asp.net\sample\ExamCrazy\ExamCrazy\bin\msmdvbanet.dll
-D:\tutorials\web\asp.net\sample\ExamCrazy\ExamCrazy\obj\Debug\ExamCrazy.dll
-D:\tutorials\web\asp.net\sample\ExamCrazy\ExamCrazy\obj\Debug\ExamCrazy.pdb
