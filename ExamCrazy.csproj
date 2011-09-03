@@ -168,19 +168,26 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExamCrazy-ErrorPage.aspx.cs">
+    <Compile Include="Error\ExamCrazy-ErrorPage.aspx.cs">
       <DependentUpon>ExamCrazy-ErrorPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ExamCrazy-ErrorPage.aspx.designer.cs">
+    <Compile Include="Error\ExamCrazy-ErrorPage.aspx.designer.cs">
       <DependentUpon>ExamCrazy-ErrorPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExamCrazy-FileNotFound.aspx.cs">
+    <Compile Include="Error\ExamCrazy-FileNotFound.aspx.cs">
       <DependentUpon>ExamCrazy-FileNotFound.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ExamCrazy-FileNotFound.aspx.designer.cs">
+    <Compile Include="Error\ExamCrazy-FileNotFound.aspx.designer.cs">
       <DependentUpon>ExamCrazy-FileNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error\ExamCrazy-NoAccess.aspx.cs">
+      <DependentUpon>ExamCrazy-NoAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error\ExamCrazy-NoAccess.aspx.designer.cs">
+      <DependentUpon>ExamCrazy-NoAccess.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExamCrazy-Main.master.cs">
       <DependentUpon>ExamCrazy-Main.master</DependentUpon>
@@ -218,13 +225,6 @@
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
-    <Compile Include="NestedRightPanel.master.cs">
-      <DependentUpon>NestedRightPanel.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NestedRightPanel.master.designer.cs">
-      <DependentUpon>NestedRightPanel.master</DependentUpon>
-    </Compile>
     <Compile Include="newrssxml.aspx.cs">
       <DependentUpon>newrssxml.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -246,6 +246,13 @@
     </Compile>
     <Compile Include="SampleContent.aspx.designer.cs">
       <DependentUpon>SampleContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\LoginControl.aspx.cs">
+      <DependentUpon>LoginControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\LoginControl.aspx.designer.cs">
+      <DependentUpon>LoginControl.aspx</DependentUpon>
     </Compile>
     <Compile Include="toprssxml.aspx.cs">
       <DependentUpon>toprssxml.aspx</DependentUpon>
@@ -273,9 +280,6 @@
     <Content Include="css\libraries.css" />
     <Content Include="css\mod.css" />
     <Content Include="css\template.css" />
-    <Content Include="ExamCrazy-ErrorPage.aspx" />
-    <Content Include="ExamCrazy-FileNotFound.aspx" />
-    <Content Include="ExamCrazy-FileNotFound.htm" />
     <Content Include="ExamCrazy-NoAccess.aspx" />
     <Content Include="img\add1.gif" />
     <Content Include="img\add2.gif" />
@@ -307,7 +311,7 @@
     <Content Include="js\jquery.li-scroller.1.0.js" />
     <Content Include="js\jquery.syntax.min.js" />
     <Content Include="Master.Master" />
-    <Content Include="SampleContent.aspx" />
+    <None Include="SampleContent.aspx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="admin\articlecommentconfirmation.aspx.exclude" />
@@ -390,6 +394,9 @@
     <Content Include="css\jquery.datepick.css" />
     <Content Include="css\popupcalendarpicker.css" />
     <Content Include="css\thickbox.css" />
+    <Content Include="Error\ExamCrazy-ErrorPage.aspx" />
+    <Content Include="Error\ExamCrazy-FileNotFound.aspx" />
+    <Content Include="Error\ExamCrazy-NoAccess.aspx" />
     <Content Include="imgsecuritycode.aspx" />
     <Content Include="js\Ajaxrequest.js" />
     <Content Include="js\jquery.datepick.js" />
@@ -397,7 +404,6 @@
     <Content Include="js\popupcalendarpicker.js" />
     <Content Include="js\validator.js" />
     <Content Include="js\wz_tooltip.js" />
-    <Content Include="NestedRightPanel.master" />
     <Content Include="HeaderFooter.Master" />
     <Content Include="Control\DatePicker.ascx" />
     <Content Include="Control\Login.ascx" />
@@ -661,6 +667,7 @@
     <Content Include="images\xmlbtnbig.gif" />
     <Content Include="images\yellowbg.gif" />
     <Content Include="images\yellowgrd.gif" />
+    <Content Include="Test\LoginControl.aspx" />
     <Content Include="Web.sitemap" />
     <Content Include="ExamCrazy-Main.master" />
     <Content Include="ExamCrazy-Register.master" />
