@@ -22,24 +22,6 @@ public partial class Login {
     protected global::System.Web.UI.WebControls.Label lblinvalidcredential;
     
     /// <summary>
-    /// RequiredFieldValidatorUnameMain control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorUnameMain;
-    
-    /// <summary>
-    /// RequiredFieldValidatorUPassMain control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorUPassMain;
-    
-    /// <summary>
     /// loginpanel control.
     /// </summary>
     /// <remarks>
@@ -58,6 +40,15 @@ public partial class Login {
     protected global::System.Web.UI.WebControls.TextBox uname;
     
     /// <summary>
+    /// RequiredFieldValidatorUnameMain control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorUnameMain;
+    
+    /// <summary>
     /// upass control.
     /// </summary>
     /// <remarks>
@@ -65,6 +56,15 @@ public partial class Login {
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
     protected global::System.Web.UI.WebControls.TextBox upass;
+    
+    /// <summary>
+    /// RequiredFieldValidatorUPassMain control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorUPassMain;
     
     /// <summary>
     /// usubmit control.

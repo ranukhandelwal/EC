@@ -1,20 +1,8 @@
 <%@ Control Language="C#" AutoEventWireup="true" Inherits="Login" Codebehind="Login.ascx.cs" %>
 <div class="loginerrmsgwrapper">
 <asp:Label runat="server" CssClass="InvalidCred" id="lblinvalidcredential" Visible="false" EnableViewState="false" Text="The submitted credentials are not valid.<br>Please check they are correct." />
- <asp:requiredfieldvalidator id="RequiredFieldValidatorUnameMain"
-      controltovalidate="uname"
-      CssClass="InvalidCred"
-      validationgroup="LoginGroup"
-      errormessage="User Name is empty"
-      runat="Server">
-    </asp:requiredfieldvalidator>
-     <asp:requiredfieldvalidator id="RequiredFieldValidatorUPassMain"
-      controltovalidate="upass"
-      CssClass="InvalidCred"
-      validationgroup="LoginGroup"
-      errormessage="Password is empty"
-      runat="Server">
-    </asp:requiredfieldvalidator>
+ 
+    
 </div>
 <asp:Panel ID="loginpanel" runat="server">
 <div class="mod loginForm unit">
@@ -24,9 +12,23 @@
                                     User Name</label>
                                 
                                 <asp:TextBox ID="uname" TextMode=SingleLine Text="" runat="server" ToolTip="Enter username" />
+                                <asp:requiredfieldvalidator id="RequiredFieldValidatorUnameMain"
+                                controltovalidate="uname"
+                                CssClass="InvalidCred"
+                                validationgroup="LoginGroup"
+                                errormessage="User Name is empty"
+                                runat="Server">
+                                </asp:requiredfieldvalidator>
                                 <label>
                                     Password</label>
                                 <asp:TextBox ID="upass" TextMode=Password Text="password" runat="server" ToolTip="Enter password" />
+                                <asp:requiredfieldvalidator id="RequiredFieldValidatorUPassMain"
+                                controltovalidate="upass"
+                                CssClass="InvalidCred"
+                                validationgroup="LoginGroup"
+                                errormessage="Password is empty"
+                                runat="Server">
+                                </asp:requiredfieldvalidator>
                                 <label>
                                     <a href="~/forgotpassword.aspx" title="Click here to request your password." onmouseover="Tip('If you forgot your password,<br>click on this link to recover it.', BGCOLOR, '#FFFBE1', BORDERCOLOR, '#acc6db', ABOVE, true)" onmouseout="UnTip()" runat="server">Forgot Password?</a></label>
                                 <label>

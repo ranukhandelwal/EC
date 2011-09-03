@@ -3,8 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="LeftPanelHolder" runat="server">
-<ucl:login ID="login" runat="server" />
+Contents here
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-Contents here
+<ucl:login ID="login" runat="server" />
+
 </asp:Content>
