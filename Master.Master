@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="ExamCrazy.Master" %>
-
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -53,6 +53,7 @@
 
 </head>
 <body>
+    <form id="form1" runat="server">
     <div class="wrapper">
         <!-- ===== PAGE DIV START HERE===== -->
         <div class="page">
@@ -268,23 +269,7 @@
                     </div>
                     <div class=" size1of4 unit">
                         <div class="rightPanel unit">
-                            <div class="mod loginForm unit">
-                                <h3>
-                                    User Login</h3>
-                                <form action="">
-                                <label>
-                                    User Name</label>
-                                <input type="text" value="" />
-                                <label>
-                                    Password</label>
-                                <input type="password" value="" />
-                                <label>
-                                    <a href="#" title="Forget pasword">Forgot password?</a></label>
-                                <label>
-                                    <a href="#" title="Signup">New Registration?</a></label>
-                                <input type="image" class="button" src="~/img/loginbtn.gif" runat="server" />
-                                </form>
-                            </div>
+                            <ucl:login ID="login" runat="server" />
                             <div class="rightAdd unit">
                                 <img src="~/img/add2.gif" alt="" title="" runat="server" />
                             </div>
@@ -352,5 +337,6 @@
             </div>
         </div>
     </div>
+    </form>
 </body>
 </html>
