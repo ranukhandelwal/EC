@@ -66,6 +66,13 @@
     <Compile Include="admin\membershipmanagers.aspx.designer.cs">
       <DependentUpon>membershipmanagers.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AjaxRequest\AjaxRequest.aspx.cs">
+      <DependentUpon>AjaxRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxRequest\AjaxRequest.aspx.designer.cs">
+      <DependentUpon>AjaxRequest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Code\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -397,6 +404,7 @@
     <None Include="admin\viewing.aspx.exclude" />
     <None Include="App_Code\BLL\ImageUploadManager.cs.exclude" />
     <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
+    <Content Include="AjaxRequest\AjaxRequest.aspx" />
     <Content Include="css\cssreciaspx.css" />
     <Content Include="css\jquery.datepick.css" />
     <Content Include="css\popupcalendarpicker.css" />
