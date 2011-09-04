@@ -43,6 +43,7 @@ public partial class Login : System.Web.UI.UserControl
             //If the user status is 0, that means the user is suspended due to site policy violation or other reasons.
             //We also have to get rid of any cookie in the users machine to prevent looping 
             //back to the previous page when we redirect the user.
+            /*
             if (!Blogic.IsUserActive(this.uname.Text, Encryption.Encrypt(this.upass.Text)))
             {
                 CookieLoginHelper.RemoveCookie();
@@ -50,9 +51,11 @@ public partial class Login : System.Web.UI.UserControl
 
                 this.Context.Response.Redirect("redirectionpage.aspx?mode=suspended&ReturnURL=" + this.Context.Request.Url.PathAndQuery);
             }
+             */
             /*
             if ((this.rememberme.Checked))
             {
+             
                 if ((Request.Browser.Cookies))
                 {
                     CookieLoginHelper.CreateLoginCookie(this.uname.Text, this.upass.Text);
@@ -62,11 +65,13 @@ public partial class Login : System.Web.UI.UserControl
                     //If the users browser does not support cookie, use session instead.
                     CookieLoginHelper.CreateLoginSession(this.uname.Text, this.upass.Text);
                 }
+              
             }
             else 
-            {
+            {*/
                 //If the users did not check the remember me checkbox, store login credential in session.
                 CookieLoginHelper.CreateLoginSession(this.uname.Text, this.upass.Text);
+            /*
             }
             */
             this.Context.Response.Redirect("redirectionpage.aspx?mode=welcome&username=" + this.uname.Text + "&ReturnURL=" + this.Context.Request.Url.PathAndQuery);
