@@ -207,6 +207,13 @@
       <DependentUpon>ExamCrazy-Register.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="forgotpassword.aspx.cs">
+      <DependentUpon>forgotpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgotpassword.aspx.designer.cs">
+      <DependentUpon>forgotpassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HeaderFooter.Master.cs">
       <DependentUpon>HeaderFooter.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -397,6 +404,7 @@
     <Content Include="Error\ExamCrazy-ErrorPage.aspx" />
     <Content Include="Error\ExamCrazy-FileNotFound.aspx" />
     <Content Include="Error\ExamCrazy-NoAccess.aspx" />
+    <Content Include="forgotpassword.aspx" />
     <Content Include="imgsecuritycode.aspx" />
     <Content Include="js\Ajaxrequest.js" />
     <Content Include="js\jquery.datepick.js" />
