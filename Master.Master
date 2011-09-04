@@ -8,6 +8,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="CSS/cssreciaspx.css" rel="stylesheet" type="text/css" /> 
     <link href="css/grids.css" rel="stylesheet" type="text/css" />
     <link href="css/libraries.css" rel="stylesheet" type="text/css" />
     <link href="css/mod.css" rel="stylesheet" type="text/css" />
@@ -53,6 +54,7 @@
 
 </head>
 <body>
+<script type="text/javascript" src="<%=ResolveUrl("~/js/wz_tooltip.js")%>"></script>
     <form id="form1" runat="server">
     <div class="wrapper">
         <!-- ===== PAGE DIV START HERE===== -->
