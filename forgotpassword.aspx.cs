@@ -10,7 +10,7 @@ namespace ExamCrazy
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            passrecoveryheader.Text = "Password Recovery";
         }
     }
 }

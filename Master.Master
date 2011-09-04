@@ -8,6 +8,8 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/Ajaxrequest.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/validator.js")%>"></script>
     <link href="CSS/cssreciaspx.css" rel="stylesheet" type="text/css" /> 
     <link href="css/grids.css" rel="stylesheet" type="text/css" />
     <link href="css/libraries.css" rel="stylesheet" type="text/css" />
@@ -265,7 +267,7 @@
                     </div>
                     <div class="size3of4 unit">
                         <div class="midddlePart">
-                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
                             </asp:ContentPlaceHolder>
                         </div>
                     </div>
