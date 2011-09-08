@@ -33,8 +33,8 @@ function ValUsername()
      var errmsg2 = "<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/takenuname.gif'> Username is too short. Min of 6 characters.</span>";
      var errmsg3 = "<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/takenuname.gif'> Username is too long. Max of 15 characters.</span>";
      var errmsg4 = "<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/takenuname.gif'> Username cannot be blank.</span>";
-     
-     var regex = new RegExp("^([a-zA-Z0-9_-]+)$");
+
+     var regex = new RegExp("^([a-zA-Z0-9]+)[\\w-_\.\@a-zA-Z0-9]+([a-zA-Z0-9]+)$");
 
 	if(!regex.test(username))
 	{
@@ -76,12 +76,13 @@ function ValPassword1()
   {
      var password1 = document.getElementById('ctl00_MainContent_Password1').value;
      
-     var errmsg1 = "<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/takenuname.gif'> Password contain invalid characters.</span>";
+     var errmsg1 = "<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/takenuname.gif'> Password should be mix of alphabets and numerals.</span>";
      var errmsg2 = "<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/takenuname.gif'> Password is too short. Min of 6 characters.</span>";
      var errmsg3 = "<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/takenuname.gif'> Password is too long. Max of 12 characters.</span>";
      var errmsg4 = "<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/takenuname.gif'> Password cannot be blank.</span>";
-     
-     var regex = new RegExp("^([a-zA-Z0-9_-]+)$");
+
+     //var regex = new RegExp("^([a-zA-Z0-9_-]+)$");
+     var regex = new RegExp("(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{6,12})$");
 
 	if(!regex.test(password1))
 	{
@@ -254,7 +255,7 @@ function LetterNumberDashUnderscoreOnly(e)
     } else if (e.which) {// Netscape/Firefox/Opera
         keyCode = e.which;
     }
-    return ((keyCode == 8) || (keyCode == 45) || (keyCode == 95) || ((keyCode >= 49) && (keyCode <= 57)) || ((keyCode >= 65) && (keyCode <= 90)) || ((keyCode >= 97) && (keyCode <= 122)));
+    return ((keyCode == 8) || (keyCode == 45) || (keyCode == 46) || (keyCode == 64) || (keyCode == 95) || ((keyCode >= 49) && (keyCode <= 57)) || ((keyCode >= 65) && (keyCode <= 90)) || ((keyCode >= 97) && (keyCode <= 122)));
     
 }
 
@@ -266,6 +267,15 @@ function LetterOnly(e)
         keyCode = e.which;
     }
     return ((keyCode > 64 && keyCode < 91) || (keyCode > 96 && keyCode < 123) || keyCode == 8);
+}
+
+function NumberOnly(e) {
+    if (window.event) {// IE
+        keyCode = e.keyCode;
+    } else if (e.which) {// Netscape/Firefox/Opera
+        keyCode = e.which;
+    }
+    return (((keyCode >= 48) && (keyCode <= 57)));
 }
 
 function isNumber(str)

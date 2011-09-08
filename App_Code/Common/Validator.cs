@@ -23,6 +23,24 @@ namespace EC.Common
         }
 
         /// <summary>
+        /// User name should be between 6 and 15 characters, should start and end with Alphanumeric characters.
+        /// Can also contain . - _ and @
+        /// </summary>
+        public static bool IsValidUserName(string strToCheck)
+        {
+            return Regex.IsMatch(strToCheck, "^([a-zA-Z0-9]+)[\\w-_.@a-zA-Z0-9]+([a-zA-Z0-9]+)$");
+        }
+
+         /// <summary>
+        /// User name should be between 6 and 12 characters, should be mix of alphabet and numbers.
+        /// Can also contain . - _ and @
+        /// </summary>
+        public static bool IsValidPassword(string strToCheck)
+        {
+            return Regex.IsMatch(strToCheck, "(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{6,12})$");
+        }
+
+        /// <summary>
         /// Validate email address format.
         /// </summary>
         public static bool IsValidEmail(string Email)
