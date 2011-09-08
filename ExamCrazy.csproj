@@ -416,6 +416,7 @@
     <Content Include="imgsecuritycode.aspx" />
     <Content Include="js\Ajaxrequest.js" />
     <Content Include="js\jquery.datepick.js" />
+    <Content Include="js\jquery.min.js" />
     <Content Include="js\jquery.timePicker.js" />
     <Content Include="js\popupcalendarpicker.js" />
     <Content Include="js\validator.js" />

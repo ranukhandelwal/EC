@@ -193,6 +193,24 @@ public partial class registration {
     protected global::System.Web.UI.HtmlControls.HtmlInputText City;
     
     /// <summary>
+    /// Mobile control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlInputText Mobile;
+    
+    /// <summary>
+    /// RequiredFieldMobile control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldMobile;
+    
+    /// <summary>
     /// Date1 control.
     /// </summary>
     /// <remarks>

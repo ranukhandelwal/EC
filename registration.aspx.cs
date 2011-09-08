@@ -69,7 +69,7 @@ public partial class registration : BasePage
     {
         Utility Util = new Utility();
 
-        if (!Page.IsValid)
+        if (Page.IsValid)
         {
             
             UserRepository User = new UserRepository();
@@ -79,11 +79,25 @@ public partial class registration : BasePage
             User.Email1 = Util.FormatTextForInput(Request.Form[Email.UniqueID]);
             User.FirstName = Util.FormatTextForInput(Request.Form[Firstname.UniqueID]);
             User.LastName = Util.FormatTextForInput(Request.Form[Lastname.UniqueID]);
-            User.CityID = Int16.Parse(Request.Form[City.UniqueID]);
+            User.SetSex = Request.Form[RadioButtonSex.UniqueID];
+            User.CityID = 1;
+            User.StateID = 8;
+            User.CountryID = 18;
+            /*User.CityID = Int16.Parse(Request.Form[City.UniqueID]);
             User.StateID = Int16.Parse(Request.Form[State.UniqueID]);
-            User.CountryID = Int16.Parse(Request.Form[Cntry.UniqueID]);
+            User.CountryID = Int16.Parse(Request.Form[Cntry.UniqueID]);*/
+            User.DOB = DateTime.Parse("1/1/2009");
             //User.DOB = DateTime.Parse(Date1.CalendarDateString);
-            //User.NewsLetter = Int32.Parse(Util.FormatTextForInput(Request.Form[Newsletter.UniqueID]));
+            if (Int32.Parse(Request.Form[Newsletter.UniqueID]) == 1)
+            {
+                User.canEmailSend = true;
+            }
+            else
+                User.canEmailSend = false;
+
+            User.ECPreference = "1,2,3";
+            User.Mobile = "9350554554";
+            User.Address = "B - 83, Saket Colony, Adarsh Nagar";
             //User.ContactMe = Int32.Parse(Util.FormatTextForInput(Request.Form[ContactMe.UniqueID]));
             User.Website = Util.FormatTextForInput(Request.Form[Website.UniqueID]);
             User.AboutMe = Util.FormatTextForInput(Request.Form[AboutMe.UniqueID]);
@@ -103,7 +117,7 @@ public partial class registration : BasePage
                 return;
             }
 
-            if (!Validator.IsAlphaNumericOnly(User.UserName))
+            if (!Validator.IsValidUserName(User.UserName))
             {
                 lbvalenght.Text = "<br>Error: Username must be at least 6 characters long and 15 characters maximun, and should only contain AlphaNumeric.";
                 lbvalenght.Visible = true;
@@ -112,7 +126,7 @@ public partial class registration : BasePage
             }
 
             //Let's decrypt the password for validation.
-            if (!Validator.IsAlphaNumericOnly(Encryption.Decrypt(User.Password)))
+            if (!Validator.IsValidPassword(Encryption.Decrypt(User.Password)))
             {
                 lbvalenght.Text = "<br>Error: Password must be at least 6 characters long and 12 characters maximun, and should only contain AlphaNumeric.";
                 lbvalenght.Visible = true;

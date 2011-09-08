@@ -827,49 +827,57 @@ namespace EC.BL
       /// <returns></returns>
       public static int AddNewUser(Users user)
       {
-          /*
+          
           SqlParameter prmUsername = new SqlParameter("@Username", SqlDbType.VarChar, 50);
           prmUsername.Value = user.UserName;
 
           SqlParameter prmPassword = new SqlParameter("@Password", SqlDbType.VarChar, 50);
           prmPassword.Value = user.Password;
-
+          
           SqlParameter prmEmail = new SqlParameter("@Email", SqlDbType.VarChar, 50);
           prmEmail.Value = user.Email1;
-
+          
           SqlParameter prmFirstName = new SqlParameter("@Firstname", SqlDbType.VarChar, 50);
           prmFirstName.Value = user.FirstName;
 
           SqlParameter prmLastName = new SqlParameter("@Lastname", SqlDbType.VarChar, 50);
           prmLastName.Value = user.LastName;
+          
+          SqlParameter prmCity = new SqlParameter("@City", SqlDbType.SmallInt);
+          prmCity.Value = user.CityID;
 
-          SqlParameter prmCity = new SqlParameter("@City", SqlDbType.VarChar, 50);
-          prmCity.Value = user.City;
+          SqlParameter prmState = new SqlParameter("@State", SqlDbType.SmallInt);
+          prmState.Value = user.StateID;
 
-          SqlParameter prmState = new SqlParameter("@State", SqlDbType.VarChar, 50);
-          prmState.Value = user.State;
+          SqlParameter prmCountry = new SqlParameter("@Country", SqlDbType.SmallInt);
+          prmCountry.Value = user.CountryID;
+          
+          SqlParameter prmMobile = new SqlParameter("@Mobile", SqlDbType.VarChar,20);
+          prmMobile.Value = user.Mobile;
 
-          SqlParameter prmCountry = new SqlParameter("@Country", SqlDbType.VarChar, 50);
-          prmCountry.Value = user.Country;
-
+          SqlParameter prmAddress = new SqlParameter("@Address", SqlDbType.VarChar, 80);
+          prmAddress.Value = user.Address;
+          
           SqlParameter prmDOB = new SqlParameter("@DOB", SqlDbType.DateTime);
           prmDOB.Value = user.DOB;
 
-          SqlParameter prmFavoriteFoods1 = new SqlParameter("@FavoriteFoods1", SqlDbType.VarChar, 50);
-          prmFavoriteFoods1.Value = user.FavoriteFoods1;
+          SqlParameter prmSex = new SqlParameter("@Sex", SqlDbType.SmallInt);
+          prmSex.Value = user.GetSex;
 
-          SqlParameter prmFavoriteFoods2 = new SqlParameter("@FavoriteFoods2", SqlDbType.VarChar, 50);
-          prmFavoriteFoods2.Value = user.FavoriteFoods2;
+          SqlParameter prmEC = new SqlParameter("@EC", SqlDbType.VarChar, 50);
+          prmEC.Value = user.ECPreference;
 
-          SqlParameter prmFavoriteFoods3 = new SqlParameter("@FavoriteFoods3", SqlDbType.VarChar, 50);
-          prmFavoriteFoods3.Value = user.FavoriteFoods3;
-
-          SqlParameter prmNewsletter = new SqlParameter("@Newsletter", SqlDbType.Int, 4);
+          SqlParameter prmCanEmailSend = new SqlParameter("@canEmailSend", SqlDbType.SmallInt);
+          prmCanEmailSend.Value = user.canEmailSend;
+           
+          /*
+          SqlParameter prmNewsletter = new SqlParameter("@Newsletter", SqlDbType.SmallInt, 4);
           prmNewsletter.Value = user.NewsLetter;
-
+          
           SqlParameter prmContactMe = new SqlParameter("@ContactMe", SqlDbType.Int, 4);
           prmContactMe.Value = user.ContactMe;
-
+          */
+          
           SqlParameter prmWebsite = new SqlParameter("@Website", SqlDbType.VarChar, 100);
           prmWebsite.Value = user.Website;
 
@@ -878,15 +886,16 @@ namespace EC.BL
 
           SqlParameter prmPhoto = new SqlParameter("@Photo", SqlDbType.VarChar, 50);
           prmPhoto.Value = user.Photo;
-
+          
+          /*
           SqlParameter prmGUID = new SqlParameter("@Guid", SqlDbType.VarChar, 100);
           prmGUID.Value = user.GUID;
-          
-          return DataAccess.Execute("spInsertUser", prmUsername, prmPassword, prmEmail, prmFirstName, prmLastName, prmCity, prmState, prmCountry, prmDOB,
-              prmFavoriteFoods1, prmFavoriteFoods2, prmFavoriteFoods3, prmNewsletter, prmContactMe, prmWebsite, prmAboutMe, prmPhoto, prmGUID);
-           * */
-          return 0;
-           
+          */
+          /*return DataAccess.Execute("spInsertUser", prmUsername, prmPassword, prmEmail, prmFirstName, prmLastName, prmCity, prmState, prmCountry, prmAddress, prmSex, prmDOB,
+               prmCanEmailSend, prmEC, prmWebsite, prmAboutMe, prmPhoto, prmMobile );*/
+          return DataAccess.Execute("spInsertUser", prmUsername, prmPassword, prmFirstName, prmLastName, prmEmail, prmCity, prmState, prmCountry, prmSex, prmDOB,
+               prmCanEmailSend, prmEC, prmMobile, prmAddress, prmWebsite, prmAboutMe/*, prmPhoto*/);
+                     
       }
 
       /// <summary>

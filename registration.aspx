@@ -32,7 +32,7 @@
                                     <td width="15%" valign="top"><div style="margin-bottom: 6px"><span class="content12">Username:</span><span class="cred2">*</span></div></td>
                                     <td width="74%" valign="top">
                                         <div style="margin-bottom: 6px">  
-                                            <input type="text" id="Username" name="Username" class="txtinput" size="20" runat="server" onkeypress="return LetterNumberDashUnderscoreOnly(event)" onkeyup="UnameKeyDown()" onmouseover="Tip('Username must be at least 6 characters long<br>and 15 characters maximun, and should only<br>contain letters, numbers, dash or underscore.', BGCOLOR, '#FFFBE1', BORDERCOLOR, '#acc6db')" onmouseout="UnTip()" onFocus="this.style.backgroundColor='#FFFBE1'" onBlur="this.style.backgroundColor='#ffffff'" />&nbsp;<span id="idforresults"></span>
+                                            <input type="text" id="Username" name="Username" class="txtinput" size="20" runat="server" onkeypress="return LetterNumberDashUnderscoreOnly(event)" onkeyup="UnameKeyDown()" onmouseover="Tip('Username must be at least 6 characters long<br>and 15 characters maximun, and should only<br>contain letters, numbers, dash or underscore dot @.', BGCOLOR, '#FFFBE1', BORDERCOLOR, '#acc6db')" onmouseout="UnTip()" onFocus="this.style.backgroundColor='#FFFBE1'" onBlur="this.style.backgroundColor='#ffffff'" />&nbsp;<span id="idforresults"></span>
                                             <br />
                                             <input type="button" id="subbutton" value="Check availability" title="Check if username is available." disabled="disabled" class="submitadmin" onclick="sendRequestTextUsernamePost()" />&nbsp;
                                             <asp:RequiredFieldValidator runat="server" id="RequiredFieldUname" ControlToValidate="Username" SetFocusOnError="true" cssClass="cred2" ErrorMessage = "Username is blank" display="Dynamic"></asp:RequiredFieldValidator>
@@ -155,6 +155,15 @@
                                 <td width="74%" valign="top">
                                   <div style="margin-bottom: 6px">
                                     <input type="text" id="City" name="City" class="txtinput" size="20" onclick="ValLastname()" runat="server" onFocus="this.style.backgroundColor='#FFFCF9'" onBlur="this.style.backgroundColor='#ffffff'" />&nbsp;
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="15%" valign="top"><div style="margin-bottom: 6px"><span class="content12">Mobile:</span><span class="cred2">*</span></div></td>
+                                <td width="74%" valign="top">
+                                  <div style="margin-bottom: 6px">
+                                    <input type="text" id="Mobile" name="Mobile" class="txtinput" size="10" runat="server" onkeypress="return NumberOnly(event)" onkeyup="UnameKeyDown()" onmouseover="Tip('Mobile no is max 10 digit,<br>contain numbers only', BGCOLOR, '#FFFBE1', BORDERCOLOR, '#acc6db')" onmouseout="UnTip()" onFocus="this.style.backgroundColor='#FFFBE1'" onBlur="this.style.backgroundColor='#ffffff'" />&nbsp;<span id="Span1"></span>
+                                    <asp:RequiredFieldValidator runat="server" id="RequiredFieldMobile" ControlToValidate="Mobile" SetFocusOnError="true" cssClass="cred2" ErrorMessage = "Mobile is blank" display="Dynamic"></asp:RequiredFieldValidator>
                                   </div>
                                 </td>
                               </tr>
