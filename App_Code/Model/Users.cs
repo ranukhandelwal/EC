@@ -59,8 +59,11 @@ namespace EC.Model
         /// <summary>User  Country ID</summary>
         protected int _CountryID;
 
+        /// <summary>User Mobile No</summary>
+        protected string _Mobile;
+
         /// <summary>User  PIN</summary>
-        protected int _PIN;
+        protected string _PIN;
 
         /// <summary>User Email1</summary>
         protected string _Email1;
@@ -93,7 +96,7 @@ namespace EC.Model
         /*User Preference Info*/
 
         /// <summary>List of EC's User in interested in</summary>
-        protected int[] _ECPreference = new int[constant.ECMAX];
+        protected string _ECPreference;
 
         protected bool _canEmailSend;
 
@@ -278,10 +281,16 @@ namespace EC.Model
             set { _CountryID = value; }
         }
 
-        public int PIN
+        public string PIN
         {
             get { return _PIN; }
             set { _PIN = value; }
+        }
+
+        public string Mobile
+        {
+            get { return _Mobile; }
+            set { _Mobile = value; }
         }
 
         public string Email1
@@ -300,10 +309,16 @@ namespace EC.Model
             set { _DOB = value; }
         }
 
-        public int Sex
+        public string SetSex
+        {
+            get { return "invalid"; }
+            set { if ((SetSex == "Male") || (SetSex == "MALE") || (SetSex == "male")) _Sex = 1; else _Sex = 0; }
+        }
+
+        public int GetSex
         {
             get { return _Sex; }
-            set { _Sex = value; }
+            
         }
 
         public int EduID
@@ -330,7 +345,7 @@ namespace EC.Model
             set { _WorkCompanyID = value; }
         }
 
-        public int[] ECPreference
+        public string ECPreference
         {
             get { return _ECPreference; }
             set { _ECPreference = value; }
