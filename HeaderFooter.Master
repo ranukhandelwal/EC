@@ -8,16 +8,21 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/jquery.min.js")%>"></script>
     <script type="text/javascript" src="<%=ResolveUrl("~/js/Ajaxrequest.js")%>"></script>
     <script type="text/javascript" src="<%=ResolveUrl("~/js/validator.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/jquery.timePicker.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/jquery.datepick.js")%>"></script>
     <link href="CSS/cssreciaspx.css" rel="stylesheet" type="text/css" /> 
     <link href="CSS/thickbox.css" rel="stylesheet" type="text/css" />
-    <link href="CSS/jquery.datepick.css" rel="stylesheet" type="text/css" />
     <link href="css/grids.css" rel="stylesheet" type="text/css" />
     <link href="css/libraries.css" rel="stylesheet" type="text/css" />
     <link href="css/mod.css" rel="stylesheet" type="text/css" />
     <link href="css/template.css" rel="stylesheet" type="text/css" />
     <link href="css/content.css" rel="stylesheet" type="text/css" />
+    <link href="css/popupcalendarpicker.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/thickbox.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.datepick.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="<%=ResolveUrl("~/js/drop_menu.js")%>"></script>
 
