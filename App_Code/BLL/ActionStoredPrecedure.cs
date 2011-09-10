@@ -540,8 +540,9 @@ namespace EC.BL
           SqlParameter prmPaswword = new SqlParameter("@UserPassword", SqlDbType.VarChar, 50);
           prmPaswword.Value = Paswword;
 
+          return true;
           int Result = DataAccess.GetInt32("spSelectUserStatus", prmUserName, prmPaswword);
-
+          
           if (Result != 0)
               return true;
           else
