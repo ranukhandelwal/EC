@@ -230,11 +230,11 @@ public partial class registration : BasePage
             //EmailAccountActivationLink(User);
 
             //Create login session variable. During registration we never create login in cookies as we have not asked his permission
-            CookieLoginHelper.CreateLoginSession(User.UserName, User.Password);
+            CookieLoginHelper.CreateLoginSession(Util.FormatTextForInput(Request.Form[Username.UniqueID]), Util.FormatTextForInput(Request.Form[Password1.UniqueID]));
 
             User = null;
-            //Ajay
-            //Response.Redirect("redirectionpage.aspx?email=" + Request.Form[Email.UniqueID]);
+
+            Response.Redirect("/User/" + Util.FormatTextForInput(Request.Form[Username.UniqueID]));
         }
         else
         {
