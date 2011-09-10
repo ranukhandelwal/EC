@@ -74,7 +74,7 @@ public partial class Login : System.Web.UI.UserControl
             /*
             }
             */
-            this.Context.Response.Redirect("redirectionpage.aspx?mode=welcome&username=" + this.uname.Text + "&ReturnURL=" + this.Context.Request.Url.PathAndQuery);
+            this.Context.Response.Redirect("User/" + this.uname.Text);
         }
         else
         {
@@ -90,7 +90,7 @@ public partial class Login : System.Web.UI.UserControl
         loginpanel.Visible = true;
         DisplayUserInfo.Visible = false;
 
-        this.Context.Response.Redirect("redirectionpage.aspx?mode=thankyoulogout&ReturnURL=" + this.Context.Request.Url.PathAndQuery);
+        this.Context.Response.Redirect("/default.aspx");
     }
 
     private void ShowInvalidErrorMsg()
@@ -104,12 +104,12 @@ public partial class Login : System.Web.UI.UserControl
     {
         if (IsUserPassValidation)
         {
-            ShowPrivateMessageAlert();
-            ShowUnApprovedNewFriendAlert();
+            //ShowPrivateMessageAlert();
+            //ShowUnApprovedNewFriendAlert();
             loginpanel.Visible = false;
             DisplayUserInfo.Visible = true;
-            lblusername.Text = "<a href='myaccount.aspx'>" + UserIdentity.UserName + "</a>";
-            lblusername.Attributes.Add("onmouseover", "Tip('<a class=content12 href=userprofile.aspx?uid=" + UserIdentity.UserID + ">My Profile</a><br><a class=content12 href=myaccount.aspx>My Account</a><br><a class=content12 href=pmview.aspx>My Inbox</a><br><a class=content12 href=mycookbook.aspx>My Cook Book</a><br><a class=content12 href=myfriendslist.aspx>My Friends List</a><br><a class=content12 href=members.aspx>Browse Members</a>', WIDTH, 150, false, '', false, true, FADEIN, 300, FADEOUT, 300, STICKY, 1, false, true, CLICKCLOSE, true)");
+            lblusername.Text = "<a href='/Account/myaccount.aspx'>" + UserIdentity.UserName + "</a>";
+            lblusername.Attributes.Add("onmouseover", "Tip('<a class=content12 href=/Account/userprofile.aspx?uid=" + UserIdentity.UserID + ">My Profile</a><br><a class=content12 href=/Account/myaccount.aspx>My Account</a><br><a class=content12 href=/Account/pmview.aspx>My Inbox</a><br><a class=content12 href=/Account/myfriendslist.aspx>My Friends List</a><br><a class=content12 href=/Account/members.aspx>Browse Members</a>', WIDTH, 150, false, '', false, true, FADEIN, 300, FADEOUT, 300, STICKY, 1, false, true, CLICKCLOSE, true)");
             lblusername.Attributes.Add("onmouseout", "UnTip()");
         }
     }
