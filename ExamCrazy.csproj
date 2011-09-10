@@ -412,6 +412,7 @@
     <None Include="App_Code\BLL\ImageUploadManager.cs.exclude" />
     <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
     <Content Include="AjaxRequest\AjaxRequest.aspx" />
+    <Content Include="bin\Intelligencia.UrlRewriter.dll" />
     <Content Include="css\cssreciaspx.css" />
     <Content Include="css\jquery.datepick.css" />
     <Content Include="css\popupcalendarpicker.css" />
