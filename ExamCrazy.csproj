@@ -275,6 +275,13 @@
     <Compile Include="toprssxml.aspx.designer.cs">
       <DependentUpon>toprssxml.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User\__user.aspx.cs">
+      <DependentUpon>__user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\__user.aspx.designer.cs">
+      <DependentUpon>__user.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm3.aspx.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -685,6 +692,7 @@
     <Content Include="images\yellowbg.gif" />
     <Content Include="images\yellowgrd.gif" />
     <Content Include="Test\LoginControl.aspx" />
+    <Content Include="User\__user.aspx" />
     <Content Include="Web.sitemap" />
     <Content Include="ExamCrazy-Main.master" />
     <Content Include="ExamCrazy-Register.master" />
