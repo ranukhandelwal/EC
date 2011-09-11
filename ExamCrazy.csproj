@@ -268,6 +268,13 @@
     <Compile Include="Test\LoginControl.aspx.designer.cs">
       <DependentUpon>LoginControl.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Test\rss_feed_announce.aspx.cs">
+      <DependentUpon>rss_feed_announce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\rss_feed_announce.aspx.designer.cs">
+      <DependentUpon>rss_feed_announce.aspx</DependentUpon>
+    </Compile>
     <Compile Include="toprssxml.aspx.cs">
       <DependentUpon>toprssxml.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -693,6 +700,7 @@
     <Content Include="images\yellowbg.gif" />
     <Content Include="images\yellowgrd.gif" />
     <Content Include="Test\LoginControl.aspx" />
+    <Content Include="Test\rss_feed_announce.aspx" />
     <Content Include="User\__user.aspx" />
     <Content Include="Web.sitemap" />
     <Content Include="ExamCrazy-Main.master" />
