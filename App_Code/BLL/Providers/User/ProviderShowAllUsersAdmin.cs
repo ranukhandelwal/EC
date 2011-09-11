@@ -101,55 +101,58 @@ namespace EC.BL.Providers.User
                 {
                     item.UID = (int)dr["UID"];
                 }
-                if (dr["UserName"] != DBNull.Value)
+                if (dr["uname"] != DBNull.Value)
                 {
-                    item.UserName = (string)dr["UserName"];
+                    item.UserName = (string)dr["uname"];
                 }
-                if (dr["Password"] != DBNull.Value)
+                if (dr["pswd"] != DBNull.Value)
                 {
-                    item.Password = (string)dr["Password"];
+                    item.Password = (string)dr["pswd"];
                 }
-                if (dr["Email"] != DBNull.Value)
+                if (dr["Email1"] != DBNull.Value)
                 {
-                    item.Email1 = (string)dr["Email"];
+                    item.Email1 = (string)dr["Email1"];
                 }
-                if (dr["FirstName"] != DBNull.Value)
+                if (dr["fName"] != DBNull.Value)
                 {
-                    item.FirstName = (string)dr["FirstName"];
+                    item.FirstName = (string)dr["fName"];
                 }
-                if (dr["LastName"] != DBNull.Value)
+                if (dr["lName"] != DBNull.Value)
                 {
-                    item.LastName = (string)dr["LastName"];
+                    item.LastName = (string)dr["lName"];
                 }
-                if (dr["City"] != DBNull.Value)
+                /*
+                if (dr["CityID"] != DBNull.Value)
                 {
-                    item.CityID = (int)dr["City"];
+                    item.CityID = (int)dr["CityID"];
                 }
-                if (dr["State"] != DBNull.Value)
+                if (dr["StateID"] != DBNull.Value)
                 {
-                    item.StateID = (int)dr["State"];
+                    item.StateID = (int)dr["StateID"];
                 }
-                if (dr["Country"] != DBNull.Value)
+                if (dr["CountryID"] != DBNull.Value)
                 {
-                    item.CountryID = (int)dr["Country"];
+                    item.CountryID = (int)dr["CountryID"];
                 }
+                
                 if (dr["UserImage"] != DBNull.Value)
                 {
                     item.Photo = (string)dr["UserImage"];
-                }
+                }*/
                 if (dr["isActive"] != DBNull.Value)
                 {
-                    item.isActive = (int)dr["isActive"];
+                    item.isActive = (Int16)dr["isActive"];
                 }
-                if (dr["DateJoined"] != DBNull.Value)
+                if (dr["RegistrationDate"] != DBNull.Value)
                 {
-                    item.RegistrationDate = (DateTime)dr["DateJoined"];
+                    item.RegistrationDate = (DateTime)dr["RegistrationDate"];
                 }
+                /*
                 if (dr["Activation"] != DBNull.Value)
                 {
                     item.isActive = (int)dr["Activation"];
                 }
-                /*
+                
                 if (dr["Hits"] != DBNull.Value)
                 {
                     item.Hits = (int)dr["Hits"];
@@ -171,17 +174,17 @@ namespace EC.BL.Providers.User
                     item.PostedArticleCount = (int)dr["TotalSubmittedArticle"];
                 }
                  * */
-                if (dr["LastVisit"] != DBNull.Value)
+                if (dr["lastlogin"] != DBNull.Value)
                 {
-                    item.LastLoginDate = (DateTime)dr["LastVisit"];
+                    item.LastLoginDate = (DateTime)dr["lastlogin"];
                 }
                 if (dr["LastUpdated"] != DBNull.Value)
                 {
                     item.LastUpdated = (DateTime)dr["LastUpdated"];
                 }
-                if (dr["UserLevel"] != DBNull.Value)
+                if (dr["UserType"] != DBNull.Value)
                 {
-                    item.UserType = (int)dr["UserLevel"];
+                    item.UserType = (Int16)dr["UserType"];
                 }
                 /*
                 if (dr["ShowFriendsListinProfile"] != DBNull.Value)
