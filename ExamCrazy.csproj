@@ -430,6 +430,7 @@
     <Content Include="forgotpassword.aspx" />
     <Content Include="imgsecuritycode.aspx" />
     <Content Include="js\Ajaxrequest.js" />
+    <Content Include="js\dropdownmenu.js" />
     <Content Include="js\jquery.datepick.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\jquery.timePicker.js" />

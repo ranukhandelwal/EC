@@ -21,7 +21,7 @@ using EC.Security;
 using EC.Common.Utilities;
 //using EC.BL.Providers.CookBooks;
 //using EC.BL.Providers.FriendList;
-using EC.Security;
+
 using EC.BL.Providers.User;
 
 public partial class membershipmanagers : BasePageAdmin
@@ -287,13 +287,13 @@ public partial class membershipmanagers : BasePageAdmin
             int isActive = (int)DataBinder.Eval(e.Item.DataItem, "isActive");
 
             //Item Counter
-            int SavedCookBookCount = (int)DataBinder.Eval(e.Item.DataItem, "SavedrecipeCount");
+            /*int SavedCookBookCount = (int)DataBinder.Eval(e.Item.DataItem, "SavedrecipeCount");
             int FriendsListCount = (int)DataBinder.Eval(e.Item.DataItem, "FriendsCount");
             int SubmittedRecipeCount = (int)DataBinder.Eval(e.Item.DataItem, "PostedRecipeCount");
             int SubmittedArticleCount = (int)DataBinder.Eval(e.Item.DataItem, "PostedArticleCount");
             int UsersCommentRecipeCount = (int)DataBinder.Eval(e.Item.DataItem, "CommentRecipeCount");
             int UsersCommentArticleCount = (int)DataBinder.Eval(e.Item.DataItem, "CommentArticleCount");
-
+            */
             editbutton.Text = "<img src='../images/icon_pencil.gif' alt='Edit' border='0'>";
             editbutton.NavigateUrl = "editprofile.aspx?uid=" + User_ID;
 
@@ -308,7 +308,7 @@ public partial class membershipmanagers : BasePageAdmin
                 delbutton.Attributes["onclick"] = "javascript:return confirm('Deleting a user will delete all items associated with the user. Are you sure you want to delete user. " + User_name + " User, UserID#  " + User_ID + "?')";
                 delbutton.Text = "<img border='0' src='../images/user_remove.png'>";
             }
-
+/*
             if (SavedCookBookCount != 0)
             {
                 string strURL3 = "popupviewusercookbook.aspx?uid=" + User_ID + "&uname=" + User_name + "&keepThis=true&TB_iframe=true&height=300&width=400";
@@ -378,7 +378,7 @@ public partial class membershipmanagers : BasePageAdmin
             {
                 lblcountcommentarticle.Text = UsersCommentArticleCount.ToString();
             }
-
+            */
             if (isActive != 0)
             {
                 if (User_ID == 1)
