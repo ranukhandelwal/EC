@@ -7,11 +7,11 @@
 <div class="contentdis5">
 <strong>RSS Feed:</strong>
 <span class="content2">
-Now you can have new recipes added directly to your site using Myasp-net.com RSS feeds. We are offering the following feeds:
+Now you can have new announce added directly to your site/computer using ExamCrazy.com RSS feeds. We are offering the following feeds:
 <br />
-<a title="Newest recipes RSS/XML feed" href="newrssxml.aspx" target="_blank"><img src="images/xmlbtnbig.gif" border="0" title="Newest recipes RSS/XML feed" alt="Newest recipes RSS/XML feed"></a> 20 Newest recipes
+<a title="Newest announcement RSS/XML feed" href="/newrssxml.aspx" target="_blank"><img src="~/images/xmlbtnbig.gif" border="0" title="Newest ExamCrazy RSS/XML feed" alt="Newest ExamCrazy RSS/XML feed" runat="server" /></a> 20 Newest recipes
 <br />
-<a title="Top recipes RSS/XML feed" href="toprssxml.aspx" target="_blank"><img src="images/xmlbtnbig.gif" border="0" title="Top recipes RSS/XML feed" alt="Top recipes RSS/XML feed"></a> Top 20 recipes
+<a title="Top announcement RSS/XML feed" href="/toprssxml.aspx" target="_blank"><img src="~/images/xmlbtnbig.gif" border="0" title="Top ExamCrazy RSS/XML feed" alt="Top ExamCrazy RSS/XML feed" runat="server" /></a> Top 20 recipes
 </span>
 </div>
 </div>
