@@ -79,6 +79,43 @@ namespace EC.BL
         {
             return 0;
         }
+
+        /// <summary>
+        /// Stored procedure to get Feed List.
+        /// </summary>
+        public IDataReader GetFeedList(int TypeID)
+        {
+            SqlParameter prmID = new SqlParameter("@TypeID", SqlDbType.Int, 4);
+            prmID.Value = TypeID;
+            return DataAccess.GetFromReader("spSelectFeedList", prmID);
+        }
+
+        public static int AddNewFeed(Feed f)
+        {
+            SqlParameter prmTitle = new SqlParameter("@Title", SqlDbType.VarChar, 50);
+            prmTitle.Value = f.Title;
+
+            SqlParameter prmAuthor = new SqlParameter("@Author", SqlDbType.VarChar, 50);
+            prmAuthor.Value = f.Author;
+
+            SqlParameter prmDescription = new SqlParameter("@Description", SqlDbType.VarChar, 1000);
+            prmDescription.Value = f.Description;
+
+            SqlParameter prmLink = new SqlParameter("@Link", SqlDbType.VarChar, 50);
+            prmLink.Value = f.Link;
+
+            SqlParameter prmTypeID = new SqlParameter("@TypeID", SqlDbType.SmallInt);
+            prmTypeID.Value = f.TypeID;
+
+            SqlParameter prmCategory = new SqlParameter("@Category", SqlDbType.VarChar, 50);
+            prmCategory.Value = f.Category;
+
+            SqlParameter prmisValid = new SqlParameter("@isValid", SqlDbType.SmallInt);
+            prmisValid.Value = f.isValid;
+
+            return DataAccess.Execute("spInsertFeed", prmTitle, prmAuthor, prmLink, prmDescription, prmisValid, prmTypeID, prmCategory);
+            
+        }
         /// <summary>
         /// Execute retrieval of stored procedures in the database.
         /// </summary>

@@ -52,6 +52,13 @@
     <Compile Include="admin\adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\AnnouncementManager.aspx.cs">
+      <DependentUpon>AnnouncementManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AnnouncementManager.aspx.designer.cs">
+      <DependentUpon>AnnouncementManager.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\managermain.aspx.cs">
       <DependentUpon>managermain.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -89,6 +96,8 @@
     <Compile Include="App_Code\BLL\Providers\City\CityRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\Country\BaseCountryObj.cs" />
     <Compile Include="App_Code\BLL\Providers\Country\CountryRepository.cs" />
+    <Compile Include="App_Code\BLL\Providers\Feed\BaseFeedObj.cs" />
+    <Compile Include="App_Code\BLL\Providers\Feed\FeedRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\IRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\ProviderLostPassword.cs" />
     <Compile Include="App_Code\BLL\Providers\ProviderSiteStatistics.cs" />
@@ -121,6 +130,7 @@
     <Compile Include="App_Code\Model\DBObj.cs" />
     <Compile Include="App_Code\Model\Email.cs" />
     <Compile Include="App_Code\Model\ExamCategory.cs" />
+    <Compile Include="App_Code\Model\Feed.cs" />
     <Compile Include="App_Code\Model\IDB.cs" />
     <Compile Include="App_Code\Model\Pager.cs" />
     <Compile Include="App_Code\Model\PrivateMessage.cs" />
@@ -342,82 +352,9 @@
     <None Include="SampleContent.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="admin\articlecommentconfirmation.aspx.exclude" />
-    <None Include="admin\articlecommentsmanager.aspx.cs.exclude" />
-    <None Include="admin\articlecommentsmanager.aspx.exclude" />
-    <None Include="admin\articlemanager.aspx.cs.exclude" />
-    <None Include="admin\articlemanager.aspx.exclude" />
-    <None Include="admin\articlepreview.aspx.cs.exclude" />
-    <None Include="admin\articlepreview.aspx.exclude" />
-    <None Include="admin\categorymanager.aspx.cs.exclude" />
-    <None Include="admin\categorymanager.aspx.exclude" />
-    <None Include="admin\commentsmanager.aspx.cs.exclude" />
-    <None Include="admin\commentsmanager.aspx.exclude" />
-    <None Include="admin\configuration.aspx.cs.exclude" />
-    <None Include="admin\configuration.aspx.exclude" />
-    <None Include="admin\confirmarticlecatedit.aspx.exclude" />
-    <None Include="admin\confirmarticlesubmission.aspx.exclude" />
-    <None Include="admin\confirmarticleupdate.aspx.exclude" />
-    <None Include="admin\confirmcatedit.aspx.exclude" />
-    <None Include="admin\confirmcommentenabled.aspx.exclude" />
-    <None Include="admin\confirmcommentupdate.aspx.exclude" />
-    <None Include="admin\confirmconfignumberofrecordsinCookBook.aspx.exclude" />
-    <None Include="admin\confirmconfignumberrecordsshowinFriendsList.aspx.exclude" />
-    <None Include="admin\confirmconfigprofilepage.aspx.exclude" />
-    <None Include="admin\confirmdel.aspx.exclude" />
-    <None Include="admin\confirmdupdate.aspx.exclude" />
-    <None Include="admin\confirmeditprofile.aspx.exclude" />
-    <None Include="admin\confirmemailupdate.aspx.exclude" />
-    <None Include="admin\confirmexceptiondelete.aspx.cs.exclude" />
-    <None Include="admin\confirmexceptiondelete.aspx.exclude" />
-    <None Include="admin\confirmmultiplecommentsdelete.aspx.cs.exclude" />
-    <None Include="admin\confirmmultiplecommentsdelete.aspx.exclude" />
-    <None Include="admin\confirmsendactivation.aspx.exclude" />
-    <None Include="admin\confirmupdatelastviewedhrs.aspx.exclude" />
-    <None Include="admin\confirmusersuspenddeleteedit.aspx.cs.exclude" />
-    <None Include="admin\confirmusersuspenddeleteedit.aspx.exclude" />
-    <None Include="admin\deleteduserlogview.aspx.cs.exclude" />
-    <None Include="admin\deleteduserlogview.aspx.exclude" />
-    <None Include="admin\deleteuser.aspx.cs.exclude" />
-    <None Include="admin\deleteuser.aspx.exclude" />
-    <None Include="admin\editing.aspx.cs.exclude" />
-    <None Include="admin\editing.aspx.exclude" />
-    <None Include="admin\editprofile.aspx.cs.exclude" />
-    <None Include="admin\editprofile.aspx.exclude" />
-    <None Include="admin\exceptionlogmanager.aspx.cs.exclude" />
-    <None Include="admin\exceptionlogmanager.aspx.exclude" />
-    <None Include="admin\getimagepopupajax.aspx.cs.exclude" />
-    <None Include="admin\getimagepopupajax.aspx.exclude" />
-    <None Include="admin\pagenotfound.aspx.exclude" />
-    <None Include="admin\popupgetuserswhohasnotactivatedaccount.aspx.cs.exclude" />
-    <None Include="admin\popupgetuserswhohasnotactivatedaccount.aspx.exclude" />
-    <None Include="admin\popuplast20userswhosubmittedarticle.aspx.cs.exclude" />
-    <None Include="admin\popuplast20userswhosubmittedarticle.aspx.exclude" />
-    <None Include="admin\popuplast20userswhosumittedrecipe.aspx.cs.exclude" />
-    <None Include="admin\popuplast20userswhosumittedrecipe.aspx.exclude" />
-    <None Include="admin\popuplast25userswhoaddafriend.aspx.cs.exclude" />
-    <None Include="admin\popuplast25userswhoaddafriend.aspx.exclude" />
-    <None Include="admin\popuplast25userswhoaddedrecipeincookbook.aspx.cs.exclude" />
-    <None Include="admin\popuplast25userswhoaddedrecipeincookbook.aspx.exclude" />
-    <None Include="admin\popuplast25userswhocommentedarecipe.aspx.cs.exclude" />
-    <None Include="admin\popuplast25userswhocommentedarecipe.aspx.exclude" />
-    <None Include="admin\popupviewusercookbook.aspx.cs.exclude" />
-    <None Include="admin\popupviewusercookbook.aspx.exclude" />
-    <None Include="admin\popupviewuserfriendslist.aspx.cs.exclude" />
-    <None Include="admin\popupviewuserfriendslist.aspx.exclude" />
-    <None Include="admin\popupviewusersuspenionnote.aspx.cs.exclude" />
-    <None Include="admin\popupviewusersuspenionnote.aspx.exclude" />
-    <None Include="admin\recipemanager.aspx.cs.exclude" />
-    <None Include="admin\recipemanager.aspx.exclude" />
-    <None Include="admin\rerecipeapprovalconfirmation.aspx.exclude" />
-    <None Include="admin\suspenduserwithnote.aspx.cs.exclude" />
-    <None Include="admin\suspenduserwithnote.aspx.exclude" />
-    <None Include="admin\updatearticle.aspx.cs.exclude" />
-    <None Include="admin\updatearticle.aspx.exclude" />
-    <None Include="admin\viewing.aspx.cs.exclude" />
-    <None Include="admin\viewing.aspx.exclude" />
     <None Include="App_Code\BLL\ImageUploadManager.cs.exclude" />
     <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
+    <Content Include="admin\AnnouncementManager.aspx" />
     <Content Include="AjaxRequest\AjaxRequest.aspx" />
     <Content Include="bin\Intelligencia.UrlRewriter.dll" />
     <Content Include="css\cssreciaspx.css" />
