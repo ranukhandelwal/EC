@@ -25,7 +25,7 @@ namespace EC.BL
         {
             get
             {
-                IDataReader dr = Blogic.ActionProcedureDataProvider.GetFeedList(TypeID);
+                IDataReader dr = Blogic.ActionProcedureDataProvider.GetFeedList(CategoryID);
                 return dr;
             }
 
@@ -36,11 +36,11 @@ namespace EC.BL
         }
 
 
-        public ExtendedCollection<Feed> GetFeedList(int Type)
+        public ExtendedCollection<Feed> GetFeedList(int Category)
         {
 
             ExtendedCollection<Feed> list = new ExtendedCollection<Feed>();
-            TypeID = Type;
+            CategoryID = Category;
             IDataReader dr = GetData;
 
             while (dr.Read())

@@ -52,12 +52,12 @@
     <Compile Include="admin\adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\AnnouncementManager.aspx.cs">
-      <DependentUpon>AnnouncementManager.aspx</DependentUpon>
+    <Compile Include="admin\announcementmanager.aspx.cs">
+      <DependentUpon>announcementmanager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\AnnouncementManager.aspx.designer.cs">
-      <DependentUpon>AnnouncementManager.aspx</DependentUpon>
+    <Compile Include="admin\announcementmanager.aspx.designer.cs">
+      <DependentUpon>announcementmanager.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\managermain.aspx.cs">
       <DependentUpon>managermain.aspx</DependentUpon>
@@ -354,7 +354,7 @@
   <ItemGroup>
     <None Include="App_Code\BLL\ImageUploadManager.cs.exclude" />
     <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
-    <Content Include="admin\AnnouncementManager.aspx" />
+    <Content Include="admin\announcementmanager.aspx" />
     <Content Include="AjaxRequest\AjaxRequest.aspx" />
     <Content Include="bin\Intelligencia.UrlRewriter.dll" />
     <Content Include="css\cssreciaspx.css" />
@@ -372,6 +372,7 @@
     <Content Include="js\jquery.min.js" />
     <Content Include="js\jquery.timePicker.js" />
     <Content Include="js\popupcalendarpicker.js" />
+    <Content Include="js\showimageajax.js" />
     <Content Include="js\validator.js" />
     <Content Include="js\wz_tooltip.js" />
     <Content Include="HeaderFooter.Master" />

@@ -42,7 +42,7 @@ fieldset {background: #ffffff;}
     </div>
     <div style="clear: both;"><br /></div>
         <div style="margin-bottom: 16px; margin-top: 10px;">
-    <a href="recipemanager.aspx" title="Recipe Manager Page"><img src="../images/food-icon.png" style="float:left; border: 0;" /></a><div class="content12" style="padding-top: 20px; padding-left: 4px;">&nbsp;Recipe Manager - edit, delete, review and approve recipe.
+    <a href="announcementmanager.aspx" title="Announcement Manager Page"><img src="../images/food-icon.png" style="float:left; border: 0;" /></a><div class="content12" style="padding-top: 20px; padding-left: 4px;">&nbsp;Announcement Manager - add, edit, deactivate, review and approve jobs, announcement, exams, admissions.
     </div>
     <div style="clear: both;"><br /></div>
     <div style="margin-bottom: 27px; margin-top: 10px;">

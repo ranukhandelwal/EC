@@ -9,6 +9,26 @@ using System.Web;
 
 namespace EC.BL
 {
+
+    /// <summary>
+    /// Announcement Category String
+    /// </summary>
+    public struct sCategory
+    {
+        private int _ID;
+        private string _Name;
+        public int ID
+        {
+            get { return _ID; }
+            set { _ID = value; }
+        }
+        public string Name
+        {
+            get { return _Name; }
+            set { _Name = value; }
+        }
+    }
+
     /// <summary>
     /// Object in this class manage constant variables.
     /// </summary>
@@ -32,7 +52,7 @@ namespace EC.BL
         public const int PageSize100 = 100;
 
         public const int ECMAX = 10;
-        #region Categopry Dropdownlist
+        #region Category Dropdownlist
         /// <summary>
         /// Recipe Section - string = "Recipe"
         /// </summary>
@@ -42,6 +62,14 @@ namespace EC.BL
         /// Article Section - string = "Article"
         /// </summary>
         public const string Article = "Article";
+
+   
+        public static sCategory[] AnnouncementCategory = new sCategory[] {
+            new sCategory{ID = 0, Name = "Choose Category"}, 
+            new sCategory{ID = 1, Name = "JOBS"}, 
+            new sCategory{ID = 2, Name = "ANNOUNCE"},
+            new sCategory{ID = 3, Name = "UPDATE"}
+        };
         #endregion
 
         #region Indentify what page the rating occured
