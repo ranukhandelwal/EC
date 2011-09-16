@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web;
+using EC.BL;
 
 namespace EC.Model
 {
@@ -14,8 +15,8 @@ namespace EC.Model
         private string _Link;
         private Int16 _isValid;
         private int _Hits;
-        private int _Type;
-        private string _Category;
+        private int _Category;
+        private string _DisplayIn;
 
         public int FeedID
         {
@@ -63,36 +64,30 @@ namespace EC.Model
             get { return ++_Hits; }
 
         }
-        public int TypeID
-        {
-            get { return _Type; }
-            set { _Type = value; }
-        }
-
-        public string TypeSTR
-        {
-            get
-            {
-                if (_Type == 1)
-                    return "JOB";
-                else if (_Type == 2)
-                    return "ANNOUNCE";
-                else
-                    return "INVALID";
-            }
-            set {
-                if ((value == "Job") || (value == "JOB") || (value == "job"))
-                    _Type = 1;
-                else if ((value == "Announce") || (value == "ANNOUNCE") || (value == "announce"))
-                    _Type = 2;
-                else
-                    _Type = -1;
-            }
-        }
-        public string Category
+        public int CategoryID
         {
             get { return _Category; }
             set { _Category = value; }
+        }
+
+        public string CategorySTR
+        {
+            get
+            {
+                if(constant.AnnouncementCategory.Length < _Category)
+                    return constant.AnnouncementCategory[_Category].Name;
+                else
+                    return "invalid";
+                                
+            }
+            set {
+                    _Category = -1;
+            }
+        }
+        public string DisplayIn
+        {
+            get { return _DisplayIn; }
+            set { _DisplayIn = value; }
         }
         
     }

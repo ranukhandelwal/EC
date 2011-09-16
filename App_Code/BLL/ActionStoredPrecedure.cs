@@ -104,16 +104,16 @@ namespace EC.BL
             SqlParameter prmLink = new SqlParameter("@Link", SqlDbType.VarChar, 50);
             prmLink.Value = f.Link;
 
-            SqlParameter prmTypeID = new SqlParameter("@TypeID", SqlDbType.SmallInt);
-            prmTypeID.Value = f.TypeID;
+            SqlParameter prmCategoryID = new SqlParameter("@CategoryID", SqlDbType.SmallInt);
+            prmCategoryID.Value = f.CategoryID;
 
-            SqlParameter prmCategory = new SqlParameter("@Category", SqlDbType.VarChar, 50);
-            prmCategory.Value = f.Category;
+            SqlParameter prmDisplayIn = new SqlParameter("@DisplayIn", SqlDbType.VarChar, 50);
+            prmDisplayIn.Value = f.DisplayIn;
 
             SqlParameter prmisValid = new SqlParameter("@isValid", SqlDbType.SmallInt);
             prmisValid.Value = f.isValid;
 
-            return DataAccess.Execute("spInsertFeed", prmTitle, prmAuthor, prmLink, prmDescription, prmisValid, prmTypeID, prmCategory);
+            return DataAccess.Execute("spInsertFeed", prmTitle, prmAuthor, prmLink, prmDescription, prmisValid, prmCategoryID, prmDisplayIn);
             
         }
         /// <summary>
@@ -257,12 +257,12 @@ namespace EC.BL
       /// Returns recipe image filename to use for update
       /// </summary>
       /// <returns></returns>
-        public IDataReader GetRecipeImageFileNameForUpdate(int ID)
+        public IDataReader GetAnnouncementImageFileNameForUpdate(int ID)
       {
           SqlParameter prmID = new SqlParameter("@ID", SqlDbType.Int, 4);
           prmID.Value = ID;
 
-          return DataAccess.GetFromReader("GetRecipeImageFileNameForUpdate", prmID);
+          return DataAccess.GetFromReader("GetAnnouncementImageFileNameForUpdate", prmID);
       }
 
       /// <summary>
@@ -461,9 +461,9 @@ namespace EC.BL
         /// Returns the last 10 updated recipe from recipe update log.
         /// </summary>
         /// <returns></returns>
-        public IDataReader GetLast10UpdatedRecipe
+        public IDataReader GetLast10UpdatedAnnouncement
         {
-            get { return DataAccess.GetFromReader("spSelectLast10UpdatedRecipe"); }
+            get { return DataAccess.GetFromReader("spSelectLast10Feed"); }
         }
 
         /// <summary>
@@ -2290,7 +2290,7 @@ namespace EC.BL
            get { return DataAccess.GetIntScalarVal("GetUnApprovedRecipeCount"); }
        }
 #endregion
-
+/*
 #region Get article details, Update hit counter, Get Category list, Add, Update and Delete Article
 
        /// <summary>
@@ -2574,15 +2574,15 @@ namespace EC.BL
        }
 
 #endregion
-
-#region Admin Recipe Manager return recipe, approve, update, delete and configuration
+*/
+#region Admin Announcement Manager return recipe, approve, update, delete and configuration
        /// <summary>
        /// Returns Admin Recipe Manager for Datagrid
        /// </summary>
        /// <returns></returns>
-        public DataTable AdminRecipeManagerWithCustomPaging(int CAT_ID, string Letter, string Find, int Tab, int Top, int Year, int Month, int RecipeImage, int LastViewed, int PageIndex, int PageSize)
+        public DataTable AdminAnnouncementManagerWithCustomPaging(int CAT_ID, string Letter, string Find, int Tab, int Top, int Year, int Month, int RecipeImage, int LastViewed, int PageIndex, int PageSize)
         {
-            SqlParameter prmCatId = new SqlParameter("@CAT_ID", SqlDbType.Int, 4);
+            SqlParameter prmCatId = new SqlParameter("@Category", SqlDbType.Int, 4);
             prmCatId.Value = CAT_ID;
 
             SqlParameter prmLetter = new SqlParameter("@Letter", SqlDbType.VarChar, 10);
@@ -2603,7 +2603,7 @@ namespace EC.BL
             SqlParameter prmMonth = new SqlParameter("@Month", SqlDbType.Int, 4);
             prmMonth.Value = Month;
 
-            SqlParameter prmRecipeImage = new SqlParameter("@RecipeImage", SqlDbType.Int, 4);
+            SqlParameter prmRecipeImage = new SqlParameter("@Image", SqlDbType.Int, 4);
             prmRecipeImage.Value = RecipeImage;
 
             SqlParameter prmLastViewed = new SqlParameter("@LastViewed", SqlDbType.Int, 4);
@@ -2615,7 +2615,7 @@ namespace EC.BL
             SqlParameter prmPageSize = new SqlParameter("@PageSize", SqlDbType.Int, 4);
             prmPageSize.Value = PageSize;
 
-            return DataAccess.GetFromDataTable("AdminManagerGetRecipe", prmCatId, prmLetter, prmFind, prmTab, prmTop, prmYear, prmMonth, prmRecipeImage, prmLastViewed, prmPageIndex, prmPageSize);
+            return DataAccess.GetFromDataTable("AdminManagerGetAnnouncement", prmCatId, prmLetter, prmFind, prmTab, prmTop, prmYear, prmMonth, prmRecipeImage, prmLastViewed, prmPageIndex, prmPageSize);
         }
 
        /// <summary>
@@ -2667,13 +2667,13 @@ namespace EC.BL
        /// Admin Recipe Manager Delete Recipe
        /// </summary>
        /// <returns></returns>
-        public int AdminRecipeManagerDelete(Recipe recipe)
+        /*public int AdminRecipeManagerDelete(Recipe recipe)
        {
            SqlParameter prmID = new SqlParameter("@ID", SqlDbType.Int, 4);
            prmID.Value = recipe.ID;
 
            return DataAccess.Execute("AdminManagerDeleteRecipe", prmID);
-       }
+       }*/
 
        /// <summary>
        /// Approve Recipe
@@ -2715,7 +2715,7 @@ namespace EC.BL
        /// Update Recipe
        /// </summary>
        /// <returns></returns>
-        public int UpdateRecipe(Recipe recipe)
+        /*public int UpdateRecipe(Recipe recipe)
        {
            SqlParameter prmUserID = new SqlParameter("@UserID", SqlDbType.Int, 4);
            prmUserID.Value = recipe.UID;
