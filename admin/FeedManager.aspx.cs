@@ -88,123 +88,126 @@ namespace ExamCrazy.admin
 
             try
             {
-                DataRow dr = dt.Rows[0];
-
-                if (Top == 100)
-                {   //100 Most popular announcement by hits count
-                    dgrd_announcement.VirtualItemCount = 100;
-                }
-                else
+                if (dt.Rows.Count > 0)
                 {
-                    //Assigned Total records count to grid virtual count
-                    dgrd_announcement.VirtualItemCount = (int)dr["RCount"];
-                }
+                    DataRow dr = dt.Rows[0];
 
-                //Initialize variable for total record count to get record count for filter
-                int TotalRecordsCount = (int)dr["RCount"];
-
-                //Release datarow object in memory
-                dr = null;
-
-                //Sort by announcement ID
-                /*if (lbOrderBy.Text == "")
-                {
-                    dv.Sort = "FeedID";
-                }
-                else
-                {
-                    try
-                    {
-                        dv.Sort = lbOrderBy.Text + " " + lbDesc.Text;
+                    if (Top == 100)
+                    {   //100 Most popular announcement by hits count
+                        dgrd_announcement.VirtualItemCount = 100;
                     }
-                    catch
+                    else
                     {
-                        dv.Sort = "Category";
+                        //Assigned Total records count to grid virtual count
+                        dgrd_announcement.VirtualItemCount = (int)dr["RCount"];
                     }
-                }*/
 
-                //Assign dataview to grid datasource
-                dgrd_announcement.DataSource = dv;
+                    //Initialize variable for total record count to get record count for filter
+                    int TotalRecordsCount = (int)dr["RCount"];
 
-                //Bind the data
-                dgrd_announcement.DataBind();
+                    //Release datarow object in memory
+                    dr = null;
 
-                //For Alphabet Letter
-                if (!string.IsNullOrEmpty(Letter))
-                {
-                    // lblSortedCat.Text = "There are&nbsp;" + TotalRecordsCount + "&nbsp;announcements starting with letter&nbsp;<b>" + Letter + "</b>";
-                    lblrcdalphaletterfooter.Text = TotalRecordsCount + "&nbsp;announcements starting with letter&nbsp;<b>" + Letter + "</b>&nbsp;-";
-                    //lblrcdCatcount.Visible = false;
+                    //Sort by announcement ID
+                    /*if (lbOrderBy.Text == "")
+                    {
+                        dv.Sort = "FeedID";
+                    }
+                    else
+                    {
+                        try
+                        {
+                            dv.Sort = lbOrderBy.Text + " " + lbDesc.Text;
+                        }
+                        catch
+                        {
+                            dv.Sort = "Category";
+                        }
+                    }*/
+
+                    //Assign dataview to grid datasource
+                    dgrd_announcement.DataSource = dv;
+
+                    //Bind the data
+                    dgrd_announcement.DataBind();
+
+                    //For Alphabet Letter
+                    if (!string.IsNullOrEmpty(Letter))
+                    {
+                        // lblSortedCat.Text = "There are&nbsp;" + TotalRecordsCount + "&nbsp;announcements starting with letter&nbsp;<b>" + Letter + "</b>";
+                        lblrcdalphaletterfooter.Text = TotalRecordsCount + "&nbsp;announcements starting with letter&nbsp;<b>" + Letter + "</b>&nbsp;-";
+                        //lblrcdCatcount.Visible = false;
+                    }
+
+                    //For search
+                    if (!string.IsNullOrEmpty(fFind))
+                    {
+                        // lblSortedCat.Text = "Your search for announcement name&nbsp;" + "(<b>" + fFind + "</b>) return:&nbsp;" + TotalRecordsCount + "&nbsp;records";
+                        //lblrcdCatcount.Visible = false;
+                    }
+
+                    //For top 100 announcement
+                    if (Top == 100)
+                    {
+                        //    lblSortedCat.Text = "Top&nbsp;" + 100 + " popular&nbsp;announcements by hits";
+                        //  lblrcdCatcount.Visible = false;
+                    }
+
+                    //For year and month announcement submission
+                    if (!string.IsNullOrEmpty(Request.QueryString["year"]) && !string.IsNullOrEmpty(Request.QueryString["month"]))
+                    {
+                        //lblSortedCat.Text = "There are&nbsp;" + TotalRecordsCount + " announcements submitted on &nbsp;" + Utility.GetMonthName(Month) + ", " + Year;
+                        //lblrcdCatcount.Visible = false;
+                    }
+
+                    //Waiting for approval
+                    if (Tab == 1)
+                    {
+                        //Hide the footer total records count
+                        LblPageInfo.Visible = false;
+                        lblrecordperpageFooter.Visible = false;
+                        /*lblrecordperpageTop.Visible = false;
+                        approvallink.Enabled = false;
+                        lblSortedCat.Text = "How To? - To approve a announcement, click the Announcement Name link inside the grid.";
+                        lblthese.Text = "There are&nbsp;";
+                        lblthese2.Text = TotalRecordsCount + "&nbsp;announcement(s) waiting for approval.";
+                        lblmangermainpage.Text = "Announcement Manager Main";
+                        lblmangermainpagelink.ToolTip = "Back to Main Announcement Manager Page";
+                        lblunapproved2.Visible = true;*/
+                    }
+
+                    //Filter for images
+                    if (AnnouncementImage == 1)
+                    {/*
+                        lblSortedCat.Text = "There are&nbsp;" + TotalRecordsCount + "&nbsp;announcement with photo";
+                        lblrcdCatcount.Visible = false;*/
+                    }
+
+                    //Filter for lastviewed
+                    if (LastViewed > 0)
+                    {
+                        /*
+                        lblSortedCat.Text = "There are&nbsp;" + TotalRecordsCount + "&nbsp;announcements viewed " + lastviewedlabel;
+                        lblrcdCatcount.Visible = false;*/
+                    }
+
+                    //Filter top 100 announcements
+                    if (Top == 100)
+                    {
+                        /*
+                        LblPageInfoTop.Text = "Total Records: 100 - Showing Page: <b>" + PageIndex.ToString() + "</b> of <b>" + dgrd_announcement.PageCount.ToString() + "</b> - Displaying: <b>" + Convert.ToInt32(LstRecpage.SelectedItem.Value) + "</b> Records Per Page";
+                        lblrcdCatcountfooter.Text = "Total Records: 100";*/
+                    }
+                    else
+                    {/*
+                        LblPageInfoTop.Text = "Total Records: " + string.Format("{0:#,###}", TotalRecordsCount) + " - Showing Page: <b>" + PageIndex.ToString() + "</b> of <b>" + dgrd_announcement.PageCount.ToString() + "</b> - Displaying: <b>" + Convert.ToInt32(LstRecpage.SelectedItem.Value) + "</b> Records Per Page";*/
+                        lblrcdCatcountfooter.Text = "Total records: " + string.Format("{0:#,###}", TotalRecordsCount);
+                    }
                 }
-
-                //For search
-                if (!string.IsNullOrEmpty(fFind))
-                {
-                    // lblSortedCat.Text = "Your search for announcement name&nbsp;" + "(<b>" + fFind + "</b>) return:&nbsp;" + TotalRecordsCount + "&nbsp;records";
-                    //lblrcdCatcount.Visible = false;
-                }
-
-                //For top 100 announcement
-                if (Top == 100)
-                {
-                    //    lblSortedCat.Text = "Top&nbsp;" + 100 + " popular&nbsp;announcements by hits";
-                    //  lblrcdCatcount.Visible = false;
-                }
-
-                //For year and month announcement submission
-                if (!string.IsNullOrEmpty(Request.QueryString["year"]) && !string.IsNullOrEmpty(Request.QueryString["month"]))
-                {
-                    //lblSortedCat.Text = "There are&nbsp;" + TotalRecordsCount + " announcements submitted on &nbsp;" + Utility.GetMonthName(Month) + ", " + Year;
-                    //lblrcdCatcount.Visible = false;
-                }
-
-                //Waiting for approval
-                if (Tab == 1)
-                {
-                    //Hide the footer total records count
-                    LblPageInfo.Visible = false;
-                    lblrecordperpageFooter.Visible = false;
-                    /*lblrecordperpageTop.Visible = false;
-                    approvallink.Enabled = false;
-                    lblSortedCat.Text = "How To? - To approve a announcement, click the Announcement Name link inside the grid.";
-                    lblthese.Text = "There are&nbsp;";
-                    lblthese2.Text = TotalRecordsCount + "&nbsp;announcement(s) waiting for approval.";
-                    lblmangermainpage.Text = "Announcement Manager Main";
-                    lblmangermainpagelink.ToolTip = "Back to Main Announcement Manager Page";
-                    lblunapproved2.Visible = true;*/
-                }
-
-                //Filter for images
-                if (AnnouncementImage == 1)
-                {/*
-                    lblSortedCat.Text = "There are&nbsp;" + TotalRecordsCount + "&nbsp;announcement with photo";
-                    lblrcdCatcount.Visible = false;*/
-                }
-
-                //Filter for lastviewed
-                if (LastViewed > 0)
-                {
                     /*
-                    lblSortedCat.Text = "There are&nbsp;" + TotalRecordsCount + "&nbsp;announcements viewed " + lastviewedlabel;
-                    lblrcdCatcount.Visible = false;*/
-                }
-
-                //Filter top 100 announcements
-                if (Top == 100)
-                {
-                    /*
-                    LblPageInfoTop.Text = "Total Records: 100 - Showing Page: <b>" + PageIndex.ToString() + "</b> of <b>" + dgrd_announcement.PageCount.ToString() + "</b> - Displaying: <b>" + Convert.ToInt32(LstRecpage.SelectedItem.Value) + "</b> Records Per Page";
-                    lblrcdCatcountfooter.Text = "Total Records: 100";*/
-                }
-                else
-                {/*
-                    LblPageInfoTop.Text = "Total Records: " + string.Format("{0:#,###}", TotalRecordsCount) + " - Showing Page: <b>" + PageIndex.ToString() + "</b> of <b>" + dgrd_announcement.PageCount.ToString() + "</b> - Displaying: <b>" + Convert.ToInt32(LstRecpage.SelectedItem.Value) + "</b> Records Per Page";*/
-                    lblrcdCatcountfooter.Text = "Total records: " + string.Format("{0:#,###}", TotalRecordsCount);
-                }
-                /*
-                lblrcdCatcount.Text = "There are " + string.Format("{0:#,###}", TotalRecordsCount) + " announcements including unapproved announcements";
-                */
-                //Display the pagecount in the top and footer
+                    lblrcdCatcount.Text = "There are " + string.Format("{0:#,###}", TotalRecordsCount) + " announcements including unapproved announcements";
+                    */
+                    //Display the pagecount in the top and footer
                 LblPageInfo.Text = "Showing Page: <b>" + PageIndex.ToString() + "</b> of <b>" + dgrd_announcement.PageCount.ToString() + "</b> - Displaying: <b>" /*+ Convert.ToInt32(LstRecpage.SelectedItem.Value)*/ + "</b> Records Per Page" + "&nbsp;-&nbsp;";
 
             }
