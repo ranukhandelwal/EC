@@ -45,16 +45,16 @@ namespace ExamCrazy.admin
             if (!IsPostBack)
             {
                 //Populate year in the dropdwonlist - starting from 2000 to the current year.
-                
+
                 lblrecordperpageFooter.Text = "Showing default 40 records per page";
-                
+
                 //Set the default pagesize.
                 dgrd_announcement.PageSize = 40;
 
                 //Data binding
                 BindData();
 
-                
+
                 //Release allocated memory
                 Util = null;
             }
@@ -132,7 +132,7 @@ namespace ExamCrazy.admin
                 //For Alphabet Letter
                 if (!string.IsNullOrEmpty(Letter))
                 {
-                   // lblSortedCat.Text = "There are&nbsp;" + TotalRecordsCount + "&nbsp;announcements starting with letter&nbsp;<b>" + Letter + "</b>";
+                    // lblSortedCat.Text = "There are&nbsp;" + TotalRecordsCount + "&nbsp;announcements starting with letter&nbsp;<b>" + Letter + "</b>";
                     lblrcdalphaletterfooter.Text = TotalRecordsCount + "&nbsp;announcements starting with letter&nbsp;<b>" + Letter + "</b>&nbsp;-";
                     //lblrcdCatcount.Visible = false;
                 }
@@ -140,15 +140,15 @@ namespace ExamCrazy.admin
                 //For search
                 if (!string.IsNullOrEmpty(fFind))
                 {
-                   // lblSortedCat.Text = "Your search for announcement name&nbsp;" + "(<b>" + fFind + "</b>) return:&nbsp;" + TotalRecordsCount + "&nbsp;records";
+                    // lblSortedCat.Text = "Your search for announcement name&nbsp;" + "(<b>" + fFind + "</b>) return:&nbsp;" + TotalRecordsCount + "&nbsp;records";
                     //lblrcdCatcount.Visible = false;
                 }
 
                 //For top 100 announcement
                 if (Top == 100)
                 {
-                //    lblSortedCat.Text = "Top&nbsp;" + 100 + " popular&nbsp;announcements by hits";
-                  //  lblrcdCatcount.Visible = false;
+                    //    lblSortedCat.Text = "Top&nbsp;" + 100 + " popular&nbsp;announcements by hits";
+                    //  lblrcdCatcount.Visible = false;
                 }
 
                 //For year and month announcement submission
@@ -215,7 +215,7 @@ namespace ExamCrazy.admin
 
             //Lets hide some unneeded control
             lblrecordperpageFooter.Visible = false;
-//            lblrecordperpageTop.Visible = false;
+            //            lblrecordperpageTop.Visible = false;
 
             //Release datatable allocated memory
             dt = null;
@@ -474,6 +474,14 @@ namespace ExamCrazy.admin
                 {
                     //lblSortedCat.Text = "Sorted by Category: " + DataBinder.Eval(e.Item.DataItem, "FeedID");
                 }
+                
+                //Category should display category name and not category id
+                foreach (sCategory cat in constant.FeedCategory)
+                {
+                    if(DataBinder.Eval(e.Item.DataItem, "Category").ToString() == cat.ID.ToString())
+                        e.Item.Cells[2].Text = cat.Name;
+                }
+                
             }
 
             //Handles the header link tooltip
