@@ -64,7 +64,7 @@ namespace EC.BL
         public const string Article = "Article";
 
    
-        public static sCategory[] AnnouncementCategory = new sCategory[] {
+        public static sCategory[] FeedCategory = new sCategory[] {
             new sCategory{ID = 0, Name = "Choose Category"}, 
             new sCategory{ID = 1, Name = "JOBS"}, 
             new sCategory{ID = 2, Name = "ANNOUNCE"},

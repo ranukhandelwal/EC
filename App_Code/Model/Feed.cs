@@ -74,8 +74,8 @@ namespace EC.Model
         {
             get
             {
-                if(constant.AnnouncementCategory.Length < _Category)
-                    return constant.AnnouncementCategory[_Category].Name;
+                if(constant.FeedCategory.Length < _Category)
+                    return constant.FeedCategory[_Category].Name;
                 else
                     return "invalid";
                                 
