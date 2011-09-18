@@ -269,6 +269,15 @@ function LetterOnly(e)
     return ((keyCode > 64 && keyCode < 91) || (keyCode > 96 && keyCode < 123) || keyCode == 8);
 }
 
+function ValidateText(e) {
+    if (window.event) {// IE
+        keyCode = e.keyCode;
+    } else if (e.which) {// Netscape/Firefox/Opera
+        keyCode = e.which;
+    }
+    return ((keyCode != 34 && keyCode != 39 && keyCode != 44 && keyCode != 96));
+}
+
 function NumberOnly(e) {
     if (window.event) {// IE
         keyCode = e.keyCode;
