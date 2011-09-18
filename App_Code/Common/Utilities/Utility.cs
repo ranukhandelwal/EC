@@ -270,7 +270,7 @@ namespace EC.Common.Utilities
                     HttpContext.Current.Response.Redirect("recipemanager.aspx");
                     break;
                 case 6:
-                    HttpContext.Current.Response.Redirect("adminlogin.aspx");
+                    HttpContext.Current.Response.Redirect("~/admin/adminlogin.aspx");
                     break;
                 case 7:
                     HttpContext.Current.Response.Redirect("confirmarticleupdate.aspx");
