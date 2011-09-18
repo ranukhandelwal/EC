@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminMaster.master.cs"
+    Inherits="adminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Membership Manager</title>
+
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/jquery.min.js")%>"></script>
+
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/jquery.easing.1.3.js")%>"></script>
+
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/alertbox.js")%>"></script>
+
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/thickbox-compressed.js")%>"></script>
+
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/dragtable.js")%>"></script>
+
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/dropdownmenu.js")%>"></script>
+
+    <link href="CSS/cssreciaspx.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/thickbox.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="headerquerycss" runat="server">
+    </asp:ContentPlaceHolder>
+    <br />
+    <!--[if gte IE 5]>
+<style>
+fieldset {background: #ffffff;}
+#sddm {margin-top: 6px;}
+</style>
+<![endif]-->
+</head>
+<body>
+
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/wz_tooltip.js")%>"></script>
+
+    <form runat="server">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+            <td width="21%" align="left" valign="top">
+                <div style="margin-left: 5px; margin-top: 14px;">
+                    <h3>
+                        <asp:ContentPlaceHolder ID="PageName" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <br />
+                    </h3>
+                    <div style="margin-top: 6px;">
+                        <asp:Label Font-Names="verdana" Font-Size="9" ID="lblusername" runat="server" /></div>
+                    <div style="margin-bottom: 4px; margin-top: 10px;">
+                        <img src="~/images/arrow.gif" align="absmiddle" runat="server" /><a href="~/admin/managermain.aspx"
+                            class="content12" title="Back to manager main page" runat="server">Manager Main
+                            Page</a>&nbsp;&nbsp;<asp:Label runat="server" ID="lblreset" Visible="false" CssClass="content12"
+                                EnableViewState="false" />
+                        <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <tr>
+                <td width="100%" align="left" valign="top">
+                    <div style="margin-top: 20px; margin-left: 12px; margin-right: 12px;">
+                        <asp:Literal ID="JSLiteral" runat="server"></asp:Literal>
+                        <fieldset>
+                            <legend><span class="sortcat">
+                                <asp:ContentPlaceHolder ID="PageNameBox" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </span></legend>
+                            <div>
+                                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                                </asp:ContentPlaceHolder>
+                        </fieldset>
+                    </div>
+                    </div>
+                </td>
+    </table>
+    </form>
+</body>
+</html>
