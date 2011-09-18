@@ -45,6 +45,34 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminFeed.master.cs">
+      <DependentUpon>AdminFeed.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminFeed.master.designer.cs">
+      <DependentUpon>AdminFeed.master</DependentUpon>
+    </Compile>
+    <Compile Include="adminMaster.Master.cs">
+      <DependentUpon>adminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminMaster.Master.designer.cs">
+      <DependentUpon>adminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AddFeed.aspx.cs">
+      <DependentUpon>AddFeed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AddFeed.aspx.designer.cs">
+      <DependentUpon>AddFeed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AddJob.aspx.cs">
+      <DependentUpon>AddJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AddJob.aspx.designer.cs">
+      <DependentUpon>AddJob.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\adminlogin.aspx.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -59,6 +87,13 @@
     <Compile Include="admin\announcementmanager.aspx.designer.cs">
       <DependentUpon>announcementmanager.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\FeedManager.aspx.cs">
+      <DependentUpon>FeedManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\FeedManager.aspx.designer.cs">
+      <DependentUpon>FeedManager.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\managermain.aspx.cs">
       <DependentUpon>managermain.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -72,6 +107,20 @@
     </Compile>
     <Compile Include="admin\membershipmanagers.aspx.designer.cs">
       <DependentUpon>membershipmanagers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Test\TestAdminFeedMaster.aspx.cs">
+      <DependentUpon>TestAdminFeedMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Test\TestAdminFeedMaster.aspx.designer.cs">
+      <DependentUpon>TestAdminFeedMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Test\TestAdminMaster.aspx.cs">
+      <DependentUpon>TestAdminMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Test\TestAdminMaster.aspx.designer.cs">
+      <DependentUpon>TestAdminMaster.aspx</DependentUpon>
     </Compile>
     <Compile Include="AjaxRequest\AjaxRequest.aspx.cs">
       <DependentUpon>AjaxRequest.aspx</DependentUpon>
@@ -352,9 +401,16 @@
     <None Include="SampleContent.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminFeed.master" />
     <None Include="App_Code\BLL\ImageUploadManager.cs.exclude" />
     <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
+    <Content Include="adminMaster.Master" />
+    <Content Include="admin\AddFeed.aspx" />
+    <Content Include="admin\AddJob.aspx" />
     <Content Include="admin\announcementmanager.aspx" />
+    <Content Include="admin\FeedManager.aspx" />
+    <Content Include="admin\Test\TestAdminFeedMaster.aspx" />
+    <Content Include="admin\Test\TestAdminMaster.aspx" />
     <Content Include="AjaxRequest\AjaxRequest.aspx" />
     <Content Include="bin\Intelligencia.UrlRewriter.dll" />
     <Content Include="css\cssreciaspx.css" />
