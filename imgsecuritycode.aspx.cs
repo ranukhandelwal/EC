@@ -11,7 +11,6 @@ using System.Web.UI.HtmlControls;
 using System.Drawing.Text;
 using System.Drawing;
 using System.Drawing.Imaging;
-using System.Drawing.Text;
 
 public partial class imgsecuritycode : System.Web.UI.Page
 {
