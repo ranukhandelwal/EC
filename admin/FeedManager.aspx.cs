@@ -343,7 +343,7 @@ namespace ExamCrazy.admin
             if ((e.CommandName == "edit"))
             {
                 TableCell iIdNumber = e.Item.Cells[0];
-                strURLRedirect = "editing.aspx?id=" + iIdNumber.Text;
+                strURLRedirect = "~/admin/EditFeed.aspx?id=" + iIdNumber.Text;
                 Server.Transfer(strURLRedirect);
             }
         }
