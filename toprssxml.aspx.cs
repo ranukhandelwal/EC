@@ -47,8 +47,9 @@ public partial class toprecipexml : BasePage
         {
             objX.WriteStartElement("item");
             objX.WriteElementString("title", dr["Title"].ToString());
-            objX.WriteElementString("link", dr["Title"].ToString());
+            objX.WriteElementString("link", dr["link"].ToString());
             objX.WriteElementString("pubDate", Convert.ToDateTime(dr["DatePublished"]).ToShortDateString());
+            objX.WriteElementString("description", dr["Summary"].ToString());
             objX.WriteEndElement();
         }
 
