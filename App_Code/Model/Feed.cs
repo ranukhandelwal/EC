@@ -11,6 +11,7 @@ namespace EC.Model
         private string _Title;
         private string _Author;
         private string _Description;
+        private string _Summary;
         private DateTime _DatePublised;
         private string _Link;
         private Int16 _isValid;
@@ -38,6 +39,11 @@ namespace EC.Model
         {
             get { return _Description; }
             set { _Description = (value == "") ? "ExamCrazy Feed Description Missing" : value; }
+        }
+        public string Summary
+        {
+            get { return _Summary; }
+            set { _Summary = (value == "") ? "ExamCrazy Feed Summary Missing" : value; }
         }
         public DateTime DatePublised
         {
