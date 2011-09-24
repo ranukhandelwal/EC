@@ -192,6 +192,13 @@
     <Compile Include="Control\DatePicker.ascx.designer.cs">
       <DependentUpon>DatePicker.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Control\DynamicTable.ascx.cs">
+      <DependentUpon>DynamicTable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\DynamicTable.ascx.designer.cs">
+      <DependentUpon>DynamicTable.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Control\Login.ascx.cs">
       <DependentUpon>Login.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -313,6 +320,13 @@
     <Compile Include="SampleContent.aspx.designer.cs">
       <DependentUpon>SampleContent.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Test\DynamicTableTest.aspx.cs">
+      <DependentUpon>DynamicTableTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\DynamicTableTest.aspx.designer.cs">
+      <DependentUpon>DynamicTableTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Test\LoginControl.aspx.cs">
       <DependentUpon>LoginControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -405,6 +419,7 @@
     <Content Include="admin\Test\TestAdminMaster.aspx" />
     <Content Include="AjaxRequest\AjaxRequest.aspx" />
     <Content Include="bin\Intelligencia.UrlRewriter.dll" />
+    <Content Include="Control\DynamicTable.ascx" />
     <Content Include="css\cssreciaspx.css" />
     <Content Include="css\jquery.datepick.css" />
     <Content Include="css\popupcalendarpicker.css" />
@@ -686,6 +701,7 @@
     <Content Include="images\xmlbtnbig.gif" />
     <Content Include="images\yellowbg.gif" />
     <Content Include="images\yellowgrd.gif" />
+    <Content Include="Test\DynamicTableTest.aspx" />
     <Content Include="Test\LoginControl.aspx" />
     <Content Include="Test\rss_feed_announce.aspx" />
     <Content Include="User\__user.aspx" />
