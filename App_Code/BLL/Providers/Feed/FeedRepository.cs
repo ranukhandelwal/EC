@@ -10,6 +10,7 @@ using System.Web.UI.HtmlControls;
 using EC.Model;
 using EC.Common;
 using EC.BL;
+using EC.Common.Utilities;
 
 namespace EC.BL
 {
@@ -36,6 +37,62 @@ namespace EC.BL
         }
 
 
+         /// <summary>
+        /// Get Feed title, author, date, hits, summmary, description etc from feed id
+        /// </summary>
+        public override void FillUp(int ID)
+        {
+            Utility Util = new Utility();
+
+            try
+            {
+                IDataReader dr = Blogic.ActionProcedureDataProvider.GetFeedDetails(ID);
+                if (dr.Read())
+                {
+                    //dr.Read();
+                    //Feed item = new Feed();
+                    if (dr["Title"] != DBNull.Value)
+                    {
+                        this.Title = (string)dr["Title"];
+                    }
+                    if (dr["FeedID"] != DBNull.Value)
+                    {
+                        this.FeedID = (int)dr["FeedID"];
+                    }
+                    if (dr["Title"] != DBNull.Value)
+                    {
+                        this.Title = (string)dr["Title"];
+                    }
+                    if (dr["Author"] != DBNull.Value)
+                    {
+                        this.Author = (string)dr["Author"];
+                    }
+                    if (dr["Description"] != DBNull.Value)
+                    {
+                        this.Description = (string)dr["Description"];
+                    }
+                    if (dr["Summary"] != DBNull.Value)
+                    {
+                        this.Summary = (string)dr["Summary"];
+                    }
+                    if (dr["Link"] != DBNull.Value)
+                    {
+                        this.Link = (string)dr["Link"];
+                    }
+                    if (dr["DatePublished"] != DBNull.Value)
+                    {
+                        this.DatePublised = (DateTime)dr["DatePublished"];
+                    }
+                    
+                }
+
+                dr.Close();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
         public ExtendedCollection<Feed> GetFeedList(int Category)
         {
 

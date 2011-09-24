@@ -90,6 +90,13 @@ namespace EC.BL
             return DataAccess.GetFromReader("spSelectFeedList", prmID);
         }
 
+        public IDataReader GetFeedDetails(int FeedID)
+        {
+            SqlParameter prmID = new SqlParameter("@FeedID", SqlDbType.Int, 4);
+            prmID.Value = FeedID;
+            return DataAccess.GetFromReader("spSelectFeed", prmID);
+        }
+
         public static int AddNewFeed(Feed f)
         {
             SqlParameter prmTitle = new SqlParameter("@Title", SqlDbType.VarChar, 50);

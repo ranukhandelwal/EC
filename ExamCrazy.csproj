@@ -80,6 +80,13 @@
     <Compile Include="admin\adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\EditFeed.aspx.cs">
+      <DependentUpon>EditFeed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\EditFeed.aspx.designer.cs">
+      <DependentUpon>EditFeed.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\FeedManager.aspx.cs">
       <DependentUpon>FeedManager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -414,6 +421,7 @@
     <Content Include="adminMaster.Master" />
     <Content Include="admin\AddFeed.aspx" />
     <Content Include="admin\AddJob.aspx" />
+    <Content Include="admin\EditFeed.aspx" />
     <Content Include="admin\FeedManager.aspx" />
     <Content Include="admin\Test\TestAdminFeedMaster.aspx" />
     <Content Include="admin\Test\TestAdminMaster.aspx" />
