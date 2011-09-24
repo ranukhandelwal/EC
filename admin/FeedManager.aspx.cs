@@ -72,6 +72,7 @@ namespace ExamCrazy.admin
             Year = (int)Util.Val(Request.QueryString["year"]);
             AnnouncementImage = (int)Util.Val(Request.QueryString["img"]);
             LastViewed = (int)Util.Val(Request.QueryString["lv"]);
+            
 
             //Set default pageindex and pagesize to pass to the BLL
             int PageIndex = dgrd_announcement.CurrentPageIndex + 1;
