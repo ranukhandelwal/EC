@@ -17,6 +17,10 @@ public partial class EditFeed : BasePageAdmin
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        //FeedRepository feed = new FeedRepository();
+        //Utility Util = new Utility();
+
+        //feed.FillUp((int)Util.Val(Request.QueryString["id"]));
 
     }
 }
