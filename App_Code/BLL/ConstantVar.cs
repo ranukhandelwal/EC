@@ -30,6 +30,44 @@ namespace EC.BL
     }
 
     /// <summary>
+    /// Job State String
+    /// </summary>
+    public struct sState
+    {
+        private int _ID;
+        private string _Name;
+        public int ID
+        {
+            get { return _ID; }
+            set { _ID = value; }
+        }
+        public string Name
+        {
+            get { return _Name; }
+            set { _Name = value; }
+        }
+    }
+
+    /// <summary>
+    /// Publish String
+    /// </summary>
+    public struct sPublish
+    {
+        private int _ID;
+        private string _Name;
+        public int ID
+        {
+            get { return _ID; }
+            set { _ID = value; }
+        }
+        public string Name
+        {
+            get { return _Name; }
+            set { _Name = value; }
+        }
+    }
+
+    /// <summary>
     /// Object in this class manage constant variables.
     /// </summary>
     public static class constant
@@ -71,8 +109,23 @@ namespace EC.BL
             new sCategory{ID = 3, Name = "UPDATE"}
         };
 
+        public static sPublish[] PublishArea = new sPublish[] {
+            new sPublish{ID = 0, Name = "GATE"}, 
+            new sPublish{ID = 1, Name = "IES"},
+            new sPublish{ID = 2, Name = "COLLEGE"},
+            new sPublish{ID = 3, Name = "JOBS"}
+        };
+
+        public static sState[] JobState = new sState[] {
+            new sState{ID = 0, Name = "Choose State"}, 
+            new sState{ID = 1, Name = "Valid"}, 
+            new sState{ID = 2, Name = "Saved"},
+            new sState{ID = 3, Name = "InValid"}
+        };
+
         public static string[] JobCategory = new string[] {"Core Technical", "Govt Sector", "Research", "IT/Software", "Freshers" };
         public static string[] JobType = new string[] { "Full Time", "Contract", "Internship"};
+        
         #endregion
 
         #region Indentify what page the rating occured

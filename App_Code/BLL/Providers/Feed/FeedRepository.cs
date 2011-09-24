@@ -36,6 +36,11 @@ namespace EC.BL
             return Blogic.AddNewFeed(f);
         }
 
+        public int Update(Feed f)
+        {
+            return Blogic.UpdateFeed(f);
+        }
+
 
          /// <summary>
         /// Get Feed title, author, date, hits, summmary, description etc from feed id
@@ -55,10 +60,9 @@ namespace EC.BL
                     {
                         this.Title = (string)dr["Title"];
                     }
-                    if (dr["FeedID"] != DBNull.Value)
-                    {
-                        this.FeedID = (int)dr["FeedID"];
-                    }
+                    
+                    this.FeedID = ID;
+                    
                     if (dr["Title"] != DBNull.Value)
                     {
                         this.Title = (string)dr["Title"];
@@ -79,9 +83,21 @@ namespace EC.BL
                     {
                         this.Link = (string)dr["Link"];
                     }
+                    if (dr["Category"] != DBNull.Value)
+                    {
+                        this.CategoryID = (int)dr["Category"];
+                    }
                     if (dr["DatePublished"] != DBNull.Value)
                     {
                         this.DatePublised = (DateTime)dr["DatePublished"];
+                    }
+                    if (dr["isValid"] != DBNull.Value)
+                    {
+                        this.isValid = Int16.Parse(dr["isValid"].ToString());
+                    }
+                    if (dr["DisplayIn"] != DBNull.Value)
+                    {
+                        this.DisplayIn = (string)dr["DisplayIn"];
                     }
                     
                 }

@@ -108,7 +108,7 @@ namespace EC.BL
             SqlParameter prmDescription = new SqlParameter("@Description", SqlDbType.NVarChar, -1);
             prmDescription.Value = f.Description;
 
-            SqlParameter prmSummary = new SqlParameter("@Summary", SqlDbType.NVarChar, 500);
+            SqlParameter prmSummary = new SqlParameter("@Summary", SqlDbType.NVarChar, -1);
             prmSummary.Value = f.Summary;
 
             SqlParameter prmLink = new SqlParameter("@Link", SqlDbType.VarChar, 50);
@@ -126,6 +126,40 @@ namespace EC.BL
 
             return DataAccess.Execute("AddNewFeed", prmTitle, prmAuthor, prmLink, prmDescription, prmSummary, prmisValid, prmCategoryID, prmDisplayIn);
             
+        }
+
+        public static int UpdateFeed(Feed f)
+        {
+            SqlParameter prmTitle = new SqlParameter("@Title", SqlDbType.VarChar, 50);
+            prmTitle.Value = f.Title;
+
+            SqlParameter prmAuthor = new SqlParameter("@Author", SqlDbType.VarChar, 50);
+            prmAuthor.Value = f.Author;
+
+            SqlParameter prmDescription = new SqlParameter("@Description", SqlDbType.NVarChar, -1);
+            prmDescription.Value = f.Description;
+
+            SqlParameter prmSummary = new SqlParameter("@Summary", SqlDbType.NVarChar, -1);
+            prmSummary.Value = f.Summary;
+
+            SqlParameter prmLink = new SqlParameter("@Link", SqlDbType.VarChar, 50);
+            prmLink.Value = f.Link;
+
+            SqlParameter prmCategoryID = new SqlParameter("@Category", SqlDbType.SmallInt);
+            prmCategoryID.Value = f.CategoryID;
+
+            SqlParameter prmDisplayIn = new SqlParameter("@DisplayIn", SqlDbType.VarChar, 50);
+            prmDisplayIn.Value = f.DisplayIn;
+
+
+            SqlParameter prmisValid = new SqlParameter("@isValid", SqlDbType.SmallInt);
+            prmisValid.Value = f.isValid;
+
+            SqlParameter prmFeedId  = new SqlParameter("@FeedID", SqlDbType.SmallInt);
+            prmFeedId.Value = f.FeedID;
+
+            return DataAccess.Execute("UpdateFeed", prmTitle, prmAuthor, prmLink, prmDescription, prmSummary, prmisValid, prmCategoryID, prmFeedId, prmDisplayIn);
+
         }
         /// <summary>
         /// Execute retrieval of stored procedures in the database.
