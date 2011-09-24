@@ -248,6 +248,33 @@ namespace ExamCrazy {
         protected global::System.Web.UI.WebControls.Label lblunapproved;
         
         /// <summary>
+        /// img2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image img2;
+        
+        /// <summary>
+        /// savedlink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink savedlink;
+        
+        /// <summary>
+        /// lblsaved control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblsaved;
+        
+        /// <summary>
         /// img3 control.
         /// </summary>
         /// <remarks>

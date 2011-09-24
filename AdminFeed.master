@@ -69,12 +69,14 @@
     <asp:Label ID="lbCountAnnouncement" runat="server" />
     <br />
     <br />
-    <span class="bluearrow2">»</span+>&nbsp;<asp:HyperLink runat="server" ID="lblmangermainpagelink" cssClass="dt" NavigateUrl="~/admin/feedmanager.aspx"><asp:Label id="lblmangermainpage" runat="server" /></asp:HyperLink><br />
+    <span class="bluearrow2">»</span+>&nbsp;<asp:HyperLink runat="server" ID="lblmangermainpagelink" cssClass="dt" NavigateUrl="~/admin/feedmanager.aspx?tab=1"><asp:Label id="lblmangermainpage" runat="server" /></asp:HyperLink><br />
     <span class="bluearrow2">»</span>&nbsp;<asp:HyperLink runat="server" ID="lblmangeraddpagelink" cssClass="dt" NavigateUrl="~/admin/AddFeed.aspx"><asp:Label id="lblmangeraddpage" runat="server" /></asp:HyperLink><br />
     <span class="bluearrow2">»</span>&nbsp;<a class="dt" href="~/admin/feedmanager.aspx?top=100" title="View the top 100 announcements by hits" runat="server" >View Top 100 Announcements</a> <br />
     <span class="bluearrow2">»</span>&nbsp;<a class="dt" href="~/admin/feedmanager.aspx?img=1" title="Display feed with photo" runat="server" >View Feed With Photo</a> <br />
         <asp:Image ID="img1" ImageAlign="AbsBottom" ImageURL="~/images/adminapproval_icon.gif" AlternateText="Aprroval Manager" runat="server" />
-        <asp:HyperLink cssClass="dt" runat="server" ID="approvallink" NavigateUrl="~/admin/feedmanager.aspx?tab=1"><asp:Label ID="lblunapproved" runat="server" /></asp:HyperLink><br />
+        <asp:HyperLink cssClass="dt" runat="server" ID="approvallink" NavigateUrl="~/admin/feedmanager.aspx?tab=3"><asp:Label ID="lblunapproved" runat="server" /></asp:HyperLink><br />
+        <asp:Image ID="img2" ImageAlign="AbsBottom" ImageURL="~/images/adminapproval_icon.gif" AlternateText="Aprroval Manager" runat="server" />
+        <asp:HyperLink cssClass="dt" runat="server" ID="savedlink" NavigateUrl="~/admin/feedmanager.aspx?tab=2"><asp:Label ID="lblsaved" runat="server" /></asp:HyperLink><br />
     
     <asp:Image ID="img3" ImageAlign="AbsBottom" ImageURL="~/images/admincategory_icon.gif" AlternateText="Category Manager" runat="server" />
     <asp:HyperLink tooltip="Click this link to edit/delete and add a announcement category" cssClass="dt" runat="server" ID="editcat" NavigateUrl="categorymanager.aspx"><asp:Label ID="lbCountCat" runat="server" /></asp:HyperLink></div></div></div><br />

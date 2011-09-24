@@ -69,6 +69,7 @@ namespace ExamCrazy
                 lbCountAnnouncement.Text = "Total Approved Announcements:&nbsp;";// +string.Format("{0:#,###}", Blogic.ActionProcedureDataProvider.GetHomepageTotalAnnouncementCount);
                 lbCountCat.Text = "Total Category:&nbsp;";// +Blogic.ActionProcedureDataProvider.GetHomepageTotalCategoryCount;
                 lblunapproved.Text = "Deactivated Feeds:&nbsp;";// +Blogic.ActionProcedureDataProvider.AdminAnnouncementManagerGetWaitingforApprovalCount;
+                lblsaved.Text = "Saved Feeds:&nbsp;";
                 //lblrecordperpage.Text = "Default 40 records per page";
                 lblrecordperpageFooter.Text = "Showing default 40 records per page";
                 lblrecordperpageTop.Text = "- 40 records per page";
