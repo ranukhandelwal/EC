@@ -70,6 +70,9 @@ namespace EC.BL
             new sCategory{ID = 2, Name = "ANNOUNCE"},
             new sCategory{ID = 3, Name = "UPDATE"}
         };
+
+        public static string[] JobCategory = new string[] {"Core Technical", "Govt Sector", "Research", "IT/Software", "Freshers" };
+        public static string[] JobType = new string[] { "Full Time", "Contract", "Internship"};
         #endregion
 
         #region Indentify what page the rating occured
