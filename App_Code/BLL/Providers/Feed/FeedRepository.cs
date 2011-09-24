@@ -67,6 +67,10 @@ namespace EC.BL
                 {
                     item.Description = (string)dr["Description"];
                 }
+                if (dr["Summary"] != DBNull.Value)
+                {
+                    item.Summary = (string)dr["Summary"];
+                }
                 if (dr["Link"] != DBNull.Value)
                 {
                     item.Link = (string)dr["Link"];

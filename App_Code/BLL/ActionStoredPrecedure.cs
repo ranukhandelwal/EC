@@ -98,22 +98,26 @@ namespace EC.BL
             SqlParameter prmAuthor = new SqlParameter("@Author", SqlDbType.VarChar, 50);
             prmAuthor.Value = f.Author;
 
-            SqlParameter prmDescription = new SqlParameter("@Description", SqlDbType.VarChar, 1000);
+            SqlParameter prmDescription = new SqlParameter("@Description", SqlDbType.NVarChar, -1);
             prmDescription.Value = f.Description;
+
+            SqlParameter prmSummary = new SqlParameter("@Summary", SqlDbType.NVarChar, 500);
+            prmSummary.Value = f.Summary;
 
             SqlParameter prmLink = new SqlParameter("@Link", SqlDbType.VarChar, 50);
             prmLink.Value = f.Link;
 
-            SqlParameter prmCategoryID = new SqlParameter("@CategoryID", SqlDbType.SmallInt);
+            SqlParameter prmCategoryID = new SqlParameter("@Category", SqlDbType.SmallInt);
             prmCategoryID.Value = f.CategoryID;
 
             SqlParameter prmDisplayIn = new SqlParameter("@DisplayIn", SqlDbType.VarChar, 50);
             prmDisplayIn.Value = f.DisplayIn;
 
+
             SqlParameter prmisValid = new SqlParameter("@isValid", SqlDbType.SmallInt);
             prmisValid.Value = f.isValid;
 
-            return DataAccess.Execute("spInsertFeed", prmTitle, prmAuthor, prmLink, prmDescription, prmisValid, prmCategoryID, prmDisplayIn);
+            return DataAccess.Execute("AddNewFeed", prmTitle, prmAuthor, prmLink, prmDescription, prmSummary, prmisValid, prmCategoryID, prmDisplayIn);
             
         }
         /// <summary>
@@ -2615,6 +2619,7 @@ namespace EC.BL
             SqlParameter prmPageSize = new SqlParameter("@PageSize", SqlDbType.Int, 4);
             prmPageSize.Value = PageSize;
 
+            
             return DataAccess.GetFromDataTable("AdminManagerGetAnnouncement", prmCatId, prmLetter, prmFind, prmTab, prmTop, prmYear, prmMonth, prmRecipeImage, prmLastViewed, prmPageIndex, prmPageSize);
         }
 
