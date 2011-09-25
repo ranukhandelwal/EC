@@ -49,9 +49,14 @@ public partial class registration : BasePage
 
         /*ExamCategory Repeater Bind */
         ExamCategoryRepository ECList = new ExamCategoryRepository();
-        ExamCategoryList.DataSource = ECList.GetECList();
-        ExamCategoryList.DataBind();
-
+        ExtendedCollection<ExamCategory> EC = ECList.GetECList();
+        ExamCategory[] ECs = new ExamCategory[EC.Count];
+        EC.CopyTo(ECs, 0);
+        for (int i = 0; i < ECs.GetLength(0); i++)
+        {
+            ExamCategoryList.Items.Add(new ListItem(ECs[i].ExamName.ToString(), ECs[i].ECID.ToString()));
+        }
+        
         HideFormIfLogin.Visible = true;
 
         //Check whether user is login, if login, hide the registration form.
@@ -65,6 +70,7 @@ public partial class registration : BasePage
         }
     }
 
+    
     public void Add_User(object s, EventArgs e)
     {
         Utility Util = new Utility();
@@ -95,7 +101,16 @@ public partial class registration : BasePage
             else
                 User.canEmailSend = false;
 
-            User.ECPreference = "1,2,3";
+            User.ECPreference = "";
+            for (int i = 0; i < ExamCategoryList.Items.Count; i++)
+            {
+                if (ExamCategoryList.Items[i].Selected)
+                {
+                    if (User.ECPreference.Length > 0)
+                        User.ECPreference += ",";
+                    User.ECPreference += ExamCategoryList.Items[i].Value;
+                }
+            }
             User.Mobile = "9350554554";
             User.Address = "B - 83, Saket Colony, Adarsh Nagar";
             //User.ContactMe = Int32.Parse(Util.FormatTextForInput(Request.Form[ContactMe.UniqueID]));

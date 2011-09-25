@@ -4,6 +4,10 @@
 <%@ Register TagPrefix="ucl" TagName="sidemenu" Src="Control/sidemenu.ascx" %>
 <%@ Register TagPrefix="ucl" TagName="searchtab" Src="Control/searchtab.ascx" %>
 <%@ Register TagPrefix="ucl" TagName="CalendarDatePicker" Src="Control/DatePicker.ascx" %>
+<asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
+    <link href="CSS/cssreciaspx.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/thickbox.css" rel="stylesheet" type="text/css" />
+</asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="LeftPanelHolder" runat="server">
     <h1>
         Why ExamCrazy</h1>
@@ -226,15 +230,13 @@
                                         <tr>
                                             <td width="15%" valign="top">
                                                 <div style="margin-bottom: 6px">
-                                                    <span class="content12">Preparing for which Exam:</span></div>
+                                                    <span class="content12">Show Interest:</span></div>
                                             </td>
                                             <td width="74%" valign="top">
                                                 <div style="margin-bottom: 6px">
-                                                    <asp:Repeater ID="ExamCategoryList" runat="server">
-                                                        <ItemTemplate>
-                                                            CheckBox<%#DataBinder.Eval(Container.DataItem,"ExamName")%><br>
-                                                        </ItemTemplate>
-                                                    </asp:Repeater>
+                                                    <asp:CheckBoxList ID="ExamCategoryList" runat="server" AutoPostBack="false"
+                                                        RepeatColumns="4" CellPadding="5" CellSpacing="5" Width="100%">
+                                                    </asp:CheckBoxList>
                                                 </div>
                                             </td>
                                         </tr>

@@ -226,7 +226,7 @@ public partial class registration {
     /// Auto-generated field.
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.Repeater ExamCategoryList;
+    protected global::System.Web.UI.WebControls.CheckBoxList ExamCategoryList;
     
     /// <summary>
     /// Newsletter control.
