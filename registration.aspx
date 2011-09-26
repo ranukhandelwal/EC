@@ -7,6 +7,8 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
     <link href="CSS/cssreciaspx.css" rel="stylesheet" type="text/css" />
     <link href="CSS/thickbox.css" rel="stylesheet" type="text/css" />
+    <link href="css/popupcalendarpicker.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.datepick.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="LeftPanelHolder" runat="server">
     <h1>

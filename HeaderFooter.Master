@@ -13,16 +13,14 @@
     <script type="text/javascript" src="<%=ResolveUrl("~/js/validator.js")%>"></script>
     <script type="text/javascript" src="<%=ResolveUrl("~/js/jquery.timePicker.js")%>"></script>
     <script type="text/javascript" src="<%=ResolveUrl("~/js/jquery.datepick.js")%>"></script>
-    <link href="CSS/cssreciaspx.css" rel="stylesheet" type="text/css" /> 
-    <link href="CSS/thickbox.css" rel="stylesheet" type="text/css" />
+    
     <link href="css/grids.css" rel="stylesheet" type="text/css" />
     <link href="css/libraries.css" rel="stylesheet" type="text/css" />
     <link href="css/mod.css" rel="stylesheet" type="text/css" />
     <link href="css/template.css" rel="stylesheet" type="text/css" />
     <link href="css/content.css" rel="stylesheet" type="text/css" />
-    <link href="css/popupcalendarpicker.css" rel="stylesheet" type="text/css" />
     <link href="CSS/thickbox.css" rel="stylesheet" type="text/css" />
-    <link href="css/jquery.datepick.css" rel="stylesheet" type="text/css" />
+    
 
     <script type="text/javascript" src="<%=ResolveUrl("~/js/drop_menu.js")%>"></script>
 
@@ -225,15 +223,17 @@
                             <li><span class="icon"></span><a href="#" title="Coal India">About us</a> </li>
                             <li><span class="icon"></span><a href="#" title="NHPC">Privacy Policy</a> </li>
                             <li><span class="icon"></span><a href="#" title="NHPC">Terms and Conditions</a>
-                            </li>
-                            <li><span class="icon"></span><a href="#" title="NHPC">Contact us</a> </li>
-                            <li><span class="icon"></span><a href="#" title="NHPC">Site Map</a> </li>
-                        </ul>
+                            
+                                    
+                                    </li>
+                                    <li><span class="icon"></span><a href="#" title="NHPC">Contact us</a> </li>
+                                    <li><span class="icon"></span><a href="#" title="NHPC">Site Map</a> </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
     </form>
 </body>
 </html>
