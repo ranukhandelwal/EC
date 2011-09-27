@@ -5,7 +5,7 @@
 <%@ Register TagPrefix="ucl" TagName="searchtab" Src="Control/searchtab.ascx" %>
 <%@ Register TagPrefix="ucl" TagName="CalendarDatePicker" Src="Control/DatePicker.ascx" %>
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
-    <link href="CSS/cssreciaspx.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/contentxd.css" rel="stylesheet" type="text/css" />
     <link href="CSS/thickbox.css" rel="stylesheet" type="text/css" />
     <link href="css/popupcalendarpicker.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery.datepick.css" rel="stylesheet" type="text/css" />

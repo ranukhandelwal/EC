@@ -29,7 +29,7 @@ public partial class Login : System.Web.UI.UserControl
         csslink.ID = "cssreciaspx";
         csslink.Attributes.Add("rel","stylesheet");
         csslink.Attributes.Add("type", "text/css");
-        csslink.Href = "CSS/cssreciaspx.css";
+        csslink.Href = "CSS/contentxd.css";
         Page.Header.Controls.Add(csslink);
         //Page.
             

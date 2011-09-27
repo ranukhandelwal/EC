@@ -428,6 +428,7 @@
     <Content Include="AjaxRequest\AjaxRequest.aspx" />
     <Content Include="bin\Intelligencia.UrlRewriter.dll" />
     <Content Include="Control\DynamicTable.ascx" />
+    <Content Include="css\contentxd.css" />
     <Content Include="css\cssreciaspx.css" />
     <Content Include="css\jquery.datepick.css" />
     <Content Include="css\popupcalendarpicker.css" />
