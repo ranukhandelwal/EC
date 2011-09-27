@@ -9,6 +9,11 @@
     <link href="CSS/thickbox.css" rel="stylesheet" type="text/css" />
     <link href="css/popupcalendarpicker.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery.datepick.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="<%# ResolveUrl("~/js/Ajaxrequest.js")%>"></script>
+    <script type="text/javascript" src="<%# ResolveUrl("~/js/validator.js")%>"></script>
+    <script type="text/javascript" src="<%# ResolveUrl("~/js/jquery.timePicker.js")%>"></script>
+    <script type="text/javascript" src="<%# ResolveUrl("~/js/jquery.datepick.js")%>"></script>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="LeftPanelHolder" runat="server">
     <h1>

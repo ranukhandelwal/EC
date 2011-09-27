@@ -25,6 +25,14 @@ public partial class Login : System.Web.UI.UserControl
     protected void Page_Load(object sender, EventArgs e)
     {
         ShowHideLoginControl(Authentication.Authenticate);
+        HtmlLink csslink = new HtmlLink();
+        csslink.ID = "cssreciaspx";
+        csslink.Attributes.Add("rel","stylesheet");
+        csslink.Attributes.Add("type", "text/css");
+        csslink.Href = "CSS/cssreciaspx.css";
+        Page.Header.Controls.Add(csslink);
+        //Page.
+            
     }
 
     public void Login_Click(object sender, ImageClickEventArgs e)

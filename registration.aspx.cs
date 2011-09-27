@@ -28,6 +28,7 @@ public partial class registration : BasePage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Page.Header.DataBind();
         /*Countries Drop Down List Generation*/
         CountryRepository CntryList = new CountryRepository();
         ExtendedCollection<Country> LC = CntryList.GetCountryList();
