@@ -26,39 +26,46 @@ using EC.Security;
 
 public partial class registration : BasePage
 {
+    private string securecode;
     protected void Page_Load(object sender, EventArgs e)
     {
         Page.Header.DataBind();
-        /*Countries Drop Down List Generation*/
-        CountryRepository CntryList = new CountryRepository();
-        ExtendedCollection<Country> LC = CntryList.GetCountryList();
-        
-        Country[] Countries = new Country[LC.Count]; 
-        LC.CopyTo(Countries,0);
-        for (int i = 0; i < Countries.GetLength(0); i++)
+        if (!Page.IsPostBack)
         {
-            Cntry.Items.Add(Countries[i].Name);
-        }
-               
-        /*State List - Sample Code*/
-        StateRepository StateList = new StateRepository();
-        ExtendedCollection<State> LS = StateList.GetStateList(97);
+            /*Countries Drop Down List Generation*/
+            CountryRepository CntryList = new CountryRepository();
+            ExtendedCollection<Country> LC = CntryList.GetCountryList();
 
-        /*City List - Sample Code*/
-        CityRepository CityList = new CityRepository();
-        ExtendedCollection<City> LCity = CityList.GetCityList(8);
+            Country[] Countries = new Country[LC.Count];
+            LC.CopyTo(Countries, 0);
+            for (int i = 0; i < Countries.GetLength(0); i++)
+            {
+                Cntry.Items.Add(Countries[i].Name);
+            }
 
-        /*ExamCategory Repeater Bind */
-        ExamCategoryRepository ECList = new ExamCategoryRepository();
-        ExtendedCollection<ExamCategory> EC = ECList.GetECList();
-        ExamCategory[] ECs = new ExamCategory[EC.Count];
-        EC.CopyTo(ECs, 0);
-        for (int i = 0; i < ECs.GetLength(0); i++)
-        {
-            ExamCategoryList.Items.Add(new ListItem(ECs[i].ExamName.ToString(), ECs[i].ECID.ToString()));
+            /*State List - Sample Code*/
+            StateRepository StateList = new StateRepository();
+            ExtendedCollection<State> LS = StateList.GetStateList(97);
+
+            /*City List - Sample Code*/
+            CityRepository CityList = new CityRepository();
+            ExtendedCollection<City> LCity = CityList.GetCityList(8);
+
+            /*ExamCategory Repeater Bind */
+            ExamCategoryRepository ECList = new ExamCategoryRepository();
+            ExtendedCollection<ExamCategory> EC = ECList.GetECList();
+            ExamCategory[] ECs = new ExamCategory[EC.Count];
+            EC.CopyTo(ECs, 0);
+            for (int i = 0; i < ECs.GetLength(0); i++)
+            {
+                ExamCategoryList.Items.Add(new ListItem(ECs[i].ExamName.ToString(), ECs[i].ECID.ToString()));
+            }
         }
-        
         HideFormIfLogin.Visible = true;
+        if (Page.IsPostBack)
+        {
+            securecode = HttpContext.Current.Session["randomstruserreg"].ToString();
+        }
 
         //Check whether user is login, if login, hide the registration form.
         //We don't want to allow users who are logon to register.
@@ -202,6 +209,14 @@ public partial class registration : BasePage
             if (User.Website.Length > 75)
             {
                 lbvalenght.Text = "<br>Error: Website URL is too long. Maximum of 75 characters.";
+                lbvalenght.Visible = true;
+                txtsecfield.Text = "";
+                return;
+            }
+            
+            if (Request.Form[txtsecfield.UniqueID] != this.securecode)
+            {
+                lbvalenght.Text = "<br>Error: Security Code Does not Match.";
                 lbvalenght.Visible = true;
                 txtsecfield.Text = "";
                 return;
