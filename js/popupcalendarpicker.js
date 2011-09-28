@@ -11,7 +11,7 @@ var	fixedY = -1 // y position (-1 if to appear below control)
 var startAt = 0 // 0 - sunday ; 1 - monday
 var showWeekNumber = 0	// 0 - don't show; 1 - show
 var showToday = 1		// 0 - don't show; 1 - show
-var imgDir = "../images/"	// directory for images, will be set in popupCalendar() method
+var imgDir = "~/images/"	// directory for images, will be set in popupCalendar() method
 
 var gotoString = "Go To Current Month"
 var todayString = "Today is"
