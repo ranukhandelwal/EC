@@ -193,6 +193,15 @@ public partial class registration {
     protected global::System.Web.UI.HtmlControls.HtmlInputText City;
     
     /// <summary>
+    /// Address control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlTextArea Address;
+    
+    /// <summary>
     /// Mobile control.
     /// </summary>
     /// <remarks>

@@ -210,6 +210,18 @@
                                         <tr>
                                             <td width="15%" valign="top">
                                                 <div style="margin-bottom: 6px">
+                                                    <span class="content12">Address:</span></div>
+                                            </td>
+                                            <td width="74%" valign="top">
+                                                <div style="margin-bottom: 6px">
+                                                    <textarea runat="server" id="Address" class="textbox" textmode="multiline" cols="60"
+                                                        rows="10" onfocus="this.style.backgroundColor='#FFFCF9'" onblur="this.style.backgroundColor='#ffffff'" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="15%" valign="top">
+                                                <div style="margin-bottom: 6px">
                                                     <span class="content12">Mobile:</span><span class="cred2">*</span></div>
                                             </td>
                                             <td width="74%" valign="top">

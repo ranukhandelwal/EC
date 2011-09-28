@@ -93,8 +93,7 @@ public partial class registration : BasePage
             /*User.CityID = Int16.Parse(Request.Form[City.UniqueID]);
             User.StateID = Int16.Parse(Request.Form[State.UniqueID]);
             User.CountryID = Int16.Parse(Request.Form[Cntry.UniqueID]);*/
-            User.DOB = DateTime.Parse("1/1/2009");
-            //User.DOB = DateTime.Parse(Date1.CalendarDateString);
+            User.DOB = DateTime.Parse(Date1.CalendarDateString);
             if (Int32.Parse(Request.Form[Newsletter.UniqueID]) == 1)
             {
                 User.canEmailSend = true;
@@ -112,8 +111,8 @@ public partial class registration : BasePage
                     User.ECPreference += ExamCategoryList.Items[i].Value;
                 }
             }
-            User.Mobile = "9350554554";
-            User.Address = "B - 83, Saket Colony, Adarsh Nagar";
+            User.Mobile = Util.FormatTextForInput(Request.Form[Mobile.UniqueID]);
+            User.Address = Util.FormatTextForInput(Request.Form[Address.UniqueID]);
             //User.ContactMe = Int32.Parse(Util.FormatTextForInput(Request.Form[ContactMe.UniqueID]));
             User.Website = Util.FormatTextForInput(Request.Form[Website.UniqueID]);
             User.AboutMe = Util.FormatTextForInput(Request.Form[AboutMe.UniqueID]);
