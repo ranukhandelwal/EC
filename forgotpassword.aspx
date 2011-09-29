@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LeftRight.master" AutoEventWireup="true"
     CodeBehind="forgotpassword.aspx.cs" Inherits="ExamCrazy.forgotpassword" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
