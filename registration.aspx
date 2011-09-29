@@ -15,6 +15,13 @@
     <script type="text/javascript" src="<%# ResolveUrl("~/js/jquery.timePicker.js")%>"></script>
     <script type="text/javascript" src="<%# ResolveUrl("~/js/jquery.datepick.js")%>"></script>
 </asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+  <div class="breadCrumsMenu unit">
+                            <a class="unit" href="~/default.aspx" title="home">Home</a>
+                            <div class="breadArrow">
+                                &gt;</div>
+                            Register Here</div>
+</asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="LeftPanelHolder" runat="server">
     <h1>
         Why ExamCrazy</h1>

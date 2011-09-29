@@ -16,6 +16,13 @@
     <script type="text/javascript" src="<%# ResolveUrl("~/js/jquery.datepick.js")%>"></script>
 
 </asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+  <div class="breadCrumsMenu unit">
+                            <a class="unit" href="~/default.aspx" title="home">Home</a>
+                            <div class="breadArrow">
+                                &gt;</div>
+                            ForgotPassword</div>
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div style="margin-left: 10px; margin-bottom: 12px; margin-right: 12px; background-color: #FFF9EC;
         margin-top: 0px;">
