@@ -150,6 +150,10 @@
                 </div>
             </div>
             <!-- ===== HEADER DIV END HERE===== -->
+            <!-- ===== BreadCrum DIV START HERE===== -->
+            <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- ===== BreadCrum DIV END HERE===== -->
             <!-- ===== CONTENT DIV START HERE===== -->
             <div class="content unit">
                 <div class="size1of4 unit">
@@ -171,13 +175,10 @@
                             <li><a href="#/ogt/content/news/News177.complete">The code that you want to run</a></li>
                         </ul>
                     </div>
-                    
-                    <div class="size3of4 unit">
-                        <div class="midddlePart">
+                                   
                             <asp:ContentPlaceHolder ID="MainContent" runat="server">
                             </asp:ContentPlaceHolder>
-                        </div>
-                    </div>
+                    
                     
                 
                 </div>
@@ -220,6 +221,10 @@
                             <li><span class="icon"></span><a href="#" title="NHPC">Privacy Policy</a> </li>
                             <li><span class="icon"></span><a href="#" title="NHPC">Terms and Conditions</a>
                             
+                                    
+                                    
+                                    
+                                    
                                     
                                     
                                     
