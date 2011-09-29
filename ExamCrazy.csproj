@@ -234,12 +234,12 @@
     <Compile Include="Control\sidemenu.ascx.designer.cs">
       <DependentUpon>sidemenu.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Error\ExamCrazy-ErrorPage.aspx.cs">
       <DependentUpon>ExamCrazy-ErrorPage.aspx</DependentUpon>
@@ -297,6 +297,13 @@
     <Compile Include="imgsecuritycode.aspx.cs">
       <DependentUpon>imgsecuritycode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeftRight.master.cs">
+      <DependentUpon>LeftRight.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeftRight.master.designer.cs">
+      <DependentUpon>LeftRight.master</DependentUpon>
     </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
@@ -418,6 +425,8 @@
     <Content Include="AdminFeed.master" />
     <None Include="App_Code\BLL\ImageUploadManager.cs.exclude" />
     <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
+    <Content Include="default.aspx" />
+    <Content Include="LeftRight.master" />
     <Content Include="adminMaster.Master" />
     <Content Include="admin\AddFeed.aspx" />
     <Content Include="admin\AddJob.aspx" />
@@ -453,7 +462,6 @@
     <Content Include="Control\rsssidemenu.ascx" />
     <Content Include="Control\searchtab.ascx" />
     <Content Include="Control\sidemenu.ascx" />
-    <Content Include="Default.aspx" />
     <Content Include="images\0.0.gif" />
     <Content Include="images\0.5.gif" />
     <Content Include="images\0.6.gif" />
@@ -740,7 +748,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>53260</DevelopmentServerPort>
+          <DevelopmentServerPort>50845</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
