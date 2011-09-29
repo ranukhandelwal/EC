@@ -260,3 +260,8 @@ span.submenu{margin:0px !important; }
 .footerNavigation ul li span{float:left; margin:0px 10px 0px 25px; color:#F00; font-size:12px;}
 .footerNavigation ul li span.icon{ float:left; background:url(../img/sprite.png) no-repeat; width:16px; height:16px;margin-right:5px;background-position: -122px -52px;}
 .last{ border:none;}
+
+
+.breadCrumsMenu{width:980px; height:20px; margin-left:10px; padding: 5px 0 0 10px;}
+.breadCrumsMenu a{ margin:0px 2px; float:left; color:#0000FF;}
+.breadArrow{ margin:0px 2px; float:left; color:#1569a2;}
