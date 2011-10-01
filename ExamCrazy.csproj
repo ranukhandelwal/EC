@@ -296,6 +296,13 @@
     <Compile Include="Job.master.designer.cs">
       <DependentUpon>Job.master</DependentUpon>
     </Compile>
+    <Compile Include="Jobs-Interviews\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobs-Interviews\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Jobs-Interviews\__Jobs.aspx.cs">
       <DependentUpon>__Jobs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -360,6 +367,13 @@
     <Compile Include="Test\rss_feed_announce.aspx.designer.cs">
       <DependentUpon>rss_feed_announce.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Test\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="toprssxml.aspx.cs">
       <DependentUpon>toprssxml.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -379,13 +393,6 @@
     <Content Include="admin\adminlogin.aspx" />
     <Content Include="admin\managermain.aspx" />
     <Content Include="admin\membershipmanagers.aspx" />
-    <Content Include="css\content.css" />
-    <Content Include="css\grids.css" />
-    <Content Include="css\ie6.css" />
-    <Content Include="css\li-scroller.css" />
-    <Content Include="css\libraries.css" />
-    <Content Include="css\mod.css" />
-    <Content Include="css\template.css" />
     <Content Include="ExamCrazy-NoAccess.aspx" />
     <Content Include="img\add1.gif" />
     <Content Include="img\add2.gif" />
@@ -423,9 +430,22 @@
     <Content Include="AdminFeed.master" />
     <None Include="App_Code\BLL\ImageUploadManager.cs.exclude" />
     <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
-    <Content Include="css\Jobs.css" />
-    <Content Include="Job.master" />
     <Content Include="default.aspx" />
+    <Content Include="Error\css\content.css" />
+    <Content Include="Error\css\contentxd.css" />
+    <Content Include="Error\css\cssreciaspx.css" />
+    <Content Include="Error\css\grids.css" />
+    <Content Include="Error\css\ie6.css" />
+    <Content Include="Error\css\Jobs.css" />
+    <Content Include="Error\css\jquery.datepick.css" />
+    <Content Include="Error\css\li-scroller.css" />
+    <Content Include="Error\css\libraries.css" />
+    <Content Include="Error\css\mod.css" />
+    <Content Include="Error\css\popupcalendarpicker.css" />
+    <Content Include="Error\css\template.css" />
+    <Content Include="Error\css\thickbox.css" />
+    <Content Include="Job.master" />
+    <Content Include="Jobs-Interviews\Default.aspx" />
     <Content Include="Jobs-Interviews\__Jobs.aspx" />
     <Content Include="LeftRight.master" />
     <Content Include="adminMaster.Master" />
@@ -438,11 +458,6 @@
     <Content Include="AjaxRequest\AjaxRequest.aspx" />
     <Content Include="bin\Intelligencia.UrlRewriter.dll" />
     <Content Include="Control\DynamicTable.ascx" />
-    <Content Include="css\contentxd.css" />
-    <Content Include="css\cssreciaspx.css" />
-    <Content Include="css\jquery.datepick.css" />
-    <Content Include="css\popupcalendarpicker.css" />
-    <Content Include="css\thickbox.css" />
     <Content Include="Error\ExamCrazy-ErrorPage.aspx" />
     <Content Include="Error\ExamCrazy-FileNotFound.aspx" />
     <Content Include="Error\ExamCrazy-NoAccess.aspx" />
@@ -722,6 +737,7 @@
     <Content Include="Test\DynamicTableTest.aspx" />
     <Content Include="Test\LoginControl.aspx" />
     <Content Include="Test\rss_feed_announce.aspx" />
+    <Content Include="Test\WebForm1.aspx" />
     <Content Include="User\__user.aspx" />
     <Content Include="Web.sitemap" />
     <Content Include="newrssxml.aspx" />
