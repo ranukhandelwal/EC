@@ -148,6 +148,7 @@
     <Compile Include="App_Code\BLL\Providers\Feed\BaseFeedObj.cs" />
     <Compile Include="App_Code\BLL\Providers\Feed\FeedRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\IRepository.cs" />
+    <Compile Include="App_Code\BLL\Providers\Jobs\JobRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\ProviderLostPassword.cs" />
     <Compile Include="App_Code\BLL\Providers\ProviderSiteStatistics.cs" />
     <Compile Include="App_Code\BLL\Providers\SiteConfiguration.cs" />
@@ -181,6 +182,7 @@
     <Compile Include="App_Code\Model\ExamCategory.cs" />
     <Compile Include="App_Code\Model\Feed.cs" />
     <Compile Include="App_Code\Model\IDB.cs" />
+    <Compile Include="App_Code\Model\Job.cs" />
     <Compile Include="App_Code\Model\Pager.cs" />
     <Compile Include="App_Code\Model\PrivateMessage.cs" />
     <Compile Include="App_Code\Model\SiteStatistics.cs" />
@@ -262,23 +264,12 @@
     <Compile Include="Error\ExamCrazy-NoAccess.aspx.designer.cs">
       <DependentUpon>ExamCrazy-NoAccess.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExamCrazy-Main.master.cs">
-      <DependentUpon>ExamCrazy-Main.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ExamCrazy-Main.master.designer.cs">
-      <DependentUpon>ExamCrazy-Main.master</DependentUpon>
-    </Compile>
     <Compile Include="ExamCrazy-NoAccess.aspx.cs">
       <DependentUpon>ExamCrazy-NoAccess.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ExamCrazy-NoAccess.aspx.designer.cs">
       <DependentUpon>ExamCrazy-NoAccess.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ExamCrazy-Register.master.cs">
-      <DependentUpon>ExamCrazy-Register.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="forgotpassword.aspx.cs">
       <DependentUpon>forgotpassword.aspx</DependentUpon>
@@ -297,6 +288,20 @@
     <Compile Include="imgsecuritycode.aspx.cs">
       <DependentUpon>imgsecuritycode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Job.master.cs">
+      <DependentUpon>Job.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Job.master.designer.cs">
+      <DependentUpon>Job.master</DependentUpon>
+    </Compile>
+    <Compile Include="Jobs-Interviews\__Jobs.aspx.cs">
+      <DependentUpon>__Jobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jobs-Interviews\__Jobs.aspx.designer.cs">
+      <DependentUpon>__Jobs.aspx</DependentUpon>
     </Compile>
     <Compile Include="LeftRight.master.cs">
       <DependentUpon>LeftRight.master</DependentUpon>
@@ -369,13 +374,6 @@
     <Compile Include="User\__user.aspx.designer.cs">
       <DependentUpon>__user.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm3.aspx.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm3.aspx.designer.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin\adminlogin.aspx" />
@@ -425,7 +423,10 @@
     <Content Include="AdminFeed.master" />
     <None Include="App_Code\BLL\ImageUploadManager.cs.exclude" />
     <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
+    <Content Include="css\Jobs.css" />
+    <Content Include="Job.master" />
     <Content Include="default.aspx" />
+    <Content Include="Jobs-Interviews\__Jobs.aspx" />
     <Content Include="LeftRight.master" />
     <Content Include="adminMaster.Master" />
     <Content Include="admin\AddFeed.aspx" />
@@ -723,12 +724,9 @@
     <Content Include="Test\rss_feed_announce.aspx" />
     <Content Include="User\__user.aspx" />
     <Content Include="Web.sitemap" />
-    <Content Include="ExamCrazy-Main.master" />
-    <Content Include="ExamCrazy-Register.master" />
     <Content Include="newrssxml.aspx" />
     <Content Include="registration.aspx" />
     <Content Include="toprssxml.aspx" />
-    <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -748,7 +746,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50845</DevelopmentServerPort>
+          <DevelopmentServerPort>62627</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
