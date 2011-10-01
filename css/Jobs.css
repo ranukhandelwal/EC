@@ -1,0 +1,35 @@
+﻿/* ************************* Job Detail Page start HERE ******************** */
+.middlePart{ padding:0px; margin:0px;}
+
+.jobDetail{ margin:0px 0px 0px 5px; width:730px;}
+.jobDetail h3{padding:5px 0px 5px 10px;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;background: url(../img/headingbackground.gif) repeat-x;}
+.jobDetail ul{ margin-bottom:5px; background:#fcfcfc; float:left;}
+.jobDetail ul li{ margin:5px 0px 0px; float:left;}
+.jobDetail ul li h5{ font-size:14px; color:#494949; font-weight:bold; padding:0px 0px 10px; width:710px;}
+.jobDetail ul li p{ font-size:12px;color:#494949; line-height:18px; margin:5px 0px; }
+.jobDetail ul li p a{ text-decoration:none; color:#F00; font-size:14px; font-weight:bold;}
+.jobDetail ul li table{width:98%; border: 1px solid #000;}
+.jobDetail ul li table tr td{ }
+.txt {color:#494949;font-family:Arial,Helvetica,sans-serif;font-size: 12px;line-height: 18px;padding-left: 10px;padding-right: 10px;}
+
+.addInjob{ background: none repeat scroll 0 0 #F3F4F5;margin: 0 0 10px;padding: 10px; height:50px; width:521px;}
+.job{ background:#fcfcfc; margin-bottom:10px;}
+.job h3{padding:5px 0px 5px 14px;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;background: url(../img/headingbackground.gif) repeat-x; height:18px;}
+.job h3 span.arrows{ float:right;background:url(../img/sprite.png) no-repeat; width:14px; height:14px; margin-left:10px;margin-right:10px;background-position:-87px -54px;}
+.job ul{ padding:10px 10px 10px 25px;}
+.job ul li{ list-style:outside disc; padding:5px 0px; }
+.job ul li a{ text-decoration:none; color:#494949; font-size:12px;}
+.job ul li span{float:right; color:#F00; font-size:12px; *margin-top:-20px;}
+.job ul li a:hover{ text-decoration:none; color:#F00; font-size:12px;}
+.job ul li span:hover{float:right; color:#494949; font-size:12px; *margin-top:-20px;}
+
+.jobNavigation{ margin-bottom:10px;}
+.jobNavigation ul {margin:0px; padding:0px; }
+.jobNavigation ul li{ background:#f7f9fa; list-style:none; padding:6px 0px 6px 10px; margin: 0px 0px 1px 0px; font-size:11px; font-weight:normal; color:#000;}
+.jobNavigation ul li a{color:#000; text-decoration:none;background:#f7f9fa;}
+.jobNavigation ul li:hover{ background:#f4f4f4; cursor:pointer;  color:#000;}
+.jobNavigation ul li span{padding:0px; margin:0px !important;}
+.jobNavigation ul li span.icon{background:url(../img/sprite.png) no-repeat; width:16px; height:12px;margin-right:5px;background-position:-24px -54px; display:inline-block;}
+.jobNavigation ul li.active{background-color:#f4f4f4; cursor:pointer; color:#000;}
+
+/* ************************* Job Detail Page END HERE ******************** */
