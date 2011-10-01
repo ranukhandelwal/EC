@@ -42,7 +42,7 @@ namespace EC.BL
         /// </summary>
         public int isValidJob(string link, int State)
         {
-            return base.isValidFeed(link, CategoryID, State);
+            return base.isValidFeed(constant.JobsPageBase + link, CategoryID, State);
         }
 
 
