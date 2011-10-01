@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="true"
+    CodeBehind="Job.master.cs" Inherits="ExamCrazy.Job" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<link href="../css/Jobs.css" rel="stylesheet" type="text/css" runat="server"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <div class="breadCrumsMenu unit">
+        <a class="unit" href="~/default.aspx" title="home" runat="server">Home</a>
+        <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+    <h3>
+        JOBS in Colleges</h3>
+    <div class="jobNavigation">
+        <ul>
+            <li class="active"><span class="icon"></span><span><a href="#" title="">Apply for teaching
+                jobs</a></span> </li>
+            <li><span class="icon"></span><span><a href="#" title="">Engineering College in India</a></span>
+            </li>
+            <li><span class="icon"></span><span><a href="#" title="">Management Colleges in India</a></span>
+            </li>
+            <li><span class="icon"></span><span><a href="#" title="">MCA colleges in India</a></span>
+            </li>
+            <li><span class="icon"></span><span><a href="#" title="">Search colleges/Courses</a></span>
+            </li>
+        </ul>
+    </div>
+    <div class="LeftPanelNav mod">
+        <h3>
+            Exam Preperation</h3>
+        <div class="jobNavigation">
+            <ul>
+                <li class="active"><span class="icon"></span><span><a href="#" title="">Exam Preperation
+                    for GATE</a></span> </li>
+                <li><span class="icon"></span><span><a href="#" title="">Exam Preperation for BHEL</a></span>
+                </li>
+                <li><span class="icon"></span><span><a href="#" title="">Exam Preperation for BSNL-JTO</a></span>
+                </li>
+                <li><span class="icon"></span><span><a href="#" title="">Exam Preperation for DRDO-SET</a></span>
+                </li>
+                <li><span class="icon"></span><span><a href="#" title="">Exam Preperation for IES</a></span>
+                </li>
+                <li><span class="icon"></span><span><a href="#" title="">Exam Preperation for AIEEE</a></span>
+                </li>
+                <li><span class="icon"></span><span><a href="#" title="">Exam Preperation for CAT</a></span>
+                </li>
+                <li><span class="icon"></span><span><a href="#" title="">Exam Preperation for MAT</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="leftSideAdd unit">
+        <a href="#" title="add">
+            <img src="../../img/addhre.gif" alt="" title="" /></a></div>
+    <div class="leftSideAdd unit">
+        <a href="#" title="add">
+            <img src="../../img/addhre.gif" alt="" title="" /></a>
+    </div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+<div class="middlePart">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
