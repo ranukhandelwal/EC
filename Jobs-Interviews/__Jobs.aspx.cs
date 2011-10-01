@@ -23,13 +23,15 @@ public partial class __Jobs : BasePage
             
 
             RequestedPage = Request.QueryString["RequestedURL"];
-            int jobid = job.isValidJob("ExamCrazy.com/jobsExamCrazy_Vacancy.asp", 2);
+            int jobid = job.isValidJob(RequestedPage, 1);
             if (jobid > 0)
             {
                 job.FillUp(jobid);
             }
         }
         lblTitle.Text = job.Title;
+        lblSummary.Text = job.Summary;
+        lbldetails.Text = job.Description;
 
     }
 }
