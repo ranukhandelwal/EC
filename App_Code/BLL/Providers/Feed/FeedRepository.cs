@@ -41,6 +41,15 @@ namespace EC.BL
             return Blogic.UpdateFeed(f);
         }
 
+        /// <summary>
+        /// Duplicate Feed links in same Category should not be allowed
+        /// </summary>
+        public int isFeedLinkDuplicate(string Link, int CategoryID)
+        {
+            
+            return Blogic.CheckFeedDuplicacy(Link, CategoryID);
+                        
+        }
 
         /// <summary>
         /// Is valid feed, checks with respect to link and category

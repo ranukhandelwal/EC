@@ -163,6 +163,20 @@ namespace EC.BL
         }
 
         /// <summary>
+        /// Check if feed link is duplicate
+        /// </summary>
+        public static int CheckFeedDuplicacy(string Link, int Category)
+        {
+            SqlParameter prmFeedLink = new SqlParameter("@Link", SqlDbType.VarChar, 50);
+            prmFeedLink.Value = Link;
+
+            SqlParameter prmFeedCategory = new SqlParameter("@Category", SqlDbType.VarChar, 50);
+            prmFeedCategory.Value = Category;
+
+            return DataAccess.GetInt32("spGetFeedDuplicacy", prmFeedLink, prmFeedCategory);
+        }
+
+        /// <summary>
         /// Check if the feed link, Category and State are valid. If valid then return feed id else -1
         /// </summary>
         public static int GetFeedID(string Link, int Category, int State)
