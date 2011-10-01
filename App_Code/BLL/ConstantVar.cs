@@ -81,6 +81,7 @@ namespace EC.BL
         //You need to change this to your own domain name.
         //You can also use HTTP request to extract the domain.
         public const string DomainName = "ExamCrazy.com";
+        public const string JobsPageBase = "~/Jobs-Interviews/";
 
         public const int RecipeImageMaxSize = 30000;
         public const int UserImageMaxSize = 60000;
