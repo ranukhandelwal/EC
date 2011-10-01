@@ -176,14 +176,14 @@ namespace ExamCrazy.admin
         {
             Utility Util = new Utility();
             summarytags = "<div class=\"jobDetail unit\">" +
-                "<h3>" + Util.FormatTextForInput(Request.Form[JobTitle.UniqueID]) + "</h3>" +
-                    "<table width=\"80%\"><tr><td align=\"left\"><img src=" + "\"" + Util.FormatTextForInput(Request.Form[logoimg.UniqueID]) + "\"" + "runat=\"server\"" + "/ ><td align=\"right\">" + Util.FormatTextForInput(Request.Form[LastDate.UniqueID]) + "</tr></table>" +
-                    "<ul> <li> <table width=\"80%\"> <tr> <td class=\"txt\" width=\"25%\"><p><h5>Eligibility: </h5>" + "<td class=\"txt\" width=\"75%\">" + Util.FormatTextForInput(Request.Form[Eligiblity.UniqueID]) + "</p>" +
-                    "<tr> <td class=\"txt\" width=\"25%\"><p><h5>Location: </h5>" + "<td class=\"txt\" width=\"75%\">" + Util.FormatTextForInput(Request.Form[Location.UniqueID]) + "</p>" +
-                    "<tr> <td class=\"txt\" width=\"25%\"><p><h5>Job Category: </h5>" + "<td class=\"txt\" width=\"75%\">" + Util.FormatTextForInput(Request.Form[JobCategory.UniqueID]) + "</p>" +
-                    "<tr> <td class=\"txt\" width=\"25%\"><p><h5>Last Date: </h5>" + "<td class=\"txt\" width=\"75%\">" + Util.FormatTextForInput(Request.Form[LastDate.UniqueID]) + "</p>" +
-                    "<tr> <td class=\"txt\" width=\"25%\"><p><h5>Job Type: </h5>" + "<td class=\"txt\" width=\"75%\">" + Util.FormatTextForInput(Request.Form[JobType.UniqueID]) + "</p>" +
-                    "<tr> <td class=\"txt\" width=\"25%\"><p><h5>Hiring Process: </h5>" + "<td class=\"txt\" width=\"75%\">" + Util.FormatTextForInput(Request.Form[HiringProcess.UniqueID]) + "</p>" +
+                    "<table width=\"80%\" border=\"0\"><tr><td align=\"left\"><img src=" + "\"" + Util.FormatTextForInput(Request.Form[logoimg.UniqueID]) + "\"" + "runat=\"server\"" + "/ ><td align=\"right\">" + Util.FormatTextForInput(Request.Form[LastDate.UniqueID]) + "</tr></table> <br /><br /><br />" +
+                    "<ul> <li> <table width=\"80%\"> " +
+                    "<tr> <td class=\"txt\" width=\"40%\" align=\"left\"><b>Eligibility: </b>" + "<td class=\"txt\" width=\"60%\" align=\"left\">" + Util.FormatTextForInput(Request.Form[Eligiblity.UniqueID]) +
+                    "<tr> <td class=\"txt\" width=\"40%\" align=\"left\"><b>Location: </b>" + "<td class=\"txt\" width=\"60%\" align=\"left\">" + Util.FormatTextForInput(Request.Form[Location.UniqueID]) +
+                    "<tr> <td class=\"txt\" width=\"40%\" align=\"left\"><b>Job Category: </b>" + "<td class=\"txt\" width=\"60%\" align=\"left\">" + Util.FormatTextForInput(Request.Form[JobCategory.UniqueID]) +
+                    "<tr> <td class=\"txt\" width=\"40%\" align=\"left\"><b>Last Date: </b>" + "<td class=\"txt\" width=\"60%\" align=\"left\">" + Util.FormatTextForInput(Request.Form[LastDate.UniqueID]) +
+                    "<tr> <td class=\"txt\" width=\"40%\" align=\"left\"><b>Job Type: </b>" + "<td class=\"txt\" width=\"60%\" align=\"left\">" + Util.FormatTextForInput(Request.Form[JobType.UniqueID]) +
+                    "<tr> <td class=\"txt\" width=\"40%\" align=\"left\"><b>Hiring Process: </b>" + "<td class=\"txt\" width=\"60%\" align=\"left\">" + Util.FormatTextForInput(Request.Form[HiringProcess.UniqueID]) +
                     "</table>";
                     
 
@@ -196,7 +196,7 @@ namespace ExamCrazy.admin
                 summarytags += tmp;
             }
 
-            summarytags += "</li></ul>";
+            summarytags += "</li></ul></div>";
             
         }
 
@@ -287,8 +287,10 @@ namespace ExamCrazy.admin
                 if(cat.Name == "JOBS")
                     feed.CategoryID = cat.ID;
             }
+
             feed.Title = Util.FormatTextForInput(Request.Form[JobTitle.UniqueID]);
-            feed.Link = constant.DomainName + "/jobs" + Util.FormatTextForInput(Request.Form[JobLink.UniqueID]);
+            feed.Link = constant.JobsPageBase + Util.FormatTextForInput(Request.Form[JobLink.UniqueID]);
+            
 
             string tmp = "";
             GenerateSummary(ref tmp);
@@ -308,7 +310,15 @@ namespace ExamCrazy.admin
             if ((state == 1) || (state == 2))
             {
                 FeedRepository feedrep = new FeedRepository();
-                feedrep.Add(feed);
+                if (feedrep.isFeedLinkDuplicate(feed.Link, feed.CategoryID) == 0)
+                {
+                    feedrep.Add(feed);
+                }
+                else
+                {
+                    lblWarningMessage.Visible = true;
+                    lblWarningMessage.Text = "Error!! FeedLink is Duplicate";
+                }
                 feedrep = null;
             }
 

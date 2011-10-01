@@ -28,7 +28,7 @@
         <fieldset>
             <legend>New Job Form</legend>
             <div style="padding-top: 25px;">
-                <asp:Label ID="lblWarningMessage" runat="server" CssClass="content12" Visible="false"
+                <asp:Label ID="lblWarningMessage" runat="server" CssClass="cred" Visible="false"
                     EnableViewState="false" />
                 <div style="margin-top: 1px; margin-bottom: 20px;">
                     <span class="content2">Fields mark with red asterisk (<span class="cred2">*</span>)
