@@ -42,6 +42,18 @@ namespace EC.BL
         }
 
 
+        /// <summary>
+        /// Is valid feed, checks with respect to link and category
+        /// </summary>
+        public int isValidFeed(string link, int Category, int State)
+        {
+            if ((link == null) || (Category <= 0))
+                return -1;
+            return Blogic.GetFeedID(link, Category, State);
+            
+        }
+
+
          /// <summary>
         /// Get Feed title, author, date, hits, summmary, description etc from feed id
         /// </summary>

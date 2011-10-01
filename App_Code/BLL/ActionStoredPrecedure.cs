@@ -161,6 +161,24 @@ namespace EC.BL
             return DataAccess.Execute("UpdateFeed", prmTitle, prmAuthor, prmLink, prmDescription, prmSummary, prmisValid, prmCategoryID, prmFeedId, prmDisplayIn);
 
         }
+
+        /// <summary>
+        /// Check if the feed link, Category and State are valid. If valid then return feed id else -1
+        /// </summary>
+        public static int GetFeedID(string Link, int Category, int State)
+        {
+            SqlParameter prmFeedLink = new SqlParameter("@Link", SqlDbType.VarChar, 50);
+            prmFeedLink.Value = Link;
+            
+            SqlParameter prmFeedCategory = new SqlParameter("@Category", SqlDbType.VarChar, 50);
+            prmFeedCategory.Value = Category;
+
+            SqlParameter prmFeedState = new SqlParameter("@State", SqlDbType.VarChar, 50);
+            prmFeedState.Value = State;
+
+            return DataAccess.GetInt32("spGetFeedId", prmFeedLink, prmFeedCategory, prmFeedState);
+            
+        }
         /// <summary>
         /// Execute retrieval of stored procedures in the database.
         /// </summary>
