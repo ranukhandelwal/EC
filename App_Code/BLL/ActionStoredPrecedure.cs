@@ -83,11 +83,15 @@ namespace EC.BL
         /// <summary>
         /// Stored procedure to get Feed List.
         /// </summary>
-        public IDataReader GetFeedList(int TypeID)
+        public IDataReader GetFeedList(int Category, int State)
         {
-            SqlParameter prmID = new SqlParameter("@TypeID", SqlDbType.Int, 4);
-            prmID.Value = TypeID;
-            return DataAccess.GetFromReader("spSelectFeedList", prmID);
+            SqlParameter CategoryID = new SqlParameter("@CategoryID", SqlDbType.Int, 4);
+            CategoryID.Value = Category;
+
+            SqlParameter StateID = new SqlParameter("@State", SqlDbType.Int, 4);
+            StateID.Value = State;
+
+            return DataAccess.GetFromReader("spSelectFeedList", CategoryID, StateID);
         }
 
         public IDataReader GetFeedDetails(int FeedID)

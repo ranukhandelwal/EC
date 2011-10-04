@@ -26,7 +26,11 @@ namespace EC.BL
         {
             get
             {
-                IDataReader dr = Blogic.ActionProcedureDataProvider.GetFeedList(CategoryID);
+                foreach (sState s in constant.JobState)
+                    if (s.Name == "Valid")
+                        isValid = Int16.Parse(s.ID.ToString());
+
+                IDataReader dr = Blogic.ActionProcedureDataProvider.GetFeedList(CategoryID, isValid);
                 return dr;
             }
 
@@ -169,9 +173,9 @@ namespace EC.BL
                 {
                     item.Link = (string)dr["Link"];
                 }
-                if (dr["DatePublised"] != DBNull.Value)
+                if (dr["DatePublished"] != DBNull.Value)
                 {
-                    item.DatePublised = (DateTime)dr["DatePublised"];
+                    item.DatePublised = (DateTime)dr["DatePublished"];
                 }
                 list.Add(item);
             }

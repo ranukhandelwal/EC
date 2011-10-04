@@ -64,7 +64,8 @@ namespace EC.BL
 
         public static Job ConvertFeedToJob(Feed f)
         {
-            return (Job)f;
+            Job j = new Job(f);
+            return j;
         }
 
         public ExtendedCollection<Job> GetJobList()
