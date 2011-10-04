@@ -169,11 +169,15 @@
                         <div class="unit news">
                             <a href="#" title="update">
                                 <img src="~/img/updates-News.png" alt="" title="update" runat="server"/></a></div>
-                        <ul id="ticker01">
-                            <li><a href="#" title="">Freshers technical Jobs at ExamCrazy.Com</a></li>
-                            <li><a href="#" title="">Freshers technical Jobs at ExamCrazy.Com</a></li>
-                            <li><a href="#/ogt/content/news/News177.complete">The code that you want to run</a></li>
-                        </ul>
+                                <asp:Repeater ID="RepeaterID" runat="server">
+                                <HeaderTemplate><ul id="ticker01"></HeaderTemplate>
+                                <ItemTemplate>
+                                    <li><a href="<%#DataBinder.Eval(Container.DataItem, "link")%>" title="<%#DataBinder.Eval(Container.DataItem, "title")%>" ><%#DataBinder.Eval(Container.DataItem, "title")%></a></li>
+                                    
+                                </ItemTemplate>
+                                <FooterTemplate></ul></FooterTemplate>
+                        
+                                </asp:Repeater>
                     </div>
                                    
                             <asp:ContentPlaceHolder ID="MainContent" runat="server">
@@ -221,6 +225,9 @@
                             <li><span class="icon"></span><a href="#" title="NHPC">Privacy Policy</a> </li>
                             <li><span class="icon"></span><a href="#" title="NHPC">Terms and Conditions</a>
                             
+                                    
+                                    
+                                    
                                     
                                     
                                     
