@@ -28,6 +28,11 @@ namespace EC.Common
         public ExtendedCollection()
         {
             _RemovedItemHistory = new List<T>();
+        }
+
+        public ExtendedCollection(List<T> l)
+        {
+            _RemovedItemHistory = l;
         } 
 
         /// <summary>
@@ -112,6 +117,18 @@ namespace EC.Common
             return list;
         }
 
+        /*public ExtendedCollection<TOutput> ConvertAll<T, TOutput>(IEnumerable<T> collection, Converter<T, TOutput> converter)
+        {
+            List<TOutput> list = new List<TOutput>();
+            foreach (T item in collection)
+            {
+                list.Add(converter(item));
+            }
+
+            ExtendedCollection<TOutput> l = new ExtendedCollection<TOutput>(list);
+            return l;
+        }
+        */
         /// <summary>
         /// Convert a list of nullable type into its equivalent non-nullable type.
         /// </summary>
