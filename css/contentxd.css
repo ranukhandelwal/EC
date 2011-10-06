@@ -345,3 +345,20 @@ background-color : #9CCAE4;
 border : 1px solid #dadada; 
 cursor : pointer; 
 }
+
+.InvalidCred {
+font-size : 11px; 
+color : #CC0000; 
+font-weight: normal;
+font-family : verdana, arial, helvetica, sans-serif; 
+text-decoration : none; 
+}
+
+.loginboxlabelwrapper {
+text-align: left; 
+margin-left: 221px;
+}
+.loginerrmsgwrapper {
+margin-bottom: 6px;
+margin-right: 35px;
+}

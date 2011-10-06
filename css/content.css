@@ -77,13 +77,25 @@ a {
 }
 /*   Header   */
 
-.socailLinks{margin:0px;  padding:10px 10px 10px 110px;background:url(../img/followback.gif) repeat-x; height:16px;}
+.socailLinks{margin:0px;  padding:10px 10px 10px 10px;background:url(../img/followback.gif) repeat-x; height:16px;}
+.userLogin a{ float:left; margin-right:50px; color:#494949; font-size:12px; font-weight:bold;line-height: 18px;}
+.userLogin a:hover{ text-decoration:none; color:#999;}
+.userLogin label{ float:left;font-size:12px; color:#494949; margin:0px 5px; line-height: 18px;font-weight:bold; }
+.userLogin input{ float:left;font-size:12px; width:100px; height:14px; padding:2px; color:#494949; margin:0px 5px; border:1px solid #cccccc;}
+.userLogin input.button{ width:50px;border:1px solid #999; background: #CCC; height:20px; color:#FFF; font-weight:bold; line-height: 10px;}
+.socailLinks a.fb{ background:url(../img/sprite.png) no-repeat; width:16px; height:16px; margin-left:20px;margin-right:3px;background-position:-24px -24px;float:left; cursor:pointer;}
+.socailLinks a.twit{ background:url(../img/sprite.png) no-repeat;  width:16px; height:16px; margin-left:5px;margin-right:3px;background-position:-56px -24px; float:left; cursor:pointer;}
+.socailLinks a.orkut{ background:url(../img/sprite.png) no-repeat; width:26px; height:16px; margin-left:5px;margin-right:0px;background-position:-88px -24px; float:left; cursor:pointer; border-right:2px solid #dbd9d9;}
+.socailLinks a.share{ background:url(../img/sprite.png) no-repeat; width:16px; height:16px; margin-left:10px;margin-right:3px;background-position:-121px -24px; float:left; cursor:pointer;}
+.socailLinks p{float:left; color:#494949; font-size:12px; font:Arial, Helvetica, sans-serif; font-weight:bold; padding:0px 0px 0px 0px; margin-left:15px;}
+
+/*.socailLinks{margin:0px;  padding:10px 10px 10px 110px;background:url(../img/followback.gif) repeat-x; height:16px;}
 .socailLinks a.fb{ background:url(../img/sprite.png) no-repeat; width:16px; height:16px; margin-left:5px;margin-right:3px;background-position:-24px -24px;float:left; cursor:pointer;}
 .socailLinks a.twit{ background:url(../img/sprite.png) no-repeat;  width:16px; height:16px; margin-left:5px;margin-right:3px;background-position:-56px -24px; float:left; cursor:pointer;}
 .socailLinks a.orkut{ background:url(../img/sprite.png) no-repeat; width:26px; height:16px; margin-left:5px;margin-right:0px;background-position:-88px -24px; float:left; cursor:pointer; border-right:2px solid #dbd9d9;}
 .socailLinks a.share{ background:url(../img/sprite.png) no-repeat; width:16px; height:16px; margin-left:10px;margin-right:3px;background-position:-121px -24px; float:left; cursor:pointer;}
 .socailLinks p{float:left; color:#494949; font-size:12px; font:Arial, Helvetica, sans-serif; font-weight:bold; padding:0px 10px 0px 0px;}
-
+*/
 
 .logo h1{background:url(../img/logo1.jpg) no-repeat; width:177px; height:39px; margin:30px 0px 30px 10px;}
 .logo h1 a{width:100%;height:100%;float:left;}
