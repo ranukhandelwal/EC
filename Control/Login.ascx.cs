@@ -22,27 +22,39 @@ using EC.BL.Providers.User;
 
 public partial class Login : System.Web.UI.UserControl
 {
+    public int loginpanelno = 0;
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (loginpanelno == 1)
+        {
+            loginpanel1.Visible = true;
+        }
+        if (loginpanelno == 2)
+        {
+            loginpanel2.Visible = true;
+        }
         ShowHideLoginControl(Authentication.Authenticate);
         HtmlLink csslink = new HtmlLink();
-        csslink.ID = "cssreciaspx";
-        csslink.Attributes.Add("rel","stylesheet");
-        csslink.Attributes.Add("type", "text/css");
-        csslink.Href = "CSS/contentxd.css";
-        Page.Header.Controls.Add(csslink);
+        if (Page.Header.FindControl("cssreciaspx") != null)
+        {
+            csslink.ID = "cssreciaspx";
+            csslink.Attributes.Add("rel", "stylesheet");
+            csslink.Attributes.Add("type", "text/css");
+            csslink.Href = "CSS/contentxd.css";
+            Page.Header.Controls.Add(csslink);
+        }
         //Page.
             
     }
 
-    public void Login_Click(object sender, ImageClickEventArgs e)
+    public void login(string uname, string upass)
     {
         //Autheticate the username and password against the database record.
-        if (Authentication.Validate(this.uname.Text, Encryption.Encrypt(this.upass.Text)))
+        if (Authentication.Validate(uname, Encryption.Encrypt(upass)))
         {
             //Check if the account has been activated through activation link.
             //If the user did not click the activation link sent through the email, then redirect to remind him/her to activate.
-            /*if (!Blogic.IsUserActivated(this.uname.Text, Encryption.Encrypt(this.upass.Text)))
+            /*if (!Blogic.IsUserActivated(uname, Encryption.Encrypt(upass)))
             {
                 this.Context.Response.Redirect("redirectionpage.aspx?mode=notactive&ReturnURL=" + this.Context.Request.Url.PathAndQuery);
             }*/
@@ -52,7 +64,7 @@ public partial class Login : System.Web.UI.UserControl
             //We also have to get rid of any cookie in the users machine to prevent looping 
             //back to the previous page when we redirect the user.
             /*
-            if (!Blogic.IsUserActive(this.uname.Text, Encryption.Encrypt(this.upass.Text)))
+            if (!Blogic.IsUserActive(uname, Encryption.Encrypt(upass)))
             {
                 CookieLoginHelper.RemoveCookie();
                 CookieLoginHelper.RemoveLoginSession();
@@ -66,23 +78,23 @@ public partial class Login : System.Web.UI.UserControl
              
                 if ((Request.Browser.Cookies))
                 {
-                    CookieLoginHelper.CreateLoginCookie(this.uname.Text, this.upass.Text);
+                    CookieLoginHelper.CreateLoginCookie(uname, upass);
                 }
                 else 
                 {
                     //If the users browser does not support cookie, use session instead.
-                    CookieLoginHelper.CreateLoginSession(this.uname.Text, this.upass.Text);
+                    CookieLoginHelper.CreateLoginSession(uname, upass);
                 }
               
             }
             else 
             {*/
-                //If the users did not check the remember me checkbox, store login credential in session.
-                CookieLoginHelper.CreateLoginSession(this.uname.Text, this.upass.Text);
+            //If the users did not check the remember me checkbox, store login credential in session.
+            CookieLoginHelper.CreateLoginSession(uname, upass);
             /*
             }
             */
-            this.Context.Response.Redirect("User/" + this.uname.Text);
+            this.Context.Response.Redirect("User/" + uname);
         }
         else
         {
@@ -90,22 +102,37 @@ public partial class Login : System.Web.UI.UserControl
         }
     }
 
+    public void Login_Click1(object sender, ImageClickEventArgs e)
+    {
+        login(this.uname1.Text, this.upass1.Text);
+    }
+
+    public void Login_Click2(object sender, EventArgs e)
+    {
+        login(this.uname2.Text, this.upass2.Text);
+    }
+
     public void Logout_Click(object sender, EventArgs e)
     {
         CookieLoginHelper.RemoveCookie();
         CookieLoginHelper.RemoveLoginSession();
 
-        loginpanel.Visible = true;
-        DisplayUserInfo.Visible = false;
+        //loginpanel1.Visible = true;
+        //DisplayUserInfo.Visible = false;
 
         this.Context.Response.Redirect("/default.aspx");
     }
 
     private void ShowInvalidErrorMsg()
     {
-        this.uname.Text = "";
-        this.upass.Text = "";
-        lblinvalidcredential.Visible = true;
+        this.uname1.Text = "";
+        this.upass1.Text = "";
+        this.uname2.Text = "";
+        this.upass2.Text = "";
+        if (loginpanelno == 1)
+            lblinvalidcredential1.Visible = true;
+        if (loginpanelno == 2)
+        lblinvalidcredential2.Visible = true;
     }
 
     private void ShowHideLoginControl(bool IsUserPassValidation)
@@ -114,7 +141,8 @@ public partial class Login : System.Web.UI.UserControl
         {
             //ShowPrivateMessageAlert();
             //ShowUnApprovedNewFriendAlert();
-            loginpanel.Visible = false;
+            loginpanel1.Visible = false;
+            loginpanel2.Visible = false;
             DisplayUserInfo.Visible = true;
             lblusername.Text = "<a href='/Account/myaccount.aspx'>" + UserIdentity.UserName + "</a>";
             lblusername.Attributes.Add("onmouseover", "Tip('<a class=content12 href=/Account/userprofile.aspx?uid=" + UserIdentity.UserID + ">My Profile</a><br><a class=content12 href=/Account/myaccount.aspx>My Account</a><br><a class=content12 href=/Account/pmview.aspx>My Inbox</a><br><a class=content12 href=/Account/myfriendslist.aspx>My Friends List</a><br><a class=content12 href=/Account/members.aspx>Browse Members</a>', WIDTH, 150, false, '', false, true, FADEIN, 300, FADEOUT, 300, STICKY, 1, false, true, CLICKCLOSE, true)");
@@ -122,36 +150,7 @@ public partial class Login : System.Web.UI.UserControl
         }
     }
 
-    private void ShowPrivateMessageAlert()
-    {
-        int CountNewMsg = Blogic.GetUserNewPrivateMessageCount(UserIdentity.UserID);
+    
 
-        if (CountNewMsg == 0)
-        {
-            lblPrivateMessageAlert.Visible = true;
-            lblPrivateMessageAlert.Text = "(" + CountNewMsg + ") <img src='images/oldmsg_icon2.gif' border='0' align='absmiddle'>&nbsp;&nbsp;";
-            lblPrivateMessageAlert.Attributes.Add("onmouseover", "Tip('Hi <b>" + UserIdentity.UserName + "</b> you have (<b>" + CountNewMsg + "</b>) new messages in your Inbox.', BGCOLOR, '#FFFBE1', BORDERCOLOR, '#acc6db', ABOVE, true)");
-            lblPrivateMessageAlert.Attributes.Add("onmouseout", "UnTip()");
-        }
-        else
-        {
-            lblPrivateMessageAlert.Visible = true;
-            lblPrivateMessageAlert.Text = "(" + CountNewMsg + ") <a href='pmview.aspx'><img src='images/newmsg_icon.gif' border='0' align='absmiddle'></a>&nbsp;&nbsp;";
-            lblPrivateMessageAlert.Attributes.Add("onmouseover", "Tip('Hi <b>" + UserIdentity.UserName + "</b> you have (<b>" + CountNewMsg + "</b>) new<br>messages in your InBox. Click to view<br>your Inbox.', BGCOLOR, '#FFFBE1', BORDERCOLOR, '#acc6db', ABOVE, true)");
-            lblPrivateMessageAlert.Attributes.Add("onmouseout", "UnTip()");
-        }
-    }
-
-    private void ShowUnApprovedNewFriendAlert()
-    {
-        int CountUnApprovedNewFriends = Blogic.GetCountUnApprovedFriends(UserIdentity.UserID);
-
-        if (CountUnApprovedNewFriends != 0)
-        {
-            lblnewfriendalert.Visible = true;
-            lblnewfriendalert.Text = "(" + CountUnApprovedNewFriends + ") <a href='viewunapprovedfriends.aspx'><img src='images/friendlisticon-_smll3.gif' border='0' align='absmiddle'></a>&nbsp;&nbsp;";
-            lblnewfriendalert.Attributes.Add("onmouseover", "Tip('You have (<b>" + CountUnApprovedNewFriends + "</b>) users added you as a friend.<br>Click here to approved or declined users request.', BGCOLOR, '#FFFBE1', BORDERCOLOR, '#acc6db')");
-            lblnewfriendalert.Attributes.Add("onmouseout", "UnTip()");
-        }
-    }
+    
 }

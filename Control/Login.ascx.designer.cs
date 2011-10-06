@@ -13,31 +13,31 @@
 public partial class Login {
     
     /// <summary>
-    /// lblinvalidcredential control.
+    /// lblinvalidcredential1 control.
     /// </summary>
     /// <remarks>
     /// Auto-generated field.
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.Label lblinvalidcredential;
+    protected global::System.Web.UI.WebControls.Label lblinvalidcredential1;
     
     /// <summary>
-    /// loginpanel control.
+    /// loginpanel1 control.
     /// </summary>
     /// <remarks>
     /// Auto-generated field.
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.Panel loginpanel;
+    protected global::System.Web.UI.WebControls.Panel loginpanel1;
     
     /// <summary>
-    /// uname control.
+    /// uname1 control.
     /// </summary>
     /// <remarks>
     /// Auto-generated field.
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.TextBox uname;
+    protected global::System.Web.UI.WebControls.TextBox uname1;
     
     /// <summary>
     /// RequiredFieldValidatorUnameMain control.
@@ -49,13 +49,13 @@ public partial class Login {
     protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorUnameMain;
     
     /// <summary>
-    /// upass control.
+    /// upass1 control.
     /// </summary>
     /// <remarks>
     /// Auto-generated field.
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.TextBox upass;
+    protected global::System.Web.UI.WebControls.TextBox upass1;
     
     /// <summary>
     /// RequiredFieldValidatorUPassMain control.
@@ -76,6 +76,69 @@ public partial class Login {
     protected global::System.Web.UI.WebControls.ImageButton usubmit;
     
     /// <summary>
+    /// loginpanel2 control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Panel loginpanel2;
+    
+    /// <summary>
+    /// uname2 control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.TextBox uname2;
+    
+    /// <summary>
+    /// RequiredFieldValidator1 control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+    
+    /// <summary>
+    /// upass2 control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.TextBox upass2;
+    
+    /// <summary>
+    /// RequiredFieldValidator2 control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+    
+    /// <summary>
+    /// usubmit2 control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Button usubmit2;
+    
+    /// <summary>
+    /// lblinvalidcredential2 control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Label lblinvalidcredential2;
+    
+    /// <summary>
     /// DisplayUserInfo control.
     /// </summary>
     /// <remarks>
@@ -83,24 +146,6 @@ public partial class Login {
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
     protected global::System.Web.UI.WebControls.Panel DisplayUserInfo;
-    
-    /// <summary>
-    /// lblnewfriendalert control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.Label lblnewfriendalert;
-    
-    /// <summary>
-    /// lblPrivateMessageAlert control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.Label lblPrivateMessageAlert;
     
     /// <summary>
     /// lblusername control.
