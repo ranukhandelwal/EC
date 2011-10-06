@@ -161,6 +161,7 @@
     <Compile Include="App_Code\BLL\Providers\SiteConfiguration.cs" />
     <Compile Include="App_Code\BLL\Providers\State\BaseStateObj.cs" />
     <Compile Include="App_Code\BLL\Providers\State\StateRepository.cs" />
+    <Compile Include="App_Code\BLL\Providers\Update\UpdateRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\User\BaseUserObj.cs" />
     <Compile Include="App_Code\BLL\Providers\User\ProviderShowAllUsersAdmin.cs" />
     <Compile Include="App_Code\BLL\Providers\User\ProviderUserDetails.cs" />
@@ -194,6 +195,7 @@
     <Compile Include="App_Code\Model\PrivateMessage.cs" />
     <Compile Include="App_Code\Model\SiteStatistics.cs" />
     <Compile Include="App_Code\Model\State.cs" />
+    <Compile Include="App_Code\Model\Update.cs" />
     <Compile Include="App_Code\Model\Users.cs" />
     <Compile Include="App_Code\Security\Authentication.cs" />
     <Compile Include="App_Code\Security\CookieloginHelper.cs" />
