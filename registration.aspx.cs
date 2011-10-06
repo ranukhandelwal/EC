@@ -29,6 +29,7 @@ public partial class registration : BasePage
     private string securecode;
     protected void Page_Load(object sender, EventArgs e)
     {
+        Master.PAGEID = 1;
         Page.Header.DataBind();
         if (!Page.IsPostBack)
         {

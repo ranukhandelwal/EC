@@ -8,8 +8,10 @@ namespace ExamCrazy
 {
     public partial class LeftRight : System.Web.UI.MasterPage
     {
+        public int PAGEID;
         protected void Page_Load(object sender, EventArgs e)
         {
+            Master.PAGEID = this.PAGEID;
 
         }
     }

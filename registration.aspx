@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="true"
     Inherits="registration" CodeBehind="registration.aspx.cs" %>
+    <%@ MasterType VirtualPath="~/HeaderFooter.master" %>
 
 <%@ Register TagPrefix="ucl" TagName="sidemenu" Src="Control/sidemenu.ascx" %>
 <%@ Register TagPrefix="ucl" TagName="searchtab" Src="Control/searchtab.ascx" %>

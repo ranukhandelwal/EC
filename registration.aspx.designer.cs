@@ -344,4 +344,16 @@ public partial class registration {
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
     protected global::System.Web.UI.WebControls.Literal JSLiteral;
+    
+    /// <summary>
+    /// Master property.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated property.
+    /// </remarks>
+    public new ExamCrazy.HeaderFooter Master {
+        get {
+            return ((ExamCrazy.HeaderFooter)(base.Master));
+        }
+    }
 }
