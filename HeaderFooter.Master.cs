@@ -15,6 +15,7 @@ namespace ExamCrazy
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.Header.DataBind();
+            login.loginpanelno = 2;
             if (!Page.IsPostBack)
             {
                 UpdateRepository UpdateList = new UpdateRepository();

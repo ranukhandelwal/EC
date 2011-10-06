@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HeaderFooter.master.cs" Inherits="ExamCrazy.HeaderFooter" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -65,6 +66,9 @@
             <!-- ===== HEADER DIV START HERE===== -->
             <div class="header unit">
                 <div class="socailLinks line">
+                <div class="unit size3of4 userLogin">
+                    <ucl:login ID="login" runat="server" />
+                </div>
                     <div class="unitExt size1of4">
                         <p>
                             Follow Us</p>
