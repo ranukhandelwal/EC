@@ -177,6 +177,10 @@ namespace EC.BL
                 {
                     item.DatePublised = (DateTime)dr["DatePublished"];
                 }
+                if (dr["DisplayIn"] != DBNull.Value)
+                {
+                    item.DisplayIn = (string)dr["DisplayIn"];
+                }
                 list.Add(item);
             }
 
