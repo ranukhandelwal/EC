@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminFeed.master" AutoEventWireup="true"
-    CodeBehind="AddJob.aspx.cs" Inherits="ExamCrazy.admin.AddJob" %>
+    CodeBehind="AddJob.aspx.cs" Inherits="ExamCrazy.admin.AddJob" validateRequest="false" %>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="headerquerycss" runat="server">
 
