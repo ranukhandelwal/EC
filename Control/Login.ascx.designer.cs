@@ -13,6 +13,15 @@
 public partial class Login {
     
     /// <summary>
+    /// invalidcredential1 control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Panel invalidcredential1;
+    
+    /// <summary>
     /// lblinvalidcredential1 control.
     /// </summary>
     /// <remarks>
@@ -128,6 +137,15 @@ public partial class Login {
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
     protected global::System.Web.UI.WebControls.Button usubmit2;
+    
+    /// <summary>
+    /// invalidcredential2 control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Panel invalidcredential2;
     
     /// <summary>
     /// lblinvalidcredential2 control.

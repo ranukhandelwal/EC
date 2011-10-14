@@ -1,8 +1,10 @@
 <%@ Control Language="C#" AutoEventWireup="true" Inherits="Login" CodeBehind="Login.ascx.cs" %>
-<div class="loginerrmsgwrapper">
-    <asp:Label runat="server" CssClass="InvalidCred" ID="lblinvalidcredential1" Visible="false"
-        EnableViewState="false" Text="The submitted credentials are not valid.<br>Please check they are correct." />
-</div>
+<asp:Panel Visible="false" ID="invalidcredential1" runat="server">
+    <div class="loginerrmsgwrapper">
+        <asp:Label runat="server" CssClass="InvalidCred" ID="lblinvalidcredential1" Visible="true"
+            EnableViewState="false" Text="The submitted credentials are not valid.<br>Please check they are correct." />
+    </div>
+</asp:Panel>
 <asp:Panel ID="loginpanel1" runat="server" Visible="false">
     <div class="mod loginForm unit">
         <h3>
@@ -28,8 +30,8 @@
             <a href="~/registration.aspx" title="Click here to register." onmouseover="Tip('If you are not a registered user,<br>click on this link to register now for free.', BGCOLOR, '#FFFBE1', BORDERCOLOR, '#acc6db', ABOVE, true)"
                 onmouseout="UnTip()" runat="server">New Registration?</a></label>
         <div class="unitExt">
-            <asp:ImageButton ID="usubmit" runat="server" OnClick="Login_Click1" Text="Login" CausesValidation="true"
-                ValidationGroup="LoginGroup1" ImageUrl="~/img/loginbtn.gif" />
+            <asp:ImageButton ID="usubmit" runat="server" OnClick="Login_Click1" Text="Login"
+                CausesValidation="true" ValidationGroup="LoginGroup1" ImageUrl="~/img/loginbtn.gif" />
         </div>
     </div>
 </asp:Panel>
@@ -47,16 +49,17 @@
         CssClass="InvalidCred" ValidationGroup="LoginGroup2" ErrorMessage="Password is empty"
         runat="Server">
     </asp:RequiredFieldValidator>
-    <asp:Button class="button" ID="usubmit2" OnClick="Login_Click2" runat="server" Text="Login" CausesValidation="true"
-        ValidationGroup="LoginGroup2" />
+    <asp:Button class="button" ID="usubmit2" OnClick="Login_Click2" runat="server" Text="Login"
+        CausesValidation="true" ValidationGroup="LoginGroup2" />
     <a href="~/registration.aspx" title="New User" runat="server">New User</a>
 </asp:Panel>
-<div class="loginerrmsgwrapper">
-    <asp:Label runat="server" CssClass="InvalidCred" ID="lblinvalidcredential2" Visible="false"
-        EnableViewState="false" Text="Invalid Login." />
-</div>
-<asp:Panel Visible="false" ID="DisplayUserInfo" runat="server" >
- <asp:Label CssClass="content12" runat="server" ID="lblusername" />&nbsp;&nbsp;<asp:Button
-        ID="Buttonlogout" class="button" runat="server" OnClick="Logout_Click" 
-        Text="Logout" />
+<asp:Panel Visible="false" ID="invalidcredential2" runat="server">
+    <div class="loginerrmsgwrapper">
+        <asp:Label runat="server" CssClass="InvalidCred" ID="lblinvalidcredential2" Visible="true"
+            EnableViewState="false" Text="Invalid Login." />
+    </div>
+</asp:Panel>
+<asp:Panel Visible="false" ID="DisplayUserInfo" runat="server">
+    <asp:Label CssClass="content12" runat="server" ID="lblusername" />&nbsp;&nbsp;<asp:Button
+        ID="Buttonlogout" class="button" runat="server" OnClick="Logout_Click" Text="Logout" />
 </asp:Panel>

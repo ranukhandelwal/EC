@@ -130,9 +130,9 @@ public partial class Login : System.Web.UI.UserControl
         this.uname2.Text = "";
         this.upass2.Text = "";
         if (loginpanelno == 1)
-            lblinvalidcredential1.Visible = true;
+            invalidcredential1.Visible = true;
         if (loginpanelno == 2)
-        lblinvalidcredential2.Visible = true;
+            invalidcredential2.Visible = true;
     }
 
     private void ShowHideLoginControl(bool IsUserPassValidation)
