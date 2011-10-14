@@ -34,18 +34,11 @@ public partial class Header : System.Web.UI.UserControl
         {
             XmlDocument doc = new XmlDocument();
             doc.Load(Server.MapPath(HeaderXML));
-            XmlNodeList nodes = doc.SelectNodes("AnoHeader/list");
-         //   DataSet HeaderDS;
-           // HeaderDS = new DataSet();
-            //string filepath = Server.MapPath(HeaderXML);
-            //HeaderDS.ReadXml(filepath);
+            XmlNodeList nodes = doc.SelectNodes("AnoHeader/list[contains(@displayin,'usr')]");
+   
             header.DataSource = nodes;
             header.DataBind();
-             //DataSource='<%#((System.Xml.XmlNode)Container.DataItem).ChildNodes%>'
-
-            
-
-            
+     
 
         }
 
@@ -53,6 +46,6 @@ public partial class Header : System.Web.UI.UserControl
 
     protected XmlNodeList GetChild(XmlNode x)
     {
-        return x.ChildNodes;
+        return x.SelectNodes("sub"+  "[contains(@displayin,'usr')]");
     }
 }

@@ -1,40 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <AnoHeader>
 
-  <list name="Home" link="#">
+  <list name="Home" displayin="ano" link="#">
 
   </list>
-  <list name="Engineering" link="#">
-    <sub name="AIEEE" link="#" />
-    <sub name="AIEEE1" link="#" />
-    <sub name="AIEEE2" link="#" />
+
+  <list name="Home1" displayin="usr" link="~/default.aspx">
+
+  </list>
+  <list name="Engineering" link="#" displayin="usr,ano">
+    <sub name="ENG" link="#" displayin="usr"/>
+    <sub name="AIEEE1" link="#" displayin="ano"/>
+    <sub name="AIEEE2" link="#" displayin="usr,ano"/>
     
   </list>
 
-  <list name="MBA" link="#">
-    <sub name="AIEEE" link="#" />
-    <sub name="AIEEE1" link="#" />
-    <sub name="AIEEE2" link="#" />
+  <list name="MBA" link="#"  displayin="usr,ano">
+    <sub name="AIEEE" link="#" displayin="usr"/>
+    <sub name="AIEEE1" link="#" displayin="usr"/>
+    <sub name="AIEEE2" link="#" displayin="ano"/>
   </list>
 
-  <list name="Jobs" link="#">
+  <list name="Jobs" link="#" displayin="usr,ano">
 
-    <sub name="AIEEE" link="#" />
-    <sub name="AIEEE1" link="#" />
-    <sub name="AIEEE2" link="#" />
+    <sub name="AIEEE" link="#" displayin="usr,ano"/>
+    <sub name="AIEEE1" link="#" displayin="usr,ano"/>
+    <sub name="AIEEE2" link="#" displayin="usr,ano"/>
   </list>
 
-  <list name="College" link="#">
-    <sub name="AIEEE" link="#" />
-    <sub name="AIEEE1" link="#" />
-    <sub name="AIEEE2" link="#" />
+  <list name="College" link="#" displayin="usr,ano">
+    <sub name="AIEEE" link="#" displayin="ano,usr"/>
+    <sub name="AIEEE1" link="#" displayin="usr"/>
+    <sub name="AIEEE2" link="#" displayin="ano"/>
   </list>
 
-  <list name="Coaching Institutes" link="#">
+  <list name="Coaching Institutes" link="#" displayin="usr,ano">
 
-    <sub name="AIEEE" link="#" />
-    <sub name="AIEEE1" link="#" />
-    <sub name="AIEEE2" link="#" />
+    <sub name="AIEEE" link="#" displayin="usr"/>
+    <sub name="AIEEE1" link="#" displayin="usr"/>
+    <sub name="AIEEE2" link="#" displayin="ano"/>
   </list>
 
 </AnoHeader>
