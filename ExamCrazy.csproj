@@ -217,6 +217,13 @@
     <Compile Include="Control\DynamicTable.ascx.designer.cs">
       <DependentUpon>DynamicTable.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Control\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Control\Login.ascx.cs">
       <DependentUpon>Login.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -362,6 +369,13 @@
     <Compile Include="Test\DynamicTableTest.aspx.designer.cs">
       <DependentUpon>DynamicTableTest.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Test\HeaderTest.aspx.cs">
+      <DependentUpon>HeaderTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\HeaderTest.aspx.designer.cs">
+      <DependentUpon>HeaderTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Test\LoginControl.aspx.cs">
       <DependentUpon>LoginControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -433,6 +447,7 @@
     <None Include="App_Code\BLL\ImageUploadManager.cs.exclude" />
     <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
     <Content Include="admin\AddUpdate.aspx" />
+    <Content Include="Control\Header.ascx" />
     <Content Include="default.aspx" />
     <Content Include="Error\css\content.css" />
     <Content Include="Error\css\contentxd.css" />
@@ -447,6 +462,7 @@
     <Content Include="Error\css\popupcalendarpicker.css" />
     <Content Include="Error\css\template.css" />
     <Content Include="Error\css\thickbox.css" />
+    <Content Include="Headers\XMLAnoHeader.xml" />
     <Content Include="Job.master" />
     <Content Include="Jobs-Interviews\Default.aspx" />
     <Content Include="Jobs-Interviews\__Jobs.aspx" />
@@ -738,6 +754,7 @@
     <Content Include="images\yellowbg.gif" />
     <Content Include="images\yellowgrd.gif" />
     <Content Include="Test\DynamicTableTest.aspx" />
+    <Content Include="Test\HeaderTest.aspx" />
     <Content Include="Test\LoginControl.aspx" />
     <Content Include="Test\rss_feed_announce.aspx" />
     <Content Include="User\__user.aspx" />
