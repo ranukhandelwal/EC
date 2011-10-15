@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LeftRight.master" AutoEventWireup="true"
     CodeBehind="forgotpassword.aspx.cs" Inherits="ExamCrazy.forgotpassword" %>
+    <%@ MasterType VirtualPath="~/LeftRight.master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="CSS/contentxd.css" rel="stylesheet" type="text/css" />
