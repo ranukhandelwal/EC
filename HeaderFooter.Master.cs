@@ -12,10 +12,13 @@ namespace ExamCrazy
     public partial class HeaderFooter : System.Web.UI.MasterPage
     {
         public int PAGEID;
+        public string HeaderFilter = "ano"; //initialized with default value
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.Header.DataBind();
             login.loginpanelno = 2;
+            HeaderCtrl.filter = HeaderFilter;
+            //HeaderCtrl.filter = "ano";
             if (!Page.IsPostBack)
             {
                 UpdateRepository UpdateList = new UpdateRepository();

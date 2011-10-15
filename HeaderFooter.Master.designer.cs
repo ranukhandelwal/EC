@@ -41,6 +41,15 @@ namespace ExamCrazy {
         protected global::Login login;
         
         /// <summary>
+        /// HeaderCtrl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Header HeaderCtrl;
+        
+        /// <summary>
         /// AddToBreadCrum control.
         /// </summary>
         /// <remarks>

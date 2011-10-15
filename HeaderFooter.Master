@@ -1,5 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HeaderFooter.master.cs" Inherits="ExamCrazy.HeaderFooter" %>
 <%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<%@ Register TagPrefix="ucl" TagName="HeaderCtr" Src="~/Control/Header.ascx" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -22,23 +23,6 @@
     </asp:ContentPlaceHolder>
 
 
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".main-nav li a.main-link").hover(function() {
-                $(".main-nav li a.close").fadeIn();
-                $(".main-nav li a.main-link").removeClass("active");
-                $(this).addClass("active");
-                $(".sub-link-bar").animate({
-                    height: "40px"
-                });
-                $(".sub-links").hide();
-                $(this).siblings(".sub-links").fadeIn();
-            });
-
-        });
-
-    </script>
 
     <script type="text/javascript" src="<%# ResolveUrl("~/js/jquery-1.6.1.min.js")%>"></script>
 
@@ -90,68 +74,8 @@
                     <input type="text" name="search" value="Search" />
                     <input type="image" src="~/img/searchbtn.gif" class="btn" value="" runat="server"/>
                 </div>
-                <div class="main-handle">
-                    <ul class="main-nav">
-                        <li><a class="main-link" href="#">Home</a></li>
-                        <li><a class="main-link" href="#">Engineering</a>
-                            <ul class="sub-links">
-                                <li><a href="#" title="AIEEE">AIEEE</a> </li>
-                                <li><a href="#" title="GATE">GATE</a> </li>
-                                <li><a href="#" title="IES">IES</a> </li>
-                                <li><a href="#" title="DRDO-SET">DRDO-SET</a> </li>
-                                <li><a href="#" title="BSNL-JTO">BSNL-JTO</a> </li>
-                                <li><a href="#" title="ENGINEERING COLLEGES">ENGINEERING COLLEGES</a> </li>
-                                <li><a href="#" title="COACHING INSTITUTES">COACHING INSTITUTES</a> </li>
-                            </ul>
-                        </li>
-                        <li><a class="main-link" href="#">MBA</a>
-                            <ul class="sub-links">
-                                <li><a href="#" title="CAT">CAT</a> </li>
-                                <li><a href="#" title="MAT">GATE</a> </li>
-                                <li><a href="#" title="IES">IES</a> </li>
-                                <li><a href="#" title="DRDO-SET">DRDO-SET</a> </li>
-                                <li><a href="#" title="BSNL-JTO">BSNL-JTO</a> </li>
-                                <li><a href="#" title="MBA COLLEGES">ENGINEERING COLLEGES</a> </li>
-                                <li><a href="#" title="COACHING INSTITUTES">COACHING INSTITUTES</a> </li>
-                            </ul>
-                        </li>
-                        <li><a class="main-link" href="#">Jobs</a>
-                            <ul class="sub-links">
-                                <li><a href="#" title="AIEEE">AIEEE</a> </li>
-                                <li><a href="#" title="GATE">GATE</a> </li>
-                                <li><a href="#" title="IES">IES</a> </li>
-                                <li><a href="#" title="DRDO-SET">DRDO-SET</a> </li>
-                                <li><a href="#" title="BSNL-JTO">BSNL-JTO</a> </li>
-                                <li><a href="#" title="ENGINEERING COLLEGES">ENGINEERING COLLEGES</a> </li>
-                                <li><a href="#" title="COACHING INSTITUTES">COACHING INSTITUTES</a> </li>
-                            </ul>
-                        </li>
-                        <li><a class="main-link" href="#">College</a>
-                            <ul class="sub-links">
-                                <li><a href="#" title="AIEEE">AIEEE</a> </li>
-                                <li><a href="#" title="GATE">GATE</a> </li>
-                                <li><a href="#" title="IES">IES</a> </li>
-                                <li><a href="#" title="DRDO-SET">DRDO-SET</a> </li>
-                                <li><a href="#" title="BSNL-JTO">BSNL-JTO</a> </li>
-                                <li><a href="#" title="ENGINEERING COLLEGES">ENGINEERING COLLEGES</a> </li>
-                                <li><a href="#" title="COACHING INSTITUTES">COACHING INSTITUTES</a> </li>
-                            </ul>
-                        </li>
-                        <li><a class="main-link" href="#">Coaching Institutes</a>
-                            <ul class="sub-links">
-                                <li><a href="#" title="AIEEE">AIEEE</a> </li>
-                                <li><a href="#" title="GATE">GATE</a> </li>
-                                <li><a href="#" title="IES">IES</a> </li>
-                                <li><a href="#" title="DRDO-SET">DRDO-SET</a> </li>
-                                <li><a href="#" title="BSNL-JTO">BSNL-JTO</a> </li>
-                                <li><a href="#" title="ENGINEERING COLLEGES">ENGINEERING COLLEGES</a> </li>
-                                <li><a href="#" title="COACHING INSTITUTES">COACHING INSTITUTES</a> </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="topdropMenu unit">
-                </div>
+                <ucl:HeaderCtr ID="HeaderCtrl" runat="server" />
+                
             </div>
             <!-- ===== HEADER DIV END HERE===== -->
             <!-- ===== BreadCrum DIV START HERE===== -->
@@ -229,6 +153,7 @@
                             <li><span class="icon"></span><a href="#" title="NHPC">Privacy Policy</a> </li>
                             <li><span class="icon"></span><a href="#" title="NHPC">Terms and Conditions</a>
                             
+                                    
                                     
                                     
                                     
