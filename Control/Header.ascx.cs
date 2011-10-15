@@ -9,7 +9,8 @@ using System.Text;
 
 public partial class Header : System.Web.UI.UserControl
 {
-    protected string HeaderXML = "~/Headers/XMLAnoHeader.xml";
+    public string HeaderXML = "~/Headers/XMLAnoHeader.xml";
+    public string filter;
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!Page.ClientScript.IsClientScriptBlockRegistered(Page.GetType(),"newscript"))
@@ -34,7 +35,7 @@ public partial class Header : System.Web.UI.UserControl
         {
             XmlDocument doc = new XmlDocument();
             doc.Load(Server.MapPath(HeaderXML));
-            XmlNodeList nodes = doc.SelectNodes("AnoHeader/list[contains(@displayin,'usr')]");
+            XmlNodeList nodes = doc.SelectNodes("AnoHeader/list[contains(@displayin,'" + filter + "')]");
    
             header.DataSource = nodes;
             header.DataBind();
@@ -46,6 +47,6 @@ public partial class Header : System.Web.UI.UserControl
 
     protected XmlNodeList GetChild(XmlNode x)
     {
-        return x.SelectNodes("sub"+  "[contains(@displayin,'usr')]");
+        return x.SelectNodes("sub"+  "[contains(@displayin,'" + filter + "')]");
     }
 }

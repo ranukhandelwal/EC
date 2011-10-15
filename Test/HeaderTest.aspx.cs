@@ -10,8 +10,10 @@ namespace ExamCrazy.Test
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            LiteralControl l;
             Page.Header.DataBind();
-
+            HeaderCtr1.filter = "usr";
+            
         }
     }
 }
