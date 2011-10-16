@@ -6,13 +6,13 @@ using System.Web.UI.WebControls;
 using EC.BL;
 using EC.Model;
 using EC.Common;
+using EC.UI;
 
 namespace ExamCrazy
 {
-    public partial class HeaderFooter : System.Web.UI.MasterPage
+    public partial class HeaderFooter : BaseMaster
     {
-        public int PAGEID;
-        public string HeaderFilter = "ano"; //initialized with default value
+         //initialized with default value
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.Header.DataBind();
