@@ -23,8 +23,7 @@ namespace ExamCrazy.User
         {
             //Check if user is logged in
             IsUserAuthenticated = Authentication.IsUserAuthenticated;
-            Master.HeaderFilter = "usr";
-
+            
             //Check if Requested page is user's page or different page
 
             uname = UserIdentity.UserName;

@@ -9,11 +9,13 @@ namespace ExamCrazy
     public partial class LeftRight : System.Web.UI.MasterPage
     {
         public int PAGEID;
-        public string HeaderFilter = "ano"; //default value
+        public string HeaderFilter; //default value
         protected void Page_Load(object sender, EventArgs e)
         {
-            Master.PAGEID = this.PAGEID;
-            Master.HeaderFilter = this.HeaderFilter;
+            if(this.PAGEID != 0)
+                Master.PAGEID = this.PAGEID;
+            if(this.HeaderFilter != null)
+                Master.HeaderFilter = this.HeaderFilter;
             login.loginpanelno = 1;
 
         }
