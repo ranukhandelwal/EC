@@ -111,10 +111,11 @@ namespace EC.BL
         };
 
         public static sPublish[] PublishArea = new sPublish[] {
-            new sPublish{ID = 0, Name = "GATE"}, 
-            new sPublish{ID = 1, Name = "IES"},
-            new sPublish{ID = 2, Name = "COLLEGE"},
-            new sPublish{ID = 3, Name = "JOBS"}
+            new sPublish{ID = 0, Name = "Default"},
+            new sPublish{ID = 1, Name = "GATE"}, 
+            new sPublish{ID = 2, Name = "IES"},
+            new sPublish{ID = 3, Name = "COLLEGE"},
+            new sPublish{ID = 4, Name = "JOBS"}
         };
 
         public static sState[] JobState = new sState[] {
