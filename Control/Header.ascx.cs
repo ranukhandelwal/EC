@@ -9,7 +9,7 @@ using System.Text;
 
 public partial class Header : System.Web.UI.UserControl
 {
-    public string HeaderXML = "~/Headers/XMLAnoHeader.xml";
+    public string HeaderXML = "~/XML/Header.xml";
     public string filter;
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -35,7 +35,7 @@ public partial class Header : System.Web.UI.UserControl
         {
             XmlDocument doc = new XmlDocument();
             doc.Load(Server.MapPath(HeaderXML));
-            XmlNodeList nodes = doc.SelectNodes("AnoHeader/list[contains(@displayin,'" + filter + "')]");
+            XmlNodeList nodes = doc.SelectNodes("Header/list[contains(@displayin,'" + filter + "')]");
    
             header.DataSource = nodes;
             header.DataBind();
