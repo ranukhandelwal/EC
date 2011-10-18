@@ -21,10 +21,10 @@ namespace EC.UI
             PAGEID = 0;
             if (Authentication.IsUserAuthenticated)
             {
-                HeaderFilter = "usr";
+                HeaderFilter = "__usr__";
             }
             else
-                HeaderFilter = "ano";
+                HeaderFilter = "__ano__";
         }
     }
 }
