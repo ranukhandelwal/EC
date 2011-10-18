@@ -12,7 +12,7 @@ namespace ExamCrazy.Test
         {
             //LiteralControl l;
             Page.Header.DataBind();
-            //HeaderCtr1.filter = "usr";
+            //HeaderCtr1.filter = "__usr__";
             
         }
     }

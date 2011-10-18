@@ -18,7 +18,6 @@ namespace ExamCrazy
             Page.Header.DataBind();
             login.loginpanelno = 2;
             HeaderCtrl.filter = HeaderFilter;
-            //HeaderCtrl.filter = "ano";
             if (!Page.IsPostBack)
             {
                 UpdateRepository UpdateList = new UpdateRepository();
