@@ -13,6 +13,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
+using EC.BL;
 
 namespace EC.Security
 {
@@ -50,6 +51,8 @@ namespace EC.Security
             //Encrypt cookie password value
             UserInfo.Values["ECUpass"] = Encryption.Encrypt(Password);
 
+            UserInfo.Values["ECUType"] = Blogic.GetUserType(UserName, Password);
+
             UserInfo.Expires = DateTime.Now.AddDays(1);
             HttpContext.Current.Response.Cookies.Add(UserInfo);
         }
@@ -63,6 +66,7 @@ namespace EC.Security
 
             //Encrypt password session value so it match to the database.
             HttpContext.Current.Session.Add("ECUpass", Encryption.Encrypt(Password));
+            HttpContext.Current.Session.Add("ECUType",Blogic.GetUserType(UserName, Password));
         }
 
         /// <summary>
@@ -153,6 +157,20 @@ namespace EC.Security
             {
                 if (IsLoginSessionExists)
                     return HttpContext.Current.Session["ECUpass"].ToString();
+                else
+                    return string.Empty;
+            }
+        }
+
+        /// <summary>
+        /// Returns the user type stored in session if user did not check remember me checkbox.
+        /// </summary>
+        public static string UserSessionType
+        {
+            get
+            {
+                if (IsLoginSessionExists)
+                    return HttpContext.Current.Session["ECUType"].ToString();
                 else
                     return string.Empty;
             }

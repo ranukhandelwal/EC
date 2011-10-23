@@ -712,6 +712,20 @@ namespace EC.BL
       }
 
       /// <summary>
+      /// Get UserType
+      /// </summary>
+      public static string GetUserType(string UserName, string Paswword)
+      {
+          SqlParameter prmUserName = new SqlParameter("@Username", SqlDbType.VarChar, 50);
+          prmUserName.Value = UserName;
+
+          SqlParameter prmPaswword = new SqlParameter("@UserPassword", SqlDbType.VarChar, 50);
+          prmPaswword.Value = Paswword;
+
+          return DataAccess.GetString("spGetUserType", prmUserName, prmPaswword);
+      }
+
+      /// <summary>
       /// Check Username availability during registration - used by Ajax
       /// </summary>
       public static bool IsUsernameAvailable(string UserName)

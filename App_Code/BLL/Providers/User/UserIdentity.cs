@@ -79,6 +79,32 @@ namespace EC.BL.Providers.User
         }
 
         /// <summary>
+        /// Returns user type. This is only use after user is authenticated or have login.
+        /// </summary>
+        public static string UserType
+        {
+            get
+            {
+                string User_Type = "__ano__";
+
+                //Check if the cookies with name ECUserInfo exist on user's machine
+                if (CookieLoginHelper.IsLoginCookieExists)
+                {
+                    //Decrypt the username stored in the cookie so it will show the decrypted value.
+                    User_Type = Encryption.Decrypt(CookieLoginHelper.LoginCookie.Values[2].ToString());
+                }
+
+                //Get the user credential in session if user did not check remember me.
+                if (CookieLoginHelper.IsLoginSessionExists)
+                {
+                    User_Type = CookieLoginHelper.UserSessionType.ToString();
+                }
+
+                return User_Type;
+            }
+        }
+
+        /// <summary>
         /// Returns logon user email address. This is only use after user is authenticated or have login.
         /// </summary>
         public static string UserEmail
