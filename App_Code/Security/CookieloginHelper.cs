@@ -51,7 +51,7 @@ namespace EC.Security
             //Encrypt cookie password value
             UserInfo.Values["ECUpass"] = Encryption.Encrypt(Password);
 
-            UserInfo.Values["ECUType"] = Blogic.GetUserType(UserName, Password);
+            UserInfo.Values["ECUType"] = Blogic.GetUserType(UserName, Encryption.Encrypt(Password));
 
             UserInfo.Expires = DateTime.Now.AddDays(1);
             HttpContext.Current.Response.Cookies.Add(UserInfo);
@@ -66,7 +66,7 @@ namespace EC.Security
 
             //Encrypt password session value so it match to the database.
             HttpContext.Current.Session.Add("ECUpass", Encryption.Encrypt(Password));
-            HttpContext.Current.Session.Add("ECUType",Blogic.GetUserType(UserName, Password));
+            HttpContext.Current.Session.Add("ECUType", Blogic.GetUserType(UserName, Encryption.Encrypt(Password)));
         }
 
         /// <summary>
