@@ -10,6 +10,8 @@ using EC.BL;
 using EC.Common;
 using EC.Model;
 using EC.Common.Utilities;
+using EC.Security;
+using EC.BL.Providers.User;
 
 namespace EC.BL
 {
@@ -31,6 +33,55 @@ namespace EC.BL
         public static SiteConfiguration GetInstance()
         {
             return Instance;
+        }
+
+        /// <summary>
+        /// Get Login Redirect Page
+        /// </summary>
+        public static string LoginRedirectPage()
+        {
+            string RedirectPage = "/User/";
+            if (Authentication.IsUserAuthenticated)
+            {
+                if (UserIdentity.UserType == "__client__")
+                {
+                }
+                //Last rule is for user so that if nothing matches they are normal user
+                else
+                {
+                    RedirectPage = "/User/" + "UserIdentity.UserName";
+                }
+            }
+            else
+            {
+                RedirectPage = "/User/"; //display list of users
+            }
+
+            return RedirectPage;
+        }
+
+        /// <summary>
+        /// Get Login Redirect Page
+        /// </summary>
+        public static string GetHeader()
+        {
+            string HeaderFilter = "/User/";
+            if (Authentication.IsUserAuthenticated)
+            {
+                if (UserIdentity.UserType == "__client__")
+                {
+                }
+                //Last rule is for user so that if nothing matches they are normal user
+                else
+                {
+                    HeaderFilter = "__usr__";
+                }
+            }
+            else
+            {
+                HeaderFilter = "__ano__";
+            }
+            return HeaderFilter;
         }
 
         /// <summary>

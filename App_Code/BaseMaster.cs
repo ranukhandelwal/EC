@@ -8,6 +8,7 @@ using EC.Model;
 using EC.Common.Utilities;
 using EC.Security;
 using EC.BL.Providers.User;
+using EC.BL;
 
 namespace EC.UI
 {
@@ -19,12 +20,7 @@ namespace EC.UI
         public BaseMaster()
         {
             PAGEID = 0;
-            if (Authentication.IsUserAuthenticated)
-            {
-                HeaderFilter = "__usr__";
-            }
-            else
-                HeaderFilter = "__ano__";
+            HeaderFilter = SiteConfiguration.GetHeader();
         }
     }
 }
