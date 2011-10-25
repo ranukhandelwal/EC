@@ -85,6 +85,27 @@ namespace EC.BL
         }
 
         /// <summary>
+        /// Get User Info Filter
+        /// </summary>
+        public static string GetUserInfoFilter(string PageName)
+        {
+            string UserInfoFilter = "__ano__";
+            if (Authentication.IsUserAuthenticated)
+            {
+                if (PageName != UserIdentity.UserName)
+                {
+                    UserInfoFilter = "__other__";
+                }
+                else
+                    UserInfoFilter = UserIdentity.UserType;
+            }
+            else
+            {
+                UserInfoFilter = "__ano__";
+            }
+            return UserInfoFilter;
+        }
+        /// <summary>
         /// Get data
         /// </summary>
         private void FillUp()
