@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UserInfo>
+
+  <list name="Update Profile" displayin="__usr__,__faculty__" link="#"></list>
+  <list name="Verify EmailID" displayin="__usr__,__faculty__" link="#"></list>
+  <list name="Update Photo" displayin="__usr__,__faculty__" link="#"></list>
+  <list name="See Notes" displayin="__ano__,__other__" link="#"></list>
+  <list name="Recent Actions" displayin="__ano__,__other__" link="#"></list>
+  <list name="Groups" displayin="__ano__,__other__" link="#"></list>
+  <list name="Member List" displayin="__usr__,__faculty__,__ano__,__other__" link="#"></list>
+  
+  
+</UserInfo>
