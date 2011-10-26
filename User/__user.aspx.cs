@@ -32,6 +32,7 @@ namespace ExamCrazy.User
             {
                 RequestedPage = Request.QueryString["RequestedURL"];
             }
+            Master.Uname = RequestedPage;
 
             lblwelcomeusername.Text = "Welcome " + uname;
 

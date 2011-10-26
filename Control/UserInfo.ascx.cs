@@ -15,6 +15,7 @@ namespace ExamCrazy.Control
     {
         public string UserInfoXML = "~/XML/UserInfo.xml";
         public string filter;
+        public string UName;
         protected void Page_Load(object sender, EventArgs e)
         {
             HtmlLink csslink = new HtmlLink();
@@ -28,6 +29,7 @@ namespace ExamCrazy.Control
             }
 
             filter = SiteConfiguration.GetUserInfoFilter("ajaykh");
+            lblname.Text = UName;
             if (!Page.IsPostBack)
             {
                 XmlDocument doc = new XmlDocument();

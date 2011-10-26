@@ -8,8 +8,10 @@ namespace ExamCrazy
 {
     public partial class UserMain : System.Web.UI.MasterPage
     {
+        public string Uname;
         protected void Page_Load(object sender, EventArgs e)
         {
+            UserInfoCtrl.UName = Uname;
 
         }
     }

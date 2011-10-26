@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UserInfo.ascx.cs" Inherits="ExamCrazy.Control.UserInfo" %>
 <div class="userInfo unit">
     <h2>
-        Welcome Examcrazy user</h2>
+        <asp:Label ID="lblname" runat="server"></asp:Label></h2>
     <p>
         examcrazy@examcrazy.com</p>
     <div class="size1of2 unit">
