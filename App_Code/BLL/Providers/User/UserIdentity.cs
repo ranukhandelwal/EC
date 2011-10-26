@@ -111,26 +111,20 @@ namespace EC.BL.Providers.User
         {
             get
             {
-                ProviderUserDetails User = new ProviderUserDetails();
-
-                User.FillUp(UserID);
-
                 string UEmail = "";
 
                 //Check if the cookies with name ECUserInfo exist on user's machine
                 if (CookieLoginHelper.IsLoginCookieExists)
                 {
-                    UEmail = User.Email1;
+                    UEmail = Blogic.GetUserEmail(Encryption.Decrypt(CookieLoginHelper.LoginCookie.Values[0].ToString()), CookieLoginHelper.LoginCookie.Values[1].ToString());
                 }
 
                 //Get the user credential in session if user did not check remember me.
                 if (CookieLoginHelper.IsLoginSessionExists)
                 {
-                    UEmail = User.Email1;
+                    UEmail = Blogic.GetUserEmail(CookieLoginHelper.UserSessionUserName.ToString(), CookieLoginHelper.UserSessionPassword.ToString());
                 }
-
-                User = null;
-
+                
                 return UEmail;
             }
         }

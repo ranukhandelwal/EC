@@ -3,7 +3,7 @@
     <h2>
         <asp:Label ID="lblname" runat="server"></asp:Label></h2>
     <p>
-        examcrazy@examcrazy.com</p>
+        <asp:Label ID="lblemail" runat="server"></asp:Label></p>
     <div class="size1of2 unit">
         <a href="#" title="User Wall">
             <img src="~/img/userwall.gif" alt="User wall" title="User Wall" runat="server" /></a>
