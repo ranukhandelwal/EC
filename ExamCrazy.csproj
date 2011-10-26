@@ -136,6 +136,9 @@
     <Compile Include="AjaxRequest\AjaxRequest.aspx.designer.cs">
       <DependentUpon>AjaxRequest.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Code\BaseMaster.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="App_Code\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -251,6 +254,13 @@
     </Compile>
     <Compile Include="Control\sidemenu.ascx.designer.cs">
       <DependentUpon>sidemenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\UserInfo.ascx.cs">
+      <DependentUpon>UserInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\UserInfo.ascx.designer.cs">
+      <DependentUpon>UserInfo.ascx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
@@ -390,12 +400,26 @@
     <Compile Include="Test\rss_feed_announce.aspx.designer.cs">
       <DependentUpon>rss_feed_announce.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Test\UserMasterTest.aspx.cs">
+      <DependentUpon>UserMasterTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\UserMasterTest.aspx.designer.cs">
+      <DependentUpon>UserMasterTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="toprssxml.aspx.cs">
       <DependentUpon>toprssxml.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="toprssxml.aspx.designer.cs">
       <DependentUpon>toprssxml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserMain.master.cs">
+      <DependentUpon>UserMain.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserMain.master.designer.cs">
+      <DependentUpon>UserMain.master</DependentUpon>
     </Compile>
     <Compile Include="User\__user.aspx.cs">
       <DependentUpon>__user.aspx</DependentUpon>
@@ -446,6 +470,28 @@
     <Content Include="AdminFeed.master" />
     <None Include="App_Code\BLL\ImageUploadManager.cs.exclude" />
     <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
+    <None Include="css\.grids.css.swp" />
+    <None Include="css\content.css.bak" />
+    <Content Include="Control\UserInfo.ascx" />
+    <Content Include="css\content.css" />
+    <Content Include="css\contentxd.css" />
+    <Content Include="css\cssreciaspx.css" />
+    <Content Include="css\grids.css" />
+    <Content Include="css\ie6.css" />
+    <Content Include="css\Jobs.css" />
+    <Content Include="css\jquery.datepick.css" />
+    <Content Include="css\li-scroller.css" />
+    <Content Include="css\libraries.css" />
+    <Content Include="css\mod.css" />
+    <Content Include="css\popupcalendarpicker.css" />
+    <Content Include="css\template.css" />
+    <Content Include="css\thickbox.css" />
+    <Content Include="css\userinfo.css" />
+    <Content Include="img\userinfobackground.gif" />
+    <Content Include="img\userwall.gif" />
+    <Content Include="popupcalendarpicker.css" />
+    <Content Include="Test\UserMasterTest.aspx" />
+    <Content Include="UserMain.master" />
     <Content Include="admin\AddUpdate.aspx" />
     <Content Include="Control\Header.ascx" />
     <Content Include="default.aspx" />
@@ -462,7 +508,7 @@
     <Content Include="Error\css\popupcalendarpicker.css" />
     <Content Include="Error\css\template.css" />
     <Content Include="Error\css\thickbox.css" />
-    <Content Include="Headers\XMLAnoHeader.xml" />
+    <Content Include="XML\Header.xml" />
     <Content Include="Job.master" />
     <Content Include="Jobs-Interviews\Default.aspx" />
     <Content Include="Jobs-Interviews\__Jobs.aspx" />
@@ -762,6 +808,7 @@
     <Content Include="newrssxml.aspx" />
     <Content Include="registration.aspx" />
     <Content Include="toprssxml.aspx" />
+    <Content Include="XML\UserInfo.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
