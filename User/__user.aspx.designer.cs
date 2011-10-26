@@ -28,9 +28,9 @@ namespace ExamCrazy.User {
         /// <remarks>
         /// Auto-generated property.
         /// </remarks>
-        public new ExamCrazy.LeftRight Master {
+        public new ExamCrazy.UserMain Master {
             get {
-                return ((ExamCrazy.LeftRight)(base.Master));
+                return ((ExamCrazy.UserMain)(base.Master));
             }
         }
     }
