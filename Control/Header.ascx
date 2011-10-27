@@ -5,7 +5,7 @@
             <ul class="main-nav">
     </HeaderTemplate>
     <ItemTemplate>
-        <li><a class="main-link" href="<%#Page.ResolveUrl(((System.Xml.XmlNode)Container.DataItem).Attributes["link"].InnerText)%>"
+        <li><a class="main-link" href="<%#ResolveUrl(((System.Xml.XmlNode)Container.DataItem).Attributes["link"].InnerText)%>"
             runat="server">
             <%#((System.Xml.XmlNode)Container.DataItem).Attributes["name"].InnerText%></a>
             <asp:Repeater ID="headernodes" runat="server" DataSource='<%# GetChild(((System.Xml.XmlNode)Container.DataItem))%>'>

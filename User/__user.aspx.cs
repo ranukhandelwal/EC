@@ -32,6 +32,12 @@ namespace ExamCrazy.User
             {
                 RequestedPage = Request.QueryString["RequestedURL"];
             }
+
+            if (RequestedPage == "$$UNAME$$")
+            {
+                RequestedPage = "/User/" + UserIdentity.UserName;
+                this.Context.Response.Redirect(RequestedPage);
+            }
             Master.Uname = RequestedPage;
 
             lblwelcomeusername.Text = "Welcome " + uname;

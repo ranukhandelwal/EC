@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Header>
 
-  <list name="Home" displayin="__ano__" link="#">
+  <list name="Home" displayin="__ano__" link="~/default.aspx">
 
   </list>
 
-  <list name="Home1" displayin="__usr__" link="~/default.aspx">
+  <list name="Home" displayin="__usr__" link="~/User/$$UNAME$$" >
 
   </list>
   <list name="Engineering" link="#" displayin="__usr__,__ano__">

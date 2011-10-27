@@ -6,6 +6,7 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Xml;
 using System.Text;
+using EC.BL.Providers.User;
 
 public partial class Header : System.Web.UI.UserControl
 {
@@ -36,7 +37,12 @@ public partial class Header : System.Web.UI.UserControl
             XmlDocument doc = new XmlDocument();
             doc.Load(Server.MapPath(HeaderXML));
             XmlNodeList nodes = doc.SelectNodes("Header/list[contains(@displayin,'" + filter + "')]");
-   
+
+            string tmp = nodes.Item(0).Attributes["link"].NamespaceURI;
+            tmp = nodes.Item(0).Attributes["link"].InnerText;
+            tmp = nodes.Item(0).Attributes["link"].LocalName;
+            tmp = nodes.Item(0).Attributes["link"].Name;
+            tmp = nodes.Item(0).Attributes["link"].Value;
             header.DataSource = nodes;
             header.DataBind();
      
