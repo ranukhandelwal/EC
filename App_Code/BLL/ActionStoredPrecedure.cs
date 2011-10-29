@@ -1041,7 +1041,7 @@ namespace EC.BL
           /*return DataAccess.Execute("spInsertUser", prmUsername, prmPassword, prmEmail, prmFirstName, prmLastName, prmCity, prmState, prmCountry, prmAddress, prmSex, prmDOB,
                prmCanEmailSend, prmEC, prmWebsite, prmAboutMe, prmPhoto, prmMobile );*/
           return DataAccess.Execute("spInsertUser", prmUsername, prmPassword, prmFirstName, prmLastName, prmEmail, prmCity, prmState, prmCountry, prmSex, prmDOB,
-               prmCanEmailSend, prmEC, prmMobile, prmAddress, prmWebsite, prmAboutMe/*, prmPhoto*/);
+               prmCanEmailSend, prmEC, prmMobile, prmAddress, prmWebsite, prmAboutMe, prmPhoto);
                      
       }
 

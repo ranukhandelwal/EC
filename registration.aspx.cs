@@ -124,6 +124,7 @@ public partial class registration : BasePage
             //User.ContactMe = Int32.Parse(Util.FormatTextForInput(Request.Form[ContactMe.UniqueID]));
             User.Website = Util.FormatTextForInput(Request.Form[Website.UniqueID]);
             User.AboutMe = Util.FormatTextForInput(Request.Form[AboutMe.UniqueID]);
+            User.Photo = "~/UserImages/" + User.UserName;
             //User.GUID = Guid.NewGuid().ToString("N");
 
             //Prevent username and email duplication. Ensure that all username and email in the database are unique.
@@ -231,12 +232,10 @@ public partial class registration : BasePage
                 string contentType = UserImageFileUpload.PostedFile.ContentType;
 
                 //File type validation
-                if (!contentType.Equals("image/gif") &&
-                    !contentType.Equals("image/jpeg") &&
-                    !contentType.Equals("image/jpg") &&
-                    !contentType.Equals("image/png"))
+                string Error = "";
+                if(!ImageUploadManager.IsValidImageType(contentType, ref Error))
                 {
-                    lbvalenght.Text = "<br>File format is invalid. Only gif, jpg, jpeg or png files are allowed.";
+                    lbvalenght.Text = Error;
                     lbvalenght.Visible = true;
                     return;
                 }
@@ -250,7 +249,11 @@ public partial class registration : BasePage
                 }
             }
 
-            //ImageUploadManager.UploadUserImage(User, PlaceHolder1, GetUserImage.ImagePathForUserPhoto, constant.UserImageMaxSize);
+            if (ImageUploadManager.UploadImage(User.UserName, PlaceHolder1, GetUserImage.ImagePathForUserPhoto, constant.UserImageMaxSize, "UserImageFileUpload") != 0)
+            {
+                JSLiteral.Text = "Error occured while uploading your image.";
+                return;
+            }
 
             if (User.Add(User) != 0)
             {
