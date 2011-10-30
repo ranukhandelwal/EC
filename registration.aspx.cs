@@ -192,7 +192,14 @@ public partial class registration : BasePage
                 return;
             }
 
-            
+            if (User.Mobile.Length > 11 || User.Mobile.Length < 10)
+            {
+                lbvalenght.Text = "<br>Error: Mobile Number is not valid";
+                lbvalenght.Visible = true;
+                txtsecfield.Text = "";
+                return;
+            }
+
             if (User.CountryID == null)
             {
                 lbvalenght.Text = "<br>Error: You must select a country.";
