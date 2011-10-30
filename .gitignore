@@ -1,0 +1,6 @@
+!UserImages/userwall.gif
+UserImages/*
+bin/ExamCrazy.dll
+bin/ExamCrazy.pdb
+bin/msmdvbanet.dll
+obj/*
