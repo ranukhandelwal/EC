@@ -16,6 +16,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Collections.ObjectModel;
 using System.Collections.Generic;
+using System.IO;
 using EC.UI;
 using EC.BL;
 using EC.BL.Providers;
@@ -124,7 +125,7 @@ public partial class registration : BasePage
             //User.ContactMe = Int32.Parse(Util.FormatTextForInput(Request.Form[ContactMe.UniqueID]));
             User.Website = Util.FormatTextForInput(Request.Form[Website.UniqueID]);
             User.AboutMe = Util.FormatTextForInput(Request.Form[AboutMe.UniqueID]);
-            User.Photo = "~/UserImages/" + User.UserName;
+            User.Photo = null;
             //User.GUID = Guid.NewGuid().ToString("N");
 
             //Prevent username and email duplication. Ensure that all username and email in the database are unique.
@@ -230,6 +231,7 @@ public partial class registration : BasePage
             {
                 int FileSize = UserImageFileUpload.PostedFile.ContentLength;
                 string contentType = UserImageFileUpload.PostedFile.ContentType;
+                User.Photo = User.UserName + Path.GetExtension(UserImageFileUpload.PostedFile.FileName);
 
                 //File type validation
                 string Error = "";
