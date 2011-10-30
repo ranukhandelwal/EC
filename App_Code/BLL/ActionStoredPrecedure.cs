@@ -740,6 +740,17 @@ namespace EC.BL
       }
 
       /// <summary>
+      /// Get UserPhoto
+      /// </summary>
+      public static string GetUserPhoto(string UserName)
+      {
+          SqlParameter prmUserName = new SqlParameter("@Username", SqlDbType.VarChar, 50);
+          prmUserName.Value = UserName;
+
+          return DataAccess.GetString("spGetUserPhoto", prmUserName);
+      }
+
+      /// <summary>
       /// Check Username availability during registration - used by Ajax
       /// </summary>
       public static bool IsUsernameAvailable(string UserName)
