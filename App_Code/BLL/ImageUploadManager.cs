@@ -60,7 +60,7 @@ namespace EC.BL
 
                 //File type validation
                 string Error = "";
-                if(IsValidImageType(contentType, ref Error))
+                if(!IsValidImageType(contentType, ref Error))
                 {
                     return 1;
                 }
