@@ -13,6 +13,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
+using System.IO;
 using EC.BL;
 using EC.BL.Providers.User;
 using EC.Security;
@@ -130,6 +131,16 @@ namespace EC.BL.Providers.User
         }
 
 
+        /// <summary>
+        /// Returns user photo. This requires username. User need not be logged in for this.
+        /// </summary>
+        public static string UserPhoto(string UName)
+        {
+            string photo = Blogic.GetUserPhoto(UName);
+            photo = constant.UserImagePath + photo;
+            return (photo.ToString() != null) ? photo : "~/UserImages/userwall.gif";
+            
+        }
         /// <summary>
         /// Returns user Role/Level.
         /// </summary>
