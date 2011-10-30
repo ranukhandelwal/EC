@@ -137,8 +137,7 @@ namespace EC.BL.Providers.User
         public static string UserPhoto(string UName)
         {
             string photo = Blogic.GetUserPhoto(UName);
-            photo = constant.UserImagePath + photo;
-            return (photo.ToString() != null) ? photo : "~/UserImages/userwall.gif";
+            return ((photo.ToString() != null) && (photo.ToString() != "")) ? constant.UserImagePath + photo : "~/UserImages/userwall.gif";
             
         }
         /// <summary>
