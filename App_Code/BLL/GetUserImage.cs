@@ -21,7 +21,7 @@ namespace EC.BL
         {
             get
             {
-                return "UserImages/";
+                return constant.UserImagePath;
             }
         }
 
@@ -32,11 +32,11 @@ namespace EC.BL
         {
             if (!string.IsNullOrEmpty(FileName))
             {
-                FileName = "UserImages/" + FileName;
+                FileName = ImagePathForUserPhoto + FileName;
             }
             else
             {
-                FileName = "UserImages/nophotoavailable.gif";
+                FileName = ImagePathForUserPhoto + "userwall.gif";
             }
 
             return FileName;
