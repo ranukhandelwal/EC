@@ -8,6 +8,7 @@ using System.Data;
 using System.Xml;
 using System.Text;
 using EC.BL;
+using EC.BL.Providers.User;
 
 namespace ExamCrazy.Control
 {
@@ -17,6 +18,8 @@ namespace ExamCrazy.Control
         public string filter;
         public string UName;
         public string UEmail;
+        //protected string UImage;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             HtmlLink csslink = new HtmlLink();
@@ -33,6 +36,10 @@ namespace ExamCrazy.Control
             lblname.Text = UName;
             lblemail.Text = UEmail;
 
+            //UImage = UserIdentity.UserPhoto(UName);
+            UserImage.Src = UserIdentity.UserPhoto(UName);
+            UserImage.Height = 100;
+            UserImage.Width = 100;
             if (!Page.IsPostBack)
             {
                 XmlDocument doc = new XmlDocument();

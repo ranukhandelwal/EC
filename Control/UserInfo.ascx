@@ -6,7 +6,7 @@
         <asp:Label ID="lblemail" runat="server"></asp:Label></p>
     <div class="size1of2 unit">
         <a href="#" title="User Wall">
-            <img src="~/img/userwall.gif" alt="User wall" title="User Wall" runat="server" /></a>
+            <img id="UserImage" alt="User wall" title="User Wall" runat="server" /></a>
     </div>
     
     <asp:Repeater ID="userinfo" runat="server">
