@@ -102,6 +102,10 @@ namespace EC.BL
         /// </summary>
         public const string Article = "Article";
 
+        /// <summary>
+        /// UserImagePath  string = "User Image Path"
+        /// </summary>
+        public const string UserImagePath = "~/UserImages/";
    
         public static sCategory[] FeedCategory = new sCategory[] {
             new sCategory{ID = 0, Name = "Choose Category"}, 
