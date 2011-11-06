@@ -4,9 +4,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using EC.BL;
+using EC.Common;
 using EC.Common.Utilities;
 using EC.Security;
 using EC.BL.Providers.User;
+using EC.Model;
 //using EC.BL.Providers.PrivateMessages;
 //using XDRecipe.BL.Providers.Events;
 
@@ -36,6 +38,10 @@ namespace ExamCrazy.AjaxRequest
 
                     case "recoverpass":
                         RecoverLostPassword();
+                        break;
+
+                    case "getstates":
+                        GetStateList();
                         break;
                     /*
                 case "markpmold":
@@ -157,6 +163,31 @@ namespace ExamCrazy.AjaxRequest
             {
                 Response.Write("<span class='content12' style='border: solid 1px #800000; padding: 3px;'>Invalid email format.</span>");
             }
+        }
+
+        private void GetStateList()
+        {
+            if (!string.IsNullOrEmpty(Request.QueryString["cntry"]) && Utility.IsQueryStringSecure(Request.QueryString["cntry"]))
+            {
+                string Cntry;
+                Cntry = Request.QueryString["cntry"];
+
+                StateRepository StateList = new StateRepository();
+                int cntryid = Convert.ToInt32(Cntry);
+                ExtendedCollection<State> LS = StateList.GetStateList(cntryid);
+                State[] States = new State[LS.Count];
+                LS.CopyTo(States, 0);
+                string states = "";
+                for (int i = 0; i < States.GetLength(0); i++)
+                {
+                    if (i != 0)
+                        states += "|";
+                    states += States[i].ID.ToString() + "," + States[i].Name.ToString();
+                }
+                Response.Write(states);
+                
+            }
+                
         }
         /*
             private void MarkPrivateMessageAsOldMessage()

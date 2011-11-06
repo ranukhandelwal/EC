@@ -147,6 +147,51 @@ function handleResponseLostpasswordText()
 }
 //End ************************************************************************************************/
 
+//***********************************************************************************************/
+//Begin Check email exists - Send the email via GET
+//***********************************************************************************************/
+function getStatesList() {
+    var cntry = escape(document.getElementById("ctl00_MainContent_Cntry").value);
+    try {
+        http.open('Get', 'AjaxRequest/AjaxRequest.aspx?mode=getstates&cntry=' + cntry);
+        http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        http.onreadystatechange = handleResponseStateddl;
+        http.send(null);
+    }
+    catch (e) { alert("An error has occured."); }
+    finally { }
+}
+
+//Get the email response text
+function handleResponseStateddl() {
+
+    //$("#ddlstate").addClass('content12').text('Generating...');
+    var ddlstate;
+    
+    if ((http.readyState == 4) && (http.status == 200)) {
+        ddlstate = document.getElementById("ctl00_MainContent_ddlstate");
+        var response = "";
+        if(http.responseText != "")
+            var response = http.responseText.split("|");
+                    
+        var response_count = 0; 
+        response_count = response.length;
+        var statelist;
+        ddlstate.options.length = 0;
+        var i = 0;
+        for (i = 0; i < response_count; i++) {
+            statelist = response[i].split(",");
+            ddlstate.options[ddlstate.options.length] = new Option(statelist[1], statelist[0]);
+        }
+
+        //response.length = 0;
+        if (response_count == 0) {
+            ddlstate.options[ddlstate.options.length] = new Option("Other", 5000);
+        }
+
+    }
+}
+//End ************************************************************************************************/
 
  //***********************************************************************************************/
 //Begin Mark PM Message as Old when clicking the Subject - Send the pmid via GET
