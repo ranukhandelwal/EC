@@ -184,13 +184,22 @@ public partial class registration {
     protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldCntry;
     
     /// <summary>
-    /// State control.
+    /// ddlstate control.
     /// </summary>
     /// <remarks>
     /// Auto-generated field.
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlInputText State;
+    protected global::System.Web.UI.WebControls.DropDownList ddlstate;
+    
+    /// <summary>
+    /// RequiredFieldValidator1 control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
     
     /// <summary>
     /// City control.

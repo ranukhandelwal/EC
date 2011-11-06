@@ -42,12 +42,8 @@ public partial class registration : BasePage
             LC.CopyTo(Countries, 0);
             for (int i = 0; i < Countries.GetLength(0); i++)
             {
-                Cntry.Items.Add(Countries[i].Name);
+                Cntry.Items.Add(new ListItem(Countries[i].Name.ToString(), Countries[i].ID.ToString()));
             }
-
-            /*State List - Sample Code*/
-            StateRepository StateList = new StateRepository();
-            ExtendedCollection<State> LS = StateList.GetStateList(97);
 
             /*City List - Sample Code*/
             CityRepository CityList = new CityRepository();
@@ -79,13 +75,67 @@ public partial class registration : BasePage
             lblWarningMessage.Text = "Sorry! You cannot register a new account when you are logon.<br>If you want to register for a new account, you must logout first.";
         }
     }
+    /* Render function was written to override render function as state list is changed on client side
+     * Control validation was failing due to this.
+     * */
+    /*
+    protected override void Render(HtmlTextWriter writer)
+    {
+        StateRepository StateList = new StateRepository();
+        if (Cntry.SelectedValue != "none")
+        {
+            int cntryid = Convert.ToInt32(Cntry.SelectedValue.ToString());
+            //ExtendedCollection<State> LS = StateList.GetStateList(Int16.Parse(Request.Form[Cntry.UniqueID]));
+            ExtendedCollection<State> LS = StateList.GetStateList(cntryid);
+            State[] States = new State[LS.Count];
+            LS.CopyTo(States, 0);
+            ddlstate.Items.Clear();
+            for (int i = 0; i < States.GetLength(0); i++)
+            {
+                Page.ClientScript.RegisterForEventValidation(ddlstate1.UniqueID, States[i].Name);
 
-    
+            }
+        }
+        base.Render(writer);
+        
+    }
+    */
+
+    /*This is not used because if selected index change event is handled for this
+     * then it will require a page load. Ajax soultion is better.
+     * */
+
+ /*   protected void ddlCntry_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        StateRepository StateList = new StateRepository();
+        int cntryid = Convert.ToInt32(Cntry.SelectedValue);
+        //ExtendedCollection<State> LS = StateList.GetStateList(Int16.Parse(Request.Form[Cntry.UniqueID]));
+        ExtendedCollection<State> LS = StateList.GetStateList(cntryid);
+        State[] States = new State[LS.Count];
+        LS.CopyTo(States, 0);
+        ddlstate.Items.Clear();
+        for (int i = 0; i < States.GetLength(0); i++)
+        {
+            ddlstate.Items.Add(States[i].Name);
+        }
+    }*/
+
     public void Add_User(object s, EventArgs e)
     {
         Utility Util = new Utility();
 
-        if (Page.IsValid)
+        /*Page validation will fail because of change id list by client script
+         This validation failure need to be corrected.
+         To Do: A new class which will be derived from DropDownList and used for 
+         State DropDownList need to be used. attribute for validation are not set.
+         * This should be very simple implementation but was giving compilation error.
+         * Below links detail it.
+         * http://johanleino.wordpress.com/2009/11/17/cascadingdropdown-casues-invalid-postback-or-callback-argument-error/
+         http://johanleino.wordpress.com/2011/04/09/revisedcascadingdropdown-casues-invalid-postback-or-callback-argument-error/
+         * 
+         */
+        // if (Page.IsValid)
+        if(Request.Form[txtsecfield.UniqueID].ToString() == this.securecode)
         {
             
             UserRepository User = new UserRepository();
@@ -97,11 +147,9 @@ public partial class registration : BasePage
             User.LastName = Util.FormatTextForInput(Request.Form[Lastname.UniqueID]);
             User.SetSex = Request.Form[RadioButtonSex.UniqueID];
             User.CityID = 1;
-            User.StateID = 8;
-            User.CountryID = 18;
-            /*User.CityID = Int16.Parse(Request.Form[City.UniqueID]);
-            User.StateID = Int16.Parse(Request.Form[State.UniqueID]);
-            User.CountryID = Int16.Parse(Request.Form[Cntry.UniqueID]);*/
+            /*User.CityID = Int16.Parse(Request.Form[City.UniqueID]);*/
+            User.StateID = Int16.Parse(Request.Form[ddlstate.UniqueID]);
+            User.CountryID = Int16.Parse(Request.Form[Cntry.UniqueID]);
             User.DOB = DateTime.Parse(Date1.CalendarDateString);
             if (Int32.Parse(Request.Form[Newsletter.UniqueID]) == 1)
             {
@@ -283,8 +331,7 @@ public partial class registration : BasePage
         {
             
             JSLiteral.Text = Util.JSAlert("Invalid security code. Make sure you type it correctly.");
-            return;
-
+            
             lblinvalidsecode.Text = "Invalid security code. Make sure you type it correctly.";
             lblinvalidsecode.Visible = true;
              

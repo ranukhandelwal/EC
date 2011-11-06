@@ -1,10 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="true"
+﻿<%@ Page EnableEventValidation="false" Title="" Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="true"
     Inherits="registration" CodeBehind="registration.aspx.cs" %>
 
 <%@ MasterType VirtualPath="~/HeaderFooter.master" %>
 <%@ Register TagPrefix="ucl" TagName="sidemenu" Src="Control/sidemenu.ascx" %>
 <%@ Register TagPrefix="ucl" TagName="searchtab" Src="Control/searchtab.ascx" %>
 <%@ Register TagPrefix="ucl" TagName="CalendarDatePicker" Src="Control/DatePicker.ascx" %>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
     <link href="CSS/contentxd.css" rel="stylesheet" type="text/css" />
     <link href="CSS/thickbox.css" rel="stylesheet" type="text/css" />
@@ -186,8 +187,8 @@
                                                 </td>
                                                 <td width="74%" valign="top">
                                                     <div style="margin-bottom: 6px">
-                                                        <asp:DropDownList ID="Cntry" runat="server" onchange="ValLastname()" CssClass="ddl"
-                                                            AutoPostBack="false">
+                                                        <asp:DropDownList ID="Cntry" runat="server" onchange="getStatesList()"
+                                                            CssClass="ddl" AutoPostBack="false">
                                                             <asp:ListItem Value="none" Selected="True">Select a Country</asp:ListItem>
                                                         </asp:DropDownList>
                                                         <asp:RequiredFieldValidator runat="server" ID="RequiredFieldCntry" ControlToValidate="Cntry"
@@ -203,8 +204,13 @@
                                                 </td>
                                                 <td width="74%" valign="top">
                                                     <div style="margin-bottom: 6px">
-                                                        <input type="text" id="State" name="State" class="txtinput" size="20" runat="server"
-                                                            onfocus="this.style.backgroundColor='#FFFCF9'" onblur="this.style.backgroundColor='#ffffff'" />&nbsp;
+                                                        <asp:DropDownList  ID="ddlstate" name="ddlstate" runat="server" onchange="ValLastname()" CssClass="ddl"
+                                                            AutoPostBack="false">
+                                                            <asp:ListItem Value="none" Selected="True">Select State</asp:ListItem>
+                                                        </asp:DropDownList>
+                                                        <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator1" ControlToValidate="ddlstate"
+                                                            SetFocusOnError="true" CssClass="cred2" InitialValue="none" ErrorMessage="State is blank"
+                                                            Display="Dynamic"> </asp:RequiredFieldValidator>
                                                     </div>
                                                 </td>
                                             </tr>
