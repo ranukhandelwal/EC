@@ -62,7 +62,87 @@ public partial class registration : BasePage
         HideFormIfLogin.Visible = true;
         if (Page.IsPostBack)
         {
+            /*Handle case for error in registration form. Since State and City list are populated
+             by client script, same status need to be managed again. So populate dropdown and mark if
+             some selection was made by user*/
+            int CountryID, StateID, CityID;
             securecode = HttpContext.Current.Session["randomstruserreg"].ToString();
+
+            try
+            {
+                CountryID = Int16.Parse(Request.Form[Cntry.UniqueID]);
+            }
+            catch
+            {
+                CountryID = 0;
+            }
+
+            try
+            {
+                StateID = Int16.Parse(Request.Form[ddlstate.UniqueID]);
+            }
+            catch
+            {
+                StateID = 0;
+            }
+
+            try
+            {
+                CityID = Int16.Parse(Request.Form[ddlcity.UniqueID]);
+            }
+            catch
+            {
+                CityID = 0;
+            }
+
+            if(CountryID > 0)
+            {
+                /*State List - for the country selected before postback*/
+                StateRepository StateList = new StateRepository();
+                ExtendedCollection<State> LState = StateList.GetStateList(CountryID);
+                State[] States = new State[LState.Count];
+                LState.CopyTo(States, 0);
+
+                ddlstate.ClearSelection();
+                ddlstate.Items.Clear();
+                ddlstate.Enabled = true;
+                for (int i = 0; i < States.GetLength(0); i++)
+                {
+                    if (States[i].ID != StateID)
+                        ddlstate.Items.Add(new ListItem(States[i].Name.ToString(), States[i].ID.ToString()));
+                    else
+                    {
+                        ListItem l = new ListItem(States[i].Name.ToString(), States[i].ID.ToString());
+                        l.Selected = true;
+                        ddlstate.Items.Add(l);
+                    }
+                }
+
+                if (StateID > 0)
+                {
+                    /*City List - For the state selected*/
+                    CityRepository CityList = new CityRepository();
+                    ExtendedCollection<City> LCity = CityList.GetCityList(StateID);
+                    City[] Cities = new City[LCity.Count];
+                    LCity.CopyTo(Cities, 0);
+
+                    ddlcity.ClearSelection();
+                    ddlcity.Items.Clear();
+                    ddlcity.Enabled = true;
+                    
+                    for (int i = 0; i < Cities.GetLength(0); i++)
+                    {
+                        if (Cities[i].ID != CityID)
+                            ddlcity.Items.Add(new ListItem(Cities[i].Name.ToString(), Cities[i].ID.ToString()));
+                        else
+                        {
+                            ListItem l = new ListItem(Cities[i].Name.ToString(), Cities[i].ID.ToString());
+                            l.Selected = true;
+                            ddlcity.Items.Add(l);
+                        }
+                    }
+                }
+            }
         }
 
         //Check whether user is login, if login, hide the registration form.
@@ -146,11 +226,53 @@ public partial class registration : BasePage
             User.FirstName = Util.FormatTextForInput(Request.Form[Firstname.UniqueID]);
             User.LastName = Util.FormatTextForInput(Request.Form[Lastname.UniqueID]);
             User.SetSex = Request.Form[RadioButtonSex.UniqueID];
-            User.CityID = 1;
-            /*User.CityID = Int16.Parse(Request.Form[City.UniqueID]);*/
-            User.StateID = Int16.Parse(Request.Form[ddlstate.UniqueID]);
-            User.CountryID = Int16.Parse(Request.Form[Cntry.UniqueID]);
-            User.DOB = DateTime.Parse(Date1.CalendarDateString);
+            try
+            {
+                User.CityID = Int16.Parse(Request.Form[ddlcity.UniqueID]);
+            }
+            catch
+            {
+                lbvalenght.Text = "<br>Error: You must select a city.";
+                lbvalenght.Visible = true;
+                txtsecfield.Text = "";
+                return;
+            }
+
+            try
+            {
+                User.StateID = Int16.Parse(Request.Form[ddlstate.UniqueID]);
+            }
+            catch
+            {
+                lbvalenght.Text = "<br>Error: You must select a state.";
+                lbvalenght.Visible = true;
+                txtsecfield.Text = "";
+                return;
+            }
+
+            try
+            {
+                User.CountryID = Int16.Parse(Request.Form[Cntry.UniqueID]);
+            }
+            catch
+            {
+                lbvalenght.Text = "<br>Error: You must select a country.";
+                lbvalenght.Visible = true;
+                txtsecfield.Text = "";
+                return;
+            }
+
+            try
+            {
+                User.DOB = DateTime.Parse(Date1.CalendarDateString);
+            }
+            catch
+            {
+                lbvalenght.Text = "<br>Error: Date Selected is wrong.";
+                lbvalenght.Visible = true;
+                txtsecfield.Text = "";
+                return;
+            }
             if (Int32.Parse(Request.Form[Newsletter.UniqueID]) == 1)
             {
                 User.canEmailSend = true;
@@ -248,9 +370,25 @@ public partial class registration : BasePage
                 return;
             }
 
-            if (User.CountryID == null)
+            if (User.CountryID == 0)
             {
                 lbvalenght.Text = "<br>Error: You must select a country.";
+                lbvalenght.Visible = true;
+                txtsecfield.Text = "";
+                return;
+            }
+
+            if (User.StateID == 0)
+            {
+                lbvalenght.Text = "<br>Error: You must select a state.";
+                lbvalenght.Visible = true;
+                txtsecfield.Text = "";
+                return;
+            }
+
+            if (User.CityID == 0)
+            {
+                lbvalenght.Text = "<br>Error: You must select a city.";
                 lbvalenght.Visible = true;
                 txtsecfield.Text = "";
                 return;
