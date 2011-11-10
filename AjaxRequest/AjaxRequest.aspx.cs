@@ -43,6 +43,10 @@ namespace ExamCrazy.AjaxRequest
                     case "getstates":
                         GetStateList();
                         break;
+
+                    case "getcities":
+                        GetCityList();
+                        break;
                     /*
                 case "markpmold":
                     MarkPrivateMessageAsOldMessage();
@@ -188,6 +192,31 @@ namespace ExamCrazy.AjaxRequest
                 
             }
                 
+        }
+
+        private void GetCityList()
+        {
+            if (!string.IsNullOrEmpty(Request.QueryString["state"]) && Utility.IsQueryStringSecure(Request.QueryString["state"]))
+            {
+                string State;
+                State = Request.QueryString["state"];
+
+                CityRepository CityList = new CityRepository();
+                int stateid = Convert.ToInt32(State);
+                ExtendedCollection<City> LC = CityList.GetCityList(stateid);
+                City[] Cities = new City[LC.Count];
+                LC.CopyTo(Cities, 0);
+                string cities = "";
+                for (int i = 0; i < Cities.GetLength(0); i++)
+                {
+                    if (i != 0)
+                        cities += "|";
+                    cities += Cities[i].ID.ToString() + "," + Cities[i].Name.ToString();
+                }
+                Response.Write(cities);
+
+            }
+
         }
         /*
             private void MarkPrivateMessageAsOldMessage()

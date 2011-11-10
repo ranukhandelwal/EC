@@ -167,9 +167,11 @@ function handleResponseStateddl() {
 
     //$("#ddlstate").addClass('content12').text('Generating...');
     var ddlstate;
+    var ddlcity;
     
     if ((http.readyState == 4) && (http.status == 200)) {
         ddlstate = document.getElementById("ctl00_MainContent_ddlstate");
+        ddlcity = document.getElementById("ctl00_MainContent_ddlcity");
         var response = "";
         if(http.responseText != "")
             var response = http.responseText.split("|");
@@ -178,7 +180,10 @@ function handleResponseStateddl() {
         response_count = response.length;
         var statelist;
         ddlstate.options.length = 0;
+        ddlcity.options.length = 0;
         var i = 0;
+        ddlstate.options[0] = new Option("Select State");
+        ddlcity.options[0] = new Option("Select City");
         for (i = 0; i < response_count; i++) {
             statelist = response[i].split(",");
             ddlstate.options[ddlstate.options.length] = new Option(statelist[1], statelist[0]);
@@ -188,6 +193,59 @@ function handleResponseStateddl() {
         if (response_count == 0) {
             ddlstate.options[ddlstate.options.length] = new Option("Other", 5000);
         }
+
+        ddlstate.setAttribute("Disabled", "false");
+        ddlstate.disabled = false;
+        ddlcity.disabled = true;
+
+    }
+}
+//End ************************************************************************************************/
+
+//***********************************************************************************************/
+//Begin Check email exists - Send the email via GET
+//***********************************************************************************************/
+function getCitiesList() {
+    var state = escape(document.getElementById("ctl00_MainContent_ddlstate").value);
+    try {
+        http.open('Get', 'AjaxRequest/AjaxRequest.aspx?mode=getcities&state=' + state);
+        http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        http.onreadystatechange = handleResponseCityddl;
+        http.send(null);
+    }
+    catch (e) { alert("An error has occured."); }
+    finally { }
+}
+
+//Get the email response text
+function handleResponseCityddl() {
+
+    //$("#ddlstate").addClass('content12').text('Generating...');
+    var ddlcity;
+
+    if ((http.readyState == 4) && (http.status == 200)) {
+        ddlcity = document.getElementById("ctl00_MainContent_ddlcity");
+        var response = "";
+        if (http.responseText != "")
+            var response = http.responseText.split("|");
+
+        var response_count = 0;
+        response_count = response.length;
+        var citylist;
+        ddlcity.options.length = 0;
+        ddlcity.options[0] = new Option("Select City");
+        var i = 0;
+        for (i = 0; i < response_count; i++) {
+            citylist = response[i].split(",");
+            ddlcity.options[ddlcity.options.length] = new Option(citylist[1], citylist[0]);
+        }
+
+        //response.length = 0;
+        if (response_count == 0) {
+            ddlcity.options[ddlcity.options.length] = new Option("Other", 5000);
+        }
+
+        ddlcity.disabled = false;
 
     }
 }
