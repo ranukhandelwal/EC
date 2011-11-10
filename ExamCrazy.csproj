@@ -468,7 +468,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminFeed.master" />
-    <None Include="App_Code\BLL\ImageUploadManager.cs.exclude" />
+    <Compile Include="App_Code\BLL\ImageUploadManager.cs" />
     <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
     <None Include="css\.grids.css.swp" />
     <None Include="css\content.css.bak" />
@@ -489,7 +489,6 @@
     <Content Include="css\userinfo.css" />
     <Content Include="img\userinfobackground.gif" />
     <Content Include="img\userwall.gif" />
-    <Content Include="popupcalendarpicker.css" />
     <Content Include="Test\UserMasterTest.aspx" />
     <Content Include="UserMain.master" />
     <Content Include="admin\AddUpdate.aspx" />
@@ -828,7 +827,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>62627</DevelopmentServerPort>
+          <DevelopmentServerPort>55366</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
