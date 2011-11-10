@@ -31,6 +31,7 @@ namespace EC.BL
         {
             if (!ContentType.Equals("image/gif") &&
                 !ContentType.Equals("image/jpeg") &&
+                !ContentType.Equals("image/pjpeg") &&
                 !ContentType.Equals("image/jpg") &&
                 !ContentType.Equals("image/x-png") &&
                 !ContentType.Equals("image/png"))
