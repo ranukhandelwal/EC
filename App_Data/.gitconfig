@@ -1,0 +1,13 @@
+[user]
+	name = NKK
+	email = nkk@gmail.com
+
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[core]
+	editor = gvim.exe
+[merge]
+	tool = diff.exe
