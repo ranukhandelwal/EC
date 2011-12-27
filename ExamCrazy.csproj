@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -11,6 +12,11 @@
     <RootNamespace>ExamCrazy</RootNamespace>
     <AssemblyName>ExamCrazy</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +26,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,6 +35,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="msmdvbanet, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
@@ -42,9 +50,266 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="admin\AddArticle.aspx" />
+    <Content Include="admin\articlemanager.aspx" />
+    <Content Include="admin\confirmarticlecatedit.aspx" />
+    <Content Include="Article\addarticle.aspx" />
+    <Content Include="Article\articledetail.aspx" />
+    <Content Include="tinymce_editor\langs\en.js" />
+    <Content Include="tinymce_editor\license.txt" />
+    <Content Include="tinymce_editor\plugins\advhr\css\advhr.css" />
+    <Content Include="tinymce_editor\plugins\advhr\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\advhr\js\rule.js" />
+    <Content Include="tinymce_editor\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="tinymce_editor\plugins\advhr\rule.htm" />
+    <Content Include="tinymce_editor\plugins\advimage\css\advimage.css" />
+    <Content Include="tinymce_editor\plugins\advimage\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\advimage\image.htm" />
+    <Content Include="tinymce_editor\plugins\advimage\img\sample.gif" />
+    <Content Include="tinymce_editor\plugins\advimage\js\image.js" />
+    <Content Include="tinymce_editor\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="tinymce_editor\plugins\advlink\css\advlink.css" />
+    <Content Include="tinymce_editor\plugins\advlink\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\advlink\js\advlink.js" />
+    <Content Include="tinymce_editor\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="tinymce_editor\plugins\advlink\link.htm" />
+    <Content Include="tinymce_editor\plugins\autosave\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\bbcode\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\compat2x\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\compat2x\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\directionality\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\emotions\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\emotions\emotions.htm" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="tinymce_editor\plugins\emotions\js\emotions.js" />
+    <Content Include="tinymce_editor\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="tinymce_editor\plugins\example\dialog.htm" />
+    <Content Include="tinymce_editor\plugins\example\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\example\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\example\img\example.gif" />
+    <Content Include="tinymce_editor\plugins\example\js\dialog.js" />
+    <Content Include="tinymce_editor\plugins\example\langs\en.js" />
+    <Content Include="tinymce_editor\plugins\example\langs\en_dlg.js" />
+    <Content Include="tinymce_editor\plugins\fullpage\css\fullpage.css" />
+    <Content Include="tinymce_editor\plugins\fullpage\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\fullpage\fullpage.htm" />
+    <Content Include="tinymce_editor\plugins\fullpage\js\fullpage.js" />
+    <Content Include="tinymce_editor\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="tinymce_editor\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="tinymce_editor\plugins\iespell\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="tinymce_editor\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="tinymce_editor\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="tinymce_editor\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="tinymce_editor\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="tinymce_editor\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="tinymce_editor\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="tinymce_editor\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="tinymce_editor\plugins\inlinepopups\template.htm" />
+    <Content Include="tinymce_editor\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\layer\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\layer\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\media\css\content.css" />
+    <Content Include="tinymce_editor\plugins\media\css\media.css" />
+    <Content Include="tinymce_editor\plugins\media\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\media\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\media\img\flash.gif" />
+    <Content Include="tinymce_editor\plugins\media\img\flv_player.swf" />
+    <Content Include="tinymce_editor\plugins\media\img\quicktime.gif" />
+    <Content Include="tinymce_editor\plugins\media\img\realmedia.gif" />
+    <Content Include="tinymce_editor\plugins\media\img\shockwave.gif" />
+    <Content Include="tinymce_editor\plugins\media\img\trans.gif" />
+    <Content Include="tinymce_editor\plugins\media\img\windowsmedia.gif" />
+    <Content Include="tinymce_editor\plugins\media\js\embed.js" />
+    <Content Include="tinymce_editor\plugins\media\js\media.js" />
+    <Content Include="tinymce_editor\plugins\media\langs\en_dlg.js" />
+    <Content Include="tinymce_editor\plugins\media\media.htm" />
+    <Content Include="tinymce_editor\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\noneditable\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\pagebreak\css\content.css" />
+    <Content Include="tinymce_editor\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\pagebreak\img\pagebreak.gif" />
+    <Content Include="tinymce_editor\plugins\pagebreak\img\trans.gif" />
+    <Content Include="tinymce_editor\plugins\paste\blank.htm" />
+    <Content Include="tinymce_editor\plugins\paste\css\blank.css" />
+    <Content Include="tinymce_editor\plugins\paste\css\pasteword.css" />
+    <Content Include="tinymce_editor\plugins\paste\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\paste\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\paste\js\pastetext.js" />
+    <Content Include="tinymce_editor\plugins\paste\js\pasteword.js" />
+    <Content Include="tinymce_editor\plugins\paste\langs\en_dlg.js" />
+    <Content Include="tinymce_editor\plugins\paste\pastetext.htm" />
+    <Content Include="tinymce_editor\plugins\paste\pasteword.htm" />
+    <Content Include="tinymce_editor\plugins\preview\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\preview\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\preview\example.html" />
+    <Content Include="tinymce_editor\plugins\preview\jscripts\embed.js" />
+    <Content Include="tinymce_editor\plugins\preview\preview.html" />
+    <Content Include="tinymce_editor\plugins\print\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\print\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\safari\blank.htm" />
+    <Content Include="tinymce_editor\plugins\safari\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\safari\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\save\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\save\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="tinymce_editor\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="tinymce_editor\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="tinymce_editor\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="tinymce_editor\plugins\spellchecker\css\content.css" />
+    <Content Include="tinymce_editor\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\spellchecker\img\wline.gif" />
+    <Content Include="tinymce_editor\plugins\style\css\props.css" />
+    <Content Include="tinymce_editor\plugins\style\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\style\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\style\js\props.js" />
+    <Content Include="tinymce_editor\plugins\style\langs\en_dlg.js" />
+    <Content Include="tinymce_editor\plugins\style\props.htm" />
+    <Content Include="tinymce_editor\plugins\tabfocus\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\tabfocus\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\table\cell.htm" />
+    <Content Include="tinymce_editor\plugins\table\css\cell.css" />
+    <Content Include="tinymce_editor\plugins\table\css\row.css" />
+    <Content Include="tinymce_editor\plugins\table\css\table.css" />
+    <Content Include="tinymce_editor\plugins\table\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\table\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\table\js\cell.js" />
+    <Content Include="tinymce_editor\plugins\table\js\merge_cells.js" />
+    <Content Include="tinymce_editor\plugins\table\js\row.js" />
+    <Content Include="tinymce_editor\plugins\table\js\table.js" />
+    <Content Include="tinymce_editor\plugins\table\langs\en_dlg.js" />
+    <Content Include="tinymce_editor\plugins\table\merge_cells.htm" />
+    <Content Include="tinymce_editor\plugins\table\row.htm" />
+    <Content Include="tinymce_editor\plugins\table\table.htm" />
+    <Content Include="tinymce_editor\plugins\template\blank.htm" />
+    <Content Include="tinymce_editor\plugins\template\css\template.css" />
+    <Content Include="tinymce_editor\plugins\template\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\template\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\template\js\template.js" />
+    <Content Include="tinymce_editor\plugins\template\langs\en_dlg.js" />
+    <Content Include="tinymce_editor\plugins\template\template.htm" />
+    <Content Include="tinymce_editor\plugins\visualchars\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\del.htm" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="tinymce_editor\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="tinymce_editor\themes\advanced\about.htm" />
+    <Content Include="tinymce_editor\themes\advanced\anchor.htm" />
+    <Content Include="tinymce_editor\themes\advanced\charmap.htm" />
+    <Content Include="tinymce_editor\themes\advanced\color_picker.htm" />
+    <Content Include="tinymce_editor\themes\advanced\editor_template.js" />
+    <Content Include="tinymce_editor\themes\advanced\editor_template_src.js" />
+    <Content Include="tinymce_editor\themes\advanced\image.htm" />
+    <Content Include="tinymce_editor\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="tinymce_editor\themes\advanced\img\icons.gif" />
+    <Content Include="tinymce_editor\themes\advanced\js\about.js" />
+    <Content Include="tinymce_editor\themes\advanced\js\anchor.js" />
+    <Content Include="tinymce_editor\themes\advanced\js\charmap.js" />
+    <Content Include="tinymce_editor\themes\advanced\js\color_picker.js" />
+    <Content Include="tinymce_editor\themes\advanced\js\image.js" />
+    <Content Include="tinymce_editor\themes\advanced\js\link.js" />
+    <Content Include="tinymce_editor\themes\advanced\js\source_editor.js" />
+    <Content Include="tinymce_editor\themes\advanced\langs\en.js" />
+    <Content Include="tinymce_editor\themes\advanced\langs\en_dlg.js" />
+    <Content Include="tinymce_editor\themes\advanced\link.htm" />
+    <Content Include="tinymce_editor\themes\advanced\skins\default\content.css" />
+    <Content Include="tinymce_editor\themes\advanced\skins\default\dialog.css" />
+    <Content Include="tinymce_editor\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="tinymce_editor\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="tinymce_editor\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="tinymce_editor\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="tinymce_editor\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="tinymce_editor\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="tinymce_editor\themes\advanced\skins\default\ui.css" />
+    <Content Include="tinymce_editor\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="tinymce_editor\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="tinymce_editor\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="tinymce_editor\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="tinymce_editor\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="tinymce_editor\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="tinymce_editor\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="tinymce_editor\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="tinymce_editor\themes\advanced\source_editor.htm" />
+    <Content Include="tinymce_editor\themes\simple\editor_template.js" />
+    <Content Include="tinymce_editor\themes\simple\editor_template_src.js" />
+    <Content Include="tinymce_editor\themes\simple\img\icons.gif" />
+    <Content Include="tinymce_editor\themes\simple\langs\en.js" />
+    <Content Include="tinymce_editor\themes\simple\skins\default\content.css" />
+    <Content Include="tinymce_editor\themes\simple\skins\default\ui.css" />
+    <Content Include="tinymce_editor\themes\simple\skins\o2k7\content.css" />
+    <Content Include="tinymce_editor\themes\simple\skins\o2k7\img\button_bg.png" />
+    <Content Include="tinymce_editor\themes\simple\skins\o2k7\ui.css" />
+    <Content Include="tinymce_editor\tiny_mce.js" />
+    <Content Include="tinymce_editor\tiny_mce_popup.js" />
+    <Content Include="tinymce_editor\tiny_mce_src.js" />
+    <Content Include="tinymce_editor\utils\editable_selects.js" />
+    <Content Include="tinymce_editor\utils\form_utils.js" />
+    <Content Include="tinymce_editor\utils\mctabs.js" />
+    <Content Include="tinymce_editor\utils\validate.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminArticle.master.cs">
+      <DependentUpon>AdminArticle.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminArticle.master.designer.cs">
+      <DependentUpon>AdminArticle.master</DependentUpon>
+    </Compile>
     <Compile Include="AdminFeed.master.cs">
       <DependentUpon>AdminFeed.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -58,6 +323,13 @@
     </Compile>
     <Compile Include="adminMaster.Master.designer.cs">
       <DependentUpon>adminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AddArticle.aspx.cs">
+      <DependentUpon>AddArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AddArticle.aspx.designer.cs">
+      <DependentUpon>AddArticle.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\AddFeed.aspx.cs">
       <DependentUpon>AddFeed.aspx</DependentUpon>
@@ -86,6 +358,13 @@
     </Compile>
     <Compile Include="admin\adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\articlemanager.aspx.cs">
+      <DependentUpon>articlemanager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\articlemanager.aspx.designer.cs">
+      <DependentUpon>articlemanager.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\EditFeed.aspx.cs">
       <DependentUpon>EditFeed.aspx</DependentUpon>
@@ -151,6 +430,22 @@
     <Compile Include="App_Code\BLL\GetUserImage.cs" />
     <Compile Include="App_Code\BLL\PagerLink.cs" />
     <Compile Include="App_Code\BLL\PageTitle.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\BaseArticleCategory.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\ArticleCategoryRepository.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\BaseArticleObj.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\ArticleRepository.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\ProvideRalatedArticle.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\ProviderArticleCategory.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\ProviderArticleCategorySideMenu.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\ProviderArticleDetail.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\ProviderArticleDropdownList.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\ProviderArticleSearch.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\ProviderGetAllArticlebyAuthor.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\ProviderGetAllArticleCommentByUser.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\ProviderLast5ArticlePublishedByUser.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\ProviderNewestArticle.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\ProviderOtherArticleByThisAuthor.cs" />
+    <Compile Include="App_Code\BLL\Providers\Article\ProviderUnapprovedArticle.cs" />
     <Compile Include="App_Code\BLL\Providers\City\BaseCityObj.cs" />
     <Compile Include="App_Code\BLL\Providers\City\CityRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\Country\BaseCountryObj.cs" />
@@ -175,7 +470,7 @@
     <Compile Include="App_Code\Common\BaseUrl.cs" />
     <Content Include="App_Code\Common\BookmarkURL.cs" />
     <Compile Include="App_Code\Common\BuildAlphabetLinks.cs" />
-    <Content Include="App_Code\Common\Cache.cs" />
+    <Compile Include="App_Code\Common\Cache.cs" />
     <Content Include="App_Code\Common\DropdownListHelper.cs" />
     <Compile Include="App_Code\Common\EmailHelper.cs" />
     <Content Include="App_Code\Common\EventsCalendar.cs" />
@@ -184,6 +479,8 @@
     <Compile Include="App_Code\Common\Utilities\Utility.cs" />
     <Compile Include="App_Code\Common\Validator.cs" />
     <Compile Include="App_Code\DAL\DataAccessObject.cs" />
+    <Compile Include="App_Code\Model\Article.cs" />
+    <Compile Include="App_Code\Model\ArticleCategory.cs" />
     <Compile Include="App_Code\Model\City.cs" />
     <Compile Include="App_Code\Model\Comment.cs" />
     <Compile Include="App_Code\Model\Configuration.cs" />
@@ -206,6 +503,20 @@
     <Compile Include="App_Code\Security\UserNameAndEmailValidation.cs" />
     <Compile Include="App_Code\BLL\Providers\ExamCategory\BaseExamCategoryObj.cs" />
     <Compile Include="App_Code\BLL\Providers\ExamCategory\ExamCategoryRepository.cs" />
+    <Compile Include="Article\addarticle.aspx.cs">
+      <DependentUpon>addarticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Article\addarticle.aspx.designer.cs">
+      <DependentUpon>addarticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Article\articledetail.aspx.cs">
+      <DependentUpon>articledetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Article\articledetail.aspx.designer.cs">
+      <DependentUpon>articledetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Control\DatePicker.ascx.cs">
       <DependentUpon>DatePicker.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -464,6 +775,7 @@
     <Content Include="js\jquery.li-scroller.1.0.js" />
     <Content Include="js\jquery.syntax.min.js" />
     <Content Include="Master.Master" />
+    <Content Include="AdminArticle.master" />
     <None Include="SampleContent.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -813,7 +1125,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
