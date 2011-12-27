@@ -2410,7 +2410,7 @@ namespace EC.BL
            get { return DataAccess.GetIntScalarVal("GetUnApprovedRecipeCount"); }
        }
 #endregion
-/*
+
 #region Get article details, Update hit counter, Get Category list, Add, Update and Delete Article
 
        /// <summary>
@@ -2420,6 +2420,17 @@ namespace EC.BL
        public IDataReader GetArticleCategoryList
        {
            get { return DataAccess.GetFromReader("GetArticleCategoryList"); }
+       }
+
+       /// <summary>
+       /// Returns article category details.
+       /// </summary>
+       /// <returns></returns>
+       public IDataReader GetArticleCategoryDetails(int CatID)
+       {
+           SqlParameter prmCatID = new SqlParameter("@CATID", SqlDbType.Int, 4);
+           prmCatID.Value = CatID;
+           return DataAccess.GetFromReader("GetArticleCategoryDetails", prmCatID); 
        }
 
        /// <summary>
@@ -2526,7 +2537,7 @@ namespace EC.BL
            return DataAccess.Execute("AddArticleRating", prmID, prmRating);
        }
 
-        /*
+        
        /// <summary>
        /// Insert article
        /// </summary>
@@ -2694,7 +2705,7 @@ namespace EC.BL
        }
 
 #endregion
-*/
+
 #region Admin Announcement Manager return recipe, approve, update, delete and configuration
        /// <summary>
        /// Returns Admin Recipe Manager for Datagrid
@@ -2961,13 +2972,13 @@ namespace EC.BL
        }
 #endregion
         */
-        /*
+        
 #region Admin Update, Delete Article Category
        /// <summary>
-       /// Update Recipe Comment
+       /// Update Article Category
        /// </summary>
        /// <returns></returns>
-        public int UpdateArticleCategory(article category)
+        public int UpdateArticleCategory(ArticleCategory category)
        {
            SqlParameter prmCatId = new SqlParameter("@Catid", SqlDbType.Int, 4);
            prmCatId.Value = category.CatID;
@@ -2975,14 +2986,20 @@ namespace EC.BL
            SqlParameter prmCatName = new SqlParameter("@CatName", SqlDbType.VarChar, 100);
            prmCatName.Value = category.Category;
 
-           return DataAccess.Execute("UpdateArticleCategory", prmCatId, prmCatName);
+           SqlParameter prmCatDesc = new SqlParameter("@CatDesc", SqlDbType.VarChar, 200);
+           prmCatDesc.Value = category.CategoryDescription;
+
+           SqlParameter prmIsValid = new SqlParameter("@isValid", SqlDbType.Int);
+           prmIsValid.Value = category.isActive;
+
+           return DataAccess.Execute("UpdateArticleCategory", prmCatId, prmCatName, prmCatDesc, prmIsValid);
        }
 
        /// <summary>
        /// Delete Article Category
        /// </summary>
        /// <returns></returns>
-        public int AdminDeleteArticleCategory(article category)
+        public int DeactivateArticleCategory(ArticleCategory category)
        {
            SqlParameter prmCatId = new SqlParameter("@Catid", SqlDbType.Int, 4);
            prmCatId.Value = category.CatID;
@@ -2994,16 +3011,23 @@ namespace EC.BL
        /// Add New Article Category
        /// </summary>
        /// <returns></returns>
-       public int AdminAddNewArticleCategory(article category)
+        public int AdminAddNewArticleCategory(ArticleCategory category)
        {
+           int a;
            SqlParameter prmCatName = new SqlParameter("@CatName", SqlDbType.VarChar, 100);
            prmCatName.Value = category.Category;
 
-           return DataAccess.Execute("AdminAddNewArticleCategory", prmCatName);
+           SqlParameter prmCatDesc = new SqlParameter("@CatDesc", SqlDbType.VarChar, 200);
+           prmCatDesc.Value = category.CategoryDescription;
+
+           SqlParameter prmIsValid = new SqlParameter("@isValid", SqlDbType.Int);
+           prmIsValid.Value = category.isActive;
+
+           return a = DataAccess.Execute("AdminAddNewArticleCategory", prmCatName, prmCatDesc, prmIsValid);
        }
 
 #endregion
-        */
+        
 #region Admin Username and Password Validation
 
        /// <summary>
