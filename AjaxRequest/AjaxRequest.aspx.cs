@@ -10,7 +10,7 @@ using EC.Security;
 using EC.BL.Providers.User;
 using EC.Model;
 //using EC.BL.Providers.PrivateMessages;
-//using XDRecipe.BL.Providers.Events;
+//using EC.BL.Providers.Events;
 
 namespace ExamCrazy.AjaxRequest
 {
