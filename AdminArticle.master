@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/adminMaster.Master" AutoEventWireup="true"
+    CodeBehind="AdminArticle.master.cs" Inherits="ExamCrazy.AdminArticle" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="headerquerycss" runat="server">
+    <asp:ContentPlaceHolder ID="headerquerycss" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="PageName" runat="server">
+    <asp:ContentPlaceHolder ID="PageName" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="PageNameBox" runat="server">
+    <asp:ContentPlaceHolder ID="PageNameBox" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="MainContent" runat="server">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td width="21%" align="left" valign="top">
+                <!--Begin Admin Task Panel-->
+                <div style="margin-top: 20px; margin-left: 5px;">
+                    <div class="nifty">
+                        <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4">
+                        </b></b>
+                        <div class="dcntmenu">
+                            <span class="contadmin">Admin Tasks Menu</span></div>
+                    </div>
+                    <div class="contentdisplayadmin">
+                        <div class="contentdis5">
+                            <div class="divmenu2">
+                                <asp:Label ID="lbCountArticle" runat="server" />
+                                <br />
+                                <br />
+                                <span class="bluearrow2">»</span>&nbsp;<a title="Back to article category manager default view"
+                                    href="~/admin/articlemanager.aspx" runat="server">Default View</a>
+                                <br />
+                                <br />
+                                <span class="bluearrow2">»</span>&nbsp;<a id="A1" title="Back to article category manager default view"
+                                    href="~/admin/articlemanager.aspx" runat="server">Approved Articles</a>
+                                <br />
+                                <br />
+                                <span class="bluearrow2">»</span>&nbsp;<a id="A2" title="Back to article category manager default view"
+                                    href="~/admin/articlemanager.aspx" runat="server">UnApproved Articles</a>
+                                <br />
+                                <br />
+                                <asp:Image ID="img4" ImageAlign="AbsBottom" ImageUrl="~/images/addnewcategoryimg.gif"
+                                    AlternateText="Click this link to Add a New article Category" runat="server" />
+                                <a title="article category" href="~/admin/AddArticle.aspx" id="AddNewCategory" runat="server">
+                                    Add/Update Article Category</a>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <!--End Admin Task Panel-->
+                <div class="nifty">
+                    <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4">
+                    </b></b>
+                    <div class="dcntmenu">
+                        <span class="contadmin">Last 10 Updated Articles</span></div>
+                </div>
+                <div class="contentdisplayadmin">
+                    <div class="contentdis5">
+                        <div class="divmenu2">
+                            <asp:Repeater ID="LastUpdatedArticles" runat="server">
+                                <ItemTemplate>
+                                    <div class="dcnt2" style="margin-top: 2px;">
+                                        <span class="arrowgr">&raquo;</span>&nbsp;<a title="View article." href="javascript:void(0)"
+                                            onmouseover="Tip('Click to view<br><b>Author: </b><%# Eval("Author")%><br><b>Updated on:</b> <%# Eval("DateUpdated")%>', BGCOLOR, '#FFFBE1', BORDERCOLOR, '#acc6db')"
+                                            onmouseout="UnTip()" onclick="window.open('articlepreview.aspx?aid=<%# Eval("AID")%>','','width=700,height=850,scrollbars=yes,resizable=yes,status=no,left=180,top=180'); return false;"
+                                            class="content12"><%# Eval("Title")%></a>
+                                    </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </td>
+            <td width="79%" align="left" valign="top">
+                <div style="margin-left: 24px; margin-right: 25px;">
+                    <div style="padding-right: 25px; padding-bottom: 4px;">
+                        <asp:Panel ID="panel1" align="right" runat="server">
+                            <span class="content2"><b>Sort Category:</b></span><asp:DropDownList ID="CategoryName"
+                                runat="server" CssClass="cselect" AutoPostBack="false">
+                            </asp:DropDownList>
+                            <asp:Button runat="server" ID="GO" OnClick="GetCatName_Click" CssClass="submitadmin"
+                                Text="Display" />
+                        </asp:Panel>
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <asp:Label ID="lblthese" Font-Names="verdana" Font-Size="9" runat="server" />
+                        <asp:Label ID="lblunapproved2" Font-Names="verdana" Font-Size="9" runat="server" />
+                        <asp:Label ID="lblthese2" Font-Names="verdana" Font-Size="9" runat="server" />
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</asp:Content>
