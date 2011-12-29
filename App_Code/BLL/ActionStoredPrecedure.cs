@@ -2596,7 +2596,10 @@ namespace EC.BL
            SqlParameter prmSummary = new SqlParameter("@Summary", SqlDbType.VarChar, 500);
            prmSummary.Value = article.Summary;
 
-           return DataAccess.Execute("spUpdateArticle", prmUserID, prmID, prmTitle, prmContent, prmCatID, prmKeyword, prmSummary);
+           SqlParameter prmApproved = new SqlParameter("@Show", SqlDbType.Int, 4);
+           prmApproved.Value = article.Approved;
+
+           return DataAccess.Execute("spUpdateArticle", prmUserID, prmID, prmTitle, prmContent, prmCatID, prmKeyword, prmSummary, prmApproved);
        }
 
        /// <summary>
