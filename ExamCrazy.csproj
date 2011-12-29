@@ -51,8 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin\AddArticle.aspx" />
+    <Content Include="admin\approvedarticles.aspx" />
     <Content Include="admin\articlemanager.aspx" />
+    <Content Include="admin\articlepreview.aspx" />
     <Content Include="admin\confirmarticlecatedit.aspx" />
+    <Content Include="admin\updatearticle.aspx" />
     <Content Include="Article\addarticle.aspx" />
     <Content Include="Article\articledetail.aspx" />
     <Content Include="tinymce_editor\langs\en.js" />
@@ -359,12 +362,26 @@
     <Compile Include="admin\adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\approvedarticles.aspx.cs">
+      <DependentUpon>approvedarticles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\approvedarticles.aspx.designer.cs">
+      <DependentUpon>approvedarticles.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\articlemanager.aspx.cs">
       <DependentUpon>articlemanager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin\articlemanager.aspx.designer.cs">
       <DependentUpon>articlemanager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\articlepreview.aspx.cs">
+      <DependentUpon>articlepreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\articlepreview.aspx.designer.cs">
+      <DependentUpon>articlepreview.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\EditFeed.aspx.cs">
       <DependentUpon>EditFeed.aspx</DependentUpon>
@@ -407,6 +424,13 @@
     </Compile>
     <Compile Include="admin\Test\TestAdminMaster.aspx.designer.cs">
       <DependentUpon>TestAdminMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\updatearticle.aspx.cs">
+      <DependentUpon>updatearticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\updatearticle.aspx.designer.cs">
+      <DependentUpon>updatearticle.aspx</DependentUpon>
     </Compile>
     <Compile Include="AjaxRequest\AjaxRequest.aspx.cs">
       <DependentUpon>AjaxRequest.aspx</DependentUpon>
