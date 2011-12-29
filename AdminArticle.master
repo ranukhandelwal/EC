@@ -40,7 +40,7 @@
                                 <br />
                                 <br />
                                 <span class="bluearrow2">»</span>&nbsp;<a id="A1" title="Back to article category manager default view"
-                                    href="~/admin/articlemanager.aspx" runat="server">Approved Articles</a>
+                                    href="~/admin/approvedarticles.aspx" runat="server">Approved Articles</a>
                                 <br />
                                 <br />
                                 <span class="bluearrow2">»</span>&nbsp;<a id="A2" title="Back to article category manager default view"
