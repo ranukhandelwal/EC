@@ -362,3 +362,67 @@ margin-left: 221px;
 margin-bottom: 6px;
 margin-right: 35px;
 }
+
+/* Begin star rater CSS */
+.srating {
+    list-style:none;
+    margin: 3px;
+    padding:0px;
+    width: 100px;
+    height: 20px;
+    position: relative;
+    background: url(../images/strating.gif) top left repeat-x;		
+}
+.srating li {
+    padding:0px;
+    margin:0px;
+    /*\*/
+    float: left;
+    /* */
+}
+.srating li a {
+    display:block;
+    width:20px;
+    height: 20px;
+    text-decoration: none;
+    text-indent: -9000px;
+    z-index: 20;
+    position: absolute;
+    padding: 0px;
+    background-image:none;	
+}
+.srating li a:hover {
+    background: url(../images/strating.gif) 0px -20px repeat-x;
+    z-index: 1;
+    left: 0px;
+}
+.srating a.onestar {
+    left: 0px;
+}
+.srating a.onestar:hover {
+    width:20px;
+}
+.srating a.twostars {
+    left:20px;
+}
+.srating a.twostars:hover {
+    width: 40px;
+}
+.srating a.threestars:hover {
+    width: 60px;
+}
+.srating a.threestars {
+    left: 40px;
+}
+.srating a.fourstars {
+    left: 60px;
+}	
+.srating a.fourstars:hover {
+    width: 80px;
+}
+.srating a.fivestars {
+    left: 80px;
+}
+.srating a.fivestars:hover {
+    width: 100px;
+}
