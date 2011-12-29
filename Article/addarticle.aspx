@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="true"
-    CodeBehind="addarticle.aspx.cs" Inherits="EC.Article.addarticle" %>
+    CodeBehind="addarticle.aspx.cs" Inherits="EC.Article.addarticle" ValidateRequest="false"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../CSS/cssreciaspx.css" rel="stylesheet" type="text/css" />
