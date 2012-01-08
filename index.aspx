@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LeftRight.master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="ExamCrazy._default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/LeftRight.master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="ExamCrazy._default" %>
 <%@ MasterType VirtualPath="~/LeftRight.master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
