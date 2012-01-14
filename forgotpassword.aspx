@@ -19,7 +19,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="AddToBreadCrum" runat="server">
   <div class="breadCrumsMenu unit">
-                            <a class="unit" href="default.aspx" title="home">Home</a>
+                            <a class="unit" href="index.aspx" title="home">Home</a>
                             <div class="breadArrow">
                                 &gt;</div>
                             ForgotPassword</div>
@@ -27,7 +27,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div style="margin-left: 10px; margin-bottom: 12px; margin-right: 12px; background-color: #FFF9EC;
         margin-top: 0px;">
-        &nbsp;&nbsp;<a href="default.aspx" class="dsort" title="Back to recipe homepage">Home</a>&nbsp;<span
+        &nbsp;&nbsp;<a href="index.aspx" class="dsort" title="Back to recipe homepage">Home</a>&nbsp;<span
             class="bluearrow">»</span>&nbsp; <span class="content2">You are here: Password recovery
                 page</span>
     </div>
