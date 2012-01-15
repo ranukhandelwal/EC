@@ -46,7 +46,7 @@ namespace EC.BL.Providers.User
                 if (CookieLoginHelper.IsLoginSessionExists)
                 {
                     //Get int userid
-                    UID = Blogic.GetUserID(CookieLoginHelper.UserSessionUserName.ToString(), CookieLoginHelper.UserSessionPassword.ToString());
+                    UID = Blogic.GetUserID(CookieLoginHelper.UserName.ToString(), CookieLoginHelper.UserPassword.ToString());
                 }
 
                 return UID;
@@ -72,7 +72,7 @@ namespace EC.BL.Providers.User
                 //Get the user credential in session if user did not check remember me.
                 if (CookieLoginHelper.IsLoginSessionExists)
                 {
-                    User_Name = CookieLoginHelper.UserSessionUserName.ToString();
+                    User_Name = CookieLoginHelper.UserName.ToString();
                 }
 
                 return User_Name;
@@ -98,7 +98,7 @@ namespace EC.BL.Providers.User
                 //Get the user credential in session if user did not check remember me.
                 if (CookieLoginHelper.IsLoginSessionExists)
                 {
-                    User_Type = CookieLoginHelper.UserSessionType.ToString();
+                    User_Type = CookieLoginHelper.UserType.ToString();
                 }
 
                 return User_Type;
@@ -123,7 +123,7 @@ namespace EC.BL.Providers.User
                 //Get the user credential in session if user did not check remember me.
                 if (CookieLoginHelper.IsLoginSessionExists)
                 {
-                    UEmail = Blogic.GetUserEmail(CookieLoginHelper.UserSessionUserName.ToString(), CookieLoginHelper.UserSessionPassword.ToString());
+                    UEmail = Blogic.GetUserEmail(CookieLoginHelper.UserName.ToString(), CookieLoginHelper.UserPassword.ToString());
                 }
                 
                 return UEmail;
