@@ -58,6 +58,7 @@
     <Content Include="admin\updatearticle.aspx" />
     <Content Include="Article\addarticle.aspx" />
     <Content Include="Article\articledetail.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="tinymce_editor\langs\en.js" />
     <Content Include="tinymce_editor\license.txt" />
     <Content Include="tinymce_editor\plugins\advhr\css\advhr.css" />
@@ -597,13 +598,6 @@
     <Compile Include="Control\UserInfo.ascx.designer.cs">
       <DependentUpon>UserInfo.ascx</DependentUpon>
     </Compile>
-    <Compile Include="default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="default.aspx.designer.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Error\ExamCrazy-ErrorPage.aspx.cs">
       <DependentUpon>ExamCrazy-ErrorPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -649,6 +643,12 @@
     <Compile Include="imgsecuritycode.aspx.cs">
       <DependentUpon>imgsecuritycode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Job.master.cs">
       <DependentUpon>Job.master</DependentUpon>
@@ -829,7 +829,6 @@
     <Content Include="UserMain.master" />
     <Content Include="admin\AddUpdate.aspx" />
     <Content Include="Control\Header.ascx" />
-    <Content Include="default.aspx" />
     <Content Include="Error\css\content.css" />
     <Content Include="Error\css\contentxd.css" />
     <Content Include="Error\css\cssreciaspx.css" />
