@@ -1,7 +1,7 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="true"
     CodeBehind="LeftRight.master.cs" Inherits="ExamCrazy.LeftRight" %>
-    <%@ MasterType VirtualPath="~/HeaderFooter.master" %>
 
+<%@ MasterType VirtualPath="~/HeaderFooter.master" %>
 <%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -9,7 +9,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
     <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server">
-            </asp:ContentPlaceHolder>
+    </asp:ContentPlaceHolder>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
     <h3>
@@ -119,7 +119,9 @@
     </div>
     <div class=" size1of4 unit">
         <div class="rightPanel unit">
-            <ucl:login ID="login" runat="server" />
+            <asp:Panel ID="rightloginpanel" runat="server">
+                <ucl:login ID="login" runat="server" />
+            </asp:Panel>
             <div class="rightAdd unit">
                 <img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" />
             </div>

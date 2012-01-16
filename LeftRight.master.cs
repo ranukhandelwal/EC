@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using EC.Security;
 
 namespace ExamCrazy
 {
@@ -17,6 +18,10 @@ namespace ExamCrazy
             if(this.HeaderFilter != null)
                 Master.HeaderFilter = this.HeaderFilter;
             login.loginpanelno = 1;
+
+            if (Authentication.Authenticate)
+                rightloginpanel.Visible = false;
+
 
         }
     }
