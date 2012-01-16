@@ -72,11 +72,11 @@ public partial class Login : System.Web.UI.UserControl
                 this.Context.Response.Redirect("redirectionpage.aspx?mode=suspended&ReturnURL=" + this.Context.Request.Url.PathAndQuery);
             }
              */
-            /*
-            if ((this.rememberme.Checked))
-            {
-             
-                if ((Request.Browser.Cookies))
+            
+            /*if ((this.rememberme.Checked))
+            {*/
+
+                if ((CookieLoginHelper.IsCookieSupported))
                 {
                     CookieLoginHelper.CreateLoginCookie(uname, upass);
                 }
@@ -86,12 +86,12 @@ public partial class Login : System.Web.UI.UserControl
                     CookieLoginHelper.CreateLoginSession(uname, upass);
                 }
               
-            }
+            /*}
             else 
-            {*/
+            {
             //If the users did not check the remember me checkbox, store login credential in session.
             CookieLoginHelper.CreateLoginSession(uname, upass);
-            /*
+            
             }
             */
             this.Context.Response.Redirect("~/User/" + uname);
@@ -120,7 +120,7 @@ public partial class Login : System.Web.UI.UserControl
         //loginpanel1.Visible = true;
         //DisplayUserInfo.Visible = false;
 
-        this.Context.Response.Redirect("/default.aspx");
+        this.Context.Response.Redirect("/index.aspx");
     }
 
     private void ShowInvalidErrorMsg()

@@ -34,20 +34,7 @@ namespace EC.BL.Providers.User
             {
                 int UID = 0;
 
-                //Check if the cookies with name ECUserInfo exist on user's machine
-                if (CookieLoginHelper.IsLoginCookieExists)
-                {
-                    //Get int userid
-                    //Decrypt the username stored in the cookie so it match to our database record.
-                    UID = Blogic.GetUserID(Encryption.Decrypt(CookieLoginHelper.LoginCookie.Values[0].ToString()), CookieLoginHelper.LoginCookie.Values[1].ToString());
-                }
-
-                //Get the user credential in session if user did not check remember me.
-                if (CookieLoginHelper.IsLoginSessionExists)
-                {
-                    //Get int userid
-                    UID = Blogic.GetUserID(CookieLoginHelper.UserName.ToString(), CookieLoginHelper.UserPassword.ToString());
-                }
+                UID = Blogic.GetUserID(CookieLoginHelper.UserName, CookieLoginHelper.UserPassword);
 
                 return UID;
             }
@@ -62,18 +49,7 @@ namespace EC.BL.Providers.User
             {
                 string User_Name = "";
 
-                //Check if the cookies with name ECUserInfo exist on user's machine
-                if (CookieLoginHelper.IsLoginCookieExists)
-                {
-                    //Decrypt the username stored in the cookie so it will show the decrypted value.
-                    User_Name = Encryption.Decrypt(CookieLoginHelper.LoginCookie.Values[0].ToString());
-                }
-
-                //Get the user credential in session if user did not check remember me.
-                if (CookieLoginHelper.IsLoginSessionExists)
-                {
-                    User_Name = CookieLoginHelper.UserName.ToString();
-                }
+                User_Name = CookieLoginHelper.UserName;
 
                 return User_Name;
             }
@@ -88,18 +64,7 @@ namespace EC.BL.Providers.User
             {
                 string User_Type = "__ano__";
 
-                //Check if the cookies with name ECUserInfo exist on user's machine
-                if (CookieLoginHelper.IsLoginCookieExists)
-                {
-                    //Decrypt the username stored in the cookie so it will show the decrypted value.
-                    User_Type = Encryption.Decrypt(CookieLoginHelper.LoginCookie.Values[2].ToString());
-                }
-
-                //Get the user credential in session if user did not check remember me.
-                if (CookieLoginHelper.IsLoginSessionExists)
-                {
-                    User_Type = CookieLoginHelper.UserType.ToString();
-                }
+                User_Type = CookieLoginHelper.UserType;
 
                 return User_Type;
             }
@@ -114,18 +79,8 @@ namespace EC.BL.Providers.User
             {
                 string UEmail = "";
 
-                //Check if the cookies with name ECUserInfo exist on user's machine
-                if (CookieLoginHelper.IsLoginCookieExists)
-                {
-                    UEmail = Blogic.GetUserEmail(Encryption.Decrypt(CookieLoginHelper.LoginCookie.Values[0].ToString()), CookieLoginHelper.LoginCookie.Values[1].ToString());
-                }
+                UEmail = CookieLoginHelper.UserEmail;
 
-                //Get the user credential in session if user did not check remember me.
-                if (CookieLoginHelper.IsLoginSessionExists)
-                {
-                    UEmail = Blogic.GetUserEmail(CookieLoginHelper.UserName.ToString(), CookieLoginHelper.UserPassword.ToString());
-                }
-                
                 return UEmail;
             }
         }

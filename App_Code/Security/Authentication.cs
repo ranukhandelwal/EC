@@ -44,42 +44,24 @@ namespace EC.Security
             {
                 bool _bShowHideLogin = false;
 
-                //Check if the users browser support cookies
-                if (HttpContext.Current.Request.Browser.Cookies)
+                if ((CookieLoginHelper.UserName != null) && (CookieLoginHelper.UserPassword != null))
                 {
-                    //Check if the cookie with name "ECUserInfo" exist on the users machine
-                    if (CookieLoginHelper.IsLoginCookieExists)
+                    //Check user status. If the user account is suspended, then redirect. 
+                    //Decrypt the username stored in the cookie so it match to our database record.
+                    if (!Blogic.IsUserActive(CookieLoginHelper.UserName, Encryption.Encrypt(CookieLoginHelper.UserPassword)))
                     {
-                        //Check user status. If the user account is suspended, then redirect. 
-                        //Decrypt the username stored in the cookie so it match to our database record.
-                        if (!Blogic.IsUserActive(Encryption.Decrypt(CookieLoginHelper.LoginCookie.Values[0].ToString()), CookieLoginHelper.LoginCookie.Values[1].ToString()))
-                        {
-                            CookieLoginHelper.RemoveCookie();
-                            CookieLoginHelper.RemoveLoginSession();
+                        CookieLoginHelper.RemoveCookie();
+                        CookieLoginHelper.RemoveLoginSession();
 
-                            HttpContext.Current.Response.Redirect("redirectionpage.aspx?mode=suspended&ReturnURL=" + HttpContext.Current.Request.Url.PathAndQuery);
-                        }
-
-                        //This property is called to hide/show the login form in the master page
-                        //Index 0 is the username and index 1 is the password.
-                        ////Decrypt the username stored in the cookie so it match to our database record.
-                        _bShowHideLogin = Authentication.Validate(Encryption.Decrypt(CookieLoginHelper.LoginCookie.Values[0].ToString()), CookieLoginHelper.LoginCookie.Values[1].ToString());
-                    }
-                }
-
-                //Get the user credential in session if user did not check remember me.
-                if (CookieLoginHelper.IsLoginSessionExists)
-                {
-                    //Check user status. If the user account is suspended, then redirect.
-                    if (!Blogic.IsUserActive(CookieLoginHelper.UserSessionUserName.ToString(), CookieLoginHelper.UserSessionPassword.ToString()))
-                    {
                         HttpContext.Current.Response.Redirect("redirectionpage.aspx?mode=suspended&ReturnURL=" + HttpContext.Current.Request.Url.PathAndQuery);
                     }
 
-                    //This property is called to hide the login form in the master page
-                    _bShowHideLogin = Authentication.Validate(CookieLoginHelper.UserSessionUserName.ToString(), CookieLoginHelper.UserSessionPassword.ToString());
+                    //This property is called to hide/show the login form in the master page
+                    //Index 0 is the username and index 1 is the password.
+                    ////Decrypt the username stored in the cookie so it match to our database record.
+                    _bShowHideLogin = Authentication.Validate(CookieLoginHelper.UserName, Encryption.Encrypt(CookieLoginHelper.UserPassword));
                 }
-
+                
                 return _bShowHideLogin;
             }
         }
@@ -98,7 +80,7 @@ namespace EC.Security
                 {
                     //If the login credential cookie found on the users machine. 
                     //Let's decrypt so it match to our database record.
-                    if (Blogic.UserLoginVerify(Encryption.Decrypt(CookieLoginHelper.LoginCookie.Values[0].ToString()), CookieLoginHelper.LoginCookie.Values[1].ToString()))
+                    if (Blogic.UserLoginVerify(CookieLoginHelper.UserName, Encryption.Encrypt(CookieLoginHelper.UserPassword)))
                     {
                         AllowAccess = true;
                     }
