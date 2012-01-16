@@ -27,6 +27,11 @@ namespace ExamCrazy
                 UC.CopyTo(updates, 0);
                 RepeaterID.DataSource = updates;
                 RepeaterID.DataBind();
+                if ((HttpContext.Current.Request.Browser.Cookies) && (HttpContext.Current.Request.Cookies["SupportCookies"] == null))
+                {
+                    HttpCookie c = new HttpCookie("SupportCookies", "true");
+                    HttpContext.Current.Response.Cookies.Add(c);
+                }
 
             }
 

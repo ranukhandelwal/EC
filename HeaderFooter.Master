@@ -1,18 +1,16 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HeaderFooter.master.cs" Inherits="ExamCrazy.HeaderFooter" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HeaderFooter.master.cs"
+    Inherits="ExamCrazy.HeaderFooter" %>
+
 <%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
 <%@ Register TagPrefix="ucl" TagName="HeaderCtr" Src="~/Control/Header.ascx" %>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Exam Crazy</title>
-    
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="text/javascript" src="<%# ResolveUrl("~/js/jquery.min.js")%>"></script>
     <script type="text/javascript" src="<%# ResolveUrl("~/js/drop_menu.js")%>"></script>
-    <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>    
-    
+    <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
     <link href="css/grids.css" rel="stylesheet" type="text/css" />
     <link href="css/libraries.css" rel="stylesheet" type="text/css" />
     <link href="css/mod.css" rel="stylesheet" type="text/css" />
@@ -21,28 +19,21 @@
     <link href="CSS/thickbox.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-
-
-
     <script type="text/javascript" src="<%# ResolveUrl("~/js/jquery-1.6.1.min.js")%>"></script>
-
     <script type="text/javascript" src="<%# ResolveUrl("~/js/jquery.li-scroller.1.0.js")%>"></script>
-
     <!-- Syntax hl -->
     <link rel="stylesheet" href="css/li-scroller.css" type="text/css" media="screen" />
-
     <script type="text/javascript">
-        $(function() {
+        $(function () {
             $("ul#ticker01").liScroll();
             $("ul#ticker02").liScroll({ travelocity: 0.15 });
             //Syntax
 
         });
     </script>
-
 </head>
 <body>
-<script type="text/javascript" src="<%=ResolveUrl("~/js/wz_tooltip.js")%>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/js/wz_tooltip.js")%>"></script>
     <form id="form1" runat="server">
     <div class="wrapper">
         <!-- ===== PAGE DIV START HERE===== -->
@@ -50,9 +41,9 @@
             <!-- ===== HEADER DIV START HERE===== -->
             <div class="header unit">
                 <div class="socailLinks line">
-                <div class="unit size3of4 userLogin">
-                    <ucl:login ID="login" runat="server" />
-                </div>
+                    <div class="unit size3of4 userLogin">
+                        <ucl:login ID="login" runat="server" />
+                    </div>
                     <div class="unitExt size1of4">
                         <p>
                             Follow Us</p>
@@ -69,13 +60,12 @@
                 </div>
                 <div class="unit addvertise">
                     <a href="#" title="add">
-                        <img src="~/img/add1.gif" alt="Adds" title="adds" runat="server"/></a></div>
+                        <img src="~/img/add1.gif" alt="Adds" title="adds" runat="server" /></a></div>
                 <div class="unit search">
                     <input type="text" name="search" value="Search" />
-                    <input type="image" src="~/img/searchbtn.gif" class="btn" value="" runat="server"/>
+                    <input type="image" src="~/img/searchbtn.gif" class="btn" value="" runat="server" />
                 </div>
                 <ucl:HeaderCtr ID="HeaderCtrl" runat="server" />
-                
             </div>
             <!-- ===== HEADER DIV END HERE===== -->
             <!-- ===== BreadCrum DIV START HERE===== -->
@@ -96,75 +86,60 @@
                     <div class="updateNews unit">
                         <div class="unit news">
                             <a href="#" title="update">
-                                <img src="~/img/updates-News.png" alt="" title="update" runat="server"/></a></div>
-                                <asp:Repeater ID="RepeaterID" runat="server">
-                                <HeaderTemplate><ul id="ticker01"></HeaderTemplate>
-                                <ItemTemplate>
-                                    <li><a href="<%#DataBinder.Eval(Container.DataItem, "link")%>" title="<%#DataBinder.Eval(Container.DataItem, "title")%>" ><%#DataBinder.Eval(Container.DataItem, "title")%></a></li>
-                                    
-                                </ItemTemplate>
-                                <FooterTemplate></ul></FooterTemplate>
-                        
-                                </asp:Repeater>
+                                <img src="~/img/updates-News.png" alt="" title="update" runat="server" /></a></div>
+                        <asp:Repeater ID="RepeaterID" runat="server">
+                            <HeaderTemplate>
+                                <ul id="ticker01">
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <li><a href="<%#DataBinder.Eval(Container.DataItem, "link")%>" title="<%#DataBinder.Eval(Container.DataItem, "title")%>">
+                                    <%#DataBinder.Eval(Container.DataItem, "title")%></a></li>
+                            </ItemTemplate>
+                            <FooterTemplate>
+                                </ul></FooterTemplate>
+                        </asp:Repeater>
                     </div>
-                                   
-                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                            </asp:ContentPlaceHolder>
-                    
-                    
-                
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
                 </div>
-        <div class="footer line">
-            <div class="footerContent">
-                <div class="size1of3 unit">
-                    <div class=" footerNavigation last">
-                        <h3>
-                            Universities/Colleges</h3>
-                        <ul>
-                            <li><span class="icon"></span><a href="#" title="Coal India">Engineering Colleges (ME/BE)</a>
-                            </li>
-                            <li><span class="icon"></span><a href="#" title="NHPC">Management College (MBA/BBA)</a>
-                            </li>
-                            <li><span class="icon"></span><a href="#" title="NHPC">MCA and BCA Colleges</a>
-                            </li>
-                            <li><span class="icon"></span><a href="#" title="NHPC">Apply for College Admissions</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="size1of3 unit">
-                    <div class=" footerNavigation">
-                        <h3>
-                            Examination</h3>
-                        <ul>
-                            <li><span class="icon"></span><a href="#" title="Coal India">AIEEE</a> </li>
-                            <li><span class="icon"></span><a href="#" title="NHPC">MBA</a> </li>
-                            <li><span class="icon"></span><a href="#" title="NHPC">GATE</a> </li>
-                            <li><span class="icon"></span><a href="#" title="NHPC">IES</a> </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="size1of3 unit">
-                    <div class="footerNavigation">
-                        <h3>
-                            Main Links</h3>
-                        <ul>
-                            <li><span class="icon"></span><a href="#" title="Coal India">About us</a> </li>
-                            <li><span class="icon"></span><a href="#" title="NHPC">Privacy Policy</a> </li>
-                            <li><span class="icon"></span><a href="#" title="NHPC">Terms and Conditions</a>
-                            
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
+                <div class="footer line">
+                    <div class="footerContent">
+                        <div class="size1of3 unit">
+                            <div class=" footerNavigation last">
+                                <h3>
+                                    Universities/Colleges</h3>
+                                <ul>
+                                    <li><span class="icon"></span><a href="#" title="Coal India">Engineering Colleges (ME/BE)</a>
+                                    </li>
+                                    <li><span class="icon"></span><a href="#" title="NHPC">Management College (MBA/BBA)</a>
+                                    </li>
+                                    <li><span class="icon"></span><a href="#" title="NHPC">MCA and BCA Colleges</a>
+                                    </li>
+                                    <li><span class="icon"></span><a href="#" title="NHPC">Apply for College Admissions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="size1of3 unit">
+                            <div class=" footerNavigation">
+                                <h3>
+                                    Examination</h3>
+                                <ul>
+                                    <li><span class="icon"></span><a href="#" title="Coal India">AIEEE</a> </li>
+                                    <li><span class="icon"></span><a href="#" title="NHPC">MBA</a> </li>
+                                    <li><span class="icon"></span><a href="#" title="NHPC">GATE</a> </li>
+                                    <li><span class="icon"></span><a href="#" title="NHPC">IES</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="size1of3 unit">
+                            <div class="footerNavigation">
+                                <h3>
+                                    Main Links</h3>
+                                <ul>
+                                    <li><span class="icon"></span><a href="#" title="Coal India">About us</a> </li>
+                                    <li><span class="icon"></span><a href="#" title="NHPC">Privacy Policy</a> </li>
+                                    <li><span class="icon"></span><a href="#" title="NHPC">Terms and Conditions</a>
                                     </li>
                                     <li><span class="icon"></span><a href="#" title="NHPC">Contact us</a> </li>
                                     <li><span class="icon"></span><a href="#" title="NHPC">Site Map</a> </li>
