@@ -32,6 +32,11 @@ public partial class registration : BasePage
     {
         Master.PAGEID = 1;
         Page.Header.DataBind();
+        Page.Header.Title = "ExamCrazy.com New Registration page";
+        HtmlMeta metaTag = new HtmlMeta();
+        metaTag.Name = "Keywords";
+        metaTag.Content = "ExamCrazy, Registration, Books, Online tests";
+        this.Header.Controls.Add(metaTag);
         if (!Page.IsPostBack)
         {
             /*Countries Drop Down List Generation*/
