@@ -1,0 +1,29 @@
+﻿.discussion{ background:#fcfcfc; margin-bottom: 10px; width:100%;}
+.discussion h3{padding:5px 0px 5px 10px;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;background: url(../img/headingbackground.gif) repeat-x; height:18px;}
+.discussion h3 span.arrows{ float:right;background:url(../img/sprite.png) no-repeat; width:14px; height:14px; margin-left:10px;margin-right:10px;background-position:-87px -54px;}
+.discussion p{ color:#606060; font-size:12px; font-weight:bold; padding:10px 0px 0px 10px; }
+.post{margin:10px; padding:0px 0px 10px 0px; border-bottom:1px dashed #c2c2c2;}
+
+.post h4{ color:#216895; font-size:12px; padding:0px;}
+.post h5{ color:#bdbebe; font-size:11px; font-style:italic;padding:0px;}
+.post p{ color:#606060;font-size:11px;padding:0px; font-weight:normal;}
+
+.viewMore{ margin:0px 10px 10px; }
+.viewMore a{ text-decoration:none; font-size:11px; font-weight:bold; color:#F00 !important; float:right;}
+
+.comments{ padding:10px;}
+.comments ul{margin:0px; padding:0px; list-style:none;}
+.comments ul li{list-style:none; margin:15px 0px 0px 0px; font-size:12px; float:left; font-family:Verdana, Geneva, sans-serif; width:100%;}
+.comments label{float:left; width:130px; color:#606060; text-align:left; padding:10px 0px;}
+.comments input{float:left; border: solid 1px #cdcdcd; width:350px; height:25px; padding:2px 0px 0px 3px;}
+.comments textarea{float:left; border: solid 1px #cdcdcd; width:350px; height:100px; padding:2px 0px 0px 3px;}
+.comments input.submit{width:120px; height:30px; padding:0px; color:#7d7b7b; font-size:16px; font-weight:bold;}
+
+.product{ background:#f7f9fa; border: solid 1px #cdcdcd; margin-bottom:10px; }
+.product ul{ padding:0px; }
+.product ul li{ list-style:none; padding:10px 10px; }
+.product ul li a{ text-decoration:none; font-size:11px; color:#494949;}
+.product ul li span{float:left; margin:0px 10px 0px 0px; color:#F00; font-size:12px;}
+.product ul li span.icon{ float:left; background:url(../img/sprite.png) no-repeat; width:5px; height:5px;margin:5px;background-position:-124px -57px;}
+.product ul li.add{ background:#FFF; margin:10px 0px 0px 0px; }
+.product ul li.borderbottom{ background:url(../img/bottombackground.gif) no-repeat; background-position: 8px 10px; }
