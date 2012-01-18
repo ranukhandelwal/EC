@@ -25,7 +25,7 @@ namespace ExamCrazy.Control
             HtmlLink csslink = new HtmlLink();
             if (Page.Header.FindControl("userinfo") == null)
             {
-                csslink.ID = "cssreciaspx";
+                csslink.ID = "userinfo";
                 csslink.Attributes.Add("rel", "stylesheet");
                 csslink.Attributes.Add("type", "text/css");
                 csslink.Href = "CSS/userinfo.css";
