@@ -58,6 +58,8 @@
     <Content Include="admin\updatearticle.aspx" />
     <Content Include="Article\addarticle.aspx" />
     <Content Include="Article\articledetail.aspx" />
+    <Content Include="Control\DiscussionForm.ascx" />
+    <Content Include="css\discussion.css" />
     <Content Include="index.aspx" />
     <Content Include="tinymce_editor\langs\en.js" />
     <Content Include="tinymce_editor\license.txt" />
@@ -548,6 +550,13 @@
     </Compile>
     <Compile Include="Control\DatePicker.ascx.designer.cs">
       <DependentUpon>DatePicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\DiscussionForm.ascx.cs">
+      <DependentUpon>DiscussionForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\DiscussionForm.ascx.designer.cs">
+      <DependentUpon>DiscussionForm.ascx</DependentUpon>
     </Compile>
     <Compile Include="Control\DynamicTable.ascx.cs">
       <DependentUpon>DynamicTable.ascx</DependentUpon>
