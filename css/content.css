@@ -223,13 +223,6 @@ span.submenu{margin:0px !important; }
 .news{ position:absolute; left:5px; top:-5px;}
 
 
-.announcement{ background:#fcfcfc; margin-bottom:10px;}
-
-.announcement ul{ padding:10px 25px;}
-.announcement ul li{ list-style:outside disc; padding:5px 0px; }
-.announcement ul li a{ text-decoration:none; color:#494949;}
-.announcement ul li span{float:right; color:#F00; font-size:12px;}
-
 .examCrazy{ background:#fcfcfc; margin-bottom: 10px; width:100%}
 .examCrazy h3{padding:5px 0px 5px 10px;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;background:#70b0e0;}
 .examCrazy h3 span.arrows{ float:right;background:url(../img/sprite.png) no-repeat; width:14px; height:14px; margin-left:10px;margin-right:10px;background-position:-87px -55px;}
