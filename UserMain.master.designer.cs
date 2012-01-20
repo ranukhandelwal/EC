@@ -49,6 +49,15 @@ namespace ExamCrazy {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
         
         /// <summary>
+        /// announce control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::ExamCrazy.Control.Announcement announce;
+        
+        /// <summary>
         /// discussion control.
         /// </summary>
         /// <remarks>
