@@ -50,6 +50,7 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\AddAnnouncement.aspx" />
     <Content Include="admin\AddArticle.aspx" />
     <Content Include="admin\approvedarticles.aspx" />
     <Content Include="admin\articlemanager.aspx" />
@@ -58,7 +59,9 @@
     <Content Include="admin\updatearticle.aspx" />
     <Content Include="Article\addarticle.aspx" />
     <Content Include="Article\articledetail.aspx" />
+    <Content Include="Control\Announcement.ascx" />
     <Content Include="Control\DiscussionForm.ascx" />
+    <Content Include="css\announcement.css" />
     <Content Include="css\discussion.css" />
     <Content Include="index.aspx" />
     <Content Include="tinymce_editor\langs\en.js" />
@@ -330,6 +333,13 @@
     <Compile Include="adminMaster.Master.designer.cs">
       <DependentUpon>adminMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="admin\AddAnnouncement.aspx.cs">
+      <DependentUpon>AddAnnouncement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AddAnnouncement.aspx.designer.cs">
+      <DependentUpon>AddAnnouncement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\AddArticle.aspx.cs">
       <DependentUpon>AddArticle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -457,6 +467,7 @@
     <Compile Include="App_Code\BLL\GetUserImage.cs" />
     <Compile Include="App_Code\BLL\PagerLink.cs" />
     <Compile Include="App_Code\BLL\PageTitle.cs" />
+    <Compile Include="App_Code\BLL\Providers\Announce\AnnounceRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\Article\BaseArticleCategory.cs" />
     <Compile Include="App_Code\BLL\Providers\Article\ArticleCategoryRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\Article\BaseArticleObj.cs" />
@@ -506,6 +517,7 @@
     <Compile Include="App_Code\Common\Utilities\Utility.cs" />
     <Compile Include="App_Code\Common\Validator.cs" />
     <Compile Include="App_Code\DAL\DataAccessObject.cs" />
+    <Compile Include="App_Code\Model\Announce.cs" />
     <Compile Include="App_Code\Model\Article.cs" />
     <Compile Include="App_Code\Model\ArticleCategory.cs" />
     <Compile Include="App_Code\Model\City.cs" />
@@ -543,6 +555,13 @@
     </Compile>
     <Compile Include="Article\articledetail.aspx.designer.cs">
       <DependentUpon>articledetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Announcement.ascx.cs">
+      <DependentUpon>Announcement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Announcement.ascx.designer.cs">
+      <DependentUpon>Announcement.ascx</DependentUpon>
     </Compile>
     <Compile Include="Control\DatePicker.ascx.cs">
       <DependentUpon>DatePicker.ascx</DependentUpon>
