@@ -42,7 +42,7 @@
                                 <br />
                                 <br />
                                 »</span>&nbsp;<asp:HyperLink runat="server" ID="lblmanagerannouncelink" CssClass="dt"
-                                    NavigateUrl="AddJob.aspx">
+                                    NavigateUrl="AddAnnouncement.aspx">
                                     <asp:Label ID="lblmanagerannounce" runat="server" /></asp:HyperLink>
     </table>
 </asp:Content>
