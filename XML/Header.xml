@@ -23,9 +23,10 @@
 
   <list name="Jobs" link="#" displayin="__usr__,__ano__">
 
-    <sub name="AIEEE" link="#" displayin="__usr__,__ano__"/>
-    <sub name="AIEEE1" link="#" displayin="__usr__,__ano__"/>
-    <sub name="AIEEE2" link="#" displayin="__usr__,__ano__"/>
+    <sub name="All Jobs" link="~/Jobs-Interviews/" displayin="__usr__,__ano__"/>
+    <sub name="Govt Jobs" link="#" displayin="__usr__,__ano__"/>
+    <sub name="Private Jobs" link="#" displayin="__usr__,__ano__"/>
+	<sub name="Jobs@ExamCrazy" link="#" displayin="__usr__,__ano__"/>
   </list>
 
   <list name="College" link="#" displayin="__usr__,__ano__">
