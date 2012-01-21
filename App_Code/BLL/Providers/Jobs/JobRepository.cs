@@ -7,6 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
+using System.Collections.Generic;
 using EC.Model;
 using EC.Common;
 using EC.BL;
@@ -71,9 +72,11 @@ namespace EC.BL
         public ExtendedCollection<Job> GetJobList()
         {
             ExtendedCollection<Job> jlist = new ExtendedCollection<Job>();
-            jlist.ConvertAll(base.GetFeedList(CategoryID), new Converter<Feed, Job>(ConvertFeedToJob));
+            IEnumerable<Job> list = jlist.ConvertAll(base.GetFeedList(CategoryID), new Converter<Feed, Job>(ConvertFeedToJob));
+            jlist.AddRange(list);
             return jlist;
         }
         
     }
 }
+ 
