@@ -27,6 +27,18 @@ public partial class __Jobs : BasePage
             if (jobid > 0)
             {
                 job.FillUp(jobid);
+                job_details.Visible = true;
+                joblistpanel.Visible = false;
+            }
+            else
+            {
+                ExtendedCollection<Job> joblist = job.GetJobList();
+                Job[] jobs = new Job[joblist.Count];
+                joblist.CopyTo(jobs, 0);
+                job_details.Visible = false;
+                joblistpanel.Visible = true;
+                JobListId.DataSource = jobs;
+                JobListId.DataBind();
             }
         }
         lblTitle.Text = job.Title;
