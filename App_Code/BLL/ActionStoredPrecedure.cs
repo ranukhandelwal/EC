@@ -1020,7 +1020,7 @@ namespace EC.BL
           prmDOB.Value = user.DOB;
 
           SqlParameter prmSex = new SqlParameter("@Sex", SqlDbType.SmallInt);
-          prmSex.Value = user.GetSex;
+          prmSex.Value = user.Sex;
 
           SqlParameter prmEC = new SqlParameter("@EC", SqlDbType.VarChar, 50);
           prmEC.Value = user.ECPreference;
@@ -1095,48 +1095,33 @@ namespace EC.BL
       /// <returns></returns>
         public static int UpdateUser(Users user)
       {
-            /*
+            
           SqlParameter prmUserId = new SqlParameter("@UserID", SqlDbType.Int, 4);
           prmUserId.Value = user.UID;
 
-          SqlParameter prmPassword = new SqlParameter("@Password", SqlDbType.VarChar, 50);
-          prmPassword.Value = user.Password;
+          SqlParameter prmSex = new SqlParameter("@Sex",SqlDbType.Int, 4);
+          prmSex.Value = user.Sex;
 
-          SqlParameter prmEmail = new SqlParameter("@Email", SqlDbType.VarChar, 50);
-          prmEmail.Value = user.Email;
+          SqlParameter prmCity = new SqlParameter("@City", SqlDbType.Int);
+          prmCity.Value = user.CityID;
 
-          SqlParameter prmFirstName = new SqlParameter("@Firstname", SqlDbType.VarChar, 50);
-          prmFirstName.Value = user.FirstName;
+          SqlParameter prmState = new SqlParameter("@State", SqlDbType.Int);
+          prmState.Value = user.StateID;
 
-          SqlParameter prmLastName = new SqlParameter("@Lastname", SqlDbType.VarChar, 50);
-          prmLastName.Value = user.LastName;
-
-          SqlParameter prmCity = new SqlParameter("@City", SqlDbType.VarChar, 50);
-          prmCity.Value = user.City;
-
-          SqlParameter prmState = new SqlParameter("@State", SqlDbType.VarChar, 50);
-          prmState.Value = user.State;
-
-          SqlParameter prmCountry = new SqlParameter("@Country", SqlDbType.VarChar, 50);
-          prmCountry.Value = user.Country;
+          SqlParameter prmCountry = new SqlParameter("@Country", SqlDbType.Int);
+          prmCountry.Value = user.CountryID;
 
           SqlParameter prmDOB = new SqlParameter("@DOB", SqlDbType.DateTime);
           prmDOB.Value = user.DOB;
 
-          SqlParameter prmFavoriteFoods1 = new SqlParameter("@FavoriteFoods1", SqlDbType.VarChar, 50);
-          prmFavoriteFoods1.Value = user.FavoriteFoods1;
-
-          SqlParameter prmFavoriteFoods2 = new SqlParameter("@FavoriteFoods2", SqlDbType.VarChar, 50);
-          prmFavoriteFoods2.Value = user.FavoriteFoods2;
-
-          SqlParameter prmFavoriteFoods3 = new SqlParameter("@FavoriteFoods3", SqlDbType.VarChar, 50);
-          prmFavoriteFoods3.Value = user.FavoriteFoods3;
-
           SqlParameter prmNewsletter = new SqlParameter("@Newsletter", SqlDbType.Int, 4);
-          prmNewsletter.Value = user.NewsLetter;
+          prmNewsletter.Value = user.canEmailSend;
 
-          SqlParameter prmContactMe = new SqlParameter("@ContactMe", SqlDbType.Int, 4);
-          prmContactMe.Value = user.ContactMe;
+          SqlParameter prmECPref = new SqlParameter("@ECPref", SqlDbType.VarChar, 100);
+          prmECPref.Value = user.ECPreference;
+
+          SqlParameter prmAddress = new SqlParameter("@Address", SqlDbType.VarChar, 100);
+          prmAddress.Value = user.Address;
 
           SqlParameter prmWebsite = new SqlParameter("@Website", SqlDbType.VarChar, 100);
           prmWebsite.Value = user.Website;
@@ -1144,15 +1129,31 @@ namespace EC.BL
           SqlParameter prmAboutMe = new SqlParameter("@AboutMe", SqlDbType.VarChar, 1000);
           prmAboutMe.Value = user.AboutMe;
 
-          SqlParameter prmPhoto = new SqlParameter("@Photo", SqlDbType.VarChar, 50);
-          prmPhoto.Value = user.Photo;
-
-          return DataAccess.Execute("spUpdateUser", prmUserId, prmPassword, prmEmail, prmFirstName, prmLastName, prmCity, prmState, prmCountry, prmDOB,
-              prmFavoriteFoods1, prmFavoriteFoods2, prmFavoriteFoods3, prmNewsletter, prmContactMe, prmWebsite, prmAboutMe, prmPhoto);
-             * */
-          return 0;
+          return DataAccess.Execute("spUpdateUser", prmUserId, prmSex, prmCity, prmState, prmCountry, prmAddress,
+               prmNewsletter, prmECPref, prmWebsite, prmAboutMe);
+          
       }
 
+
+        /// <summary>
+        /// Update user
+        /// </summary>
+        /// <returns></returns>
+        public static int UpdatePassWord(int userid, string Oldpassword, string password)
+        {
+
+            SqlParameter prmUserId = new SqlParameter("@UserID", SqlDbType.Int, 4);
+            prmUserId.Value = userid;
+
+            SqlParameter prmOldPassword = new SqlParameter("@OldPassword", SqlDbType.VarChar, 100);
+            prmOldPassword.Value = Oldpassword;
+
+            SqlParameter prmPassword = new SqlParameter("@Password", SqlDbType.VarChar, 100);
+            prmPassword.Value = password;
+
+            return DataAccess.GetInt32("spUpdatePassword", prmUserId, prmOldPassword, prmPassword);
+
+        }
       /// <summary>
       /// Delete user
       /// </summary>
