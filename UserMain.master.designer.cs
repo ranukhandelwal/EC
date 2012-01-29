@@ -49,21 +49,21 @@ namespace ExamCrazy {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
         
         /// <summary>
-        /// announce control.
+        /// userpageid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::ExamCrazy.Control.Announcement announce;
+        protected global::System.Web.UI.WebControls.Panel userpageid;
         
         /// <summary>
-        /// discussion control.
+        /// userlistid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::ExamCrazy.Control.DiscussionForm discussion;
+        protected global::System.Web.UI.WebControls.Panel userlistid;
     }
 }
