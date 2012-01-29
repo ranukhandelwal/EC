@@ -151,9 +151,13 @@ function handleResponseLostpasswordText()
 //Begin Check email exists - Send the email via GET
 //***********************************************************************************************/
 function getStatesList() {
-    var cntry = escape(document.getElementById("ctl00_MainContent_Cntry").value);
+    var cntry;
+    if(document.getElementById("ctl00_ctl00_MainContent_MainContent_Cntry"))
+        cntry = escape(document.getElementById("ctl00_ctl00_MainContent_MainContent_Cntry").value);
+    else
+        cntry = escape(document.getElementById("ctl00_MainContent_Cntry").value);
     try {
-        http.open('Get', 'AjaxRequest/AjaxRequest.aspx?mode=getstates&cntry=' + cntry);
+        http.open('Get', '/AjaxRequest/AjaxRequest.aspx?mode=getstates&cntry=' + cntry);
         http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         http.onreadystatechange = handleResponseStateddl;
         http.send(null);
@@ -168,10 +172,18 @@ function handleResponseStateddl() {
     //$("#ddlstate").addClass('content12').text('Generating...');
     var ddlstate;
     var ddlcity;
-    
+
     if ((http.readyState == 4) && (http.status == 200)) {
-        ddlstate = document.getElementById("ctl00_MainContent_ddlstate");
-        ddlcity = document.getElementById("ctl00_MainContent_ddlcity");
+        if (document.getElementById("ctl00_ctl00_MainContent_MainContent_Cntry")) {
+            ddlstate = document.getElementById("ctl00_ctl00_MainContent_MainContent_ddlstate");
+            ddlcity = document.getElementById("ctl00_ctl00_MainContent_MainContent_ddlcity");
+        }
+        else {
+            ddlstate = document.getElementById("ctl00_MainContent_ddlstate");
+            ddlcity = document.getElementById("ctl00_MainContent_ddlcity");
+        }
+      //  ddlstate = document.getElementById("ctl00_MainContent_ddlstate");
+      //  ddlcity = document.getElementById("ctl00_MainContent_ddlcity");
         var response = "";
         if(http.responseText != "")
             var response = http.responseText.split("|");
@@ -206,9 +218,15 @@ function handleResponseStateddl() {
 //Begin Check email exists - Send the email via GET
 //***********************************************************************************************/
 function getCitiesList() {
-    var state = escape(document.getElementById("ctl00_MainContent_ddlstate").value);
+    var state;
+    if (document.getElementById("ctl00_ctl00_MainContent_MainContent_ddlstate")) {
+        state = escape(document.getElementById("ctl00_ctl00_MainContent_MainContent_ddlstate").value);
+    }
+    else {
+        state = escape(document.getElementById("ctl00_MainContent_ddlstate").value);
+    }
     try {
-        http.open('Get', 'AjaxRequest/AjaxRequest.aspx?mode=getcities&state=' + state);
+        http.open('Get', '/AjaxRequest/AjaxRequest.aspx?mode=getcities&state=' + state);
         http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         http.onreadystatechange = handleResponseCityddl;
         http.send(null);
@@ -224,7 +242,12 @@ function handleResponseCityddl() {
     var ddlcity;
 
     if ((http.readyState == 4) && (http.status == 200)) {
-        ddlcity = document.getElementById("ctl00_MainContent_ddlcity");
+        if (document.getElementById("ctl00_ctl00_MainContent_MainContent_ddlstate")) {
+            ddlcity = document.getElementById("ctl00_ctl00_MainContent_MainContent_ddlcity");
+        }
+        else {
+            ddlcity = document.getElementById("ctl00_MainContent_ddlcity");
+        }
         var response = "";
         if (http.responseText != "")
             var response = http.responseText.split("|");
