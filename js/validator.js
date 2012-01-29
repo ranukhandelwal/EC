@@ -6,12 +6,19 @@ Purpose: Validate text fields
 *******************************************************/
 
 //Validate password match
-function CheckIfPasswordMatch() 
-  {
-     var password1 = document.getElementById('ctl00_MainContent_Password1').value;
-     var password2 = document.getElementById('ctl00_MainContent_Password2').value;
+function CheckIfPasswordMatch() {
+    var password1;
+    var password2;
+    if (document.getElementById('ctl00_MainContent_Password1') && document.getElementById('ctl00_MainContent_Password2')) {
+        password1 = document.getElementById('ctl00_MainContent_Password1').value;
+        password2 = document.getElementById('ctl00_MainContent_Password2').value;
+    }
+    else if (document.getElementById('ctl00_ctl00_MainContent_MainContent_Password1') && document.getElementById('ctl00_ctl00_MainContent_MainContent_Password2')) {
+        password1 = document.getElementById('ctl00_ctl00_MainContent_MainContent_Password1').value;
+        password2 = document.getElementById('ctl00_ctl00_MainContent_MainContent_Password2').value;
+    }
      
-     var errmsg = "<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/takenuname.gif'> Password did not match.</span>";
+     var errmsg = "<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='/images/takenuname.gif'> Password did not match.</span>";
          
      if (password1 != password2)
         {       
@@ -74,7 +81,14 @@ function ValUsername()
 //Validate password
 function ValPassword1() 
   {
-     var password1 = document.getElementById('ctl00_MainContent_Password1').value;
+     var password1;
+     if (document.getElementById("ctl00_MainContent_Password1")) {
+         password1 = document.getElementById("ctl00_MainContent_Password1").value;
+     }
+     else if (document.getElementById("ctl00_ctl00_MainContent_MainContent_Password1")) {
+         password1 = document.getElementById("ctl00_ctl00_MainContent_MainContent_Password1").value;
+     }
+     
      
      var errmsg1 = "<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/takenuname.gif'> Password should be mix of alphabets and numerals.</span>";
      var errmsg2 = "<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/takenuname.gif'> Password is too short. Min of 6 characters.</span>";

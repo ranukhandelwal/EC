@@ -101,7 +101,12 @@ namespace EC.BL
             }
             else
             {
-                UserInfoFilter = "__ano__";
+                if(PageName == "Register@ExamCrazy")
+                {
+                    UserInfoFilter = "__listnologin__";
+                }
+                else
+                    UserInfoFilter = "__ano__";
             }
             return UserInfoFilter;
         }
