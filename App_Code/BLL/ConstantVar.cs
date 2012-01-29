@@ -131,6 +131,9 @@ namespace EC.BL
 
         public static string[] JobCategory = new string[] {"Core Technical", "Govt Sector", "Research", "IT/Software", "Freshers" };
         public static string[] JobType = new string[] { "Full Time", "Contract", "Internship"};
+
+        public const int MALE = 0;
+        public const int FEMALE = 1;
         
         #endregion
 
