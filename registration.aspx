@@ -10,15 +10,10 @@
     <link href="CSS/thickbox.css" rel="stylesheet" type="text/css" />
     <link href="css/popupcalendarpicker.css" rel="stylesheet" type="text/css" />
     <link href="css/jquery.datepick.css" rel="stylesheet" type="text/css" />
-
     <script type="text/javascript" src="<%# ResolveUrl("~/js/Ajaxrequest.js")%>"></script>
-
     <script type="text/javascript" src="<%# ResolveUrl("~/js/validator.js")%>"></script>
-
     <script type="text/javascript" src="<%# ResolveUrl("~/js/jquery.timePicker.js")%>"></script>
-
     <script type="text/javascript" src="<%# ResolveUrl("~/js/jquery.datepick.js")%>"></script>
-
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="AddToBreadCrum" runat="server">
     <div class="breadCrumsMenu unit">
@@ -173,8 +168,6 @@
                                                     <div style="margin-bottom: 6px">
                                                         <asp:RadioButtonList ID="RadioButtonSex" RepeatColumns="2" RepeatDirection="Horizontal"
                                                             runat="server">
-                                                            <asp:ListItem>Male</asp:ListItem>
-                                                            <asp:ListItem>Female</asp:ListItem>
                                                         </asp:RadioButtonList>
                                                     </div>
                                                 </td>

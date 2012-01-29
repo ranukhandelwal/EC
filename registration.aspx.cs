@@ -63,6 +63,8 @@ public partial class registration : BasePage
             {
                 ExamCategoryList.Items.Add(new ListItem(ECs[i].ExamName.ToString(), ECs[i].ECID.ToString()));
             }
+            RadioButtonSex.Items.Add(new ListItem("Male", constant.MALE.ToString()));
+            RadioButtonSex.Items.Add(new ListItem("Female", constant.FEMALE.ToString()));
         }
         HideFormIfLogin.Visible = true;
         if (Page.IsPostBack)
@@ -230,7 +232,7 @@ public partial class registration : BasePage
             User.Email1 = Util.FormatTextForInput(Request.Form[Email.UniqueID]);
             User.FirstName = Util.FormatTextForInput(Request.Form[Firstname.UniqueID]);
             User.LastName = Util.FormatTextForInput(Request.Form[Lastname.UniqueID]);
-            User.SetSex = Request.Form[RadioButtonSex.UniqueID];
+            User.Sex = Int32.Parse(Request.Form[RadioButtonSex.UniqueID]);
             try
             {
                 User.CityID = Int16.Parse(Request.Form[ddlcity.UniqueID]);
