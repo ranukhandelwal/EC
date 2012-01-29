@@ -53,12 +53,20 @@ namespace EC.Model
         /// <summary>User  City ID</summary>
         protected int _CityID;
 
+        /// <summary>User  City Name</summary>
+        protected string _CityName;
+
         /// <summary>User  State ID</summary>
         protected int _StateID;
+
+        /// <summary>User  State Name</summary>
+        protected string _StateName;
 
         /// <summary>User  Country ID</summary>
         protected int _CountryID;
 
+        /// <summary>User  Country Name</summary>
+        protected string _CountryName;
         /// <summary>User Mobile No</summary>
         protected string _Mobile;
 
@@ -281,6 +289,23 @@ namespace EC.Model
             set { _CountryID = value; }
         }
 
+        public string CityName
+        {
+            get { return _CityName; }
+            set { _CityName = value; }
+        }
+
+        public string StateName
+        {
+            get { return _StateName; }
+            set { _StateName = value; }
+        }
+
+        public string CountryName
+        {
+            get { return _CountryName; }
+            set { _CountryName = value; }
+        }
         public string PIN
         {
             get { return _PIN; }
@@ -309,16 +334,17 @@ namespace EC.Model
             set { _DOB = value; }
         }
 
-        public string SetSex
+        public string SetSexString
         {
             get { return "invalid"; }
-            set { if ((SetSex == "Male") || (SetSex == "MALE") || (SetSex == "male")) _Sex = 1; else _Sex = 0; }
+            set { if (SetSexString.ToLower() == "male") _Sex = constant.MALE; else if (SetSexString.ToLower() == "female") _Sex = constant.FEMALE; }
         }
+        
 
-        public int GetSex
+        public int Sex
         {
             get { return _Sex; }
-            
+            set { if (value == constant.FEMALE) _Sex = constant.FEMALE; else if (value == constant.MALE) _Sex = constant.MALE; }
         }
 
         public int EduID
