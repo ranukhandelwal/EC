@@ -34,7 +34,7 @@ namespace EC.BL.Providers.User
             {
                 int UID = 0;
 
-                UID = Blogic.GetUserID(CookieLoginHelper.UserName, CookieLoginHelper.UserPassword);
+                UID = Blogic.GetUserID(CookieLoginHelper.UserName, Encryption.Encrypt(CookieLoginHelper.UserPassword));
 
                 return UID;
             }
@@ -91,7 +91,9 @@ namespace EC.BL.Providers.User
         /// </summary>
         public static string UserPhoto(string UName)
         {
-            string photo = Blogic.GetUserPhoto(UName);
+            string photo = "";
+            if(UName != null)
+                photo = Blogic.GetUserPhoto(UName);
             return ((photo.ToString() != null) && (photo.ToString() != "")) ? constant.UserImagePath + photo : "~/UserImages/userwall.gif";
             
         }
