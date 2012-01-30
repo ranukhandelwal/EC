@@ -1136,7 +1136,7 @@ namespace EC.BL
 
 
         /// <summary>
-        /// Update user
+        /// Update user password
         /// </summary>
         /// <returns></returns>
         public static int UpdatePassWord(int userid, string Oldpassword, string password)
@@ -1154,6 +1154,24 @@ namespace EC.BL
             return DataAccess.GetInt32("spUpdatePassword", prmUserId, prmOldPassword, prmPassword);
 
         }
+
+        /// <summary>
+        /// Update user image
+        /// </summary>
+        /// <returns></returns>
+        public static int UpdateUserImage(int userid, string image_name)
+        {
+            SqlParameter prmUserId = new SqlParameter("@UserID", SqlDbType.Int, 4);
+            prmUserId.Value = userid;
+
+            SqlParameter prmImageName = new SqlParameter("@ImageName", SqlDbType.VarChar, 100);
+            prmImageName.Value = image_name;
+
+            return DataAccess.Execute("spUpdateUserImage", prmUserId, prmImageName);
+
+        }
+
+
       /// <summary>
       /// Delete user
       /// </summary>
