@@ -14,7 +14,7 @@ using EC.BL.Providers.User;
 
 namespace ExamCrazy.user_profile
 {
-    public partial class update_password : System.Web.UI.Page
+    public partial class update_password : BaseLoggedInPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -22,7 +22,7 @@ using EC.BL.Providers.User;
 
 namespace ExamCrazy.user_profile
 {
-    public partial class update_profile : System.Web.UI.Page
+    public partial class update_profile : BaseLoggedInPage
     {
         ProviderUserDetails user = new ProviderUserDetails();
         protected void Page_Load(object sender, EventArgs e)
