@@ -18,6 +18,7 @@ namespace ExamCrazy.Control
         public string filter;
         public string UName;
         public string UEmail;
+        //public string ImgVerify;
         //protected string UImage;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -35,6 +36,25 @@ namespace ExamCrazy.Control
             filter = SiteConfiguration.GetUserInfoFilter(UName);
             lblname.Text = UName;
             lblemail.Text = UEmail;
+            if (UName == UserIdentity.UserName)
+            {
+                pnlverifyemail.Visible = true;
+                if (UserIdentity.isEmail1Verified)
+                {
+                    ImgVerify.Src = ResolveUrl("~/images/adminapproval_icon.gif");
+                    ImgVerify.Attributes.Add("onmouseover", "Tip('<a class=content12 href=/user-profile/update-email.aspx" + ">Update Email</a><br><a class=content12 href=/user-profile/verify-email.aspx>Verify Email</a>', WIDTH, 150, false, '', false, true, FADEIN, 300, FADEOUT, 300, STICKY, 1, false, true, CLICKCLOSE, true)");
+                    lblemail.Attributes.Add("onmouseover", "Tip('<a class=content12 href=/user-profile/update-email.aspx" + ">Update Email</a><br><a class=content12 href=/user-profile/verify-email.aspx>Verify Email</a>', WIDTH, 150, false, '', false, true, FADEIN, 300, FADEOUT, 300, STICKY, 1, false, true, CLICKCLOSE, true)");
+                }
+                else
+                {
+                    ImgVerify.Src = ResolveUrl("~/images/takenuname.gif");
+                    ImgVerify.Attributes.Add("onmouseover", "Tip('<b>Email not verified</b><br><a class=content12 href=/user-profile/update-email.aspx" + ">Update Email</a><br><a class=content12 href=/user-profile/verify-email.aspx>Verify Email</a>', WIDTH, 150, false, '', false, true, FADEIN, 300, FADEOUT, 300, STICKY, 1, false, true, CLICKCLOSE, true)");
+                    lblemail.Attributes.Add("onmouseover", "Tip('<b>Email not verified</b><br><a class=content12 href=/user-profile/update-email.aspx" + ">Update Email</a><br><a class=content12 href=/user-profile/verify-email.aspx>Verify Email</a>', WIDTH, 150, false, '', false, true, FADEIN, 300, FADEOUT, 300, STICKY, 1, false, true, CLICKCLOSE, true)");
+                }
+                
+                ImgVerify.Attributes.Add("onmouseout", "UnTip()");
+                lblemail.Attributes.Add("onmouseout", "UnTip()");
+            }
 
             //UImage = UserIdentity.UserPhoto(UName);
             UserImage.Src = UserIdentity.UserPhoto(UName);
