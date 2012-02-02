@@ -20,8 +20,11 @@ namespace ExamCrazy
                 userlistid.Visible = true;
                 userpageid.Visible = false;
             }
-            if(Uname == UserIdentity.UserName)
+            if (Uname == UserIdentity.UserName)
+            {
                 UserInfoCtrl.UEmail = UserIdentity.UserEmail;
+                
+            }
         }
     }
 }
