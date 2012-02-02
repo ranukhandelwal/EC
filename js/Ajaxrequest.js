@@ -73,10 +73,16 @@ function handleResponseUsernameText()
 //***********************************************************************************************/
 function sendRequestEmailTextPost() 
   {
-    var email = escape(document.getElementById("ctl00_MainContent_Email").value);
+    var email;
+    if (document.getElementById("ctl00_MainContent_Email")) {
+        email = escape(document.getElementById("ctl00_MainContent_Email").value);
+    }
+    else if (document.getElementById("ctl00_ctl00_MainContent_MainContent_Email")) {
+        email = escape(document.getElementById("ctl00_ctl00_MainContent_MainContent_Email").value);
+    }
             try
               {
-                 http.open('Get','AjaxRequest/AjaxRequest.aspx?mode=checkemail&email='+ email);
+                 http.open('Get','/AjaxRequest/AjaxRequest.aspx?mode=checkemail&email='+ email);
                  http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
                  http.onreadystatechange = handleResponseEmailText;
 	    http.send(null);

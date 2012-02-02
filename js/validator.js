@@ -137,7 +137,13 @@ function ValPassword1()
 //Validate email
 function ValEmail() 
   {
-     var email = document.getElementById('ctl00_MainContent_Email').value;
+     var email;
+     if (document.getElementById('ctl00_ctl00_MainContent_MainContent_Email')) {
+         email = document.getElementById('ctl00_ctl00_MainContent_MainContent_Email').value;
+     }
+     else if (document.getElementById('ctl00_MainContent_Email')) {
+         email = document.getElementById('ctl00_MainContent_Email').value;
+     }
      
      var errmsg1 = "<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/takenuname.gif'> Invalid email format.</span>";
      var errmsg2 = "<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/takenuname.gif'> Email cannot be blank.</span>";
