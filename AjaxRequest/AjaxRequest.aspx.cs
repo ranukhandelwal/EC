@@ -104,11 +104,11 @@ namespace ExamCrazy.AjaxRequest
 
                 if (Blogic.IsEmailExists(Email))
                 {
-                    Response.Write("<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/takenuname.gif'> " + Email + " is already in used.</span>");
+                    Response.Write("<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='/images/takenuname.gif'> " + Email + " is already in used.</span>");
                 }
                 else
                 {
-                    Response.Write("<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='images/availuname.gif'> " + Email + " is OK.</span>");
+                    Response.Write("<span class='content12' style='border: solid 1px #800000; padding: 3px;'><img src='/images/availuname.gif'> " + Email + " is OK.</span>");
                 }
             }
             else
