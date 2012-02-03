@@ -1156,6 +1156,39 @@ namespace EC.BL
         }
 
         /// <summary>
+        /// Is Email Verified: 1 - verified, 0 - unverified
+        /// </summary>
+        /// <returns></returns>
+        public static int IsEmailVerified(int userid, string Email)
+        {
+
+            SqlParameter prmUserId = new SqlParameter("@UserID", SqlDbType.Int, 4);
+            prmUserId.Value = userid;
+
+            SqlParameter prmEmail = new SqlParameter("@Email", SqlDbType.VarChar, 100);
+            prmEmail.Value = Email;
+
+            return DataAccess.GetInt32("spIsEmail1Verified", prmUserId, prmEmail);
+
+        }
+        /// <summary>
+        /// Update user password
+        /// </summary>
+        /// <returns></returns>
+        public static int UpdateEmail(int userid, string Email)
+        {
+
+            SqlParameter prmUserId = new SqlParameter("@UserID", SqlDbType.Int, 4);
+            prmUserId.Value = userid;
+
+            SqlParameter prmEmail = new SqlParameter("@Email", SqlDbType.VarChar, 100);
+            prmEmail.Value = Email;
+
+            return DataAccess.Execute("spUpdateUserEmail", prmUserId, prmEmail);
+
+        }
+
+        /// <summary>
         /// Update user image
         /// </summary>
         /// <returns></returns>
