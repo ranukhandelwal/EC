@@ -6,6 +6,7 @@
 #endregion
 using System;
 using EC.Model;
+using EC.BL.Providers.User;
 
 namespace EC.BL
 {
@@ -55,6 +56,11 @@ namespace EC.BL
         public override int Deactivate(Users user)
         {
             return Blogic.DeleteUser(user);
+        }
+
+        public static int UpdateImage(string image_name)
+        {
+            return Blogic.UpdateUserImage(UserIdentity.UserID, image_name);
         }
 
     }
