@@ -1,6 +1,9 @@
 ﻿.userInfo{ background:url(../img/userinfobackground.gif) repeat-x; padding:15px 10px 10px 10px; width:92%; margin-bottom:10px; height:147px;}
 .userInfo h2{ color:#FF0; font-size:14px; font-weight:bold; padding:0px; }
-.userInfo p{ color:#FFF; font-size:11px; font-weight:normal; padding:5px 0px 10px 0px; }
+.userInfo p{ color:#FFF; font-size:10px; font-weight:normal; padding:0px 0px 10px 0px; }
+.userInfo table{border:0; padding:0px 0px 0px 0px;}
+.userInfo table tr{}
+.userInfo table tr td{padding:0px 5px 0px 0px;}
 .userInfo ul{}
 .userInfo ul li{ background:url(../img/whitecricle.gif) no-repeat; padding:0px 0px 0px 10px; background-position:0px 8px;}
 .userInfo ul li a{ text-decoration:none; color:#FFF; font-size:11px; font-weight:normal; padding:0px; line-height:20px; }
