@@ -97,6 +97,21 @@ namespace EC.BL.Providers.User
             return ((photo.ToString() != null) && (photo.ToString() != "")) ? constant.UserImagePath + photo : "~/UserImages/userwall.gif";
             
         }
+
+        /// <summary>
+        /// Returns bool true-- email verified false-- email not verified.
+        /// </summary>
+        public static bool isEmail1Verified
+        {
+            get
+            {
+                if (Blogic.IsEmailVerified(UserIdentity.UserID, UserIdentity.UserEmail) > 0)
+                    return true;
+                else
+                    return false;
+            }
+        }
+
         /// <summary>
         /// Returns user Role/Level.
         /// </summary>
