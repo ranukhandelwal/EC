@@ -87,7 +87,7 @@ namespace EC.Security
                 }
 
                 //Get the user credential in session if user did not check remember me.
-                if (CookieLoginHelper.IsLoginSessionExists)
+                else  if (CookieLoginHelper.IsLoginSessionExists)
                 {
                     AllowAccess = true;
                 }
