@@ -61,9 +61,12 @@
     <Content Include="Article\articledetail.aspx" />
     <Content Include="Control\Announcement.ascx" />
     <Content Include="Control\DiscussionForm.ascx" />
+    <Content Include="Control\MemberList.ascx" />
     <Content Include="css\announcement.css" />
     <Content Include="css\discussion.css" />
     <Content Include="index.aspx" />
+    <Content Include="Test\TempIntermediatePage.aspx" />
+    <Content Include="Test\TestUserMemberList.aspx" />
     <Content Include="tinymce_editor\langs\en.js" />
     <Content Include="tinymce_editor\license.txt" />
     <Content Include="tinymce_editor\plugins\advhr\css\advhr.css" />
@@ -307,6 +310,12 @@
     <Content Include="tinymce_editor\utils\form_utils.js" />
     <Content Include="tinymce_editor\utils\mctabs.js" />
     <Content Include="tinymce_editor\utils\validate.js" />
+    <Content Include="user-profile\update-email.aspx" />
+    <Content Include="user-profile\update-image.aspx" />
+    <Content Include="user-profile\update-password.aspx" />
+    <Content Include="user-profile\update-profile.aspx" />
+    <Content Include="user-profile\verify-email.aspx" />
+    <Content Include="User\Default.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -452,6 +461,9 @@
     <Compile Include="AjaxRequest\AjaxRequest.aspx.designer.cs">
       <DependentUpon>AjaxRequest.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Code\BaseLoggedInPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="App_Code\BaseMaster.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -513,7 +525,7 @@
     <Compile Include="App_Code\Common\EmailHelper.cs" />
     <Content Include="App_Code\Common\EventsCalendar.cs" />
     <Compile Include="App_Code\Common\ExtendedCollection.cs" />
-    <Content Include="App_Code\Common\JavaScriptAlert.cs" />
+    <Compile Include="App_Code\Common\JavaScriptAlert.cs" />
     <Compile Include="App_Code\Common\Utilities\Utility.cs" />
     <Compile Include="App_Code\Common\Validator.cs" />
     <Compile Include="App_Code\DAL\DataAccessObject.cs" />
@@ -597,6 +609,13 @@
     </Compile>
     <Compile Include="Control\Login.ascx.designer.cs">
       <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MemberList.ascx.cs">
+      <DependentUpon>MemberList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\MemberList.ascx.designer.cs">
+      <DependentUpon>MemberList.ascx</DependentUpon>
     </Compile>
     <Compile Include="Control\rsssidemenu.ascx.cs">
       <DependentUpon>rsssidemenu.ascx</DependentUpon>
@@ -764,6 +783,20 @@
     <Compile Include="Test\rss_feed_announce.aspx.designer.cs">
       <DependentUpon>rss_feed_announce.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Test\TempIntermediatePage.aspx.cs">
+      <DependentUpon>TempIntermediatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\TempIntermediatePage.aspx.designer.cs">
+      <DependentUpon>TempIntermediatePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test\TestUserMemberList.aspx.cs">
+      <DependentUpon>TestUserMemberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\TestUserMemberList.aspx.designer.cs">
+      <DependentUpon>TestUserMemberList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Test\UserMasterTest.aspx.cs">
       <DependentUpon>UserMasterTest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -778,12 +811,54 @@
     <Compile Include="toprssxml.aspx.designer.cs">
       <DependentUpon>toprssxml.aspx</DependentUpon>
     </Compile>
+    <Compile Include="user-profile\update-email.aspx.cs">
+      <DependentUpon>update-email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user-profile\update-email.aspx.designer.cs">
+      <DependentUpon>update-email.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user-profile\update-image.aspx.cs">
+      <DependentUpon>update-image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user-profile\update-image.aspx.designer.cs">
+      <DependentUpon>update-image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user-profile\update-password.aspx.cs">
+      <DependentUpon>update-password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user-profile\update-password.aspx.designer.cs">
+      <DependentUpon>update-password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user-profile\update-profile.aspx.cs">
+      <DependentUpon>update-profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user-profile\update-profile.aspx.designer.cs">
+      <DependentUpon>update-profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user-profile\verify-email.aspx.cs">
+      <DependentUpon>verify-email.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user-profile\verify-email.aspx.designer.cs">
+      <DependentUpon>verify-email.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserMain.master.cs">
       <DependentUpon>UserMain.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserMain.master.designer.cs">
       <DependentUpon>UserMain.master</DependentUpon>
+    </Compile>
+    <Compile Include="User\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\__user.aspx.cs">
       <DependentUpon>__user.aspx</DependentUpon>
@@ -834,7 +909,7 @@
   <ItemGroup>
     <Content Include="AdminFeed.master" />
     <Compile Include="App_Code\BLL\ImageUploadManager.cs" />
-    <None Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs.exclude" />
+    <Compile Include="App_Code\BLL\Providers\User\ProviderShowAllUsers.cs" />
     <None Include="css\.grids.css.swp" />
     <None Include="css\content.css.bak" />
     <Content Include="Control\UserInfo.ascx" />
