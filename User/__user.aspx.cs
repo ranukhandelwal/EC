@@ -55,8 +55,11 @@ namespace ExamCrazy.User
                 //note: Register@ExamCrazy is used in Siteconfiguration too
                 //infact a bad design, using like a magic no.
                 string QueryString = Request.RawUrl;
-                QueryString = QueryString.Split('?')[1];
-                memlist.QueryString = QueryString;
+                if (QueryString.Split('?').Length > 1)
+                {
+                    QueryString = QueryString.Split('?')[1];
+                    memlist.QueryString = QueryString;
+                }
                 
             }
             else if (RequestedPage == uname)
