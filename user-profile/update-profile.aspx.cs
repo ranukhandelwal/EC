@@ -78,6 +78,13 @@ namespace ExamCrazy.user_profile
                         }
                         ddlstate.Enabled = true;
                     }
+                    if (user.StateID == constant.StateMaxID)
+                    {
+                        ListItem l = new ListItem("Other", constant.StateMaxID.ToString());
+                        l.Selected = true;
+                        ddlstate.Items.Add(l);
+                        ddlstate.Enabled = true;
+                    }
                 }
 
                 /*City List */
@@ -100,6 +107,13 @@ namespace ExamCrazy.user_profile
                             l.Selected = true;
                             ddlcity.Items.Add(l);
                         }
+                        ddlcity.Enabled = true;
+                    }
+                    if (user.CityID == constant.CityMaxID)
+                    {
+                        ListItem l = new ListItem("Other", constant.CityMaxID.ToString());
+                        l.Selected = true;
+                        ddlcity.Items.Add(l);
                         ddlcity.Enabled = true;
                     }
                 }
@@ -308,8 +322,14 @@ namespace ExamCrazy.user_profile
             User.AboutMe = Util.FormatTextForInput(Request.Form[AboutMe.UniqueID]);
             if (User.Update(User) != 0)
             {
+                JavaScript.Alert("Profile Updation failed");
                 JSLiteral.Text = "Error occured while processing your submit.";
                 return;
+            }
+            else
+            {
+                JavaScript.Alert("Your Profile Updated Successfully");
+                Response.Redirect("~/User/" + UserIdentity.UserName);
             }
         }
 

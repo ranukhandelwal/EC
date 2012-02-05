@@ -123,7 +123,7 @@
                         </td>
                         <td width="74%" valign="top">
                             <div style="margin-bottom: 6px">
-                                <asp:DropDownList ID="ddlcity" name="ddlcity" runat="server" onchange="ValLastname()"
+                                <asp:DropDownList ID="ddlcity" name="ddlcity" runat="server" 
                                     CssClass="ddl" AutoPostBack="false" Enabled="false">
                                     <asp:ListItem Value="none" Selected="True">Select City</asp:ListItem>
                                 </asp:DropDownList>
