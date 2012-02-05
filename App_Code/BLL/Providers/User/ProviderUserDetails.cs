@@ -28,96 +28,131 @@ namespace EC.BL.Providers.User
         public override void FillUp(int UID)
         {
             IDataReader dr = Blogic.ActionProcedureDataProvider.GetUsers(UID);
-            /*
-
+            
             while (dr.Read())
             {
-                if (dr["UserLevel"] != DBNull.Value)
+                if (dr["Email1"] != DBNull.Value)
                 {
-                    this._UserLevel = (int)dr["UserLevel"];
+                    this.Email1 = (string)dr["Email1"];
                 }
-                if (dr["UserName"] != DBNull.Value)
+                if (dr["fName"] != DBNull.Value)
                 {
-                    this._Username = (string)dr["UserName"];
+                    this.FirstName = (string)dr["fName"];
                 }
-                if (dr["Password"] != DBNull.Value)
+                if (dr["lName"] != DBNull.Value)
                 {
-                    this._Password = (string)dr["Password"];
+                    this.LastName = (string)dr["lName"];
                 }
-                if (dr["FirstName"] != DBNull.Value)
+                if (dr["Sex"] != DBNull.Value)
                 {
-                    this._FirstName = (string)dr["FirstName"];
+                    this.Sex = Int32.Parse(dr["Sex"].ToString());
                 }
-                if (dr["LastName"] != DBNull.Value)
+                if (dr["CityID"] != DBNull.Value)
                 {
-                    this._LastName = (string)dr["LastName"];
+                    this.CityID = (int)dr["CityID"];
                 }
-                if (dr["City"] != DBNull.Value)
+                if (dr["StateID"] != DBNull.Value)
                 {
-                    this._City = (string)dr["City"];
+                    this.StateID = (int)dr["StateID"];
+                }
+
+                if (dr["CountryID"] != DBNull.Value)
+                {
+                    this.CountryID = (int)dr["CountryID"];
+                }
+
+                if (dr["Country_Name"] != DBNull.Value)
+                {
+                    this.CountryName = (string)dr["Country_Name"];
                 }
                 else
                 {
-                    this._City = "NA";
+                    this.CountryName = "NA";
                 }
 
-                if (dr["State"] != DBNull.Value)
+                if (dr["State_Name"] != DBNull.Value)
                 {
-                    this._State = (string)dr["State"];
+                    this.StateName = (string)dr["State_Name"];
                 }
                 else
                 {
-                    this._State = "NA";
+                    this.StateName = "NA";
                 }
 
-                if (dr["Country"] != DBNull.Value)
+                if (dr["City_Name"] != DBNull.Value)
                 {
-                    this._Country = (string)dr["Country"];
+                    this.CityName = (string)dr["City_Name"];
                 }
-                if (dr["Email"] != DBNull.Value)
+                else
                 {
-                    this._Email = (string)dr["Email"];
+                    this.CityName = "NA";
+                }
+                
+                if (dr["Email1"] != DBNull.Value)
+                {
+                    this.Email1 = (string)dr["Email1"];
+                }
+
+                if (dr["isEmail1Verified"] != DBNull.Value)
+                {
+                    this.isEmail1Verified = Int32.Parse(dr["isEmail1Verified"].ToString());
                 }
                 if (dr["DOB"] != DBNull.Value)
                 {
-                    this._DOB = (DateTime)dr["DOB"];
+                    this.DOB = (DateTime)dr["DOB"];
                 }
                 if (dr["AboutMe"] != DBNull.Value)
                 {
-                    this._AboutMe = (string)dr["AboutMe"];
+                    this.AboutMe = (string)dr["AboutMe"];
                 }
                 else
                 {
-                    this._AboutMe = "NA";
+                    this.AboutMe = "NA";
                 }
-
-                if (dr["FavoriteFoods1"] != DBNull.Value)
+                if (dr["Address"] != DBNull.Value)
                 {
-                    this._FavoriteFoods1 = (string)dr["FavoriteFoods1"];
+                    this.Address = (string)dr["Address"];
                 }
                 else
                 {
-                    this._FavoriteFoods1 = "NA";
+                    this.Address = "NA";
                 }
-
-                if (dr["FavoriteFoods2"] != DBNull.Value)
+                if (dr["mobile"] != DBNull.Value)
                 {
-                    this._FavoriteFoods2 = (string)dr["FavoriteFoods2"];
+                    this.Mobile = (string)dr["mobile"];
                 }
                 else
                 {
-                    this._FavoriteFoods2 = "NA";
+                    this.Mobile = "NA";
                 }
-
-                if (dr["FavoriteFoods3"] != DBNull.Value)
+                if (dr["ECPreference"] != DBNull.Value)
                 {
-                    this._FavoriteFoods3 = (string)dr["FavoriteFoods3"];
+                    this.ECPreference = (string)dr["ECPreference"];
                 }
                 else
                 {
-                    this._FavoriteFoods3 = "NA";
+                    this.ECPreference = "NA";
                 }
-
+                if (dr["Website"] != DBNull.Value)
+                {
+                    this.Website = (string)dr["Website"];
+                }
+                else
+                {
+                    this.Website = "NA";
+                }
+                if (dr["canEmailSend"] != DBNull.Value)
+                {
+                    if (Int32.Parse(dr["canEmailSend"].ToString()) == 1)
+                        this.canEmailSend = true;
+                    else
+                        this.canEmailSend = false;
+                }
+                else
+                {
+                    this.canEmailSend = true;
+                }
+                /*
                 if (dr["NewsLetter"] != DBNull.Value)
                 {
                     this._NewsLetter = (int)dr["NewsLetter"];
@@ -191,8 +226,9 @@ namespace EC.BL.Providers.User
                 {
                     this._Activation = (int)dr["Activation"];
                 }
+                 * */
             }
-            */
+            
             dr.Close();
         }
     }
