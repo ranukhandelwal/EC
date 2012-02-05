@@ -16,11 +16,4 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
     <asp:ContentPlaceHolder ID="MainContent" runat="server">
     </asp:ContentPlaceHolder>
-    <asp:Panel ID="userpageid" Visible="true" runat="server">
-    </asp:Panel>
-    <asp:Panel ID="userlistid" Visible="false" runat="server">
-        <fieldset>
-            <legend>User List</legend>
-        </fieldset>
-    </asp:Panel>
 </asp:Content>

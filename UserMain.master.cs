@@ -15,11 +15,6 @@ namespace ExamCrazy
         protected void Page_Load(object sender, EventArgs e)
         {
             UserInfoCtrl.UName = Uname;
-            if (userpanel == 1)
-            {
-                userlistid.Visible = true;
-                userpageid.Visible = false;
-            }
             if (Uname == UserIdentity.UserName)
             {
                 UserInfoCtrl.UEmail = UserIdentity.UserEmail;
