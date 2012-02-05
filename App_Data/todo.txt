@@ -1,0 +1,6 @@
+spSelectUser to be updated on server
+spupdateuser
+table widths of alluser to be checked
+spUpdatePassword
+spUpdateUserImage
+spUpdateEmail
