@@ -123,10 +123,21 @@ namespace EC.Security
         {
             get
             {
-                if ((HttpContext.Current.Session["ECUsername"] != null) && (HttpContext.Current.Session["ECUpass"] != null))
-                    return true;
-                else
+                try
+                {
+                    //Even HttpContext.Current.Session can be null. To find out conditions 
+                    //look at following page 
+                    //http://stackoverflow.com/questions/1382791/asp-net-what-to-do-if-current-session-is-null
+                    if ((HttpContext.Current.Session != null) && (HttpContext.Current.Session["ECUsername"] != null) && (HttpContext.Current.Session["ECUpass"] != null))
+                        return true;
+                    else
+                        return false;
+                }
+                catch
+                {
                     return false;
+                }
+
             }
         }
 
