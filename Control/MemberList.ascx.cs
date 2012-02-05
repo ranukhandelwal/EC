@@ -17,6 +17,9 @@ using EC.BL.Providers.User;
 
 namespace ExamCrazy.Control
 {
+    /// <summary>
+    /// user control to generate user member list.
+    /// </summary>
     public partial class MemberList : System.Web.UI.UserControl
     {
         private Utility Util
@@ -25,7 +28,12 @@ namespace ExamCrazy.Control
         }
 
         public string LinkPage = "/User/";//This is default page, can be overwritten
-        public string QueryString; //Can be used to override query string values
+        /// <summary>
+        /// Assign this variable the querystring, this will over write actual querystring.
+        /// format of querystring is same as actual querysting.
+        /// </summary>
+        public string QueryString; 
+        //Can be used to override query string values
         protected void Page_Load(object sender, EventArgs e)
         {
             HtmlLink csslink = new HtmlLink();
