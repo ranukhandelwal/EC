@@ -209,7 +209,8 @@ function handleResponseStateddl() {
 
         //response.length = 0;
         if (response_count == 0) {
-            ddlstate.options[ddlstate.options.length] = new Option("Other", 5000);
+            ddlstate.options[ddlstate.options.length] = new Option("Other", 50000);
+            //Note: This constant value is also defined in Constant Class. They should alwasy match
         }
 
         ddlstate.setAttribute("Disabled", "false");
@@ -271,7 +272,8 @@ function handleResponseCityddl() {
 
         //response.length = 0;
         if (response_count == 0) {
-            ddlcity.options[ddlcity.options.length] = new Option("Other", 5000);
+            ddlcity.options[ddlcity.options.length] = new Option("Other", 50000);
+            //Note: This constant value is also defined in Constant Class. They should alwasy match
         }
 
         ddlcity.disabled = false;

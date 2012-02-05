@@ -83,6 +83,12 @@ namespace EC.BL
         public const string DomainName = "ExamCrazy.com";
         public const string JobsPageBase = "~/Jobs-Interviews/";
 
+        //Note StateMaxId and CityMaxID is used as hard coded values in Ajaxrequest.js
+        //Couldnt get some value to read class constant in javascript. Please note these
+        //values should always match
+        public const int StateMaxID = 50000;
+        public const int CityMaxID = 50000;
+
         public const int RecipeImageMaxSize = 30000;
         public const int UserImageMaxSize = 60000;
 
