@@ -13,6 +13,15 @@ namespace ExamCrazy.User {
     public partial class @__user {
         
         /// <summary>
+        /// userpage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel userpage;
+        
+        /// <summary>
         /// lblwelcomeusername control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,24 @@ namespace ExamCrazy.User {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::ExamCrazy.Control.DiscussionForm discussion;
+        
+        /// <summary>
+        /// userlist control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel userlist;
+        
+        /// <summary>
+        /// memlist control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::ExamCrazy.Control.MemberList memlist;
         
         /// <summary>
         /// Master property.

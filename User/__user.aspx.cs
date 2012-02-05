@@ -14,11 +14,15 @@ using EC.BL.Providers.User;
 
 namespace ExamCrazy.User
 {
-    public partial class __user : System.Web.UI.Page
+    public partial class __user : BasePage
     {
         static string uname;
         static bool IsUserAuthenticated;
         static string RequestedPage = "";
+        private Utility Util
+        {
+            get { return new Utility(); }
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
             //Check if user is logged in
@@ -42,13 +46,18 @@ namespace ExamCrazy.User
             }
             else if (RequestedPage.ToLower().Contains("default.aspx") || RequestedPage.ToLower().Contains("index.aspx") )
             {
-                Master.userpanel = 1;
+                userlist.Visible = true;
+                userpage.Visible = false;
                 if (IsUserAuthenticated)
                     Master.Uname = uname;
                 else
                     Master.Uname = "Register@ExamCrazy";
                 //note: Register@ExamCrazy is used in Siteconfiguration too
                 //infact a bad design, using like a magic no.
+                string QueryString = Request.RawUrl;
+                QueryString = QueryString.Split('?')[1];
+                memlist.QueryString = QueryString;
+                
             }
             else if (RequestedPage == uname)
             {
@@ -63,6 +72,7 @@ namespace ExamCrazy.User
                     {
                         lblwelcomeusername.Text = "</br>RequestedPage does not exist";
                         Master.Uname = uname;
+                        this.Context.Response.Redirect(ResolveUrl("~/User/"));
                     }
                     else
                     {
