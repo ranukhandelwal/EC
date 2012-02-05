@@ -35,9 +35,9 @@ public partial class Login : System.Web.UI.UserControl
         }
         ShowHideLoginControl(Authentication.Authenticate);
         HtmlLink csslink = new HtmlLink();
-        if (Page.Header.FindControl("cssreciaspx") == null)
+        if (Page.Header.FindControl("csscontentxd") == null)
         {
-            csslink.ID = "cssreciaspx";
+            csslink.ID = "csscontentxd";
             csslink.Attributes.Add("rel", "stylesheet");
             csslink.Attributes.Add("type", "text/css");
             csslink.Href = "CSS/contentxd.css";
