@@ -122,6 +122,11 @@ namespace EC.BL.Providers.User
             return list;
         }
          */
+
+        public static bool UserExists(string uname)
+        {
+            return !Blogic.IsUsernameAvailable(uname);
+        }
     }
 }
 
