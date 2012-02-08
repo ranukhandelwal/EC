@@ -18,8 +18,10 @@ namespace ExamCrazy
             Page.Header.DataBind();
             login.loginpanelno = 2;
             HeaderCtrl.filter = HeaderFilter;
+            form1.Action = Request.RawUrl;
             if (!Page.IsPostBack)
             {
+
                 UpdateRepository UpdateList = new UpdateRepository();
                 ExtendedCollection<Update> UC = UpdateList.GetUpdateList(PAGEID.ToString());
                 //UC.Contains(
