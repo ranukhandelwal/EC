@@ -98,6 +98,7 @@ public partial class Login : System.Web.UI.UserControl
         }
         else
         {
+            JavaScript.Alert("Invalid Login Credentials");
             ShowInvalidErrorMsg();
         }
     }
