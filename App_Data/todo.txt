@@ -4,3 +4,5 @@ table widths of alluser to be checked
 spUpdatePassword
 spUpdateUserImage
 spUpdateEmail
+spSelectDisplayAllMembers
+spiseamil1verfied
