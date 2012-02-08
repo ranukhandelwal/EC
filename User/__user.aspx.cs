@@ -25,26 +25,39 @@ namespace ExamCrazy.User
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Check if user is logged in
-            IsUserAuthenticated = Authentication.IsUserAuthenticated;
             
-            //Check if Requested page is user's page or different page
-
-            uname = UserIdentity.UserName;
-
             if (!string.IsNullOrEmpty(Request.QueryString["RequestedURL"]))
             {
                 RequestedPage = Request.QueryString["RequestedURL"];
+
+                while (RequestedPage.Contains("RequestedURL="))
+                {
+                    if (RequestedPage.Contains("RequestedURL="))
+                    {
+                        if (RequestedPage.Split('?').Length > 1)
+                        {
+                            RequestedPage = RequestedPage.Split('?')[1];
+                        }
+                    }
+                    RequestedPage = HttpUtility.ParseQueryString(RequestedPage).Get("RequestedURL");
+                }
+                //string rawurl = Request.RawUrl;
             }
 
-            Master.Uname = RequestedPage;
 
+            uname = UserIdentity.UserName;
+            Master.Uname = RequestedPage;
+            //Check if user is logged in
+            IsUserAuthenticated = Authentication.IsUserAuthenticated;
+
+            //special case to check if user is logged in and is calling his own page
             if (RequestedPage == "$$UNAME$$")
             {
                 RequestedPage = "/User/" + UserIdentity.UserName;
                 this.Context.Response.Redirect(RequestedPage);
             }
-            else if (RequestedPage.ToLower().Contains("default.aspx") || RequestedPage.ToLower().Contains("index.aspx") )
+            //not the user page but user list page
+            else if (RequestedPage.ToLower().Contains("default.aspx") || RequestedPage.ToLower().Contains("index.aspx"))
             {
                 userlist.Visible = true;
                 userpage.Visible = false;
@@ -54,14 +67,16 @@ namespace ExamCrazy.User
                     Master.Uname = "Register@ExamCrazy";
                 //note: Register@ExamCrazy is used in Siteconfiguration too
                 //infact a bad design, using like a magic no.
-                string QueryString = Request.RawUrl;
+                string QueryString = Request.RawUrl +"RequestedPage==" +RequestedPage;
+                memlist.QueryString = QueryString;
                 if (QueryString.Split('?').Length > 1)
                 {
                     QueryString = QueryString.Split('?')[1];
                     memlist.QueryString = QueryString;
                 }
-                
+
             }
+            //requested page is users own page
             else if (RequestedPage == uname)
             {
                 lblwelcomeusername.Text = "Welcome " + uname;
@@ -89,10 +104,9 @@ namespace ExamCrazy.User
 
                     lblwelcomeusername.Text = lblwelcomeusername.Text + "<br> You are watching " + RequestedPage + "'s Page";
                 }
-                
-            }
 
-                       
+            }
+            
         }
     }
 }
