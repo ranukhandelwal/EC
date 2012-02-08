@@ -50,6 +50,7 @@ namespace ExamCrazy.Control
             int OrderBy;
             int SortBy;
             int iPage;
+            qstring.Text = QueryString;
             if ((QueryString != null) && (QueryString != ""))
             {
                 if (QueryString.Contains("ob="))

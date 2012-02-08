@@ -51,6 +51,7 @@
                     <div style="padding-top: 8px;">
                         <div style="margin-top: 5px; margin-bottom: 10px;">
                             <asp:Label runat="server" ID="lblcounter" CssClass="content12" EnableViewState="false" />
+                            <asp:Label runat="server" ID="qstring" CssClass="content12" EnableViewState="false" />
                         </div>
                         <div style="margin-top: 12px; margin-bottom: 20px;">
                             <asp:Label runat="server" ID="lblAplhaLetterLinks" CssClass="content12" EnableViewState="false" />
