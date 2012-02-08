@@ -28,7 +28,7 @@
                 <ul>
         </HeaderTemplate>
         <ItemTemplate>
-            <li><a id="A1" href="<%#Page.ResolveUrl(((System.Xml.XmlNode)Container.DataItem).Attributes["link"].InnerText)%>"
+            <li><a id="A1" href='<%#Page.ResolveUrl(((System.Xml.XmlNode)Container.DataItem).Attributes["link"].InnerText)%>'
                 runat="server">
                 <%#((System.Xml.XmlNode)Container.DataItem).Attributes["name"].InnerText%></a>
         </ItemTemplate>
