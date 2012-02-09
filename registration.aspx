@@ -341,11 +341,11 @@
                                                 <td width="15%">
                                                 </td>
                                                 <td width="74%">
-                                                    <input type="text" class="txtinput" id="hd" name="hd" runat="server" style="visibility: hidden;">
+                                                    <input type="text" class="txtinput" id="hd" name="hd" runat="server" style="visibility: hidden;" />
                                                     <br />
                                                     <span class="content2">Security Code:</span>
                                                     <br />
-                                                    <img height="30" alt="" src="imgsecuritycode.aspx" width="80">
+                                                    <img height="30" alt="" src="imgsecuritycode.aspx" width="80" />
                                                     <br />
                                                     <asp:Label ID="lblinvalidsecode" CssClass="cred2" runat="server" Visible="false" />
                                                     <asp:TextBox ID="txtsecfield" CssClass="txtinput" runat="server" Width="70"></asp:TextBox><asp:RequiredFieldValidator
