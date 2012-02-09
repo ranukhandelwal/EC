@@ -57,7 +57,7 @@
                             <br />
                             <input type="button" id="subbutemail" value="Verify email" title="Check if email already in used. Cannot use the same email."
                                 disabled="disabled" class="submitadmin" onclick="sendRequestEmailTextPost()" />&nbsp;
-                            <asp:RequiredFieldValidator runat="server" ID="RequiredFieldEmail" ControlToValidate="Email"
+                            <asp:RequiredFieldValidator runat="server" ValidationGroup="updateemail" ID="RequiredFieldEmail" ControlToValidate="Email"
                                 SetFocusOnError="true" CssClass="cred2" ErrorMessage="Email is blank" Display="Dynamic"> </asp:RequiredFieldValidator>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
             </tr>
             <tr>
                 <td width="15%" valign="top" colspan="2">
-                    <asp:ValidationSummary ID="UpdateEmailID" runat="server" EnableClientScript="true"
+                    <asp:ValidationSummary ID="UpdateEmailID" ValidationGroup="updateemail" runat="server" EnableClientScript="true"
                         ShowMessageBox="true" ShowSummary="false" HeaderText="The following fields need attention:" />
                     <asp:Button runat="server" Text="Submit" ID="BtnUpdateEmail" CssClass="submitadmin"
                         OnClick="UpdateEmail" />
