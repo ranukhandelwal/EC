@@ -57,7 +57,7 @@ namespace ExamCrazy.User
                 this.Context.Response.Redirect(RequestedPage);
             }
             //not the user page but user list page
-            else if (RequestedPage.ToLower().Contains("default.aspx") || RequestedPage.ToLower().Contains("index.aspx"))
+            else if (RequestedPage.ToLower().Contains("default.aspx") || RequestedPage.ToLower().Contains("index.aspx") || RequestedPage == "" || RequestedPage == null)
             {
                 userlist.Visible = true;
                 userpage.Visible = false;
