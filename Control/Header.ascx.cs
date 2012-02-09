@@ -32,6 +32,7 @@ public partial class Header : System.Web.UI.UserControl
             s.Append("});");
             Page.ClientScript.RegisterClientScriptBlock(Page.GetType(), "newscript", s.ToString(), true);
         }
+        lbltest.Text = "url=" + Request.RawUrl;
         if (!Page.IsPostBack)
         {
             XmlDocument doc = new XmlDocument();

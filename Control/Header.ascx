@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Header.ascx.cs" Inherits="Header" %>
+<asp:Label ID="lbltest" runat="server"></asp:Label>
 <asp:Repeater ID="header" runat="server">
     <HeaderTemplate>
         <div class="main-handle">
