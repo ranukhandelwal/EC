@@ -121,7 +121,7 @@ public partial class Login : System.Web.UI.UserControl
         //loginpanel1.Visible = true;
         //DisplayUserInfo.Visible = false;
 
-        this.Context.Response.Redirect("/index.aspx");
+        this.Context.Response.Redirect("~");
     }
 
     private void ShowInvalidErrorMsg()
