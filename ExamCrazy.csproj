@@ -65,6 +65,7 @@
     <Content Include="Control\MemberList.ascx" />
     <Content Include="css\announcement.css" />
     <Content Include="css\discussion.css" />
+    <Content Include="imgsecuritycode.aspx" />
     <Content Include="index.aspx" />
     <Content Include="Test\TempIntermediatePage.aspx" />
     <Content Include="Test\TestUserMemberList.aspx" />
@@ -692,6 +693,9 @@
       <DependentUpon>imgsecuritycode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="imgsecuritycode.aspx.designer.cs">
+      <DependentUpon>imgsecuritycode.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -953,7 +957,6 @@
     <Content Include="Error\ExamCrazy-FileNotFound.aspx" />
     <Content Include="Error\ExamCrazy-NoAccess.aspx" />
     <Content Include="forgotpassword.aspx" />
-    <Content Include="imgsecuritycode.aspx" />
     <Content Include="js\Ajaxrequest.js" />
     <Content Include="js\dropdownmenu.js" />
     <Content Include="js\jquery.datepick.js" />
