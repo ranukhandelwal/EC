@@ -1,7 +1,7 @@
-#region XD World Recipe V 2.8
+#region ExamCrazy
 // FileName: Login.ascx.cs
 
-// Date Created: 2/14/2009
+// Date Created: 
 // Website: www.examcrazy.com
 #endregion
 using System;
