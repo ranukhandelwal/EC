@@ -145,8 +145,8 @@ public partial class Login : System.Web.UI.UserControl
             loginpanel1.Visible = false;
             loginpanel2.Visible = false;
             DisplayUserInfo.Visible = true;
-            lblusername.Text = "<a href='/Account/myaccount.aspx'>" + UserIdentity.UserName + "</a>";
-            lblusername.Attributes.Add("onmouseover", "Tip('<a class=content12 href=/Account/userprofile.aspx?uid=" + UserIdentity.UserID + ">My Profile</a><br><a class=content12 href=/Account/myaccount.aspx>My Account</a><br><a class=content12 href=/Account/pmview.aspx>My Inbox</a><br><a class=content12 href=/Account/myfriendslist.aspx>My Friends List</a><br><a class=content12 href=/Account/members.aspx>Browse Members</a>', WIDTH, 150, false, '', false, true, FADEIN, 300, FADEOUT, 300, STICKY, 1, false, true, CLICKCLOSE, true)");
+            lblusername.Text = "<a href='/User/" + UserIdentity.UserName +"'>" + UserIdentity.UserName + "</a>";
+            lblusername.Attributes.Add("onmouseover", "Tip('<a class=content12 href=/user-profile/update-profile.aspx" + ">My Profile</a><br><a class=content12 href=/user-profile/update-password.aspx>Update Password</a><br><a class=content12 href=/user-profile/update-image.aspx>Update Image</a><br><a class=content12 href=/user-profile/verify-email.aspx>Verify Email</a><br><a class=content12 href=/User/>Browse Members</a>', WIDTH, 150, false, '', false, true, FADEIN, 300, FADEOUT, 300, STICKY, 1, false, true, CLICKCLOSE, true)");
             lblusername.Attributes.Add("onmouseout", "UnTip()");
         }
     }
