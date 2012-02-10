@@ -4,7 +4,7 @@
     <HeaderTemplate>
         <div class="announcement mod">
             <h3>
-                <span class="unit">Announcements</span> <span class="arrows"></span>
+                Announcements <span class="arrows"></span>
             </h3>
             <div class="">
                 <ul>

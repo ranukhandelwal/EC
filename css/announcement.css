@@ -1,5 +1,5 @@
 ﻿.announcement{ background:#fcfcfc; margin-bottom:10px;}
-.announcement h3{padding:5px 0px 5px 14px;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;background: url(../img/headingbackground.gif) repeat-x; height:18px;}
+.announcement h3 {padding:5px 0px 5px 14px;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;background: url(../img/headingbackground.gif) repeat-x; height:18px;}
 .announcement h3 span.arrows{ float:right;background:url(../img/sprite.png) no-repeat; width:14px; height:14px; margin-left:10px;margin-right:10px;background-position:-87px -54px;}
 .announcement ul{ padding:10px 10px 10px 25px;}
 .announcement ul li{ list-style:outside disc; padding:5px 0px; }
