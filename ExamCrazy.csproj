@@ -68,6 +68,10 @@
     <Content Include="css\discussion.css" />
     <Content Include="css\preferredproduct.css" />
     <Content Include="imgsecuritycode.aspx" />
+    <Content Include="img\exam.gif" />
+    <Content Include="img\GateAcademy.gif" />
+    <Content Include="img\headingbackground.gif" />
+    <Content Include="img\whitecricle.gif" />
     <Content Include="index.aspx" />
     <Content Include="Test\TempIntermediatePage.aspx" />
     <Content Include="Test\TestUserMemberList.aspx" />
