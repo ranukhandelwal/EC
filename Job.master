@@ -2,7 +2,7 @@
     CodeBehind="Job.master.cs" Inherits="ExamCrazy.Job" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-<link href="../css/Jobs.css" rel="stylesheet" type="text/css" runat="server"/>
+    <link href="../css/Jobs.css" rel="stylesheet" type="text/css" runat="server" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </asp:Content>
@@ -63,8 +63,8 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
-<div class="middlePart">
-    <asp:ContentPlaceHolder ID="MainContent" runat="server">
-    </asp:ContentPlaceHolder>
+    <div class="middlePart">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
     </div>
 </asp:Content>
