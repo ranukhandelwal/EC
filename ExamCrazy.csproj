@@ -63,8 +63,10 @@
     <Content Include="Control\Announcement.ascx" />
     <Content Include="Control\DiscussionForm.ascx" />
     <Content Include="Control\MemberList.ascx" />
+    <Content Include="Control\PreferredProducts.ascx" />
     <Content Include="css\announcement.css" />
     <Content Include="css\discussion.css" />
+    <Content Include="css\preferredproduct.css" />
     <Content Include="imgsecuritycode.aspx" />
     <Content Include="index.aspx" />
     <Content Include="Test\TempIntermediatePage.aspx" />
@@ -618,6 +620,13 @@
     </Compile>
     <Compile Include="Control\MemberList.ascx.designer.cs">
       <DependentUpon>MemberList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PreferredProducts.ascx.cs">
+      <DependentUpon>PreferredProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\PreferredProducts.ascx.designer.cs">
+      <DependentUpon>PreferredProducts.ascx</DependentUpon>
     </Compile>
     <Compile Include="Control\rsssidemenu.ascx.cs">
       <DependentUpon>rsssidemenu.ascx</DependentUpon>
