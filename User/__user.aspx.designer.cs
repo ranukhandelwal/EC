@@ -67,6 +67,15 @@ namespace ExamCrazy.User {
         protected global::ExamCrazy.Control.MemberList memlist;
         
         /// <summary>
+        /// prodlist control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::ExamCrazy.Control.PreferredProducts prodlist;
+        
+        /// <summary>
         /// Master property.
         /// </summary>
         /// <remarks>
