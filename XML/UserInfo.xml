@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <UserInfo>
 
+  <list name="My Products" displayin="__usr__,__faculty__" link="#"></list>
   <list name="Update Profile" displayin="__usr__,__faculty__" link="~/user-profile/update-profile.aspx"></list>
-  <list name="Verify EmailID" displayin="__usr__,__faculty__" link="#"></list>
   <list name="Update Photo" displayin="__usr__,__faculty__" link="~/user-profile/update-image.aspx"></list>
   <list name="See Notes" displayin="__ano__,__other__" link="#"></list>
   <list name="Recent Actions" displayin="__ano__,__other__" link="#"></list>
