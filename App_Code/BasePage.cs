@@ -49,7 +49,7 @@ namespace EC.UI
             SendEmailNotification = null;
             */
             //Redirect to the error page.
-            Server.Transfer("Error/ExamCrazy-ErrorPage.aspx");
+            Server.Transfer("~/Error/ExamCrazy-ErrorPage.aspx");
         }
 
         /// <summary>
