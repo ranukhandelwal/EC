@@ -5,7 +5,9 @@
 // Website: www.examcrazy.com
 #endregion
 using System;
+using System.Net;
 using System.Net.Mail;
+using System.Web;
 
 namespace EC.Common
 {
@@ -28,22 +30,30 @@ namespace EC.Common
             {
                 try
                 {
-                    MailAddress from = new MailAddress(FromEmail);
-                    MailAddress to = new MailAddress(ToEmail);
-                    MailMessage msg = new MailMessage(from, to);
-
-                    msg.Subject = Subject;
-                    msg.Body = emailbody;
-                    msg.IsBodyHtml = true;
-                    msg.Priority = MailPriority.High;
-
                     SmtpClient smtp = new SmtpClient();
+                    NetworkCredential basicCredential = new NetworkCredential("support@gatetutor.in", "a1s2d3f4");
+                    MailMessage msg = new MailMessage();
+                    MailAddress from = new MailAddress(FromEmail);
+                    
+                    smtp.Host = "mail.gatetutor.in";
+                    smtp.Port = 25;
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = basicCredential;
+
+                    msg.From = from;
+                    msg.Subject = Subject;
+                    msg.IsBodyHtml = true;
+                    msg.Body = emailbody;
+                    msg.To.Add(ToEmail);
+                    
+                    
                     smtp.Send(msg);
                 }
                 catch (Exception x)
                 {
                     Err = 1;
-                    throw new SystemException();
+                    throw new SystemException("Email Error" + x);
+                    
                 }
             }
 
