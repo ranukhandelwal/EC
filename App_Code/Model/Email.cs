@@ -12,7 +12,7 @@ namespace EC.Model
     /// <summary>
     /// Object in this class manages email properties
     /// </summary>
-    public class Email : DBObj
+    public class Email
     {
         //Defaut constructor
         public Email()
@@ -20,91 +20,88 @@ namespace EC.Model
         }
 
 #region Class Variables
-        /// <summary>Item ID</summary>
-        protected int _ItemID;
-
-        /// <summary>Name of the Item i.e recipe or article</summary>
-        protected string _ItemName;
-
+        
         /// <summary>Recipient Email Address</summary>
-        protected string _RecipientEmail;
+        private string _To;
 
         /// <summary>Recipient Name</summary>
-        protected string _RecipientName;
-
-        /// <summary>Category Name</summary>
-        protected string _Category;
+        private string _ToName;
 
         /// <summary>Sender Name</summary>
-        protected string _SenderEmail;
+        private string _From;
 
         /// <summary>Sender Name</summary>
-        protected string _SenderName;
+        private string _FromName;
 
-        /// <summary>Admin Email</summary>
-        protected string _FromAdminEmail;
+        /// <summary>CC Email</summary>
+        private string _CC;
 
-        /// <summary>Admin Email</summary>
-        protected string _ToAdminEmail;
+        /// <summary>BCC Email</summary>
+        private string _BCC;
+
+        /// <summary>Email Body</summary>
+        private string _Body;
 
         /// <summary>SMTP Server Address</summary>
-        protected string _SMTPServerAddress;
+        private string _SMTPServerAddress;
+
+        /// <summary>Email Saved in Template Name</summary>
+        private string _TemplateName;
+
+        /// <summary>Email Subject</summary>
+        private string _Subject;
 
 #endregion
 
 #region Properties
-        public int ItemID
+        
+
+        public string TemplateName
         {
-            get { return _ItemID; }
-            set { _ItemID = value; }
+            get { return _TemplateName; }
+            set { _TemplateName = value; }
         }
 
-        public string ItemName
+        public string To
         {
-            get { return _ItemName; }
-            set { _ItemName = value; }
+            get { return _To; }
+            set { _To = value; }
         }
 
-        public string RecipientEmail
+        public string ToName
         {
-            get { return _RecipientEmail; }
-            set { _RecipientEmail = value; }
+            get { return _ToName; }
+            set { _ToName = value; }
         }
 
-        public string RecipientName
+        public string From
         {
-            get { return _RecipientName; }
-            set { _RecipientName = value; }
+            get { return _From; }
+            set { _From = value; }
         }
 
-        public string Category
+        public string FromName
         {
-            get { return _Category; }
-            set { _Category = value; }
+            get { return _FromName; }
+            set { _FromName = value; }
         }
 
-        public string SenderEmail
+        public string CC
         {
-            get { return _SenderEmail; }
-            set { _SenderEmail = value; }
+            get { return _CC; }
+            set { _CC = value; }
         }
 
-        public string SenderName
+        public string BCC
         {
-            get { return _SenderName; }
-            set { _SenderName = value; }
+            get { return _BCC; }
+            set { _BCC = value; }
         }
 
-        public string FromAdminEmail
+        public string Body
         {
-            get { return _FromAdminEmail; }
-            set { _FromAdminEmail = value; }
-        }
-
-        public string ToAdminEmail
-        {
-            get { return _ToAdminEmail; }
-            set { _ToAdminEmail = value; }
+            get { return _Body; }
+            set { _Body = value; }
         }
 
         public string SMTPServerAddress
@@ -113,6 +110,11 @@ namespace EC.Model
             set { _SMTPServerAddress = value; }
         }
 
+        public string Subject
+        {
+            get { return _Subject; }
+            set { _Subject = value; }
+        }
 #endregion
     }
 }
