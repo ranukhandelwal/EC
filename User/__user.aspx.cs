@@ -64,9 +64,8 @@ namespace ExamCrazy.User
                 if (IsUserAuthenticated)
                     Master.Uname = uname;
                 else
-                    Master.Uname = "Register@ExamCrazy";
-                //note: Register@ExamCrazy is used in Siteconfiguration too
-                //infact a bad design, using like a magic no.
+                    Master.Uname = constant.DefaultUserName;
+                
                 string QueryString = Request.RawUrl +"RequestedPage==" +RequestedPage;
                 memlist.QueryString = QueryString;
                 if (QueryString.Split('?').Length > 1)

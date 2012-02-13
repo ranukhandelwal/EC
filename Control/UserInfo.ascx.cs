@@ -33,6 +33,9 @@ namespace ExamCrazy.Control
                 Page.Header.Controls.Add(csslink);
             }
 
+            if ((UName == "") || (UName == null))
+                UName = constant.DefaultUserName;
+
             filter = SiteConfiguration.GetUserInfoFilter(UName);
             lblname.Text = UName;
             lblemail.Text = UEmail;

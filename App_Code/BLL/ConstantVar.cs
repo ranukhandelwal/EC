@@ -82,6 +82,7 @@ namespace EC.BL
         //You can also use HTTP request to extract the domain.
         public const string DomainName = "ExamCrazy.com";
         public const string JobsPageBase = "~/Jobs-Interviews/";
+        public const string DefaultUserName = "Register@ExamCrazy";
 
         //Note StateMaxId and CityMaxID is used as hard coded values in Ajaxrequest.js
         //Couldnt get some value to read class constant in javascript. Please note these
