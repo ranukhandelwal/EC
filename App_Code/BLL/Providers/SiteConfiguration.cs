@@ -61,7 +61,15 @@ namespace EC.BL
         }
 
         /// <summary>
-        /// Get Login Redirect Page
+        /// Get Email Verification Page
+        /// </summary>
+        public static string EmailVerificationPage()
+        {
+            return BaseUrl.GetBaseUrl + "user-profile/verify-email.aspx";
+        }
+
+        /// <summary>
+        /// Get Header Filter
         /// </summary>
         public static string GetHeader()
         {
