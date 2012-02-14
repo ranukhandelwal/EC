@@ -148,13 +148,13 @@ namespace ExamCrazy.AjaxRequest
 
                 if (Blogic.IsEmailExists(Email))
                 {
-                    EmailTemplate SendCredential = new EmailTemplate();
+                    /*EmailTemplate SendCredential = new EmailTemplate();
 
                     lostpassword.GetUserCredential(Email);
 
                     SendCredential.SendPassword(Email, lostpassword.GetFirstname, lostpassword.GetUserName, Encryption.Decrypt(lostpassword.GetUserPass));
 
-                    SendCredential = null;
+                    SendCredential = null;*/
 
                     Response.Write("<span class='content12' style='border: solid 1px #800000; padding: 6px;'><img src='images/takenuname.gif'> Your login credential has been sent to " + Email + ".</span>");
                 }

@@ -445,11 +445,11 @@ public partial class membershipmanagers : BasePageAdmin
 
             Blogic.ReinstateUserAccount(UserID);
 
-            EmailTemplate SendeMail = new EmailTemplate();
+            /*EmailTemplate SendeMail = new EmailTemplate();
 
             SendeMail.SendAccountSuspensionReinstateEmail(UserEmail, UserName, "Account Resintate", 2);
 
-            SendeMail = null;
+            SendeMail = null;*/
 
             Response.Redirect("confirmusersuspenddeleteedit.aspx?mode=ReInstate&uid=" + UserID);
         }
