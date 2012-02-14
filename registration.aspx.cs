@@ -24,6 +24,7 @@ using EC.Common;
 using EC.Model;
 using EC.Common.Utilities;
 using EC.Security;
+using EC.BL.Providers.User;
 
 public partial class registration : BasePage
 {
@@ -463,11 +464,23 @@ public partial class registration : BasePage
                 return;
             }
 
-            //EmailAccountActivationLink(User);
-
             //Create login session variable. During registration we never create login in cookies as we have not asked his permission
             CookieLoginHelper.CreateLoginSession(Util.FormatTextForInput(Request.Form[Username.UniqueID]), Util.FormatTextForInput(Request.Form[Password1.UniqueID]));
 
+            EmailRepository SendEmail = new EmailRepository();
+            SendEmail.ReadEmailTemplate("RegistrationEmail.xml");
+            SendEmail.SendEmail(UserIdentity.UserEmail);
+
+            string EmailVerificationLink;
+            UserActivationLink EmailActivationLink = new UserActivationLink();
+            EmailVerificationLink = EmailActivationLink.GenerateActivationLink();
+            EmailVerificationLink = ResolveUrl(SiteConfiguration.EmailVerificationPage()) + EmailVerificationLink;
+            SendEmail.ReadEmailTemplate("EmailVerification.xml");
+            SendEmail.ReplaceString("$$EmailVerificationLink$$", EmailVerificationLink);
+            SendEmail.SendEmail(UserIdentity.UserEmail);
+
+            EmailActivationLink = null;
+            SendEmail = null;
             User = null;
 
             Response.Redirect("/User/" + Util.FormatTextForInput(Request.Form[Username.UniqueID]));
@@ -485,11 +498,5 @@ public partial class registration : BasePage
         Util = null;
     }
 
-    private void EmailAccountActivationLink(UserRepository User)
-    {
-        EmailTemplate SendeMail = new EmailTemplate();
-        SendeMail.RecipientEmail = User.Email1;
-        /*SendeMail.SendActivationLink(User.Username, User.GUID);*/
-        SendeMail = null;
-    }
+    
 }
