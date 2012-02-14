@@ -119,7 +119,7 @@ function handleResponseEmailText()
 //***********************************************************************************************/
 function sendRequestLostPasswordTextPost() 
   {
-    var email = escape(document.getElementById("ctl00_MainContent_useremailrecoverpass").value);
+      var email = escape(document.getElementById("ctl00_ctl00_MainContent_MainContent_useremailrecoverpass").value);
             try
               {
                  http.open('Get','AjaxRequest/AjaxRequest.aspx?mode=recoverpass&email='+ email);
