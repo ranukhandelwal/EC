@@ -73,6 +73,7 @@
     <Content Include="img\headingbackground.gif" />
     <Content Include="img\whitecricle.gif" />
     <Content Include="index.aspx" />
+    <Content Include="Test\EmailTest.aspx" />
     <Content Include="Test\TempIntermediatePage.aspx" />
     <Content Include="Test\TestUserMemberList.aspx" />
     <Content Include="tinymce_editor\langs\en.js" />
@@ -469,6 +470,9 @@
     <Compile Include="AjaxRequest\AjaxRequest.aspx.designer.cs">
       <DependentUpon>AjaxRequest.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Code\BaseActivationPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="App_Code\BaseLoggedInPage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -483,7 +487,6 @@
     </Compile>
     <Compile Include="App_Code\BLL\ActionStoredPrecedure.cs" />
     <Compile Include="App_Code\BLL\ConstantVar.cs" />
-    <Compile Include="App_Code\BLL\EmailTemplates.cs" />
     <Compile Include="App_Code\BLL\GetUserImage.cs" />
     <Compile Include="App_Code\BLL\PagerLink.cs" />
     <Compile Include="App_Code\BLL\PageTitle.cs" />
@@ -508,6 +511,7 @@
     <Compile Include="App_Code\BLL\Providers\City\CityRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\Country\BaseCountryObj.cs" />
     <Compile Include="App_Code\BLL\Providers\Country\CountryRepository.cs" />
+    <Compile Include="App_Code\BLL\Providers\Email\EmailRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\Feed\BaseFeedObj.cs" />
     <Compile Include="App_Code\BLL\Providers\Feed\FeedRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\IRepository.cs" />
@@ -522,6 +526,7 @@
     <Compile Include="App_Code\BLL\Providers\User\ProviderShowAllUsersAdmin.cs" />
     <Compile Include="App_Code\BLL\Providers\User\ProviderUserDetails.cs" />
     <Compile Include="App_Code\BLL\Providers\User\ProviderUsersSearch.cs" />
+    <Compile Include="App_Code\BLL\Providers\User\UserActivationLink.cs" />
     <Compile Include="App_Code\BLL\Providers\User\UserFeaturesConfiguration.cs" />
     <Compile Include="App_Code\BLL\Providers\User\UserIdentity.cs" />
     <Compile Include="App_Code\BLL\Providers\User\UserRepository.cs" />
@@ -530,7 +535,6 @@
     <Compile Include="App_Code\Common\BuildAlphabetLinks.cs" />
     <Compile Include="App_Code\Common\Cache.cs" />
     <Content Include="App_Code\Common\DropdownListHelper.cs" />
-    <Compile Include="App_Code\Common\EmailHelper.cs" />
     <Content Include="App_Code\Common\EventsCalendar.cs" />
     <Compile Include="App_Code\Common\ExtendedCollection.cs" />
     <Compile Include="App_Code\Common\JavaScriptAlert.cs" />
@@ -780,6 +784,13 @@
     <Compile Include="Test\DynamicTableTest.aspx.designer.cs">
       <DependentUpon>DynamicTableTest.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Test\EmailTest.aspx.cs">
+      <DependentUpon>EmailTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test\EmailTest.aspx.designer.cs">
+      <DependentUpon>EmailTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Test\HeaderTest.aspx.cs">
       <DependentUpon>HeaderTest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -951,6 +962,8 @@
     <Content Include="UserMain.master" />
     <Content Include="admin\AddUpdate.aspx" />
     <Content Include="Control\Header.ascx" />
+    <Content Include="XML\EmailTemplate\EmailVerification.xml" />
+    <Content Include="XML\EmailTemplate\RegistrationEmail.xml" />
     <Content Include="XML\Header.xml" />
     <Content Include="Job.master" />
     <Content Include="Jobs-Interviews\Default.aspx" />
