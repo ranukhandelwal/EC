@@ -109,7 +109,7 @@ namespace EC.BL
             }
             else
             {
-                if(PageName == "Register@ExamCrazy")
+                if(PageName == constant.DefaultUserName)
                 {
                     UserInfoFilter = "__listnologin__";
                 }
