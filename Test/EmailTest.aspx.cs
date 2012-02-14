@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using EC.Common;
 using EC.UI;
+using EC.BL;
 
 namespace ExamCrazy.Test
 {
@@ -17,7 +18,10 @@ namespace ExamCrazy.Test
         }
         public void SendTestEmail(object s, EventArgs e)
         {
-            if (EmailHelper.SendEmail("ranu.khandelwal@gmail.com", "support@gatetutor.in", "Test Email", "This is Test Email") != 0)
+            EmailRepository ERepository = new EmailRepository();
+            ERepository.ReadEmailTemplate("RegistrationEmail.xml");
+            //ERepository.SendEmail("ranu.khandelwal@gmail.com");
+            if (ERepository.SendEmail("ranu.khandelwal@gmail.com") != 0)
             {
                 lblError.Text = "Error in sending email";
                 lblError.Visible = true;
