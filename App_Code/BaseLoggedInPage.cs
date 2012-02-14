@@ -8,9 +8,10 @@ namespace EC.UI
 {
     public class BaseLoggedInPage : BasePage
     {
+        protected bool Activation = false;
         protected override void OnLoad(EventArgs e)
         {
-            if (!Authentication.IsUserAuthenticated)
+            if ((!Authentication.IsUserAuthenticated) && !Activation)
             {
                 Response.Redirect(ResolveUrl("~/Test/TempIntermediatePage.aspx"));
             }
