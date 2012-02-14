@@ -7,9 +7,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    Need to discuss method for this, choices are:<br />
-    1) Send link to users for verification<br />
-    2) send code for verification<br />
+    <asp:Label ID="lblmessage" runat="server"></asp:Label>
+    <asp:Panel ID="pnlDefault" runat="server" Visible="false">
+        <asp:Label ID="lblDefault" runat="server"></asp:Label>
+        <asp:Button runat="server" Text="Request Email Verification Link" ID="BtnEmailVerification"
+            CssClass="submitadmin" OnClick="SendEmailVerificationLink" Visible="false" />
+    </asp:Panel>
+    <asp:Panel ID="pnlActivation" runat="server" Visible="false">
+    </asp:Panel>
+    
     <br />
     <br />
     <br />
