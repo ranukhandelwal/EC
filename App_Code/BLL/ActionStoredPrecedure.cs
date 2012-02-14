@@ -1156,6 +1156,25 @@ namespace EC.BL
         }
 
         /// <summary>
+        /// Authenticate Email Verification Link
+        /// </summary>
+        /// <returns></returns>
+        public static int IsEmailLinkAuthenticate(int userid, string email, string username)
+        {
+
+            SqlParameter prmUserId = new SqlParameter("@UserID", SqlDbType.Int, 4);
+            prmUserId.Value = userid;
+
+            SqlParameter prmUserName = new SqlParameter("@UserName", SqlDbType.VarChar, 100);
+            prmUserName.Value = username;
+
+            SqlParameter prmEmail = new SqlParameter("@Email", SqlDbType.VarChar, 100);
+            prmEmail.Value = email;
+
+            return DataAccess.GetInt32("spIsEmail1LinkAuthenticate", prmUserId, prmUserName, prmEmail);
+
+        }
+        /// <summary>
         /// Is Email Verified: 1 - verified, 0 - unverified
         /// </summary>
         /// <returns></returns>
