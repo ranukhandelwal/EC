@@ -473,7 +473,7 @@ public partial class registration : BasePage
 
             string EmailVerificationLink;
             UserActivationLink EmailActivationLink = new UserActivationLink();
-            EmailVerificationLink = EmailActivationLink.GenerateActivationLink();
+            EmailVerificationLink = EmailActivationLink.GenerateEmailVerificationLink();
             EmailVerificationLink = ResolveUrl(SiteConfiguration.EmailVerificationPage()) + EmailVerificationLink;
             SendEmail.ReadEmailTemplate("EmailVerification.xml");
             SendEmail.ReplaceString("$$EmailVerificationLink$$", EmailVerificationLink);

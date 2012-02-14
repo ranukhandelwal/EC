@@ -17,7 +17,7 @@ namespace EC.BL.Providers.User
             get { return new Utility(); }
         }
 
-        public string GenerateActivationLink()
+        public string GenerateEmailVerificationLink()
         {
             string link = "?";
             if (Authentication.IsUserAuthenticated)

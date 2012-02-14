@@ -57,7 +57,7 @@ namespace ExamCrazy.user_profile
             string EmailVerificationLink;
             EmailRepository SendEmail = new EmailRepository();
             UserActivationLink EmailActivationLink = new UserActivationLink();
-            EmailVerificationLink = EmailActivationLink.GenerateActivationLink();
+            EmailVerificationLink = EmailActivationLink.GenerateEmailVerificationLink();
             EmailVerificationLink = ResolveUrl(SiteConfiguration.EmailVerificationPage()) + EmailVerificationLink;
             SendEmail.ReadEmailTemplate("EmailVerification.xml");
             SendEmail.ReplaceString("$$EmailVerificationLink$$", EmailVerificationLink);
