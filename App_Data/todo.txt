@@ -1,8 +1,1 @@
-spSelectUser to be updated on server
-spupdateuser
-table widths of alluser to be checked
-spUpdatePassword
-spUpdateUserImage
-spUpdateEmail
-spSelectDisplayAllMembers
-spiseamil1verfied
+[spIsEmail1LinkAuthenticate] not updated in local copy of Ranu
