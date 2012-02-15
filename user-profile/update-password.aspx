@@ -15,7 +15,7 @@
             Visible="false" />
     </div>
     <fieldset>
-        <legend>User Profile Update</legend>
+        <legend>User Password Update</legend>
         <div style="padding-top: 25px;">
             <asp:Label ID="lblWarningMessage" runat="server" CssClass="content12" Visible="false"
                 EnableViewState="false" />
