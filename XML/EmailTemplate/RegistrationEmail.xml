@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Email>
+  <subject>Welcome to ExamCrazy.Com</subject>
+  <body>
+    <![CDATA[ Dear $$UserName$$
+<p>Thank you for registering with ExamCrazy.Com </p>
+
+<p>We welcome you to ExamCrazy.Com family. </p>
+
+<p>Please note you are bound by the $$TandCLink$$ of this website. In case of any issue please contact
+support@examcrazy.com</p>
+
+<p>Please verify your email by clicking on $$EmailVerify$$</p>
+
+<p>Kind regards,<br/><br/>
+
+ExamCrazy.com
+</p>
+ ]]>
+  </body>
+  <fromEmail>support@gatetutor.in</fromEmail>
+  <fromEmailName>ExamCrazy Support</fromEmailName>
+  <bcc>examcrazy@gmail.com;ajay.st@gmail.com</bcc>
+</Email>

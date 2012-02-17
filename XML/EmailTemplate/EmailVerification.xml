@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Email>
+  <subject>ExamCrazy.Com Email Verification</subject>
+  <body>
+    <![CDATA[ Dear $$UserName$$
+<p>We have received registration request @ExamCrazy.Com with $$UserEmail$$</p>
+
+<p>Please click on the link below to verify your EmailID. This is necessary
+other wise you will not be able to use many features @ExamCrazy.Com</p>
+
+<a href="$$EmailVerificationLink$$">Click here to verify your email</a>
+<p>Kind regards,<br/><br/>
+
+ExamCrazy.com
+</p>
+ ]]>
+  </body>
+  <fromEmail>support@gatetutor.in</fromEmail>
+  <fromEmailName>ExamCrazy Support</fromEmailName>
+  <bcc>examcrazy@gmail.com;ajay.st@gmail.com</bcc>
+</Email>
