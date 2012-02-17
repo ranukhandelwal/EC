@@ -963,6 +963,7 @@
     <Content Include="admin\AddUpdate.aspx" />
     <Content Include="Control\Header.ascx" />
     <Content Include="XML\EmailTemplate\EmailVerification.xml" />
+    <Content Include="XML\EmailTemplate\ForgotPassWord.xml" />
     <Content Include="XML\EmailTemplate\RegistrationEmail.xml" />
     <Content Include="XML\Header.xml" />
     <Content Include="Job.master" />
