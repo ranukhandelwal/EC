@@ -31,6 +31,24 @@ namespace ExamCrazy.user_profile {
         protected global::System.Web.UI.WebControls.Label lblWarningMessage;
         
         /// <summary>
+        /// lblupdatepswd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblupdatepswd;
+        
+        /// <summary>
+        /// pnldefault control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnldefault;
+        
+        /// <summary>
         /// OldPassword control.
         /// </summary>
         /// <remarks>
@@ -47,6 +65,15 @@ namespace ExamCrazy.user_profile {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        
+        /// <summary>
+        /// pnlActivation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlActivation;
         
         /// <summary>
         /// Password1 control.
