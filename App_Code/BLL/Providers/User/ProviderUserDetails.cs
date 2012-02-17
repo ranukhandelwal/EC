@@ -35,6 +35,10 @@ namespace EC.BL.Providers.User
                 {
                     this.Email1 = (string)dr["Email1"];
                 }
+                if (dr["uname"] != DBNull.Value)
+                {
+                    this.UserName = (string)dr["uname"];
+                }
                 if (dr["fName"] != DBNull.Value)
                 {
                     this.FirstName = (string)dr["fName"];
