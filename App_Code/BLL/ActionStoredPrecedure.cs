@@ -698,7 +698,7 @@ namespace EC.BL
       }
 
       /// <summary>
-      /// Get UserID
+      /// Get UserID From UserName and Password
       /// </summary>
       public static int GetUserID(string UserName, string Paswword)
       {
@@ -709,6 +709,17 @@ namespace EC.BL
           prmPaswword.Value = Paswword;
 
           return DataAccess.GetInt32("spGetUserID", prmUserName, prmPaswword);
+      }
+
+      /// <summary>
+      /// Get UserID From Email
+      /// </summary>
+      public static int GetUserIDFromEmail(string Email)
+      {
+          SqlParameter prmEmail = new SqlParameter("@Email", SqlDbType.VarChar, 100);
+          prmEmail.Value = Email;
+
+          return DataAccess.GetInt32("spGetUserIDFromEmail", prmEmail);
       }
 
       /// <summary>
@@ -1155,6 +1166,22 @@ namespace EC.BL
 
         }
 
+        /// <summary>
+        /// Update user password with username and new password onlu
+        /// </summary>
+        /// <returns></returns>
+        public static int UpdatePassWord(string username, string password)
+        {
+
+            SqlParameter prmUserName = new SqlParameter("@UserName", SqlDbType.VarChar, 100);
+            prmUserName.Value = username;
+
+            SqlParameter prmPassword = new SqlParameter("@Password", SqlDbType.VarChar, 100);
+            prmPassword.Value = password;
+
+            return DataAccess.GetInt32("spUpdatePasswordFromUname", prmUserName, prmPassword);
+
+        }
         /// <summary>
         /// Authenticate Email Verification Link
         /// </summary>

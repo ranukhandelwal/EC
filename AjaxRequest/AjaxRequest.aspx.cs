@@ -143,11 +143,18 @@ namespace ExamCrazy.AjaxRequest
         {
             if (!string.IsNullOrEmpty(Request.QueryString["email"]) && Utility.IsQueryStringSecure(Request.QueryString["email"]))
             {
-                string Email;
-                Email = Request.QueryString["email"];
+                string EmailID;
+                EmailID = Request.QueryString["email"];
 
-                if (Blogic.IsEmailExists(Email))
+                if (Blogic.IsEmailExists(EmailID))
                 {
+                    EmailRepository SendEmail = new EmailRepository();
+                    UserActivationLink UserLink = new UserActivationLink();
+                    string link;
+                    SendEmail.ReadEmailTemplate("ForgotPassWord.xml");
+                    link = BaseUrl.GetBaseUrl + "user-profile/update-password.aspx" + UserLink.GeneratePasswordResetLink(EmailID);
+                    SendEmail.ReplaceString("$$PasswordLink$$", link);
+                    SendEmail.SendEmail(EmailID);
                     /*EmailTemplate SendCredential = new EmailTemplate();
 
                     lostpassword.GetUserCredential(Email);
@@ -156,11 +163,11 @@ namespace ExamCrazy.AjaxRequest
 
                     SendCredential = null;*/
 
-                    Response.Write("<span class='content12' style='border: solid 1px #800000; padding: 6px;'><img src='images/takenuname.gif'> Your login credential has been sent to " + Email + ".</span>");
+                    Response.Write("<span class='content12' style='border: solid 1px #800000; padding: 6px;'><img src='images/takenuname.gif'> Your login credential has been sent to " + EmailID + ".</span>");
                 }
                 else
                 {
-                    Response.Write("<span class='content12' style='border: solid 1px #800000; padding: 6px;'><img src='images/takenuname.gif'> There is no user with this email " + Email + ".</span>");
+                    Response.Write("<span class='content12' style='border: solid 1px #800000; padding: 6px;'><img src='images/takenuname.gif'> There is no user with this email " + EmailID + ".</span>");
                 }
             }
             else
