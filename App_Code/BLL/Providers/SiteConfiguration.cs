@@ -49,7 +49,7 @@ namespace EC.BL
                 //Last rule is for user so that if nothing matches they are normal user
                 else
                 {
-                    RedirectPage = "/User/" + "UserIdentity.UserName";
+                    RedirectPage = "/User/" + UserIdentity.UserName;
                 }
             }
             else
