@@ -41,7 +41,7 @@ namespace ExamCrazy.user_profile
                 else
                 {
                     JavaScript.Alert(EmailUploadMessage);
-                    Response.Redirect(ResolveUrl("~/User/") + UserIdentity.UserName);
+                    LoginRepository.Logout();
                 }
             }
             else

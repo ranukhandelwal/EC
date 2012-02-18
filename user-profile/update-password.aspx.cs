@@ -66,7 +66,7 @@ namespace ExamCrazy.user_profile
                     else
                     {
                         JavaScript.Alert(PwdUploadMessage);
-                        Response.Redirect(ResolveUrl("~"));
+                        LoginRepository.Logout();
                     }
                 }
             }
