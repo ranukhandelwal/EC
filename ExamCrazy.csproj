@@ -516,7 +516,7 @@
     <Compile Include="App_Code\BLL\Providers\Feed\FeedRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\IRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\Jobs\JobRepository.cs" />
-    <Compile Include="App_Code\BLL\Providers\ProviderLostPassword.cs" />
+    <Compile Include="App_Code\BLL\Providers\Login\LoginRepository.cs" />
     <Compile Include="App_Code\BLL\Providers\ProviderSiteStatistics.cs" />
     <Compile Include="App_Code\BLL\Providers\SiteConfiguration.cs" />
     <Compile Include="App_Code\BLL\Providers\State\BaseStateObj.cs" />
