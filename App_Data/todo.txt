@@ -1,1 +1,2 @@
 [spIsEmail1LinkAuthenticate] not updated in local copy of Ranu
+spUpdatePasswordFromUname
