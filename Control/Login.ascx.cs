@@ -47,81 +47,30 @@ public partial class Login : System.Web.UI.UserControl
             
     }
 
-    public void login(string uname, string upass)
+    
+
+    public void Login_Click1(object sender, ImageClickEventArgs e)
     {
-        //Autheticate the username and password against the database record.
-        if (Authentication.Validate(uname, Encryption.Encrypt(upass)))
+        if (LoginRepository.Login(Request.Form[uname1.UniqueID].ToString(), Request.Form[upass1.UniqueID].ToString()) != 0)
         {
-            //Check if the account has been activated through activation link.
-            //If the user did not click the activation link sent through the email, then redirect to remind him/her to activate.
-            /*if (!Blogic.IsUserActivated(uname, Encryption.Encrypt(upass)))
-            {
-                this.Context.Response.Redirect("redirectionpage.aspx?mode=notactive&ReturnURL=" + this.Context.Request.Url.PathAndQuery);
-            }*/
-
-            //After the user is authenticated and activated, check if the user is not suspended.
-            //If the user status is 0, that means the user is suspended due to site policy violation or other reasons.
-            //We also have to get rid of any cookie in the users machine to prevent looping 
-            //back to the previous page when we redirect the user.
-            /*
-            if (!Blogic.IsUserActive(uname, Encryption.Encrypt(upass)))
-            {
-                CookieLoginHelper.RemoveCookie();
-                CookieLoginHelper.RemoveLoginSession();
-
-                this.Context.Response.Redirect("redirectionpage.aspx?mode=suspended&ReturnURL=" + this.Context.Request.Url.PathAndQuery);
-            }
-             */
-            
-            /*if ((this.rememberme.Checked))
-            {*/
-
-                if ((CookieLoginHelper.IsCookieSupported))
-                {
-                    CookieLoginHelper.CreateLoginCookie(uname, upass);
-                }
-                else 
-                {
-                    //If the users browser does not support cookie, use session instead.
-                    CookieLoginHelper.CreateLoginSession(uname, upass);
-                }
-              
-            /*}
-            else 
-            {
-            //If the users did not check the remember me checkbox, store login credential in session.
-            CookieLoginHelper.CreateLoginSession(uname, upass);
-            
-            }
-            */
-            this.Context.Response.Redirect("~/User/" + uname);
+            JavaScript.Alert("Invalid Login Credentials");
+            ShowInvalidErrorMsg();
         }
-        else
+            
+    }
+
+    public void Login_Click2(object sender, EventArgs e)
+    {
+        if (LoginRepository.Login(Request.Form[uname2.UniqueID].ToString(), Request.Form[upass2.UniqueID].ToString()) != 0)
         {
             JavaScript.Alert("Invalid Login Credentials");
             ShowInvalidErrorMsg();
         }
     }
 
-    public void Login_Click1(object sender, ImageClickEventArgs e)
-    {
-        login(this.uname1.Text, this.upass1.Text);
-    }
-
-    public void Login_Click2(object sender, EventArgs e)
-    {
-        login(this.uname2.Text, this.upass2.Text);
-    }
-
     public void Logout_Click(object sender, EventArgs e)
     {
-        CookieLoginHelper.RemoveCookie();
-        CookieLoginHelper.RemoveLoginSession();
-
-        //loginpanel1.Visible = true;
-        //DisplayUserInfo.Visible = false;
-
-        this.Context.Response.Redirect("~");
+        LoginRepository.Logout();
     }
 
     private void ShowInvalidErrorMsg()
