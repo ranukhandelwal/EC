@@ -5,7 +5,7 @@
             EnableViewState="false" Text="The submitted credentials are not valid.<br>Please check they are correct." />
     </div>
 </asp:Panel>
-<asp:Panel ID="loginpanel1" runat="server" Visible="false">
+<asp:Panel ID="loginpanel1" runat="server" Visible="false" DefaultButton="usubmit">
     <div class="mod loginForm unit">
         <h3>
             User Login</h3>
@@ -35,7 +35,7 @@
         </div>
     </div>
 </asp:Panel>
-<asp:Panel ID="loginpanel2" runat="server" Visible="false">
+<asp:Panel ID="loginpanel2" runat="server" Visible="false" DefaultButton="usubmit2">
     <label>
         Register User</label>
     <asp:TextBox ID="uname2" TextMode="SingleLine" Text="User Name" name="User Name"
