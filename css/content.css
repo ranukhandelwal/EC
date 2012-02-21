@@ -251,6 +251,20 @@ span.submenu{margin:0px !important; }
 .loginForm label a{ color:#336699; text-decoration:none;}
 .rightAdd{ margin:10px 0px 0px; cursor:pointer;}
 
+/* ************************* general body text applicable for allpages******************** */
+.gbody{ margin:0px 0px 0px 5px; width:530px;}
+.gbody h3{padding:5px 0px 5px 10px;color:#FFF;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;background: url(../img/headingbackground.gif) repeat-x;}
+.gbody ul{ margin-bottom:5px; background:#fcfcfc; float:left;}
+.gbody ul li{ margin:5px 0px 0px; float:left;}
+.gbody ul li h5{ font-size:14px; color:#494949; font-weight:bold; padding:0px 0px 10px; width:710px;}
+.gbody ul li p{ font-size:12px;color:#494949; line-height:18px; margin:5px 0px; }
+.gbody ul li p a{ text-decoration:none; color:#F00; font-size:14px; font-weight:bold;}
+.gbody ul li table{width:98%; border: 1px solid #000;}
+.gbody ul li table tr td{ }
+.txt {color:#000000;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; TEXT-ALIGN: justify; TEXT-VALIGN: top; line-height: 180%;padding-left: 0px;padding-right: 0px;}
+
+/* ************************* general body text applicable for allpages ******************** */
+
 
 
 
