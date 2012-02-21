@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Header>
 
-  <list name="Home" displayin="__ano__" link="~/default.aspx">
+  <list name="Home" displayin="__ano__" link="~/index.aspx">
 
   </list>
 
@@ -9,7 +9,7 @@
 
   </list>
   <list name="Engineering" link="#" displayin="__usr__,__ano__">
-    <sub name="ENG" link="#" displayin="__usr__"/>
+    <sub name="ENG" link="~/Pre-Engineering/Engineering.aspx" displayin="__usr__,__ano__"/>
     <sub name="AIEEE1" link="#" displayin="__ano__"/>
     <sub name="AIEEE2" link="#" displayin="__usr__,__ano__"/>
     

@@ -10,7 +10,7 @@ namespace ExamCrazy.Test
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            login.loginpanelno = 3;
         }
     }
 }

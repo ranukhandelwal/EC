@@ -100,8 +100,8 @@
                                 <asp:Repeater ID="RepeaterID" runat="server">
                                 <HeaderTemplate><ul id="ticker01"></HeaderTemplate>
                                 <ItemTemplate>
-                                    <li><a href="<%#DataBinder.Eval(Container.DataItem, "link")%>" title="<%#DataBinder.Eval(Container.DataItem, "title")%>" ><%#DataBinder.Eval(Container.DataItem, "title")%></a></li>
                                     
+
                                 </ItemTemplate>
                                 <FooterTemplate></ul></FooterTemplate>
                         

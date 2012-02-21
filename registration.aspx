@@ -22,7 +22,7 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="AddToBreadCrum" runat="server">
     <div class="breadCrumsMenu unit">
-        <a class="unit" href="default.aspx" title="home">Home</a>
+        <a class="unit" href="index.aspx" title="home">Home</a>
         <div class="breadArrow">
             &gt;</div>
         Register Here</div>
@@ -34,7 +34,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
     <div class="size1of1">
         <div class="size1of1" style="background-color: #FFF9EC; margin-top: 0px;">
-            &nbsp;&nbsp;<a href="default.aspx" class="dsort" title="Back to ExamCrazy.Com homepage">Home</a>&nbsp;<span
+            &nbsp;&nbsp;<a href="index.aspx" class="dsort" title="Back to ExamCrazy.Com homepage">Home</a>&nbsp;<span
                 class="bluearrow">»</span>&nbsp; <span class="content2">You are here: User Registration
                     Form</span>
         </div>

@@ -53,6 +53,74 @@
         CausesValidation="true" ValidationGroup="LoginGroup2" />
     <a href="~/registration.aspx" title="New User" runat="server">New User</a>
 </asp:Panel>
+<asp:Panel ID="loginpanel3" runat="server" Visible="false">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('a.login-window').click(function () {
+
+                //Getting the variable's value from a link 
+                var loginBox = $(this).attr('href');
+
+                //Fade in the Popup
+                $(loginBox).fadeIn(300);
+
+                //Set the center alignment padding + border see css style
+                var popMargTop = ($(loginBox).height() + 24) / 2;
+                var popMargLeft = ($(loginBox).width() + 24) / 2;
+
+                $(loginBox).css({
+                    'margin-top': -popMargTop,
+                    'margin-left': -popMargLeft
+                });
+
+                // Add the mask to body
+                $('body').append('<div id="mask"></div>');
+                $('#mask').fadeIn(300);
+
+                return false;
+            });
+
+            // When clicking on the button close or the mask layer the popup closed
+            $('a.close, #mask').live('click', function () {
+                $('#mask , .login-popup').fadeOut(300, function () {
+                    $('#mask').remove();
+                });
+                return false;
+            });
+        });
+    </script>
+    <a href="#login-box" class="login-window">Login / Sign In</a>
+    <div id="login-box" class="login-popup">
+        <a href="#" class="close">
+            <img src="close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+        <fieldset class="textbox">
+            <label>
+                UserName</label>
+            <asp:TextBox ID="uname3" TextMode="SingleLine" Text="" runat="server" ToolTip="Enter username" />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="uname3"
+                CssClass="InvalidCred" ValidationGroup="LoginGroup3" ErrorMessage="User Name is empty"
+                runat="Server">
+            </asp:RequiredFieldValidator>
+            <br>
+            <label>
+                Password </label>
+            <asp:TextBox ID="upass3" TextMode="Password" Text="password" runat="server" ToolTip="Enter password" />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="upass3"
+                CssClass="InvalidCred" ValidationGroup="LoginGroup3" ErrorMessage="Password is empty"
+                runat="Server">
+            </asp:RequiredFieldValidator>
+            <asp:Button class="button" ID="usubmit3" OnClick="Login_Click3" runat="server" Text="Login"
+                CausesValidation="true" ValidationGroup="LoginGroup3" />
+            <p>
+                <a class="forgot" href="#">Forgot your password?</a>
+            </p>
+            <p>
+                <a id="A1" href="~/registration.aspx" title="New User" runat="server">New User</a>
+            </p>
+        </fieldset>
+    </div>
+</asp:Panel>
 <asp:Panel Visible="false" ID="invalidcredential2" runat="server">
     <div class="loginerrmsgwrapper">
         <asp:Label runat="server" CssClass="InvalidCred" ID="lblinvalidcredential2" Visible="true"

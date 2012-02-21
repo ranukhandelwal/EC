@@ -7,7 +7,7 @@
 <div id="b2">
 <asp:Panel ID="PanelSideMenuShowUsersLinks" runat="server">
 <ul>
-<li><a title="Back to hompeage" href="default.aspx">Home</a></li>
+<li><a title="Back to hompeage" href="index.aspx">Home</a></li>
     <li><a title="Configure site settings" href="myaccount.aspx">My Account</a></li>
     <li><a title="View, delete and send private message to other members." href="pmview.aspx">My PM Inbox</a></li>
     <li><a title="View my CookBook." href="mycookbook.aspx">My CookBook</a></li>
@@ -26,7 +26,7 @@
 </asp:Panel>
 <asp:Panel ID="PanelSideMenuShowAdminLoginLink" runat="server">
 <ul>
-<li><a title="Back to hompeage" href="default.aspx">Home</a></li>
+<li><a title="Back to hompeage" href="index.aspx">Home</a></li>
     <li><a title="XD Portal Administrator Login" href="admin/adminlogin.aspx">Admin Login</a></li>
     <li><a title="Configure site settings" href="myaccount.aspx">My Account</a></li>
     <li><a title="View, delete and send private message to other members." href="pmview.aspx">My PM Inbox</a></li>
@@ -46,7 +46,7 @@
 </asp:Panel>
 <asp:Panel ID="PanelSideMenuHideUsersLinks" runat="server">
 <ul>
-<li><a title="Back to hompeage" href="default.aspx">Home</a></li>
+<li><a title="Back to hompeage" href="index.aspx">Home</a></li>
     <li><a title="View 100 Newest Recipes" href="sort.aspx?sid=4">Newest Recipes</a></li>
     <li><a title="View 100 Most Popular Recipes" href="sort.aspx?sid=1">Most Popular Recipes</a></li>
     <li><a title="View 100 Highest Rated Recipes" href="sort.aspx?sid=2">Highest Rated Recipes</a></li>

@@ -33,6 +33,10 @@ public partial class Login : System.Web.UI.UserControl
         {
             loginpanel2.Visible = true;
         }
+        if (loginpanelno == 3)
+        {
+            loginpanel3.Visible = true;
+        }
         ShowHideLoginControl(Authentication.Authenticate);
         HtmlLink csslink = new HtmlLink();
         if (Page.Header.FindControl("cssreciaspx") == null)
@@ -112,6 +116,11 @@ public partial class Login : System.Web.UI.UserControl
         login(this.uname2.Text, this.upass2.Text);
     }
 
+    public void Login_Click3(object sender, EventArgs e)
+    {
+        login(this.uname3.Text, this.upass3.Text);
+    }
+
     public void Logout_Click(object sender, EventArgs e)
     {
         CookieLoginHelper.RemoveCookie();
@@ -120,7 +129,7 @@ public partial class Login : System.Web.UI.UserControl
         //loginpanel1.Visible = true;
         //DisplayUserInfo.Visible = false;
 
-        this.Context.Response.Redirect("/default.aspx");
+        this.Context.Response.Redirect("/index.aspx");
     }
 
     private void ShowInvalidErrorMsg()
