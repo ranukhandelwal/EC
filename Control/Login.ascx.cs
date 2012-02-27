@@ -14,6 +14,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
+using AjaxControlToolkit.Sanitizer;
 using EC.UI;
 using EC.BL;
 using EC.Common;
@@ -32,8 +33,14 @@ public partial class Login : System.Web.UI.UserControl
         if (loginpanelno == 2)
         {
             loginpanel2.Visible = true;
+            ShowHideLoginControl(Authentication.Authenticate);
         }
-        ShowHideLoginControl(Authentication.Authenticate);
+        if (loginpanelno == 3)
+        {
+            ShowPopup();
+            //loginpanel3.Visible = true;
+        }
+        
         HtmlLink csslink = new HtmlLink();
         if (Page.Header.FindControl("csscontentxd") == null)
         {
@@ -51,7 +58,7 @@ public partial class Login : System.Web.UI.UserControl
 
     public void Login_Click1(object sender, ImageClickEventArgs e)
     {
-        if (LoginRepository.Login(Request.Form[uname1.UniqueID].ToString(), Request.Form[upass1.UniqueID].ToString()) != 0)
+        if (LoginRepository.Login(Request.Form[uname1.UniqueID].ToString(), Request.Form[upass1.UniqueID].ToString(), null) != 0)
         {
             JavaScript.Alert("Invalid Login Credentials");
             ShowInvalidErrorMsg();
@@ -61,18 +68,41 @@ public partial class Login : System.Web.UI.UserControl
 
     public void Login_Click2(object sender, EventArgs e)
     {
-        if (LoginRepository.Login(Request.Form[uname2.UniqueID].ToString(), Request.Form[upass2.UniqueID].ToString()) != 0)
+        if (LoginRepository.Login(Request.Form[uname2.UniqueID].ToString(), Request.Form[upass2.UniqueID].ToString(), null) != 0)
         {
             JavaScript.Alert("Invalid Login Credentials");
             ShowInvalidErrorMsg();
         }
     }
 
+    public void Login_Click3(object sender, EventArgs e)
+    {
+        if (LoginRepository.Login(Request.Form[uname3.UniqueID].ToString(), Request.Form[upass3.UniqueID].ToString(), this.Context.Request.Url.PathAndQuery) != 0)
+        {
+            JavaScript.Alert("Invalid Login Credentials");
+            ShowInvalidErrorMsg();
+        }
+    }
     public void Logout_Click(object sender, EventArgs e)
     {
         LoginRepository.Logout();
     }
 
+    public void ShowPopup()
+    {
+        if (!Authentication.IsUserLogin)
+        {
+            loginpanel3.Visible = true;
+            ModalPopupExtender.Show();
+        }
+    }
+
+    public void ModalPopupCancel_Click(object sender, EventArgs e)
+    {
+        JavaScript.Alert("Redirecting to Home Page");
+        Response.Redirect("~");
+    }
+    
     private void ShowInvalidErrorMsg()
     {
         this.uname1.Text = "";
