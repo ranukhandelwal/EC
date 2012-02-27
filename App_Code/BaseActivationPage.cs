@@ -30,7 +30,7 @@ namespace EC.UI
             if (__domain != null && __email != null && __username != null && __userid != null && action != null)
             {
                 base.Activation = true;
-                __domain = __domain.Replace(" ","+");
+                __domain = __domain.Replace(" ", "+");
                 __email = __email.Replace(" ", "+");
                 __username = __username.Replace(" ", "+");
                 __userid = __userid.Replace(" ", "+");
@@ -41,7 +41,7 @@ namespace EC.UI
                         __isEmailLinkAuthenticate = true;
                     else
                         __isEmailLinkAuthenticate = false;
-                    
+
                     __verifyEmailLink = null;
                 }
                 else if (action == "pswd")
