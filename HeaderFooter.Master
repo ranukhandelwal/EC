@@ -35,6 +35,8 @@
 <body>
     <script type="text/javascript" src="<%=ResolveUrl("~/js/wz_tooltip.js")%>"></script>
     <form id="form1" runat="server">
+    <ajaxToolkit:ToolkitScriptManager runat="Server" ID="ScriptManager1" ScriptMode="Release"
+        ViewStateMode="Disabled" />
     <div class="wrapper">
         <!-- ===== PAGE DIV START HERE===== -->
         <div class="page">
