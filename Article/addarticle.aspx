@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="true"
     CodeBehind="addarticle.aspx.cs" Inherits="EC.Article.addarticle" ValidateRequest="false"%>
+    <%@Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../CSS/cssreciaspx.css" rel="stylesheet" type="text/css" />
@@ -47,6 +48,7 @@
     Why ExamCrazy
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+<ucl:login ID="login" runat="server" />
     <table border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
         <tr>
             <td valign="top" width="85%">

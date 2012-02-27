@@ -18,6 +18,10 @@ namespace ExamCrazy.user_profile
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if ((!Authentication.IsUserAuthenticated) && !Activation)
+            {
+                login.ShowPopup();
+            }
             Master.Uname = UserIdentity.UserName;
             if (base.Activation)
             {

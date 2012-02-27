@@ -2,11 +2,13 @@
     CodeBehind="verify-email.aspx.cs" Inherits="ExamCrazy.user_profile.verify_email" %>
 
 <%@ MasterType VirtualPath="~/UserMain.master" %>
+<%@Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+<ucl:login ID="login" runat="server" />
     <asp:Label ID="lblmessage" runat="server"></asp:Label>
     <asp:Panel ID="pnlDefault" runat="server" Visible="false">
         <asp:Label ID="lblDefault" runat="server"></asp:Label>

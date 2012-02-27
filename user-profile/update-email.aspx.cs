@@ -18,6 +18,7 @@ namespace ExamCrazy.user_profile
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            login.ShowPopup();
             Master.Uname = UserIdentity.UserName;
             lblOldEmail.Text = UserIdentity.UserEmail;
             if (UserIdentity.isEmail1Verified)

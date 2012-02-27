@@ -13,6 +13,15 @@ namespace ExamCrazy.user_profile {
     public partial class update_email {
         
         /// <summary>
+        /// login control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Login login;
+        
+        /// <summary>
         /// lbvalenght control.
         /// </summary>
         /// <remarks>

@@ -15,27 +15,20 @@ using EC.BL.Providers.Article;
 
 namespace EC.Article
 {
-    public partial class addarticle : BasePage
+    public partial class addarticle : BaseLoggedInPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Authentication.IsUserAuthenticated)
-            {
-                HideContentIfNotLogin.Visible = true;
-                lblauthorname.Text = UserIdentity.UserName.ToString();
-                /*ArticleCategory Drop Down List Generation*/
-                ArticleCategoryRepository ArticleCatList = new ArticleCategoryRepository();
-                ExtendedCollection<ArticleCategory> AC = ArticleCatList.GetArticleCategoryList(1);
+            login.ShowPopup();
+            HideContentIfNotLogin.Visible = true;
+            lblauthorname.Text = UserIdentity.UserName.ToString();
+            /*ArticleCategory Drop Down List Generation*/
+            ArticleCategoryRepository ArticleCatList = new ArticleCategoryRepository();
+            ExtendedCollection<ArticleCategory> AC = ArticleCatList.GetArticleCategoryList(1);
 
-                for (int i = 0; i < AC.Count; i++)
-                {
-                    ddlarticlecategory.Items.Add(new ListItem(AC[i].Category.ToString(), AC[i].CatID.ToString()));
-                }
-            }
-            else
+            for (int i = 0; i < AC.Count; i++)
             {
-                lblyouarenotlogin.Visible = true;
-                lblyouarenotlogin.Text = "<div style='margin-top: 12px; margin-bottom: 7px;'><img src='../images/lock.gif' align='absmiddle'> You are not authorize to add an article. Please login to add an article.</div>";
+                ddlarticlecategory.Items.Add(new ListItem(AC[i].Category.ToString(), AC[i].CatID.ToString()));
             }
         }
         public void Add_Article(Object s, EventArgs e)

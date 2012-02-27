@@ -2,6 +2,7 @@
     AutoEventWireup="true" CodeBehind="update-profile.aspx.cs" Inherits="ExamCrazy.user_profile.update_profile" %>
 
 <%@ MasterType VirtualPath="~/UserMain.master" %>
+<%@Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="CSS/contentxd.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="<%# ResolveUrl("~/js/Ajaxrequest.js")%>"></script>
@@ -10,6 +11,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+<ucl:login ID="login" runat="server" />
     <div style="padding: 2px; text-align: left; margin-left: 1px; margin-right: 26px;">
         <asp:Label ID="lbvalenght" runat="server" Font-Bold="True" ForeColor="#C00000" Font-Names="Verdana"
             Visible="false" />

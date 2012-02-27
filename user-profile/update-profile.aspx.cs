@@ -27,6 +27,7 @@ namespace ExamCrazy.user_profile
         ProviderUserDetails user = new ProviderUserDetails();
         protected void Page_Load(object sender, EventArgs e)
         {
+            login.ShowPopup();
             Master.Uname = UserIdentity.UserName;
             if (!IsPostBack)
             {

@@ -19,6 +19,7 @@ namespace ExamCrazy.user_profile
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            login.ShowPopup();
             Master.Uname = UserIdentity.UserName;
 
         }
