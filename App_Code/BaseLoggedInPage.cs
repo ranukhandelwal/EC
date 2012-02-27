@@ -13,9 +13,11 @@ namespace EC.UI
         {
             if ((!Authentication.IsUserAuthenticated) && !Activation)
             {
-                Response.Redirect(ResolveUrl("~/Test/TempIntermediatePage.aspx"));
+                //From this place login popup should be called. But at present this is not
+                //working
             }
             base.OnLoad(e);
-        }        
+        }
+        
     }
 }
