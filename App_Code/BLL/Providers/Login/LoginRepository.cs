@@ -12,7 +12,7 @@ namespace EC.BL
 {
     public static class LoginRepository
     {
-        public static int Login(string uname, string upass)
+        public static int Login(string uname, string upass, string redirectPage)
         {
             //Autheticate the username and password against the database record.
             if (Authentication.Validate(uname, Encryption.Encrypt(upass)))
@@ -38,7 +38,14 @@ namespace EC.BL
                     CookieLoginHelper.CreateLoginSession(uname, upass);
                 }
 
-                HttpContext.Current.Response.Redirect(SiteConfiguration.LoginRedirectPage());
+                if ((redirectPage == null) || (redirectPage == ""))
+                {
+                    HttpContext.Current.Response.Redirect(SiteConfiguration.LoginRedirectPage());
+                }
+                else
+                {
+                    HttpContext.Current.Response.Redirect(redirectPage);
+                }
                 return 0;
             }
             else
