@@ -1,0 +1,81 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="IONICLinks.master.cs" Inherits="ExamCrazy.Masters.IONICLinks" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Tutorials Home</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/<%=aieee_root%>physics.aspx" runat="server" title="physics.asp">All Physics Tutorials"><li class="active"><span class="icon"></span><span>physics.asp">All Physics Tutorials</span></li></a>
+                          <a id="A2" href="~/<%=aieee_root%>maths.aspx" runat="server" title="maths.asp">All Maths Tutorials"><li class="active"><span class="icon"></span><span>maths.asp">All Maths Tutorials</span></li></a>
+                          <a id="A3" href="~/<%=aieee_root%>chemistry.aspx" runat="server" title="Chemistry.asp">All Chemistry Tutorials"><li class="active"><span class="icon"></span><span>Chemistry.asp">All Chemistry Tutorials</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Ionic Equilibrium</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A4" href="~/<%=aieee_root%>chemistry/ionic-equilibrium/electrolytes.aspx" runat="server" title="Chemistry/Ionic-Equilibrium/Electrolytes.asp">Electrolytes"><li class="active"><span class="icon"></span><span>Chemistry/Ionic-Equilibrium/Electrolytes.asp">Electrolytes</span></li></a>
+                          <a id="A5" href="~/<%=aieee_root%>chemistry/ionic-equilibrium/ostwald_s_dilution_law.aspx" runat="server" title="Chemistry/Ionic-Equilibrium/Ostwald_s_dilution_law.asp">Ostwald�s dilution law"><li class="active"><span class="icon"></span><span>Chemistry/Ionic-Equilibrium/Ostwald_s_dilution_law.asp">Ostwald�s dilution law</span></li></a>
+                          <a id="A6" href="~/<%=aieee_root%>chemistry/ionic-equilibrium/common_ion_effect_and_solubility_product.aspx" runat="server" title="Chemistry/Ionic-Equilibrium/Common_ion_effect_and_Solubility_product.asp">Common ion effect and Solubility product"><li class="active"><span class="icon"></span><span>Chemistry/Ionic-Equilibrium/Common_ion_effect_and_Solubility_product.asp">Common ion effect and Solubility product</span></li></a>
+                          <a id="A7" href="~/<%=aieee_root%>chemistry/ionic-equilibrium/acid_and_base_concepts.aspx" runat="server" title="Chemistry/Ionic-Equilibrium/Acid_and_Base_concepts.asp">Acid and Base concepts"><li class="active"><span class="icon"></span><span>Chemistry/Ionic-Equilibrium/Acid_and_Base_concepts.asp">Acid and Base concepts</span></li></a>
+                          <a id="A8" href="~/<%=aieee_root%>chemistry/ionic-equilibrium/the_relative_strength_of_acids_and_bases.aspx" runat="server" title="Chemistry/Ionic-Equilibrium/The_relative_strength_of_acids_and_bases.asp">The relative strength of acids and bases"><li class="active"><span class="icon"></span><span>Chemistry/Ionic-Equilibrium/The_relative_strength_of_acids_and_bases.asp">The relative strength of acids and bases</span></li></a>
+                          <a id="A9" href="~/<%=aieee_root%>chemistry/ionic-equilibrium/neutralisation.aspx" runat="server" title="Chemistry/Ionic-Equilibrium/Neutralisation.asp">Neutralisation"><li class="active"><span class="icon"></span><span>Chemistry/Ionic-Equilibrium/Neutralisation.asp">Neutralisation</span></li></a>
+                          <a id="A10" href="~/<%=aieee_root%>chemistry/ionic-equilibrium/ionic_product_of_water_and_ph_scale.aspx" runat="server" title="Chemistry/Ionic-Equilibrium/Ionic_product_of_water_and_pH_scale.asp">Ionic product of water and pH scale"><li class="active"><span class="icon"></span><span>Chemistry/Ionic-Equilibrium/Ionic_product_of_water_and_pH_scale.asp">Ionic product of water and pH scale</span></li></a>
+                          <a id="A11" href="~/<%=aieee_root%>chemistry/ionic-equilibrium/buffer_solution.aspx" runat="server" title="Chemistry/Ionic-Equilibrium/Buffer_solution.asp">Buffer solution"><li class="active"><span class="icon"></span><span>Chemistry/Ionic-Equilibrium/Buffer_solution.asp">Buffer solution</span></li></a>
+                          <a id="A12" href="~/<%=aieee_root%>chemistry/ionic-equilibrium/salt_hydrolysis.aspx" runat="server" title="Chemistry/Ionic-Equilibrium/Salt_hydrolysis.asp">Salt hydrolysis"><li class="active"><span class="icon"></span><span>Chemistry/Ionic-Equilibrium/Salt_hydrolysis.asp">Salt hydrolysis</span></li></a>
+                          <a id="A13" href="~/<%=aieee_root%>chemistry/ionic-equilibrium/acid_base_indicators.aspx" runat="server" title="Chemistry/Ionic-Equilibrium/Acid_base_indicators.asp">Acid-base indicators"><li class="active"><span class="icon"></span><span>Chemistry/Ionic-Equilibrium/Acid_base_indicators.asp">Acid-base indicators</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>More Engineering Links</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A14" href="~/<%=aieee_root%>engineering/coaching-institutes-engineering-india-for-gate-ies-psus.aspx" runat="server" title="Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs.asp">Directory of coaching Institutes"><li class="active"><span class="icon"></span><span>Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs.asp">Directory of coaching Institutes</span></li></a>
+                          <a id="A15" href="~/<%=aieee_root%>engineering/top-ranking-government-engineering-colleges-in-india.aspx" runat="server" title="Engineering/Top-ranking-Government-Engineering-colleges-in-india.asp">Govt engg college rankings"><li class="active"><span class="icon"></span><span>Engineering/Top-ranking-Government-Engineering-colleges-in-india.asp">Govt engg college rankings</span></li></a>
+                          <a id="A16" href="~/<%=aieee_root%>engineering/top-ranking-private-engineering-colleges-in-india.aspx" runat="server" title="Engineering/Top-ranking-Private-Engineering-colleges-in-india.asp">Private engg college rankings"><li class="active"><span class="icon"></span><span>Engineering/Top-ranking-Private-Engineering-colleges-in-india.asp">Private engg college rankings</span></li></a>
+                          <a id="A17" href="~/<%=aieee_root%>engineering/admission-notifications-engineering-institutes-india-me-mtech.aspx" runat="server" title="Engineering/Admission-notifications-Engineering-institutes-india-ME-Mtech.asp">Admission notifications for Mtech/PhD"><li class="active"><span class="icon"></span><span>Engineering/Admission-notifications-Engineering-institutes-india-ME-Mtech.asp">Admission notifications for Mtech/PhD</span></li></a>
+                          <a id="A18" href="~/<%=aieee_root%>colleges/engineering_colleges.aspx" runat="server" title="Colleges/Engineering_Colleges.asp">All Engineering Colleges in India"><li class="active"><span class="icon"></span><span>Colleges/Engineering_Colleges.asp">All Engineering Colleges in India</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

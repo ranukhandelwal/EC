@@ -1,0 +1,92 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="EMLinks.master.cs" Inherits="ExamCrazy.Masters.EMLinks" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Electromagnetic Tutorials</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/engineering/electronics-communication/magnetic_circuits.aspx" runat="server" title="Magnetic circuits"><li class="active"><span class="icon"></span><span>Magnetic circuits</span></li></a>
+                          <a id="A2" href="~/engineering/electronics-communication/faraday_law_of_induction_lenzs.aspx" runat="server" title="Faraday's law of induction. Lenz's law"><li class="active"><span class="icon"></span><span>Faraday's law of induction. Lenz's law</span></li></a>
+                          <a id="A3" href="~/engineering/electronics-communication/faradays_law_examples.aspx" runat="server" title="Faraday's law examples"><li class="active"><span class="icon"></span><span>Faraday's law examples</span></li></a>
+                          <a id="A4" href="~/engineering/electronics-communication/faradays_law_and_moving_circuits.aspx" runat="server" title="Faraday's law and moving circuits"><li class="active"><span class="icon"></span><span>Faraday's law and moving circuits</span></li></a>
+                          <a id="A5" href="~/engineering/electronics-communication/displacement_current_and_ampere.aspx" runat="server" title="Displacement current and Amp�re's law"><li class="active"><span class="icon"></span><span>Displacement current and Amp�re's law</span></li></a>
+                          <a id="A6" href="~/engineering/electronics-communication/maxwell_equations_boundary_conditions.aspx" runat="server" title="Maxwell's equations, boundary conditions"><li class="active"><span class="icon"></span><span>Maxwell's equations, boundary conditions</span></li></a>
+                          <a id="A7" href="~/engineering/electronics-communication/sinusoidal_steady_state_phasors.aspx" runat="server" title="Sinusoidal steady state, phasors"><li class="active"><span class="icon"></span><span>Sinusoidal steady state, phasors</span></li></a>
+                          <a id="A8" href="~/engineering/electronics-communication/maxwells_equations_and_electrical_circuits.aspx" runat="server" title="Maxwell's equations and electrical circuits"><li class="active"><span class="icon"></span><span>Maxwell's equations and electrical circuits</span></li></a>
+                          <a id="A9" href="~/engineering/electronics-communication/non_ideal_behavior_of_physical_circuit.aspx" runat="server" title="Non-ideal behavior of physical circuit elements. Skin effect"><li class="active"><span class="icon"></span><span>Non-ideal behavior of physical circuit elements. Skin effect</span></li></a>
+                          <a id="A10" href="~/engineering/electronics-communication/ideal_transformer.aspx" runat="server" title="Ideal transformer"><li class="active"><span class="icon"></span><span>Ideal transformer</span></li></a>
+                          <a id="A11" href="~/engineering/electronics-communication/transmission_lines_and_distributed_l_and_c.aspx" runat="server" title="Transmission lines and distributed l and c."><li class="active"><span class="icon"></span><span>Transmission lines and distributed l and c.</span></li></a>
+                          <a id="A12" href="~/engineering/electronics-communication/time_domain_solutions_to_tl_wave_equations.aspx" runat="server" title="Time domain solutions to TL wave equations."><li class="active"><span class="icon"></span><span>Time domain solutions to TL wave equations.</span></li></a>
+                          <a id="A13" href="~/engineering/electronics-communication/transmission_line_termination_reflections.aspx" runat="server" title="Transmission line termination, reflections. Current waves."><li class="active"><span class="icon"></span><span>Transmission line termination, reflections. Current waves.</span></li></a>
+                          <a id="A14" href="~/engineering/electronics-communication/bounce_diagrams.aspx" runat="server" title="Bounce diagrams"><li class="active"><span class="icon"></span><span>Bounce diagrams</span></li></a>
+                          <a id="A15" href="~/engineering/electronics-communication/pulse_propagation_on_tls.aspx" runat="server" title="Pulse propagation on transmission lines. Time domain reflectometry"><li class="active"><span class="icon"></span><span>Pulse propagation on transmission lines. Time domain reflectometry</span></li></a>
+                          <a id="A16" href="~/engineering/electronics-communication/pulse_propagation_on_tls.aspx" runat="server" title="Sinusoidal steady state excitation of lossless transmission lines"><li class="active"><span class="icon"></span><span>Sinusoidal steady state excitation of lossless transmission lines</span></li></a>
+                          <a id="A17" href="~/engineering/electronics-communication/termination_of_tls_load_reflection_coefficient.aspx" runat="server" title="Termination of transmission lines. Load reflection coefficient."><li class="active"><span class="icon"></span><span>Termination of transmission lines. Load reflection coefficient.</span></li></a>
+                          <a id="A18" href="~/engineering/electronics-communication/input_impedance_of_tls_excitation_and_the_source_conditions.aspx" runat="server" title="Input impedance of TLs. Excitation and source conditions"><li class="active"><span class="icon"></span><span>Input impedance of TLs. Excitation and source conditions</span></li></a>
+                          <a id="A19" href="~/engineering/electronics-communication/generalized_reflection_coefficient.aspx" runat="server" title="Generalized reflection coefficient. Crank diagram. VSWR"><li class="active"><span class="icon"></span><span>Generalized reflection coefficient. Crank diagram. VSWR</span></li></a>
+                          <a id="A20" href="~/engineering/electronics-communication/lossy_tls_dispersionless_tls_special_cases_for_general_tls.aspx" runat="server" title="Lossy transmission lines. Dispersionless TLs. Special cases of general TLs."><li class="active"><span class="icon"></span><span>Lossy transmission lines. Dispersionless TLs. Special cases of general TLs.</span></li></a>
+                          <a id="A21" href="~/engineering/electronics-communication/smith_chart.aspx" runat="server" title="Smith chart"><li class="active"><span class="icon"></span><span>Smith chart</span></li></a>
+                          <a id="A22" href="~/engineering/electronics-communication/tl_matching_quarter_wave_transformers.aspx" runat="server" title="TL matching. Quarter-wave transformers. Resistive pads"><li class="active"><span class="icon"></span><span>TL matching. Quarter-wave transformers. Resistive pads</span></li></a>
+                          <a id="A23" href="~/engineering/electronics-communication/single_stub_tuner_i_analytical_solution.aspx" runat="server" title="Single-stub tuner I-Analytical solution"><li class="active"><span class="icon"></span><span>Single-stub tuner I-Analytical solution</span></li></a>
+                          <a id="A24" href="~/engineering/electronics-communication/single_stub_tuner_ii_smith_chart_solution.aspx" runat="server" title="Single-stub tuner II-Smith chart solution"><li class="active"><span class="icon"></span><span>Single-stub tuner II-Smith chart solution</span></li></a>
+                          <a id="A25" href="~/engineering/electronics-communication/uniform_plane_waves_infinite_current_sheets.aspx" runat="server" title="Uniform plane waves. Infinite current sheets"><li class="active"><span class="icon"></span><span>Uniform plane waves. Infinite current sheets</span></li></a>
+                          <a id="A26" href="~/engineering/electronics-communication/uniform_plane_waves_in_lossy_materials.aspx" runat="server" title="Plane waves in lossy materials. Skin depth"><li class="active"><span class="icon"></span><span>Plane waves in lossy materials. Skin depth</span></li></a>
+                          <a id="A27" href="~/engineering/electronics-communication/poyntings_theorem_power_flow_and_plane_waves.aspx" runat="server" title="Poynting's theorem. Power flow and plane waves"><li class="active"><span class="icon"></span><span>Poynting's theorem. Power flow and plane waves</span></li></a>
+                          <a id="A28" href="~/engineering/electronics-communication/upws_normally_incident_on_a_lossless_half_space.aspx" runat="server" title="Uniform plane waves normally incident on a lossless half space"><li class="active"><span class="icon"></span><span>Uniform plane waves normally incident on a lossless half space</span></li></a>
+                          <a id="A29" href="~/engineering/electronics-communication/example_of_a_normally_incident_upw_on_a_lossless_half_space.aspx" runat="server" title="Example of a normally incident UPW on a lossless half space"><li class="active"><span class="icon"></span><span>Example of a normally incident UPW on a lossless half space</span></li></a>
+                          <a id="A30" href="~/engineering/electronics-communication/electromagnetic_radiation_and_antennas.aspx" runat="server" title="Electromagnetic radiation and antennas"><li class="active"><span class="icon"></span><span>Electromagnetic radiation and antennas</span></li></a>
+                          <a id="A31" href="~/engineering/electronics-communication/hertzian_dipole_antenna.aspx" runat="server" title="Hertzian dipole antenna"><li class="active"><span class="icon"></span><span>Hertzian dipole antenna</span></li></a>
+                          <a id="A32" href="~/engineering/electronics-communication/near_and_far_fields_of_the_hertzian_dipole_antenna.aspx" runat="server" title="Near and far fields of the Hertzian dipole antenna. Radiation resistance"><li class="active"><span class="icon"></span><span>Near and far fields of the Hertzian dipole antenna. Radiation resistance</span></li></a>
+                          <a id="A33" href="~/engineering/electronics-communication/antenna_radiation_patterns_directivity_and_gain.aspx" runat="server" title="Antenna radiation patterns. Directivity and gain"><li class="active"><span class="icon"></span><span>Antenna radiation patterns. Directivity and gain</span></li></a>
+                          <a id="A34" href="~/engineering/electronics-communication/antenna_effective_aperture_friis_equation.aspx" runat="server" title="Antenna effective aperture. The Friis equation."><li class="active"><span class="icon"></span><span>Antenna effective aperture. The Friis equation.</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Other Electronics 1 Tutorials</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A35" href="~/engineering/electronics-communication/ideal-diode.aspx" runat="server" title="Diode Tutorials"><li class="active"><span class="icon"></span><span>Diode Tutorials</span></li></a>
+                          <a id="A36" href="~/engineering/electronics-communication/bipolar_junction_transistor.aspx" runat="server" title="BJT Tutorials"><li class="active"><span class="icon"></span><span>BJT Tutorials</span></li></a>
+                          <a id="A37" href="~/engineering/electronics-communication/enhancement_type_mosfet_operation_p-channel_and_cmos.aspx" runat="server" title="MOSFET Tutorials"><li class="active"><span class="icon"></span><span>MOSFET Tutorials</span></li></a>
+                          <a id="A38" href="~/engineering/electronics-communication/overview_norcal_40a.aspx" runat="server" title="Electronics II Tutorials"><li class="active"><span class="icon"></span><span>Electronics II Tutorials</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

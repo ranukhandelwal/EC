@@ -1,0 +1,119 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="MWLinks.master.cs" Inherits="ExamCrazy.Masters.MWLinks" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Microwave Tutorials</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/engineering/electronics-communication/overview_of_pertinent_electromagnetics.aspx" runat="server" title="Overview of pertinent electromagnetics"><li class="active"><span class="icon"></span><span>Overview of pertinent electromagnetics</span></li></a>
+                          <a id="A2" href="~/engineering/electronics-communication/telegrapher_equations_for_transmission_lines.aspx" runat="server" title="Telegrapher equations for transmission lines. Power flow"><li class="active"><span class="icon"></span><span>Telegrapher equations for transmission lines. Power flow</span></li></a>
+                          <a id="A3" href="~/engineering/electronics-communication/phasor_wave_solutions_to_the_telegrapher_equations_termination_of_tls.aspx" runat="server" title="Phasor wave solutions to the telegrapher equations. Termination of TLs."><li class="active"><span class="icon"></span><span>Phasor wave solutions to the telegrapher equations. Termination of TLs.</span></li></a>
+                          <a id="A4" href="~/engineering/electronics-communication/tl_input_impedance_time_average_power.aspx" runat="server" title="TL input impedance, time average power, return and insertion losses"><li class="active"><span class="icon"></span><span>TL input impedance, time average power, return and insertion losses</span></li></a>
+                          <a id="A5" href="~/engineering/electronics-communication/generator_and_load_mismatches_on_tls.aspx" runat="server" title="Generator and load mismatches on TLs"><li class="active"><span class="icon"></span><span>Generator and load mismatches on TLs</span></li></a>
+                          <a id="A6" href="~/engineering/electronics-communication/the_smith_chart.aspx" runat="server" title="The Smith chart."><li class="active"><span class="icon"></span><span>The Smith chart.</span></li></a>
+                          <a id="A7" href="~/engineering/electronics-communication/transmission_line_matching_using_lumped_l_networks.aspx" runat="server" title="Transmission line matching using lumped L networks"><li class="active"><span class="icon"></span><span>Transmission line matching using lumped L networks</span></li></a>
+                          <a id="A8" href="~/engineering/electronics-communication/single_stub_tuning.aspx" runat="server" title="Single-stub tuning"><li class="active"><span class="icon"></span><span>Single-stub tuning</span></li></a>
+                          <a id="A9" href="~/engineering/electronics-communication/quarter_wave_transformer_matching.aspx" runat="server" title="Quarter-wave-transformer matching"><li class="active"><span class="icon"></span><span>Quarter-wave-transformer matching</span></li></a>
+                          <a id="A10" href="~/engineering/electronics-communication/tem_te_and_tm_modes_for_waveguides.aspx" runat="server" title="TEM, TE, and TM modes for waveguides. Rectangular waveguide"><li class="active"><span class="icon"></span><span>TEM, TE, and TM modes for waveguides. Rectangular waveguide</span></li></a>
+                          <a id="A11" href="~/engineering/electronics-communication/dispersion_stripline_and_other_planar_waveguides.aspx" runat="server" title="Dispersion. Stripline and other planar waveguides"><li class="active"><span class="icon"></span><span>Dispersion. Stripline and other planar waveguides</span></li></a>
+                          <a id="A12" href="~/engineering/electronics-communication/microstrip_ads_and_linecalc.aspx" runat="server" title="Microstrip. ADS and LineCalc"><li class="active"><span class="icon"></span><span>Microstrip. ADS and LineCalc</span></li></a>
+                          <a id="A13" href="~/engineering/electronics-communication/simple_quasi_static_moment_method.aspx" runat="server" title="Simple quasi-static moment method analysis of a microstrip"><li class="active"><span class="icon"></span><span>Simple quasi-static moment method analysis of a microstrip</span></li></a>
+                          <a id="A14" href="~/engineering/electronics-communication/impedance_and_admittance_matrices.aspx" runat="server" title="Impedance and admittance matrices."><li class="active"><span class="icon"></span><span>Impedance and admittance matrices.</span></li></a>
+                          <a id="A15" href="~/engineering/electronics-communication/s_parameters_and_the_scattering_matrix.aspx" runat="server" title="S parameters and the scattering matrix"><li class="active"><span class="icon"></span><span>S parameters and the scattering matrix</span></li></a>
+                          <a id="A16" href="~/engineering/electronics-communication/properties_of_s_matrices_shifting_reference_planes.aspx" runat="server" title="Properties of S matrices. Shifting reference planes"><li class="active"><span class="icon"></span><span>Properties of S matrices. Shifting reference planes</span></li></a>
+                          <a id="A17" href="~/engineering/electronics-communication/s_parameters_and_time_average.aspx" runat="server" title="S parameters and time average power. Generalized S parameters."><li class="active"><span class="icon"></span><span>S parameters and time average power. Generalized S parameters.</span></li></a>
+                          <a id="A18" href="~/engineering/electronics-communication/vector_network_analyzer.aspx" runat="server" title="Vector network analyzer"><li class="active"><span class="icon"></span><span>Vector network analyzer</span></li></a>
+                          <a id="A19" href="~/engineering/electronics-communication/proper_microwave_laboratory_practices.aspx" runat="server" title="Proper microwave laboratory practices"><li class="active"><span class="icon"></span><span>Proper microwave laboratory practices</span></li></a>
+                          <a id="A20" href="~/engineering/electronics-communication/transmission_abcd_matrix.aspx" runat="server" title="Transmission (ABCD) matrix"><li class="active"><span class="icon"></span><span>Transmission (ABCD) matrix</span></li></a>
+                          <a id="A21" href="~/engineering/electronics-communication/signal_flow_graphs.aspx" runat="server" title="Signal flow graphs"><li class="active"><span class="icon"></span><span>Signal flow graphs</span></li></a>
+                          <a id="A22" href="~/engineering/electronics-communication/measurement_errors_trl_calibration_of_a_vna.aspx" runat="server" title="Measurement errors. TRL calibration of a VNA."><li class="active"><span class="icon"></span><span>Measurement errors. TRL calibration of a VNA.</span></li></a>
+                          <a id="A23" href="~/engineering/electronics-communication/basic_properties_of_dividers_and_couplers.aspx" runat="server" title="Basic properties of dividers and couplers"><li class="active"><span class="icon"></span><span>Basic properties of dividers and couplers</span></li></a>
+                          <a id="A24" href="~/engineering/electronics-communication/t-junction_and_resistive_power_dividers.aspx" runat="server" title="T-junction and resistive power divider"><li class="active"><span class="icon"></span><span>T-junction and resistive power divider</span></li></a>
+                          <a id="A25" href="~/engineering/electronics-communication/wilkinson_power_divider.aspx" runat="server" title="Wilkinson power divider"><li class="active"><span class="icon"></span><span>Wilkinson power divider</span></li></a>
+                          <a id="A26" href="~/engineering/electronics-communication/quadrature_90_hybrid.aspx" runat="server" title="Quadrature 90 degree hybrid"><li class="active"><span class="icon"></span><span>Quadrature 90 degree hybrid</span></li></a>
+                          <a id="A27" href="~/engineering/electronics-communication/the_180_hybrid.aspx" runat="server" title="The 180 degree hybrid."><li class="active"><span class="icon"></span><span>The 180 degree hybrid.</span></li></a>
+                          <a id="A28" href="~/engineering/electronics-communication/coupled_line_and_lange_directional_couplers.aspx" runat="server" title="Coupled line and Lange directional couplers"><li class="active"><span class="icon"></span><span>Coupled line and Lange directional couplers</span></li></a>
+                          <a id="A29" href="~/engineering/electronics-communication/microwave_filter_designby_the_insertion_loss_method.aspx" runat="server" title="Microwave filter design by the insertion loss method"><li class="active"><span class="icon"></span><span>Microwave filter design by the insertion loss method</span></li></a>
+                          <a id="A30" href="~/engineering/electronics-communication/scaling_of_low_pass_prototype_filters.aspx" runat="server" title="Scaling of low pass prototype filters. Stepped impedance low pass filters."><li class="active"><span class="icon"></span><span>Scaling of low pass prototype filters. Stepped impedance low pass filters.</span></li></a>
+                          <a id="A31" href="~/engineering/electronics-communication/stub_synthesis_kurodas_identities_st.aspx" runat="server" title="Stub synthesis. Kuroda�s identities. Stub low pass filters"><li class="active"><span class="icon"></span><span>Stub synthesis. Kuroda�s identities. Stub low pass filters</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Free Electronics Tutorials</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A32" href="~/engineering/electronics-communication/ideal-diode.aspx" runat="server" title="Diode Tutorials"><li class="active"><span class="icon"></span><span>Diode Tutorials</span></li></a>
+                          <a id="A33" href="~/engineering/electronics-communication/bipolar_junction_transistor.aspx" runat="server" title="BJT Tutorials"><li class="active"><span class="icon"></span><span>BJT Tutorials</span></li></a>
+                          <a id="A34" href="~/engineering/electronics-communication/enhancement_type_mosfet_operation_p-channel_and_cmos.aspx" runat="server" title="MOSFET Tutorials"><li class="active"><span class="icon"></span><span>MOSFET Tutorials</span></li></a>
+                          <a id="A35" href="~/engineering/electronics-communication/overview_norcal_40a.aspx" runat="server" title="Electronics II Tutorials"><li class="active"><span class="icon"></span><span>Electronics II Tutorials</span></li></a>
+                          <a id="A36" href="~/engineering/electronics-communication/magnetic_circuits.aspx" runat="server" title="Applied Electromagnetics Tutorials"><li class="active"><span class="icon"></span><span>Applied Electromagnetics Tutorials</span></li></a>
+                          <a id="A37" href="~/engineering/electronics-communication/overview_of_pertinent_electromagnetics.aspx" runat="server" title="Microwave Tutorials"><li class="active"><span class="icon"></span><span>Microwave Tutorials</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>GATE preparation tips</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A38" href="~/engineering/gate/how-to-prepare-best-recommended-books-gate-preparation.aspx" runat="server" title="GATE Books & How to prepare"><li class="active"><span class="icon"></span><span>GATE Books & How to prepare</span></li></a>
+                          <a id="A39" href="~/engineering/gate/gate-objective-solving-tricks.aspx" runat="server" title="Objective Solving Tricks"><li class="active"><span class="icon"></span><span>Objective Solving Tricks</span></li></a>
+                          <a id="A40" href="~/engineering/gate.aspx" runat="server" title="Other GATE links"><li class="active"><span class="icon"></span><span>Other GATE links</span></li></a>
+                          <a id="A41" href="~/engineering/ies.aspx" runat="server" title="IES exam preparation"><li class="active"><span class="icon"></span><span>IES exam preparation</span></li></a>
+                          <a id="A42" href="~/engineering/drdo-set.aspx" runat="server" title="All about DRDO-SET"><li class="active"><span class="icon"></span><span>All about DRDO-SET</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>More Engineering Links</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub4">
+                    <ul>
+                          <a id="A43" href="~/engineering/coaching-institutes-engineering-india-for-gate-ies-psus.aspx" runat="server" title="Directory of coaching Institutes"><li class="active"><span class="icon"></span><span>Directory of coaching Institutes</span></li></a>
+                          <a id="A44" href="~/engineering/top-ranking-government-engineering-colleges-in-india.aspx" runat="server" title="Govt engg college rankings"><li class="active"><span class="icon"></span><span>Govt engg college rankings</span></li></a>
+                          <a id="A45" href="~/engineering/top-ranking-private-engineering-colleges-in-india.aspx" runat="server" title="Private engg college rankings"><li class="active"><span class="icon"></span><span>Private engg college rankings</span></li></a>
+                          <a id="A46" href="~/engineering/admission-notifications-engineering-institutes-india-me-mtech.aspx" runat="server" title="Admission notifications for Mtech/PhD"><li class="active"><span class="icon"></span><span>Admission notifications for Mtech/PhD</span></li></a>
+                          <a id="A47" href="~/colleges/engineering_colleges.aspx" runat="server" title="All Engineering Colleges in India"><li class="active"><span class="icon"></span><span>All Engineering Colleges in India</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

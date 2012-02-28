@@ -1,0 +1,82 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="DSOLinks.master.cs" Inherits="ExamCrazy.Masters.DSOLinks" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Data Structures and Algorithm Tutorials</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/engineering/computer-science/introduction.aspx" runat="server" title="Introduction"><li class="active"><span class="icon"></span><span>Introduction</span></li></a>
+                          <a id="A2" href="~/engineering/computer-science/role_of_algorithms_and_data_structures_in_problem_solving.aspx" runat="server" title="Role of Algorithms and Data Structures in Problem Solving"><li class="active"><span class="icon"></span><span>Role of Algorithms and Data Structures in Problem Solving</span></li></a>
+                          <a id="A3" href="~/engineering/computer-science/role_of_algorithms.aspx" runat="server" title="Role of Algorithms"><li class="active"><span class="icon"></span><span>Role of Algorithms</span></li></a>
+                          <a id="A4" href="~/engineering/computer-science/role_of_data_structures.aspx" runat="server" title="Role of Data Structures "><li class="active"><span class="icon"></span><span>Role of Data Structures </span></li></a>
+                          <a id="A5" href="~/engineering/computer-science/types_of_data_structures.aspx" runat="server" title="Types of Data Structures"><li class="active"><span class="icon"></span><span>Types of Data Structures</span></li></a>
+                          <a id="A6" href="~/engineering/computer-science/designing_algorithms_and_measuring_their_efficiency.aspx" runat="server" title="Designing Algorithms & measuring efficiency"><li class="active"><span class="icon"></span><span>Designing Algorithms & measuring efficiency</span></li></a>
+                          <a id="A7" href="~/engineering/computer-science/identifying_techniques_for_designing_algorithms.aspx" runat="server" title="Identifying Techniques for Designing Algorithms"><li class="active"><span class="icon"></span><span>Identifying Techniques for Designing Algorithms</span></li></a>
+                          <a id="A8" href="~/engineering/computer-science/designing_algorithms_using_recursion.aspx" runat="server" title="Designing Algorithms using Recursion"><li class="active"><span class="icon"></span><span>Designing Algorithms using Recursion</span></li></a>
+                          <a id="A9" href="~/engineering/computer-science/determining_the_efficiency_of_an_algorithm.aspx" runat="server" title="Determining Efficiency of an Algorithm"><li class="active"><span class="icon"></span><span>Determining Efficiency of an Algorithm</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>GATE preparation tips</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A10" href="~/engineering/gate/how-to-prepare-best-recommended-books-gate-preparation.aspx" runat="server" title="GATE Books & How to prepare"><li class="active"><span class="icon"></span><span>GATE Books & How to prepare</span></li></a>
+                          <a id="A11" href="~/engineering/gate/gate-objective-solving-tricks.aspx" runat="server" title="Objective Solving Tricks"><li class="active"><span class="icon"></span><span>Objective Solving Tricks</span></li></a>
+                          <a id="A12" href="http://gate.examcrazy.com" runat="server" title="Other GATE links"><li class="active"><span class="icon"></span><span>Other GATE links</span></li></a>
+                          <a id="A13" href="~/engineering/ies.aspx" runat="server" title="IES exam preparation"><li class="active"><span class="icon"></span><span>IES exam preparation</span></li></a>
+                          <a id="A14" href="~/engineering/drdo-set.aspx" runat="server" title="All about DRDO-SET"><li class="active"><span class="icon"></span><span>All about DRDO-SET</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>More Engineering Links</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A15" href="~/engineering/coaching-institutes-engineering-india-for-gate-ies-psus.aspx" runat="server" title="Directory of coaching Institutes"><li class="active"><span class="icon"></span><span>Directory of coaching Institutes</span></li></a>
+                          <a id="A16" href="~/engineering/top-ranking-government-engineering-colleges-in-india.aspx" runat="server" title="Govt engg college rankings"><li class="active"><span class="icon"></span><span>Govt engg college rankings</span></li></a>
+                          <a id="A17" href="~/engineering/top-ranking-private-engineering-colleges-in-india.aspx" runat="server" title="Private engg college rankings"><li class="active"><span class="icon"></span><span>Private engg college rankings</span></li></a>
+                          <a id="A18" href="~/engineering/admission-notifications-engineering-institutes-india-me-mtech.aspx" runat="server" title="Admission notifications for Mtech/PhD"><li class="active"><span class="icon"></span><span>Admission notifications for Mtech/PhD</span></li></a>
+                          <a id="A19" href="~/colleges/engineering_colleges.aspx" runat="server" title="All Engineering Colleges in India"><li class="active"><span class="icon"></span><span>All Engineering Colleges in India</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

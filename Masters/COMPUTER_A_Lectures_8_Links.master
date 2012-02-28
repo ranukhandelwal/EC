@@ -1,0 +1,77 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="COMPUTER_A_Lectures_8_Links.master.cs" Inherits="ExamCrazy.Masters.COMPUTER_A_Lectures_8_Links" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Computer Organization And Architecture</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~//engineering/computer-science/computer-organization-and-architecture/why-parallel-computation.aspx" runat="server" title="Why Parallel Computation "><li class="active"><span class="icon"></span><span>Why Parallel Computation </span></li></a>
+                          <a id="A2" href="~//engineering/computer-science/computer-organization-and-architecture/a-solution-parallel-computers.aspx" runat="server" title=" Solution Parallel Computers "><li class="active"><span class="icon"></span><span> Solution Parallel Computers </span></li></a>
+                          <a id="A3" href="~//engineering/computer-science/computer-organization-and-architecture/parallel-programs.aspx" runat="server" title="Parallel Programs "><li class="active"><span class="icon"></span><span>Parallel Programs </span></li></a>
+                          <a id="A4" href="~//engineering/computer-science/computer-organization-and-architecture/flynn-classification-of-computer-architectures.aspx" runat="server" title="Flynn Classification of Computer Architectures "><li class="active"><span class="icon"></span><span>Flynn Classification of Computer Architectures </span></li></a>
+                          <a id="A5" href="~//engineering/computer-science/computer-organization-and-architecture/performance-of-parallel-architectures.aspx" runat="server" title="Performance of Parallel Architectures "><li class="active"><span class="icon"></span><span>Performance of Parallel Architectures </span></li></a>
+                          <a id="A6" href="~//engineering/computer-science/computer-organization-and-architecture/performance-metrics.aspx" runat="server" title="Performance Metrics "><li class="active"><span class="icon"></span><span>Performance Metrics </span></li></a>
+                          <a id="A7" href="~//engineering/computer-science/computer-organization-and-architecture/amdahl-law.aspx" runat="server" title="Amdahl Law "><li class="active"><span class="icon"></span><span>Amdahl Law </span></li></a>
+                          <a id="A8" href="~//engineering/computer-science/computer-organization-and-architecture/other-aspects-which-limit-the-speedup.aspx" runat="server" title="Other Aspects which Limit the Speedup "><li class="active"><span class="icon"></span><span>Other Aspects which Limit the Speedup </span></li></a>
+                          <a id="A9" href="~//engineering/computer-science/computer-organization-and-architecture/efficiency-and-communication-cost.aspx" runat="server" title="Efficiency and Communication Cost "><li class="active"><span class="icon"></span><span>Efficiency and Communication Cost </span></li></a>
+                          <a id="A10" href="~//engineering/computer-science/computer-organization-and-architecture/the-interconnection-network.aspx" runat="server" title="The Interconnection Network "><li class="active"><span class="icon"></span><span>The Interconnection Network </span></li></a>
+                          <a id="A11" href="~//engineering/computer-science/computer-organization-and-architecture/simd-computers.aspx" runat="server" title="SIMD Computers "><li class="active"><span class="icon"></span><span>SIMD Computers </span></li></a>
+                          <a id="A12" href="~//engineering/computer-science/computer-organization-and-architecture/multiprocessors.aspx" runat="server" title="MULTIPROCESSORS "><li class="active"><span class="icon"></span><span>MULTIPROCESSORS </span></li></a>
+                          <a id="A13" href="~//engineering/computer-science/computer-organization-and-architecture/multicomputers.aspx" runat="server" title="Multicomputers "><li class="active"><span class="icon"></span><span>Multicomputers </span></li></a>
+                          <a id="A14" href="~//engineering/computer-science/computer-organization-and-architecture/vector-processors.aspx" runat="server" title="Vector Processors "><li class="active"><span class="icon"></span><span>Vector Processors </span></li></a>
+                          <a id="A15" href="~//engineering/computer-science/computer-organization-and-architecture/the-vector-unit.aspx" runat="server" title="The Vector Unit "><li class="active"><span class="icon"></span><span>The Vector Unit </span></li></a>
+                          <a id="A16" href="~//engineering/computer-science/computer-organization-and-architecture/vector-instructions.aspx" runat="server" title="Vector Instructions "><li class="active"><span class="icon"></span><span>Vector Instructions </span></li></a>
+                          <a id="A17" href="~//engineering/computer-science/computer-organization-and-architecture/multimedia-extensions-to-general-purpose-microprocessors.aspx" runat="server" title="Multimedia Extensions to General Purpose Microprocessors "><li class="active"><span class="icon"></span><span>Multimedia Extensions to General Purpose Microprocessors </span></li></a>
+                          <a id="A18" href="~//engineering/computer-science/computer-organization-and-architecture/summary.aspx" runat="server" title="Summary "><li class="active"><span class="icon"></span><span>Summary </span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>More Engineering Links</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A19" href="~/<%=aieee_root%>engineering/coaching-institutes-engineering-india-for-gate-ies-psus.aspx" runat="server" title="Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs.asp">Directory of coaching Institutes"><li class="active"><span class="icon"></span><span>Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs.asp">Directory of coaching Institutes</span></li></a>
+                          <a id="A20" href="~/<%=aieee_root%>engineering/top-ranking-government-engineering-colleges-in-india.aspx" runat="server" title="Engineering/Top-ranking-Government-Engineering-colleges-in-india.asp">Govt engg college rankings"><li class="active"><span class="icon"></span><span>Engineering/Top-ranking-Government-Engineering-colleges-in-india.asp">Govt engg college rankings</span></li></a>
+                          <a id="A21" href="~/<%=aieee_root%>engineering/top-ranking-private-engineering-colleges-in-india.aspx" runat="server" title="Engineering/Top-ranking-Private-Engineering-colleges-in-india.asp">Private engg college rankings"><li class="active"><span class="icon"></span><span>Engineering/Top-ranking-Private-Engineering-colleges-in-india.asp">Private engg college rankings</span></li></a>
+                          <a id="A22" href="~/<%=aieee_root%>engineering/admission-notifications-engineering-institutes-india-me-mtech.aspx" runat="server" title="Engineering/Admission-notifications-Engineering-institutes-india-ME-Mtech.asp">Admission notifications for Mtech/PhD"><li class="active"><span class="icon"></span><span>Engineering/Admission-notifications-Engineering-institutes-india-ME-Mtech.asp">Admission notifications for Mtech/PhD</span></li></a>
+                          <a id="A23" href="~/<%=aieee_root%>colleges/engineering_colleges.aspx" runat="server" title="Colleges/Engineering_Colleges.asp">All Engineering Colleges in India"><li class="active"><span class="icon"></span><span>Colleges/Engineering_Colleges.asp">All Engineering Colleges in India</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>
