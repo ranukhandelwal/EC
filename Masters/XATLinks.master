@@ -1,0 +1,76 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="XATLinks.master.cs" Inherits="ExamCrazy.Masters.XATLinks" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span><b>XAT</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/mba/xat/about-xavier-admission-test-xlri-xat.aspx" runat="server" title="About XAT"><li class="active"><span class="icon"></span><span>About XAT</span></li></a>
+                          <a id="A2" href="~/mba/xat/pattern-structure-of-xat-2009-exam.aspx" runat="server" title="Pattern of XAT exam"><li class="active"><span class="icon"></span><span>Pattern of XAT exam</span></li></a>
+                          <a id="A3" href="~/mba/xat/registration-important-dates-for-xat-2009.aspx" runat="server" title="XAT 2009 Registration & Dates"><li class="active"><span class="icon"></span><span>XAT 2009 Registration & Dates</span></li></a>
+                          <a id="A4" href="~/mba/xat/exam-cities-test-centers-for-xat-2009.aspx" runat="server" title="XAT test centers"><li class="active"><span class="icon"></span><span>XAT test centers</span></li></a>
+                          <a id="A5" href="~/mba/xat/institutes-accepting-xat-score-for-admissions.aspx" runat="server" title="Institutes accepting XAT score"><li class="active"><span class="icon"></span><span>Institutes accepting XAT score</span></li></a>
+                          <a id="A6" href="~/mba/group-discussion-for-mba-admissions.aspx" runat="server" title="Group Discussion Tips/Tricks"><li class="active"><span class="icon"></span><span>Group Discussion Tips/Tricks</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span><b>MBA</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A7" href="~/mba/mba-in-india.aspx" runat="server" title="MBA in India"><li class="active"><span class="icon"></span><span>MBA in India</span></li></a>
+                          <a id="A8" href="~/mba/group-discussion-for-mba-admissions.aspx" runat="server" title="GD preparation"><li class="active"><span class="icon"></span><span>GD preparation</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span><b>MBA Admissions</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A9" href="~/mba/application-date-for-various-mba-management-institutes.aspx" runat="server" title="MBA admission notifications"><li class="active"><span class="icon"></span><span>MBA admission notifications</span></li></a>
+                          <a id="A10" href="~/mba/bschool-rankings.aspx" runat="server" title="India BSchool Rankings"><li class="active"><span class="icon"></span><span>India BSchool Rankings</span></li></a>
+                          <a id="A11" href="~/colleges/management_colleges.aspx" runat="server" title="MBA colleges in India"><li class="active"><span class="icon"></span><span>MBA colleges in India</span></li></a>
+                          <a id="A12" href="~/mba/coaching-institutes-offering-mba-preparation-classes.aspx" runat="server" title="MBA coaching Institutes"><li class="active"><span class="icon"></span><span>MBA coaching Institutes</span></li></a>
+                          <a id="A13" href="~/mba/group-discussion-for-mba-admissions.aspx" runat="server" title="GD Preparation"><li class="active"><span class="icon"></span><span>GD Preparation</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

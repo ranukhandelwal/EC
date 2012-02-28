@@ -1,0 +1,102 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="Chemistry_tutorials_Links.master.cs" Inherits="ExamCrazy.Masters.Chemistry_tutorials_Links" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>States of Matter</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/<%=aieee_root%>chemistry/matter-states/introduction.aspx" runat="server" title="chemistry/matter-states/Introduction.asp">Introduction to States of Matter by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Introduction.asp">Introduction to States of Matter by S.S. Education</span></li></a>
+                          <a id="A2" href="~/<%=aieee_root%>chemistry/matter-states/the-gaseous-state.aspx" runat="server" title="chemistry/matter-states/The-Gaseous-State.asp">The Gaseous State S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/The-Gaseous-State.asp">The Gaseous State S.S. Education</span></li></a>
+                          <a id="A3" href="~/<%=aieee_root%>chemistry/matter-states/gas-laws-boyles-law.aspx" runat="server" title="chemistry/matter-states/Gas-Laws-Boyles-Law.asp">Gas Laws - Boyle's Law by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Gas-Laws-Boyles-Law.asp">Gas Laws - Boyle's Law by S.S. Education</span></li></a>
+                          <a id="A4" href="~/<%=aieee_root%>chemistry/matter-states/charles-law.aspx" runat="server" title="chemistry/matter-states/Charles-Law.asp">Charle's Law by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Charles-Law.asp">Charle's Law by S.S. Education</span></li></a>
+                          <a id="A5" href="~/<%=aieee_root%>chemistry/matter-states/avogadros-law.aspx" runat="server" title="chemistry/matter-states/Avogadros-Law.asp">Avogadro's Law by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Avogadros-Law.asp">Avogadro's Law by S.S. Education</span></li></a>
+                          <a id="A6" href="~/<%=aieee_root%>chemistry/matter-states/daltons-law-of-partial-pressures.aspx" runat="server" title="chemistry/matter-states/Daltons-Law-of-Partial-Pressures.asp">Dalton's Law of Partial Pressures by  S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Daltons-Law-of-Partial-Pressures.asp">Dalton's Law of Partial Pressures by  S.S. Education</span></li></a>
+                          <a id="A7" href="~/<%=aieee_root%>chemistry/matter-states/grahams-law-of-diffusion.aspx" runat="server" title="chemistry/matter-states/Grahams-Law-of-Diffusion.asp">Graham's Law of Diffusion by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Grahams-Law-of-Diffusion.asp">Graham's Law of Diffusion by S.S. Education</span></li></a>
+                          <a id="A8" href="~/<%=aieee_root%>chemistry/matter-states/ideal-gas-equation.aspx" runat="server" title="chemistry/matter-states/Ideal-Gas-Equation.asp">Ideal Gas Equation by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Ideal-Gas-Equation.asp">Ideal Gas Equation by S.S. Education</span></li></a>
+                          <a id="A9" href="~/<%=aieee_root%>chemistry/matter-states/ideal-and-real-gases.aspx" runat="server" title="chemistry/matter-states/Ideal-and-Real-Gases.asp">Ideal and Real Gases by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Ideal-and-Real-Gases.asp">Ideal and Real Gases by S.S. Education</span></li></a>
+                          <a id="A10" href="~/<%=aieee_root%>chemistry/matter-states/kinetic-molecular-theory-of-gases.aspx" runat="server" title="chemistry/matter-states/Kinetic-Molecular-Theory-of-Gases.asp">Kinetic Molecular Theory of Gases by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Kinetic-Molecular-Theory-of-Gases.asp">Kinetic Molecular Theory of Gases by S.S. Education</span></li></a>
+                          <a id="A11" href="~/<%=aieee_root%>chemistry/matter-states/liquefaction-of-gases.aspx" runat="server" title="chemistry/matter-states/Liquefaction-of-Gases.asp">Liquefaction of Gases by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Liquefaction-of-Gases.asp">Liquefaction of Gases by S.S. Education</span></li></a>
+                          <a id="A12" href="~/<%=aieee_root%>chemistry/matter-states/relationship-between-critical-constant.aspx" runat="server" title="chemistry/matter-states/Relationship-between-Critical-Constant.asp">Relationship between Critical Constant and Van der Waal's Constants by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Relationship-between-Critical-Constant.asp">Relationship between Critical Constant and Van der Waal's Constants by S.S. Education</span></li></a>
+                          <a id="A13" href="~/<%=aieee_root%>chemistry/matter-states/maxwells-distribution-of-molecular-speeds.aspx" runat="server" title="chemistry/matter-states/Maxwells-Distribution-of-Molecular-Speeds.asp">Maxwell's Distribution of Molecular Speeds by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Maxwells-Distribution-of-Molecular-Speeds.asp">Maxwell's Distribution of Molecular Speeds by S.S. Education</span></li></a>
+                          <a id="A14" href="~/<%=aieee_root%>chemistry/matter-states/the-liquid-state.aspx" runat="server" title="chemistry/matter-states/The-Liquid-State.asp">The Liquid State by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/The-Liquid-State.asp">The Liquid State by S.S. Education</span></li></a>
+                          <a id="A15" href="~/<%=aieee_root%>chemistry/matter-states/properties-of-liquids-i.aspx" runat="server" title="chemistry/matter-states/Properties-of-Liquids-I.asp">Properties of Liquids - I by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Properties-of-Liquids-I.asp">Properties of Liquids - I by S.S. Education</span></li></a>
+                          <a id="A16" href="~/<%=aieee_root%>chemistry/matter-states/properties-of-liquids-ii.aspx" runat="server" title="chemistry/matter-states/Properties-of-Liquids-II.asp">Properties of Liquids - II by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Properties-of-Liquids-II.asp">Properties of Liquids - II by S.S. Education</span></li></a>
+                          <a id="A17" href="~/<%=aieee_root%>chemistry/matter-states/the-solid-state.aspx" runat="server" title="chemistry/matter-states/The-Solid-State.asp">The Solid State by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/The-Solid-State.asp">The Solid State by S.S. Education</span></li></a>
+                          <a id="A18" href="~/<%=aieee_root%>chemistry/matter-states/classification-of-solids.aspx" runat="server" title="chemistry/matter-states/Classification-of-Solids.asp">Classification of Solids by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Classification-of-Solids.asp">Classification of Solids by S.S. Education</span></li></a>
+                          <a id="A19" href="~/<%=aieee_root%>chemistry/matter-states/crystalline-solids.aspx" runat="server" title="chemistry/matter-states/Crystalline-Solids.asp">Crystalline Solids by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/matter-states/Crystalline-Solids.asp">Crystalline Solids by S.S. Education</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Other Maths Tutorials</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A20" href="~/<%=aieee_root%>maths/vectors-algebra/introduction_to_vectors_and_3-d_geometry.aspx" runat="server" title="Maths/Vectors-Algebra/Introduction_to_Vectors_and_3-D_Geometry.asp">Introduction to Vectors and 3-D Geometry"><li class="active"><span class="icon"></span><span>Maths/Vectors-Algebra/Introduction_to_Vectors_and_3-D_Geometry.asp">Introduction to Vectors and 3-D Geometry</span></li></a>
+                          <a id="A21" href="~/<%=aieee_root%>maths/matrices/basics_about_matrices.aspx" runat="server" title="Maths/Matrices/Basics_about_Matrices.asp">Matrices and Determinant Tutorials"><li class="active"><span class="icon"></span><span>Maths/Matrices/Basics_about_Matrices.asp">Matrices and Determinant Tutorials</span></li></a>
+                          <a id="A22" href="~/<%=aieee_root%>maths/differential-equations/basics_of_differential_equations.aspx" runat="server" title="Maths/differential-equations/Basics_of_Differential_Equations.asp">Differential Equation Tutorials"><li class="active"><span class="icon"></span><span>Maths/differential-equations/Basics_of_Differential_Equations.asp">Differential Equation Tutorials</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Other AIEEE/IIT/PRE-ENGINEERING TUTORIALS</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A23" href="~/<%=aieee_root%>maths.aspx" runat="server" title="maths.asp">Maths Tutorials for AIEEE IIT Pre Engineering"><li class="active"><span class="icon"></span><span>maths.asp">Maths Tutorials for AIEEE IIT Pre Engineering</span></li></a>
+                          <a id="A24" href="~/<%=aieee_root%>physics.aspx" runat="server" title="physics.asp">Physics Tutorials for AIEEE IIT Pre Engineering"><li class="active"><span class="icon"></span><span>physics.asp">Physics Tutorials for AIEEE IIT Pre Engineering</span></li></a>
+                          <a id="A25" href="~/<%=aieee_root%>chemistry.aspx" runat="server" title="chemistry.asp">Chemistry Tutorials for AIEEE IIT Pre Engineering"><li class="active"><span class="icon"></span><span>chemistry.asp">Chemistry Tutorials for AIEEE IIT Pre Engineering</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>More Engineering Links</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub4">
+                    <ul>
+                          <a id="A26" href="~/<%=aieee_root%>engineering/coaching-institutes-engineering-india-for-gate-ies-psus.aspx" runat="server" title="Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs.asp">Directory of coaching Institutes"><li class="active"><span class="icon"></span><span>Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs.asp">Directory of coaching Institutes</span></li></a>
+                          <a id="A27" href="~/<%=aieee_root%>engineering/top-ranking-government-engineering-colleges-in-india.aspx" runat="server" title="Engineering/Top-ranking-Government-Engineering-colleges-in-india.asp">Govt engg college rankings"><li class="active"><span class="icon"></span><span>Engineering/Top-ranking-Government-Engineering-colleges-in-india.asp">Govt engg college rankings</span></li></a>
+                          <a id="A28" href="~/<%=aieee_root%>engineering/top-ranking-private-engineering-colleges-in-india.aspx" runat="server" title="Engineering/Top-ranking-Private-Engineering-colleges-in-india.asp">Private engg college rankings"><li class="active"><span class="icon"></span><span>Engineering/Top-ranking-Private-Engineering-colleges-in-india.asp">Private engg college rankings</span></li></a>
+                          <a id="A29" href="~/<%=aieee_root%>engineering/admission-notifications-engineering-institutes-india-me-mtech.aspx" runat="server" title="Engineering/Admission-notifications-Engineering-institutes-india-ME-Mtech.asp">Admission notifications for Mtech/PhD"><li class="active"><span class="icon"></span><span>Engineering/Admission-notifications-Engineering-institutes-india-ME-Mtech.asp">Admission notifications for Mtech/PhD</span></li></a>
+                          <a id="A30" href="~/<%=aieee_root%>colleges/engineering_colleges.aspx" runat="server" title="Colleges/Engineering_Colleges.asp">All Engineering Colleges in India"><li class="active"><span class="icon"></span><span>Colleges/Engineering_Colleges.asp">All Engineering Colleges in India</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

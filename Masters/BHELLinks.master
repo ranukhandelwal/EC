@@ -1,0 +1,77 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="BHELLinks.master.cs" Inherits="ExamCrazy.Masters.BHELLinks" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>BHEL 2010</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/engineering/bhel/about-bhel-written-test.aspx" runat="server" title="About BHEL recruitement Exam"><li class="active"><span class="icon"></span><span>About BHEL recruitement Exam</span></li></a>
+                          <a id="A2" href="~/engineering/bhel/bhel-exam-eligibility.aspx" runat="server" title="BHEL 2010 Eligibility"><li class="active"><span class="icon"></span><span>BHEL 2010 Eligibility</span></li></a>
+                          <a id="A3" href="~/engineering/bhel/bhel-how-to-apply.aspx" runat="server" title="BHEL 2010 How to Apply"><li class="active"><span class="icon"></span><span>BHEL 2010 How to Apply</span></li></a>
+                          <a id="A4" href="~/engineering/bhel/bhel-number-of-seats-requirements.aspx" runat="server" title="BHEL number of vacancies"><li class="active"><span class="icon"></span><span>BHEL number of vacancies</span></li></a>
+                          <a id="A5" href="~/engineering/bhel/bhel-selection-process.aspx" runat="server" title="BHEL Selection process"><li class="active"><span class="icon"></span><span>BHEL Selection process</span></li></a>
+                          <a id="A6" href="~/engineering/bhel/bhel-exam-faqs.aspx" runat="server" title="BHEL important FAQs"><li class="active"><span class="icon"></span><span>BHEL important FAQs</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>BHEL Study Material</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A7" href="~/engineering/electrical.aspx" runat="server" title="Electrical Engineering"><li class="active"><span class="icon"></span><span>Electrical Engineering</span></li></a>
+                          <a id="A8" href="~/engineering/mechanical.aspx" runat="server" title="Mechanical Engineering"><li class="active"><span class="icon"></span><span>Mechanical Engineering</span></li></a>
+                          <a id="A9" href="~/engineering/electronics-communication.aspx" runat="server" title="Electronics & Comm Engg"><li class="active"><span class="icon"></span><span>Electronics & Comm Engg</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>BHEL Practice tests</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A10" href="~/products/online-bhel-mock-test-series.aspx" runat="server" title="BHEL mock test series"><li class="active"><span class="icon"></span><span>BHEL mock test series</span></li></a>
+                          <a id="A11" href="~/ano_utils/user_appearintest1.aspx" runat="server" title="BHEL papers Electronics"><li class="active"><span class="icon"></span><span>BHEL papers Electronics</span></li></a>
+                          <a id="A12" href="~/ano_utils/user_appearintest1.aspx" runat="server" title="BHEL papers Mechanical"><li class="active"><span class="icon"></span><span>BHEL papers Mechanical</span></li></a>
+                          <a id="A13" href="~/ano_utils/user_appearintest1.aspx" runat="server" title="BHEL papers Electrical"><li class="active"><span class="icon"></span><span>BHEL papers Electrical</span></li></a>
+                          <a id="A14" href="~/ano_utils/user_appearintest1.aspx" runat="server" title="BHEL General Ability Test"><li class="active"><span class="icon"></span><span>BHEL General Ability Test</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

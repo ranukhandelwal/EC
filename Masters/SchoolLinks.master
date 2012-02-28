@@ -1,0 +1,78 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="SchoolLinks.master.cs" Inherits="ExamCrazy.Masters.SchoolLinks" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>SCHOOL SYSTEM</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/education-system/india/indian-education-school-system.aspx" runat="server" title="Indian School System"><li class="active"><span class="icon"></span><span>Indian School System</span></li></a>
+                          <a id="A2" href="~/education-system/india/secondary-higher-secondary-boards-indian-school-system.aspx" runat="server" title="Secondary & Higher Secondary Board list"><li class="active"><span class="icon"></span><span>Secondary & Higher Secondary Board list</span></li></a>
+                          <a id="A3" href="~/education-system/india/council-of-boards-of-school-education-in-india-cobse.aspx" runat="server" title="COBSE-Council of Boards of School Education"><li class="active"><span class="icon"></span><span>COBSE-Council of Boards of School Education</span></li></a>
+                          <a id="A4" href="~/education-system/india/national_council_of_educational_research_training_ncert.aspx" runat="server" title="National Council of Educational Research and Training(NCERT)"><li class="active"><span class="icon"></span><span>National Council of Educational Research and Training(NCERT)</span></li></a>
+                          <a id="A5" href="~/ntss-ntse/national-talent-search-examination-scholarship.aspx" runat="server" title="National Talent Search Examination(NTSE)"><li class="active"><span class="icon"></span><span>National Talent Search Examination(NTSE)</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>BOARD EXAMS</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A6" href="~/education-system/india/school-board-results-secondary-higher-x-xii.aspx" runat="server" title="Board Exam Results"><li class="active"><span class="icon"></span><span>Board Exam Results</span></li></a>
+                          <a id="A7" href="~/cbse/central-board-secondary-education-cbse.aspx" runat="server" title="All about CBSE"><li class="active"><span class="icon"></span><span>All about CBSE</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>CARRIER OPTIONS</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A8" href="~/pre-engineering/be-btech-in-india.aspx" runat="server" title="B.E./B.Tech Exams/ Admissions/Preperations"><li class="active"><span class="icon"></span><span>B.E./B.Tech Exams/ Admissions/Preperations</span></li></a>
+                          <a id="A9" href="~/pre-engineering/be-btech-in-india.aspx" runat="server" title="All About AIEEE and Free AIEEE test series"><li class="active"><span class="icon"></span><span>All About AIEEE and Free AIEEE test series</span></li></a>
+                          <a id="A10" href="~/medical.aspx" runat="server" title="Medical Entrance Exams"><li class="active"><span class="icon"></span><span>Medical Entrance Exams</span></li></a>
+                          <a id="A11" href="~/colleges/engineering_colleges.aspx" runat="server" title="Engineering Colleges of India"><li class="active"><span class="icon"></span><span>Engineering Colleges of India</span></li></a>
+                          <a id="A12" href="~/engineering/admission-notifications-engineering-institutes-india-be-btech.aspx" runat="server" title="B.E./ B.Tech Admissions Notifications"><li class="active"><span class="icon"></span><span>B.E./ B.Tech Admissions Notifications</span></li></a>
+                          <a id="A13" href="~/education-system/india/indian-education-types-of-colleges-in-universities.aspx" runat="server" title="Different types of Colleges in India"><li class="active"><span class="icon"></span><span>Different types of Colleges in India</span></li></a>
+                          <a id="A14" href="~/education-system/india/indian-education-domicile-requirement.aspx" runat="server" title="Domicile Requirement for College admissions/exams"><li class="active"><span class="icon"></span><span>Domicile Requirement for College admissions/exams</span></li></a>
+                          <a id="A15" href="~/education-system/india/indian-education-reservation-quota-system.aspx" runat="server" title="Reservation and Quota system for College Admissions in India"><li class="active"><span class="icon"></span><span>Reservation and Quota system for College Admissions in India</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

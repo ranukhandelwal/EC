@@ -1,0 +1,74 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="OCLinks.master.cs" Inherits="ExamCrazy.Masters.OCLinks" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Organic Chemistry Tutorials</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/<%=aieee_root%>chemistry/organic-chemistry/organic-chemistry-basics.aspx" runat="server" title="chemistry/organic-chemistry/Organic-Chemistry-Basics.asp">Organic Chemistry Basics by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/organic-chemistry/Organic-Chemistry-Basics.asp">Organic Chemistry Basics by S.S. Education</span></li></a>
+                          <a id="A2" href="~/<%=aieee_root%>chemistry/organic-chemistry/structural-isomerism.aspx" runat="server" title="chemistry/organic-chemistry/Structural-Isomerism.asp">Structural Isomerism by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/organic-chemistry/Structural-Isomerism.asp">Structural Isomerism by S.S. Education</span></li></a>
+                          <a id="A3" href="~/<%=aieee_root%>chemistry/organic-chemistry/stereo-isomerism.aspx" runat="server" title="chemistry/organic-chemistry/Stereo-Isomerism.asp">Stereo Isomerism by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/organic-chemistry/Stereo-Isomerism.asp">Stereo Isomerism by S.S. Education</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>OTHER AIEEE/IIT/PRE-ENGINEERING TUTORIALS</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A4" href="~/<%=aieee_root%>maths.aspx" runat="server" title="maths.asp">Maths Tutorials for AIEEE IIT Pre Engineering"><li class="active"><span class="icon"></span><span>maths.asp">Maths Tutorials for AIEEE IIT Pre Engineering</span></li></a>
+                          <a id="A5" href="~/<%=aieee_root%>physics.aspx" runat="server" title="physics.asp">Physics Tutorials for AIEEE IIT Pre Engineering"><li class="active"><span class="icon"></span><span>physics.asp">Physics Tutorials for AIEEE IIT Pre Engineering</span></li></a>
+                          <a id="A6" href="~/<%=aieee_root%>chemistry.aspx" runat="server" title="chemistry.asp">Chemistry Tutorials for AIEEE IIT Pre Engineering"><li class="active"><span class="icon"></span><span>chemistry.asp">Chemistry Tutorials for AIEEE IIT Pre Engineering</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>More Engineering Links</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A7" href="~/<%=aieee_root%>engineering/coaching-institutes-engineering-india-for-gate-ies-psus.aspx" runat="server" title="Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs.asp">Directory of coaching Institutes"><li class="active"><span class="icon"></span><span>Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs.asp">Directory of coaching Institutes</span></li></a>
+                          <a id="A8" href="~/<%=aieee_root%>engineering/top-ranking-government-engineering-colleges-in-india.aspx" runat="server" title="Engineering/Top-ranking-Government-Engineering-colleges-in-india.asp">Govt engg college rankings"><li class="active"><span class="icon"></span><span>Engineering/Top-ranking-Government-Engineering-colleges-in-india.asp">Govt engg college rankings</span></li></a>
+                          <a id="A9" href="~/<%=aieee_root%>engineering/top-ranking-private-engineering-colleges-in-india.aspx" runat="server" title="Engineering/Top-ranking-Private-Engineering-colleges-in-india.asp">Private engg college rankings"><li class="active"><span class="icon"></span><span>Engineering/Top-ranking-Private-Engineering-colleges-in-india.asp">Private engg college rankings</span></li></a>
+                          <a id="A10" href="~/<%=aieee_root%>engineering/admission-notifications-engineering-institutes-india-me-mtech.aspx" runat="server" title="Engineering/Admission-notifications-Engineering-institutes-india-ME-Mtech.asp">Admission notifications for Mtech/PhD"><li class="active"><span class="icon"></span><span>Engineering/Admission-notifications-Engineering-institutes-india-ME-Mtech.asp">Admission notifications for Mtech/PhD</span></li></a>
+                          <a id="A11" href="~/<%=aieee_root%>colleges/engineering_colleges.aspx" runat="server" title="Colleges/Engineering_Colleges.asp">All Engineering Colleges in India"><li class="active"><span class="icon"></span><span>Colleges/Engineering_Colleges.asp">All Engineering Colleges in India</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

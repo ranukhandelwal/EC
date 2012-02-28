@@ -1,0 +1,68 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="Reduced_in_struction_set_computers_Links.master.cs" Inherits="ExamCrazy.Masters.Reduced_in_struction_set_computers_Links" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Reduced in struction set computers </span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~//engineering/computer-science/computer-organization-and-architecture/what-are-riscs-and-why-do-we-need-them.aspx" runat="server" title="What are RISCs and why do we need them "><li class="active"><span class="icon"></span><span>What are RISCs and why do we need them </span></li></a>
+                          <a id="A2" href="~//engineering/computer-science/computer-organization-and-architecture/the-semantic-gap.aspx" runat="server" title="The Semantic Gap "><li class="active"><span class="icon"></span><span>The Semantic Gap </span></li></a>
+                          <a id="A3" href="~//engineering/computer-science/computer-organization-and-architecture/evaluation-of-program-execution.aspx" runat="server" title="Evaluation of Program Execution "><li class="active"><span class="icon"></span><span>Evaluation of Program Execution </span></li></a>
+                          <a id="A4" href="~//engineering/computer-science/computer-organization-and-architecture/frequency-of-instructions-executed.aspx" runat="server" title="Frequency of Instructions Executed "><li class="active"><span class="icon"></span><span>Frequency of Instructions Executed </span></li></a>
+                          <a id="A5" href="~//engineering/computer-science/computer-organization-and-architecture/procedure-calls.aspx" runat="server" title="Procedure Calls "><li class="active"><span class="icon"></span><span>Procedure Calls </span></li></a>
+                          <a id="A6" href="~//engineering/computer-science/computer-organization-and-architecture/conclusions-from-evaluation-of-program-execution.aspx" runat="server" title="Conclusions from Evaluation of Program Execution "><li class="active"><span class="icon"></span><span>Conclusions from Evaluation of Program Execution </span></li></a>
+                          <a id="A7" href="~//engineering/computer-science/computer-organization-and-architecture/main-characteristics-of-risc-architectures.aspx" runat="server" title="Main Characteristics of RISC Architectures "><li class="active"><span class="icon"></span><span>Main Characteristics of RISC Architectures </span></li></a>
+                          <a id="A8" href="~//engineering/computer-science/computer-organization-and-architecture/are-riscs-really-better-than-ciscs.aspx" runat="server" title="Are RISCs Really Better than CISCs "><li class="active"><span class="icon"></span><span>Are RISCs Really Better than CISCs </span></li></a>
+                          <a id="A9" href="~//engineering/computer-science/computer-organization-and-architecture/risc-summary.aspx" runat="server" title="Summary "><li class="active"><span class="icon"></span><span>Summary </span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>More Engineering Links</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A10" href="~/<%=aieee_root%>engineering/coaching-institutes-engineering-india-for-gate-ies-psus.aspx" runat="server" title="Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs.asp">Directory of coaching Institutes"><li class="active"><span class="icon"></span><span>Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs.asp">Directory of coaching Institutes</span></li></a>
+                          <a id="A11" href="~/<%=aieee_root%>engineering/top-ranking-government-engineering-colleges-in-india.aspx" runat="server" title="Engineering/Top-ranking-Government-Engineering-colleges-in-india.asp">Govt engg college rankings"><li class="active"><span class="icon"></span><span>Engineering/Top-ranking-Government-Engineering-colleges-in-india.asp">Govt engg college rankings</span></li></a>
+                          <a id="A12" href="~/<%=aieee_root%>engineering/top-ranking-private-engineering-colleges-in-india.aspx" runat="server" title="Engineering/Top-ranking-Private-Engineering-colleges-in-india.asp">Private engg college rankings"><li class="active"><span class="icon"></span><span>Engineering/Top-ranking-Private-Engineering-colleges-in-india.asp">Private engg college rankings</span></li></a>
+                          <a id="A13" href="~/<%=aieee_root%>engineering/admission-notifications-engineering-institutes-india-me-mtech.aspx" runat="server" title="Engineering/Admission-notifications-Engineering-institutes-india-ME-Mtech.asp">Admission notifications for Mtech/PhD"><li class="active"><span class="icon"></span><span>Engineering/Admission-notifications-Engineering-institutes-india-ME-Mtech.asp">Admission notifications for Mtech/PhD</span></li></a>
+                          <a id="A14" href="~/<%=aieee_root%>colleges/engineering_colleges.aspx" runat="server" title="Colleges/Engineering_Colleges.asp">All Engineering Colleges in India"><li class="active"><span class="icon"></span><span>Colleges/Engineering_Colleges.asp">All Engineering Colleges in India</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

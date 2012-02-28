@@ -1,0 +1,73 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="gtplinks.master.cs" Inherits="ExamCrazy.Masters.gtplinks" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+                          <a id="A1" href="~/exam-preparation/gate-tutor/about_gate_tutor_program.aspx" runat="server" title="About Gate Tutor Program."><li class="active"><span class="icon"></span><span>About Gate Tutor Program.</span></li></a>
+                          <a id="A2" href="~/exams.aspx" runat="server" title="GATE TUTOR SUGGESTED METHODS."><li class="active"><span class="icon"></span><span>GATE TUTOR SUGGESTED METHODS.</span></li></a>
+                          <a id="A3" href="~/exam-preparation/gate-tutor/ajay-dangi.aspx" runat="server" title="Ajay Dangi."><li class="active"><span class="icon"></span><span>Ajay Dangi.</span></li></a>
+                          <a id="A4" href="~/exam-preparation/gate-tutor/roll_no_2.aspx" runat="server" title="Participant2: (Participant requested to hide name)."><li class="active"><span class="icon"></span><span>Participant2: (Participant requested to hide name).</span></li></a>
+                          <a id="A5" href="~/exam-preparation/gate-tutor/balaganesh.aspx" runat="server" title="Balaganesh."><li class="active"><span class="icon"></span><span>Balaganesh.</span></li></a>
+                          <a id="A6" href="~/exam-preparation/gate-tutor/v-dorthy.aspx" runat="server" title="V.Dorthy."><li class="active"><span class="icon"></span><span>V.Dorthy.</span></li></a>
+                          <a id="A7" href="~/exam-preparation/gate-tutor/roll_no_5.aspx" runat="server" title="Participant5: (Participant requested to hide name)."><li class="active"><span class="icon"></span><span>Participant5: (Participant requested to hide name).</span></li></a>
+                          <a id="A8" href="~/exam-preparation/gate-tutor/nl-sahiti.aspx" runat="server" title="NL Sahiti."><li class="active"><span class="icon"></span><span>NL Sahiti.</span></li></a>
+                          <a id="A9" href="~/exam-preparation/gate-tutor/mahesh-chandra.aspx" runat="server" title="Mahesh chandra."><li class="active"><span class="icon"></span><span>Mahesh chandra.</span></li></a>
+                          <a id="A10" href="~/exam-preparation/gate-tutor/mahesh-patil.aspx" runat="server" title="Mahesh Patil."><li class="active"><span class="icon"></span><span>Mahesh Patil.</span></li></a>
+                          <a id="A11" href="~/exam-preparation/gate-tutor/roll_no_9.aspx" runat="server" title="Participant9: (Participant requested to hide name)."><li class="active"><span class="icon"></span><span>Participant9: (Participant requested to hide name).</span></li></a>
+                          <a id="A12" href="~/exam-preparation/gate-tutor/s--prabhakaran.aspx" runat="server" title="S. Prabhakaran."><li class="active"><span class="icon"></span><span>S. Prabhakaran.</span></li></a>
+                          <a id="A13" href="~/exam-preparation/gate-tutor/rahul-chatterjee.aspx" runat="server" title="Rahul chatterjee."><li class="active"><span class="icon"></span><span>Rahul chatterjee.</span></li></a>
+                          <a id="A14" href="~/exam-preparation/gate-tutor/savitha-n.aspx" runat="server" title="Savitha.N."><li class="active"><span class="icon"></span><span>Savitha.N.</span></li></a>
+                          <a id="A15" href="~/exam-preparation/gate-tutor/v-j-sreenivsan.aspx" runat="server" title="V.J.SREENIVSAN   ."><li class="active"><span class="icon"></span><span>V.J.SREENIVSAN   .</span></li></a>
+                          <a id="A16" href="~/exam-preparation/gate-tutor/sunil.aspx" runat="server" title="Sunil."><li class="active"><span class="icon"></span><span>Sunil.</span></li></a>
+                          <a id="A17" href="~/exam-preparation/gate-tutor/uma-shankar-jha.aspx" runat="server" title="UMA SHANKAR JHA."><li class="active"><span class="icon"></span><span>UMA SHANKAR JHA.</span></li></a>
+                          <a id="A18" href="~/exam-preparation/gate-tutor/v-vaishnavi.aspx" runat="server" title="V.VAISHNAVI."><li class="active"><span class="icon"></span><span>V.VAISHNAVI.</span></li></a>
+                          <a id="A19" href="~/exam-preparation/gate-tutor/roll_no_17.aspx" runat="server" title="Participant17: (Participant requested to hide name)."><li class="active"><span class="icon"></span><span>Participant17: (Participant requested to hide name).</span></li></a>
+                          <a id="A20" href="~/exam-preparation/gate-tutor/lalit.aspx" runat="server" title="Lalit."><li class="active"><span class="icon"></span><span>Lalit.</span></li></a>
+                          <a id="A21" href="~/exam-preparation/gate-tutor/jitesh-kumar-prajapat.aspx" runat="server" title="Jitesh Kumar Prajapat."><li class="active"><span class="icon"></span><span>Jitesh Kumar Prajapat.</span></li></a>
+                          <a id="A22" href="~/exam-preparation/gate-tutor/ram.aspx" runat="server" title="Ram."><li class="active"><span class="icon"></span><span>Ram.</span></li></a>
+                          <a id="A23" href="~/exam-preparation/gate-tutor/kanhaiya-choudhary.aspx" runat="server" title="KANHAIYA CHOUDHARY."><li class="active"><span class="icon"></span><span>KANHAIYA CHOUDHARY.</span></li></a>
+                          <a id="A24" href="~/exam-preparation/gate-tutor/kirti.aspx" runat="server" title="kirti."><li class="active"><span class="icon"></span><span>kirti.</span></li></a>
+                          <a id="A25" href="~/exam-preparation/gate-tutor/kush-tripathi.aspx" runat="server" title="kush Tripathi."><li class="active"><span class="icon"></span><span>kush Tripathi.</span></li></a>
+                          <a id="A26" href="~/exam-preparation/gate-tutor/roll_no_24.aspx" runat="server" title="Participant24: (Participant requested to hide name)."><li class="active"><span class="icon"></span><span>Participant24: (Participant requested to hide name).</span></li></a>
+                          <a id="A27" href="~/exam-preparation/gate-tutor/sheetal-pradhan.aspx" runat="server" title="SHEETAL PRADHAN."><li class="active"><span class="icon"></span><span>SHEETAL PRADHAN.</span></li></a>
+                          <a id="A28" href="~/exam-preparation/gate-tutor/akash-mishra.aspx" runat="server" title="Akash Mishra."><li class="active"><span class="icon"></span><span>Akash Mishra.</span></li></a>
+                          <a id="A29" href="~/exam-preparation/gate-tutor/tushar.aspx" runat="server" title="Tushar."><li class="active"><span class="icon"></span><span>Tushar.</span></li></a>
+                          <a id="A30" href="~/exam-preparation/gate-tutor/geethu-mohan.aspx" runat="server" title="GEETHU MOHAN."><li class="active"><span class="icon"></span><span>GEETHU MOHAN.</span></li></a>
+                          <a id="A31" href="~/exam-preparation/gate-tutor/abhijit-choudhary.aspx" runat="server" title="Abhijit Choudhary."><li class="active"><span class="icon"></span><span>Abhijit Choudhary.</span></li></a>
+                          <a id="A32" href="~/exam-preparation/gate-tutor/ashwini-bharat-pawar.aspx" runat="server" title="ASHWINI BHARAT PAWAR."><li class="active"><span class="icon"></span><span>ASHWINI BHARAT PAWAR.</span></li></a>
+                          <a id="A33" href="~/exam-preparation/gate-tutor/kiran-laxmanrao-more.aspx" runat="server" title="Kiran Laxmanrao More."><li class="active"><span class="icon"></span><span>Kiran Laxmanrao More.</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

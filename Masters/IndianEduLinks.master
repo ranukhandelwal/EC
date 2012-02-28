@@ -1,0 +1,86 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="IndianEduLinks.master.cs" Inherits="ExamCrazy.Masters.IndianEduLinks" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>INDIAN EDU. SYSTEM</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/education-system/india/indian-education-system-over-view.aspx" runat="server" title="Indian Education System Overview"><li class="active"><span class="icon"></span><span>Indian Education System Overview</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>SCHOOL SYSTEM</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A2" href="~/engineering/aieee/aieee-exam-application-procedure-fees.aspx" runat="server" title="Application Procedure"><li class="active"><span class="icon"></span><span>Application Procedure</span></li></a>
+                          <a id="A3" href="~/engineering/aieee/aieee-important-dates-exam-schedule.aspx" runat="server" title="AIEEE 2009 Important dates"><li class="active"><span class="icon"></span><span>AIEEE 2009 Important dates</span></li></a>
+                          <a id="A4" href="~/engineering/aieee/aieee-test-centers-exam-cities.aspx" runat="server" title="Test centers AIEEE 2009"><li class="active"><span class="icon"></span><span>Test centers AIEEE 2009</span></li></a>
+                          <a id="A5" href="~/engineering/aieee/aieee-declaration-of-result-counselling-admissions.aspx" runat="server" title="Results & admissions"><li class="active"><span class="icon"></span><span>Results & admissions</span></li></a>
+                          <a id="A6" href="~/interviews-jobs/government-jobs/gail-jobs-important-dates.aspx" runat="server" title="GAIL 2009 Important Dates"><li class="active"><span class="icon"></span><span>GAIL 2009 Important Dates</span></li></a>
+                          <a id="A7" href="~/engineering/coaching-institutes-engineering-india-for-gate-ies-psus.aspx" runat="server" title="Click here for engineering coaching institute in your city"><li class="active"><span class="icon"></span><span>Click here for engineering coaching institute in your city</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>UNIVERSITY SYSTEM</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A8" href="~/education-system/india/indian-education-university-stream.aspx" runat="server" title="Introduction & History"><li class="active"><span class="icon"></span><span>Introduction & History</span></li></a>
+                          <a id="A9" href="~/education-system/india/indian-education-tyes-of-universities.aspx" runat="server" title="Types of Indian Universities"><li class="active"><span class="icon"></span><span>Types of Indian Universities</span></li></a>
+                          <a id="A10" href="~/education-system/india/indian-education-types-of-colleges-in-universities.aspx" runat="server" title="Colleges of Indian Universities"><li class="active"><span class="icon"></span><span>Colleges of Indian Universities</span></li></a>
+                          <a id="A11" href="~/education-system/india/indian-education-university-college-admissions.aspx" runat="server" title="Admissions in Indian Colleges and Universities"><li class="active"><span class="icon"></span><span>Admissions in Indian Colleges and Universities</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>NON-UNIV SYSTEM</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub4">
+                    <ul>
+                          <a id="A12" href="~/ano_utils/user_appearintest2.aspx" runat="server" title="Physics Papers"><li class="active"><span class="icon"></span><span>Physics Papers</span></li></a>
+                          <a id="A13" href="~/ano_utils/user_appearintest2.aspx" runat="server" title="Chemistry Papers"><li class="active"><span class="icon"></span><span>Chemistry Papers</span></li></a>
+                          <a id="A14" href="~/ano_utils/user_appearintest2.aspx" runat="server" title="Mathematics Papers"><li class="active"><span class="icon"></span><span>Mathematics Papers</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>
