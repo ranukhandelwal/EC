@@ -87,6 +87,13 @@
     <Content Include="img\headingbackground.gif" />
     <Content Include="img\whitecricle.gif" />
     <Content Include="index.aspx" />
+    <Content Include="NTSS-NTSE\application-form-results-ntse.aspx" />
+    <Content Include="NTSS-NTSE\exam-pattern-syllabus-ntse.aspx" />
+    <Content Include="NTSS-NTSE\Examination-scheme-NTSE-scholarship.aspx" />
+    <Content Include="NTSS-NTSE\history-evolution-ntse.aspx" />
+    <Content Include="NTSS-NTSE\important-dates-ntse.aspx" />
+    <Content Include="NTSS-NTSE\National-talent-search-examination-scholarship.aspx" />
+    <Content Include="NTSS-NTSE\scholarship-ntse.aspx" />
     <Content Include="Test\EmailTest.aspx" />
     <Content Include="Test\TempIntermediatePage.aspx" />
     <Content Include="Test\TestUserMemberList.aspx" />
@@ -775,6 +782,48 @@
     </Compile>
     <Compile Include="newrssxml.aspx.designer.cs">
       <DependentUpon>newrssxml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTSS-NTSE\application-form-results-ntse.aspx.cs">
+      <DependentUpon>application-form-results-ntse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTSS-NTSE\application-form-results-ntse.aspx.designer.cs">
+      <DependentUpon>application-form-results-ntse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTSS-NTSE\exam-pattern-syllabus-ntse.aspx.cs">
+      <DependentUpon>exam-pattern-syllabus-ntse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTSS-NTSE\exam-pattern-syllabus-ntse.aspx.designer.cs">
+      <DependentUpon>exam-pattern-syllabus-ntse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTSS-NTSE\Examination-scheme-NTSE-scholarship.aspx.cs">
+      <DependentUpon>Examination-scheme-NTSE-scholarship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTSS-NTSE\Examination-scheme-NTSE-scholarship.aspx.designer.cs">
+      <DependentUpon>Examination-scheme-NTSE-scholarship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTSS-NTSE\history-evolution-ntse.aspx.cs">
+      <DependentUpon>history-evolution-ntse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTSS-NTSE\history-evolution-ntse.aspx.designer.cs">
+      <DependentUpon>history-evolution-ntse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTSS-NTSE\important-dates-ntse.aspx.cs">
+      <DependentUpon>important-dates-ntse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTSS-NTSE\important-dates-ntse.aspx.designer.cs">
+      <DependentUpon>important-dates-ntse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTSS-NTSE\National-talent-search-examination-scholarship.aspx.cs">
+      <DependentUpon>National-talent-search-examination-scholarship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTSS-NTSE\National-talent-search-examination-scholarship.aspx.designer.cs">
+      <DependentUpon>National-talent-search-examination-scholarship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTSS-NTSE\scholarship-ntse.aspx.cs">
+      <DependentUpon>scholarship-ntse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NTSS-NTSE\scholarship-ntse.aspx.designer.cs">
+      <DependentUpon>scholarship-ntse.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="registration.aspx.cs">
