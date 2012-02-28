@@ -1,0 +1,426 @@
+<%@ Page Language="C#" MasterPageFile="~/Masters/networking_tutorials_links.master" AutoEventWireup="True" CodeBehind="Information-Exchange-Process.aspx.cs"  Inherits="ExamCrazy.Engineering.Computer_Science.networking_tutorials.Information_Exchange_Process" %>
+<%@ MasterType VirtualPath="~/Masters/networking_tutorials_links.master" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server"></asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server"></asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+<div class="gbody txt">
+
+ 
+
+<table border="0" width="99%" cellspacing=2 cellpadding=2 bordercolor='#e4e4e4'>
+
+    <tr>
+
+      
+      <td class="txt"><Table border="1" cellspacing="2" cellpadding="2" bordercolor="#c4c4c4">
+
+    <tr>
+
+      
+      <td class="txt">
+	<b>Information Exchange Process </b></td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br>
+<br><b>Information flow:</b> The flow of information is from the top layer (usually application layer) down to the physical layer at information source node; and from the physical layer up to the application later at the destination node as illustrated in the figure below. 
+<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image1.gif"></sub>
+<br>The information exchange process occurs between peer OSI layers. Each layer in the source system adds control information to data and each layer in the destination system analyzes and removes the control information from that data. &nbsp; 
+<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image2.gif"></sub>
+<br>If System A has data from a software application to send to System B, the data is passed to the application layer. The application layer in System a then communicates any control information required by the application layer in System B by prepending a header to the data. The resulting information unit (a header and the data) is passed to the presentation layer, which pretends its own header containing control information intended for the presentation layer in System B. The information unit grows in size as each layer prepends its own header (and in some cases a trailer) that contains control information to be used by its peer layer in System B. At the physical layer, the entire information unit is placed onto the network medium. &nbsp; 
+<br>The physical layer in System B receives the information unit and passes it to the data-link layer. The data link layer in System B then reads the control information contained in the header prepended by the data link layer in System A. The header is then removed, and the remainder of the information unit is passed to the network layer. Each layer performs the same actions: The layer reads the header from its peer layer, strips it off, and passes the remaining information unit to the next highest layer. After the application layer performs these actions, the data is passed to the recipient software application in System B, in exactly the form in which it was transmitted by the application in System A. 
+</td>
+
+      
+      <td class="txt">
+	<br>
+</td>
+</tr></table>
+<br>
+</td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br>
+<br><b>Discuss About Computer Network Tutorials</b><Table border="1" cellspacing="2" cellpadding="2" bordercolor="#c4c4c4">
+
+    <tr>
+
+      
+      <td class="txt">
+	<br>
+	<br>Top of Form<Table border="1" cellspacing="2" cellpadding="2" bordercolor="#c4c4c4">
+
+    <tr>
+
+      
+      <td class="txt">
+	<br></td>
+
+      
+      <td class="txt">
+	<br>&nbsp;&nbsp; <asp:HyperLink ID="HyperLink1" runat="server" Text="<b>START NEW THREADS</b> " NavigateUrl="javascript:moveNewThread(); "></asp:HyperLink></td>
+</tr></table>
+<br><Table border="1" cellspacing="2" cellpadding="2" bordercolor="#c4c4c4">
+
+    <tr>
+
+      
+      <td class="txt">
+	<br><b>Computer Networks</b>
+<br>Computer Networks Discussion Forum</td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br>
+</td>
+
+      
+      <td class="txt">
+	<br><b>Thread / Thread Starter</b>
+</td>
+
+      
+      <td class="txt">
+	<br><b>Last Post</b>
+</td>
+
+      
+      <td class="txt">
+	<br><b>Replies</b>
+</td>
+
+      
+      <td class="txt">
+	<br><b>Views</b>
+</td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image3.gif"></sub>
+</td>
+
+      
+      <td class="txt">
+	<br><asp:HyperLink ID="HyperLink2" runat="server" Text="<b>networking</b>" NavigateUrl="~/engineering/computer-science/networking-tutorials/information-exchange-process.aspx"></asp:HyperLink> 
+<br>numericals on networking... 
+<br>
+<br><b>Posted By :-</b><b> </b><b>&nbsp;priyasaha</b> 
+</td>
+
+      
+      <td class="txt">
+	<br>Dec 17, 11:03:33 AM
+</td>
+
+      
+      <td class="txt">
+	<br>0
+</td>
+
+      
+      <td class="txt">
+	<br>668
+</td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image3.gif"></sub>
+</td>
+
+      
+      <td class="txt">
+	<br><asp:HyperLink ID="HyperLink3" runat="server" Text="<b>cs</b>" NavigateUrl="~/engineering/computer-science/networking-tutorials/information-exchange-process.aspx"></asp:HyperLink> 
+<br>computer science 
+<br>
+<br><b>Posted By :-</b><b> </b><b>&nbsp;mayurgate</b> 
+</td>
+
+      
+      <td class="txt">
+	<br>Sep 28, 10:22:35 AM
+</td>
+
+      
+      <td class="txt">
+	<br>0
+</td>
+
+      
+      <td class="txt">
+	<br>475
+</td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image3.gif"></sub>
+</td>
+
+      
+      <td class="txt">
+	<br><asp:HyperLink ID="HyperLink4" runat="server" Text="<b>Session layer</b>" NavigateUrl="~/engineering/computer-science/networking-tutorials/information-exchange-process.aspx"></asp:HyperLink> 
+<br>I love u 
+<br>
+<br><b>Posted By :-</b><b> </b><b>&nbsp;kamala</b> 
+</td>
+
+      
+      <td class="txt">
+	<br>Jun 21, 6:11:21 AM
+</td>
+
+      
+      <td class="txt">
+	<br>0
+</td>
+
+      
+      <td class="txt">
+	<br>424
+</td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image3.gif"></sub>
+</td>
+
+      
+      <td class="txt">
+	<br><asp:HyperLink ID="HyperLink5" runat="server" Text="<b>session layer</b>" NavigateUrl="~/engineering/computer-science/networking-tutorials/information-exchange-process.aspx"></asp:HyperLink> 
+<br>getgd 
+<br>
+<br><b>Posted By :-</b><b> </b><b>&nbsp;akshay.patni@gmail.com</b> 
+</td>
+
+      
+      <td class="txt">
+	<br>May 6, 9:19:54 PM
+</td>
+
+      
+      <td class="txt">
+	<br>0
+</td>
+
+      
+      <td class="txt">
+	<br>350
+</td>
+</tr></table>
+<br>
+<br>
+	<br>Bottom of Form<Table border="1" cellspacing="2" cellpadding="2" bordercolor="#c4c4c4">
+
+    <tr>
+
+      
+      <td class="txt">
+	<br><b>To start your new thread you must login here.</b></td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br>
+	<br>Top of Form<Table border="1" cellspacing="2" cellpadding="2" bordercolor="#c4c4c4">
+
+    <tr>
+
+      
+      <td class="txt">
+	<br><b>To reply/post a comment you need to login, Use your user name and password to login if you are already registered else register here</b> </td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt"><Table border="1" cellspacing="2" cellpadding="2" bordercolor="#c4c4c4">
+
+    <tr>
+
+      
+      <td class="txt">
+<br><b>EXISTING USER LOGIN</b> </td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt"><Table border="1" cellspacing="2" cellpadding="2" bordercolor="#c4c4c4">
+
+    <tr>
+
+      
+      <td class="txt"><Table border="1" cellspacing="2" cellpadding="2" bordercolor="#c4c4c4">
+
+    <tr>
+
+      
+      <td class="txt">
+<br><b>(Members Login)</b> </td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br>Username: 
+</td>
+
+      
+      <td class="txt">
+	<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image4.wmf"></sub>
+</td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br>Password: 
+</td>
+
+      
+      <td class="txt">
+	<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image4.wmf"></sub>
+</td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image4.wmf"></sub>
+</td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br>
+<br><asp:HyperLink ID="HyperLink6" runat="server" Text="Problems in login? Click here.." NavigateUrl="~/ano_utils/forgot_password.aspx"></asp:HyperLink> 
+</td>
+</tr></table>
+<br>
+</td>
+</tr></table>
+<br>
+</td>
+</tr></table>
+<br>
+</td>
+
+      
+      <td class="txt"><Table border="1" cellspacing="2" cellpadding="2" bordercolor="#c4c4c4">
+
+    <tr>
+
+      
+      <td class="txt">
+	<br><b>NEW USER REGISTERATION FORM</b> </td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt"><Table border="1" cellspacing="2" cellpadding="2" bordercolor="#c4c4c4">
+
+    <tr>
+
+      
+      <td class="txt"><Table border="1" cellspacing="2" cellpadding="2" bordercolor="#c4c4c4">
+
+    <tr>
+
+      
+      <td class="txt">
+<br></td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br><b>Login-Id</b>
+<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image5.wmf"></sub>
+</td>
+
+      
+      <td class="txt">
+	<br><b>Email-ID</b>
+<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image5.wmf"></sub>
+</td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br><b>Password</b>
+<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image5.wmf"></sub>
+</td>
+
+      
+      <td class="txt">
+	<br><b>Confirm-Password</b>
+<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image5.wmf"></sub>
+</td>
+</tr>
+
+    <tr>
+
+      
+      <td class="txt">
+<br><b>Full-Name</b>
+<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image5.wmf"></sub>
+</td>
+
+      
+      <td class="txt">
+	<br>
+<br><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image4.wmf"></sub><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image4.wmf"></sub><sub><img src="/Engineering/Computer-Science/networking-tutorials/img_information-exchange-process/image4.wmf"></sub>
+</td>
+</tr></table>
+<br>
+</td>
+</tr></table>
+<br>
+</td>
+</tr></table>
+<br>
+</td>
+</tr></table>
+<br>Bottom of Form
+</td>
+</tr></table>
+<br>
+</td>
+</tr></table>
+<br>
+</td>
+</tr></table>
+</div>
+</asp:Content>
