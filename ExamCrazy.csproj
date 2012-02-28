@@ -74,6 +74,17 @@
     <Content Include="Article\addarticle.aspx" />
     <Content Include="Article\articledetail.aspx" />
     <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="cbse\admission-procedure-secondary-school-X-cbse.aspx" />
+    <Content Include="cbse\admission-procedure-senior-secondary-school-XII-cbse.aspx" />
+    <Content Include="cbse\cbse-10th-secondary-attendance-requirement-regular-students-admission.aspx" />
+    <Content Include="cbse\cbse-10th-secondary-private-students-admission.aspx" />
+    <Content Include="cbse\cbse-10th-secondary-regular-students-admission.aspx" />
+    <Content Include="cbse\cbse-12th-senior-secondary-attendance-requirement-regular-students-admission.aspx" />
+    <Content Include="cbse\cbse-12th-senior-secondary-private-students-admission.aspx" />
+    <Content Include="cbse\cbse-12th-senoir-secondary-regular-students-admission.aspx" />
+    <Content Include="cbse\central-board-secondary-education-cbse.aspx" />
+    <Content Include="cbse\Examination Scheme-cbse-10th-secondary.aspx" />
+    <Content Include="cbse\Examination Scheme-cbse-12th-secondary.aspx" />
     <Content Include="Control\Announcement.ascx" />
     <Content Include="Control\DiscussionForm.ascx" />
     <Content Include="Control\MemberList.ascx" />
@@ -81,12 +92,124 @@
     <Content Include="css\announcement.css" />
     <Content Include="css\discussion.css" />
     <Content Include="css\preferredproduct.css" />
+    <Content Include="Exams\books_to_follow_for_Competitive_Exams.aspx" />
+    <Content Include="Exams\discussion_on_questions.aspx" />
+    <Content Include="Exams\how_many_hours_to_study.aspx" />
+    <Content Include="Exams\how_to_prepare_for_objective_exams.aspx" />
+    <Content Include="Exams\How_to_Start_preparing_for_Competitive_Exams.aspx" />
+    <Content Include="Exams\is_coaching_required_for_Competitive_Exams.aspx" />
+    <Content Include="Exams\online_study_material_for_exams.aspx" />
+    <Content Include="Exams\preparing_notes_for_exams.aspx" />
+    <Content Include="Exams\self_study_group_study_Competitive_Exams.aspx" />
+    <Content Include="Exams\Should_i_prepare_full_syllabus_for_Competitive_Exams.aspx" />
+    <Content Include="Exams\when_to_start_preparing_for_competitive_exams.aspx" />
+    <Content Include="Expert-speak\Career_Opportunities_in_Multimedia_Networking.aspx" />
+    <Content Include="Expert-speak\EMERGING_BUSINESS_PROPOSALS_FOR_TECHNOLOGY.aspx" />
+    <Content Include="Expert-speak\Energy_Efficiency_Conservation.aspx" />
+    <Content Include="Expert-speak\Engineer_Scientists.aspx" />
+    <Content Include="Expert-speak\Expert_speak_articles.aspx" />
+    <Content Include="Expert-speak\Expert_speak_Practice_tests.aspx" />
+    <Content Include="Expert-speak\Expert_speak_Tutorials.aspx" />
+    <Content Include="Expert-speak\img_presenting_a_seminar_in_college\image1.gif" />
+    <Content Include="Expert-speak\Presenting_a_Seminar_in_college.aspx" />
     <Content Include="imgsecuritycode.aspx" />
     <Content Include="img\exam.gif" />
     <Content Include="img\GateAcademy.gif" />
     <Content Include="img\headingbackground.gif" />
     <Content Include="img\whitecricle.gif" />
     <Content Include="index.aspx" />
+    <Content Include="MBA\Application-date-for-various-MBA-management-institutes.aspx" />
+    <Content Include="MBA\BSchool-rankings.aspx" />
+    <Content Include="MBA\Bschool-rankings\AIMA-2007-rankings-Grade-A-plus-Indian-BSchools.aspx" />
+    <Content Include="MBA\Bschool-rankings\AIMA-2007-rankings-Grade-B-plus-Indian-BSchools.aspx" />
+    <Content Include="MBA\Bschool-rankings\AIMA-2007-rankings-Grade-C-plus-Indian-BSchools.aspx" />
+    <Content Include="MBA\Bschool-rankings\AIMA-2007-rankings-Grade-Super-League-Indian-BSchools.aspx" />
+    <Content Include="MBA\Bschool-rankings\Business-Today-Ranking-of-Top-Indian-B-Schools-2007.aspx" />
+    <Content Include="MBA\Bschool-rankings\img_indian-b-schools-pagalguy-mba-rankings-2009\image1.jpeg" />
+    <Content Include="MBA\Bschool-rankings\Indian-B-schools-AIMA-mba-rankings-2006.aspx" />
+    <Content Include="MBA\Bschool-rankings\Indian-B-schools-AIMA-mba-rankings-2007.aspx" />
+    <Content Include="MBA\Bschool-rankings\Indian-B-schools-pagalguy-mba-rankings-2009.aspx" />
+    <Content Include="MBA\Bschool-rankings\Private-Indian-B-schools-MINT-mba-rankings-2008.aspx" />
+    <Content Include="MBA\Bschool-rankings\Top-Indian-B-schools-By-Salary-mba-rankings-2008.aspx" />
+    <Content Include="MBA\Bschool-rankings\Top-Indian-B-schools-outlook-mba-rankings-2007.aspx" />
+    <Content Include="MBA\Bschool-rankings\Top-Indian-B-schools-outlook-mba-rankings-2008.aspx" />
+    <Content Include="MBA\CAT.aspx" />
+    <Content Include="MBA\CAT\Axis-bank-branches-CAT-vouchers.aspx" />
+    <Content Include="MBA\CAT\CAT-2007-analysis.aspx" />
+    <Content Include="MBA\CAT\CAT-2007-paper-key.aspx" />
+    <Content Include="MBA\CAT\CAT-eligibility.aspx" />
+    <Content Include="MBA\CAT\CAT-how-to-apply.aspx" />
+    <Content Include="MBA\CAT\CAT-important-dates-exam-centers.aspx" />
+    <Content Include="MBA\CAT\CAT-previous-year-papers.aspx" />
+    <Content Include="MBA\CAT\CAT-Sample-test-section1.aspx" />
+    <Content Include="MBA\CAT\CAT-Sample-test-section2.aspx" />
+    <Content Include="MBA\CAT\CAT-Sample-test-section3.aspx" />
+    <Content Include="MBA\CAT\CAT-syllabus.aspx" />
+    <Content Include="MBA\CAT\Institutes-accepting-CAT-score-for-admissions.aspx" />
+    <Content Include="MBA\CAT\MBA-admission-process-CAT-IIM.aspx" />
+    <Content Include="MBA\Coaching-Institutes-offering-MBA-preparation-classes.aspx" />
+    <Content Include="MBA\Details-about-other-MBA-exams.aspx" />
+    <Content Include="MBA\Group-Discussion-for-MBA-admissions.aspx" />
+    <Content Include="MBA\IBSAT.aspx" />
+    <Content Include="MBA\IBSAT\About-ICFAI-Business-School-Aptitude-Test-IBSAT.aspx" />
+    <Content Include="MBA\IBSAT\Eligibility-Criteria-for-IBSAT.aspx" />
+    <Content Include="MBA\IBSAT\How-to-apply-for-IBSAT-MBA.aspx" />
+    <Content Include="MBA\IBSAT\IBSAT-2008-Test-exam-cities-Centers.aspx" />
+    <Content Include="MBA\IBSAT\Important-dates-for-IBSAT-exam.aspx" />
+    <Content Include="MBA\img_bschool-rankings\image1.jpeg" />
+    <Content Include="MBA\img_coaching-institutes-offering-mba-preparation-classes\image1.jpeg" />
+    <Content Include="MBA\img_mba-coaching-classes-bihar\image1.jpeg" />
+    <Content Include="MBA\img_mba-coaching-classes-gujarat\image1.jpeg" />
+    <Content Include="MBA\img_mba-coaching-classes-haryana\image1.jpeg" />
+    <Content Include="MBA\img_mba-coaching-classes-karnataka\image1.jpeg" />
+    <Content Include="MBA\img_mba-coaching-classes-maharashtra\image1.jpeg" />
+    <Content Include="MBA\img_mba-coaching-classes-new-delhi\image1.jpeg" />
+    <Content Include="MBA\img_mba-coaching-classes-orissa\image1.jpeg" />
+    <Content Include="MBA\img_mba-coaching-classes-punjab\image1.jpeg" />
+    <Content Include="MBA\img_mba-coaching-classes-rajasthan\image1.jpeg" />
+    <Content Include="MBA\img_mba-coaching-classes-tamilnadu\image1.jpeg" />
+    <Content Include="MBA\img_mba-coaching-classes-uttar-pradesh\image1.jpeg" />
+    <Content Include="MBA\img_mba-coaching-classes-west-bengal\image1.jpeg" />
+    <Content Include="MBA\img_mba-in-india\image1.jpeg" />
+    <Content Include="MBA\JMET.aspx" />
+    <Content Include="MBA\JMET\About-JMET-Joint-Management-Entrance-Test.aspx" />
+    <Content Include="MBA\JMET\CAT-2007-paper-key.aspx" />
+    <Content Include="MBA\JMET\Eligibility-for-JMET-affiliated-programs.aspx" />
+    <Content Include="MBA\JMET\img_eligibility-for-jmet-affiliated-programs\image1.jpeg" />
+    <Content Include="MBA\JMET\JMET-important-dates.aspx" />
+    <Content Include="MBA\JMET\JMET-participating-MBA-institutes.aspx" />
+    <Content Include="MBA\MAT.aspx" />
+    <Content Include="MBA\MAT\About-Management-Aptitude-Test-AIMA-MAT.aspx" />
+    <Content Include="MBA\MAT\Exam-cities-test-centers-MAT.aspx" />
+    <Content Include="MBA\MAT\Important-Dates-MAT-AIMA.aspx" />
+    <Content Include="MBA\MBA-coaching-classes-Bihar.aspx" />
+    <Content Include="MBA\MBA-coaching-classes-GUJARAT.aspx" />
+    <Content Include="MBA\MBA-coaching-classes-Haryana.aspx" />
+    <Content Include="MBA\MBA-coaching-classes-Karnataka.aspx" />
+    <Content Include="MBA\MBA-coaching-classes-Maharashtra.aspx" />
+    <Content Include="MBA\MBA-coaching-classes-New-Delhi.aspx" />
+    <Content Include="MBA\MBA-coaching-classes-Orissa.aspx" />
+    <Content Include="MBA\MBA-coaching-classes-Punjab.aspx" />
+    <Content Include="MBA\MBA-coaching-classes-Rajasthan.aspx" />
+    <Content Include="MBA\MBA-coaching-classes-TAMILNADU.aspx" />
+    <Content Include="MBA\MBA-coaching-classes-Uttar-Pradesh.aspx" />
+    <Content Include="MBA\MBA-coaching-classes-West-Bengal.aspx" />
+    <Content Include="MBA\MBA-important-date-for-various-entrance-exams.aspx" />
+    <Content Include="MBA\MBA-in-India.aspx" />
+    <Content Include="MBA\SNAP.aspx" />
+    <Content Include="MBA\SNAP\How-to-register-for-Symbiosis-National-Aptitude-Test.aspx" />
+    <Content Include="MBA\SNAP\Postgraduate-Institutes-accepting-admission-SNAP.aspx" />
+    <Content Include="MBA\SNAP\SNAP-Admission-requirements.aspx" />
+    <Content Include="MBA\SNAP\SNAP-Important-Dates.aspx" />
+    <Content Include="MBA\SNAP\SNAP-Overview.aspx" />
+    <Content Include="MBA\SNAP\SNAP-test-centers.aspx" />
+    <Content Include="MBA\SNAP\SNAP-test-structure.aspx" />
+    <Content Include="MBA\XAT.aspx" />
+    <Content Include="MBA\XAT\About-Xavier-Admission-Test-XLRI-XAT.aspx" />
+    <Content Include="MBA\XAT\Exam-cities-test-centers-for-XAT-2009.aspx" />
+    <Content Include="MBA\XAT\Institutes-accepting-XAT-score-for-admissions.aspx" />
+    <Content Include="MBA\XAT\Pattern-structure-of-XAT-2009-exam.aspx" />
+    <Content Include="MBA\XAT\Registration-Important-Dates-for-XAT-2009.aspx" />
     <Content Include="NTSS-NTSE\application-form-results-ntse.aspx" />
     <Content Include="NTSS-NTSE\exam-pattern-syllabus-ntse.aspx" />
     <Content Include="NTSS-NTSE\Examination-scheme-NTSE-scholarship.aspx" />
@@ -94,6 +217,63 @@
     <Content Include="NTSS-NTSE\important-dates-ntse.aspx" />
     <Content Include="NTSS-NTSE\National-talent-search-examination-scholarship.aspx" />
     <Content Include="NTSS-NTSE\scholarship-ntse.aspx" />
+    <Content Include="Pre-Engineering\Admission-notifications-Engineering-institutes-india-BE-Btech.aspx" />
+    <Content Include="Pre-Engineering\AIEEE.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-declaration-of-result-Counselling-Admissions.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-exam-Application-Procedure-Fees.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-exam-eligibility.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-Exam-Structure-paper-marking.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-APTITUDE-BARCH-BPLANNING.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-InOrganic-Chemistry.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-MATHMATICS.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-Organic-Chemistry.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-Physical-Chemistry.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-Physics.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-important-dates-exam-schedule.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-online-exam.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-Participating-Institutes-2009.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-Participating-Institutes-2010.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-Participating-Institutes.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\AIEEE-test-centers-exam-cities.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\Best-strategies-to-Attempt-AIEEE-to-get-high-Score.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\chemistry.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\img_aieee-exam-application-procedure-fees\image1.jpeg" />
+    <Content Include="Pre-Engineering\AIEEE\img_aieee-exam-application-procedure-fees\image2.gif" />
+    <Content Include="Pre-Engineering\AIEEE\img_aieee-exam-eligibility\image1.gif" />
+    <Content Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-aptitude-barch-bplanning\image1.gif" />
+    <Content Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-inorganic-chemistry\image1.gif" />
+    <Content Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-mathmatics\image1.gif" />
+    <Content Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-mathmatics\image2.gif" />
+    <Content Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-organic-chemistry\image1.gif" />
+    <Content Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-physical-chemistry\image1.gif" />
+    <Content Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-physics\image1.gif" />
+    <Content Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus\image1.gif" />
+    <Content Include="Pre-Engineering\AIEEE\img_aieee-participating-institutes-2009\image1.gif" />
+    <Content Include="Pre-Engineering\AIEEE\img_aieee-participating-institutes-2010\image1.gif" />
+    <Content Include="Pre-Engineering\AIEEE\img_best-strategies-to-attempt-aieee-to-get-high-score\image1.jpeg" />
+    <Content Include="Pre-Engineering\AIEEE\img_chemistry\image1.jpeg" />
+    <Content Include="Pre-Engineering\AIEEE\img_maths\image1.jpeg" />
+    <Content Include="Pre-Engineering\AIEEE\img_physics\image1.jpeg" />
+    <Content Include="Pre-Engineering\AIEEE\maths.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\Pattern-of-AIEEE-exam.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\physics.aspx" />
+    <Content Include="Pre-Engineering\AIEEE\Recommended-Books-For-AIEEE-Exam-Preparation.aspx" />
+    <Content Include="Pre-Engineering\BE-BTECH-Admission-Procedure-In-India.aspx" />
+    <Content Include="Pre-Engineering\BE-BTECH-All-India-Tests.aspx" />
+    <Content Include="Pre-Engineering\BE-BTECH-In-India.aspx" />
+    <Content Include="Pre-Engineering\BE-BTECH-State-Wise-Tests.aspx" />
+    <Content Include="Pre-Engineering\BE-BTECH-Streams-Branches-In-India.aspx" />
+    <Content Include="Pre-Engineering\chemistry.aspx" />
+    <Content Include="Pre-Engineering\Engineering-Bachelor-Regulatory-AICTE.aspx" />
+    <Content Include="Pre-Engineering\img_aieee\image1.jpeg" />
+    <Content Include="Pre-Engineering\img_be-btech-in-india\image1.jpeg" />
+    <Content Include="Pre-Engineering\img_indian-institute-of-technology\image1.jpeg" />
+    <Content Include="Pre-Engineering\img_maths\image1.jpeg" />
+    <Content Include="Pre-Engineering\Indian-Institute-Of-Technology.aspx" />
+    <Content Include="Pre-Engineering\maths.aspx" />
+    <Content Include="Pre-Engineering\NIT-REC-India-Engineering.aspx" />
+    <Content Include="Pre-Engineering\physics.aspx" />
     <Content Include="Test\EmailTest.aspx" />
     <Content Include="Test\TempIntermediatePage.aspx" />
     <Content Include="Test\TestUserMemberList.aspx" />
@@ -601,6 +781,72 @@
     <Compile Include="Article\articledetail.aspx.designer.cs">
       <DependentUpon>articledetail.aspx</DependentUpon>
     </Compile>
+    <Compile Include="cbse\admission-procedure-secondary-school-X-cbse.aspx.cs">
+      <DependentUpon>admission-procedure-secondary-school-X-cbse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\admission-procedure-secondary-school-X-cbse.aspx.designer.cs">
+      <DependentUpon>admission-procedure-secondary-school-X-cbse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\admission-procedure-senior-secondary-school-XII-cbse.aspx.cs">
+      <DependentUpon>admission-procedure-senior-secondary-school-XII-cbse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\admission-procedure-senior-secondary-school-XII-cbse.aspx.designer.cs">
+      <DependentUpon>admission-procedure-senior-secondary-school-XII-cbse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\cbse-10th-secondary-attendance-requirement-regular-students-admission.aspx.cs">
+      <DependentUpon>cbse-10th-secondary-attendance-requirement-regular-students-admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\cbse-10th-secondary-attendance-requirement-regular-students-admission.aspx.designer.cs">
+      <DependentUpon>cbse-10th-secondary-attendance-requirement-regular-students-admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\cbse-10th-secondary-private-students-admission.aspx.cs">
+      <DependentUpon>cbse-10th-secondary-private-students-admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\cbse-10th-secondary-private-students-admission.aspx.designer.cs">
+      <DependentUpon>cbse-10th-secondary-private-students-admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\cbse-10th-secondary-regular-students-admission.aspx.cs">
+      <DependentUpon>cbse-10th-secondary-regular-students-admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\cbse-10th-secondary-regular-students-admission.aspx.designer.cs">
+      <DependentUpon>cbse-10th-secondary-regular-students-admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\cbse-12th-senior-secondary-attendance-requirement-regular-students-admission.aspx.cs">
+      <DependentUpon>cbse-12th-senior-secondary-attendance-requirement-regular-students-admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\cbse-12th-senior-secondary-attendance-requirement-regular-students-admission.aspx.designer.cs">
+      <DependentUpon>cbse-12th-senior-secondary-attendance-requirement-regular-students-admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\cbse-12th-senior-secondary-private-students-admission.aspx.cs">
+      <DependentUpon>cbse-12th-senior-secondary-private-students-admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\cbse-12th-senior-secondary-private-students-admission.aspx.designer.cs">
+      <DependentUpon>cbse-12th-senior-secondary-private-students-admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\cbse-12th-senoir-secondary-regular-students-admission.aspx.cs">
+      <DependentUpon>cbse-12th-senoir-secondary-regular-students-admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\cbse-12th-senoir-secondary-regular-students-admission.aspx.designer.cs">
+      <DependentUpon>cbse-12th-senoir-secondary-regular-students-admission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\central-board-secondary-education-cbse.aspx.cs">
+      <DependentUpon>central-board-secondary-education-cbse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\central-board-secondary-education-cbse.aspx.designer.cs">
+      <DependentUpon>central-board-secondary-education-cbse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\Examination Scheme-cbse-10th-secondary.aspx.cs">
+      <DependentUpon>Examination Scheme-cbse-10th-secondary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\Examination Scheme-cbse-10th-secondary.aspx.designer.cs">
+      <DependentUpon>Examination Scheme-cbse-10th-secondary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\Examination Scheme-cbse-12th-secondary.aspx.cs">
+      <DependentUpon>Examination Scheme-cbse-12th-secondary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cbse\Examination Scheme-cbse-12th-secondary.aspx.designer.cs">
+      <DependentUpon>Examination Scheme-cbse-12th-secondary.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Control\Announcement.ascx.cs">
       <DependentUpon>Announcement.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -713,6 +959,120 @@
     <Compile Include="ExamCrazy-NoAccess.aspx.designer.cs">
       <DependentUpon>ExamCrazy-NoAccess.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Exams\books_to_follow_for_Competitive_Exams.aspx.cs">
+      <DependentUpon>books_to_follow_for_Competitive_Exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\books_to_follow_for_Competitive_Exams.aspx.designer.cs">
+      <DependentUpon>books_to_follow_for_Competitive_Exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\discussion_on_questions.aspx.cs">
+      <DependentUpon>discussion_on_questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\discussion_on_questions.aspx.designer.cs">
+      <DependentUpon>discussion_on_questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\how_many_hours_to_study.aspx.cs">
+      <DependentUpon>how_many_hours_to_study.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\how_many_hours_to_study.aspx.designer.cs">
+      <DependentUpon>how_many_hours_to_study.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\how_to_prepare_for_objective_exams.aspx.cs">
+      <DependentUpon>how_to_prepare_for_objective_exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\how_to_prepare_for_objective_exams.aspx.designer.cs">
+      <DependentUpon>how_to_prepare_for_objective_exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\How_to_Start_preparing_for_Competitive_Exams.aspx.cs">
+      <DependentUpon>How_to_Start_preparing_for_Competitive_Exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\How_to_Start_preparing_for_Competitive_Exams.aspx.designer.cs">
+      <DependentUpon>How_to_Start_preparing_for_Competitive_Exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\is_coaching_required_for_Competitive_Exams.aspx.cs">
+      <DependentUpon>is_coaching_required_for_Competitive_Exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\is_coaching_required_for_Competitive_Exams.aspx.designer.cs">
+      <DependentUpon>is_coaching_required_for_Competitive_Exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\online_study_material_for_exams.aspx.cs">
+      <DependentUpon>online_study_material_for_exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\online_study_material_for_exams.aspx.designer.cs">
+      <DependentUpon>online_study_material_for_exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\preparing_notes_for_exams.aspx.cs">
+      <DependentUpon>preparing_notes_for_exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\preparing_notes_for_exams.aspx.designer.cs">
+      <DependentUpon>preparing_notes_for_exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\self_study_group_study_Competitive_Exams.aspx.cs">
+      <DependentUpon>self_study_group_study_Competitive_Exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\self_study_group_study_Competitive_Exams.aspx.designer.cs">
+      <DependentUpon>self_study_group_study_Competitive_Exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\Should_i_prepare_full_syllabus_for_Competitive_Exams.aspx.cs">
+      <DependentUpon>Should_i_prepare_full_syllabus_for_Competitive_Exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\Should_i_prepare_full_syllabus_for_Competitive_Exams.aspx.designer.cs">
+      <DependentUpon>Should_i_prepare_full_syllabus_for_Competitive_Exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\when_to_start_preparing_for_competitive_exams.aspx.cs">
+      <DependentUpon>when_to_start_preparing_for_competitive_exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exams\when_to_start_preparing_for_competitive_exams.aspx.designer.cs">
+      <DependentUpon>when_to_start_preparing_for_competitive_exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\Career_Opportunities_in_Multimedia_Networking.aspx.cs">
+      <DependentUpon>Career_Opportunities_in_Multimedia_Networking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\Career_Opportunities_in_Multimedia_Networking.aspx.designer.cs">
+      <DependentUpon>Career_Opportunities_in_Multimedia_Networking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\EMERGING_BUSINESS_PROPOSALS_FOR_TECHNOLOGY.aspx.cs">
+      <DependentUpon>EMERGING_BUSINESS_PROPOSALS_FOR_TECHNOLOGY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\EMERGING_BUSINESS_PROPOSALS_FOR_TECHNOLOGY.aspx.designer.cs">
+      <DependentUpon>EMERGING_BUSINESS_PROPOSALS_FOR_TECHNOLOGY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\Energy_Efficiency_Conservation.aspx.cs">
+      <DependentUpon>Energy_Efficiency_Conservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\Energy_Efficiency_Conservation.aspx.designer.cs">
+      <DependentUpon>Energy_Efficiency_Conservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\Engineer_Scientists.aspx.cs">
+      <DependentUpon>Engineer_Scientists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\Engineer_Scientists.aspx.designer.cs">
+      <DependentUpon>Engineer_Scientists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\Expert_speak_articles.aspx.cs">
+      <DependentUpon>Expert_speak_articles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\Expert_speak_articles.aspx.designer.cs">
+      <DependentUpon>Expert_speak_articles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\Expert_speak_Practice_tests.aspx.cs">
+      <DependentUpon>Expert_speak_Practice_tests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\Expert_speak_Practice_tests.aspx.designer.cs">
+      <DependentUpon>Expert_speak_Practice_tests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\Expert_speak_Tutorials.aspx.cs">
+      <DependentUpon>Expert_speak_Tutorials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\Expert_speak_Tutorials.aspx.designer.cs">
+      <DependentUpon>Expert_speak_Tutorials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\Presenting_a_Seminar_in_college.aspx.cs">
+      <DependentUpon>Presenting_a_Seminar_in_college.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expert-speak\Presenting_a_Seminar_in_college.aspx.designer.cs">
+      <DependentUpon>Presenting_a_Seminar_in_college.aspx</DependentUpon>
+    </Compile>
     <Compile Include="forgotpassword.aspx.cs">
       <DependentUpon>forgotpassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -776,6 +1136,921 @@
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
+    <Compile Include="Masters\aaiLinks.master.cs">
+      <DependentUpon>aaiLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\aaiLinks.master.designer.cs">
+      <DependentUpon>aaiLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\AIEEELinks.master.cs">
+      <DependentUpon>AIEEELinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\AIEEELinks.master.designer.cs">
+      <DependentUpon>AIEEELinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\algorithm_tutorials_Links.master.cs">
+      <DependentUpon>algorithm_tutorials_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\algorithm_tutorials_Links.master.designer.cs">
+      <DependentUpon>algorithm_tutorials_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Ano_ExpertSpeakLinks.master.cs">
+      <DependentUpon>Ano_ExpertSpeakLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Ano_ExpertSpeakLinks.master.designer.cs">
+      <DependentUpon>Ano_ExpertSpeakLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Architectures_for_Parallel_Computation_Links.master.cs">
+      <DependentUpon>Architectures_for_Parallel_Computation_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Architectures_for_Parallel_Computation_Links.master.designer.cs">
+      <DependentUpon>Architectures_for_Parallel_Computation_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Automation_Testing_Links.master.cs">
+      <DependentUpon>Automation_Testing_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Automation_Testing_Links.master.designer.cs">
+      <DependentUpon>Automation_Testing_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\BHELLinks.master.cs">
+      <DependentUpon>BHELLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\BHELLinks.master.designer.cs">
+      <DependentUpon>BHELLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\BJTLinks.master.cs">
+      <DependentUpon>BJTLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\BJTLinks.master.designer.cs">
+      <DependentUpon>BJTLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\brLinks.master.cs">
+      <DependentUpon>brLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\brLinks.master.designer.cs">
+      <DependentUpon>brLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Bschool_rankingsLinks.master.cs">
+      <DependentUpon>Bschool_rankingsLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Bschool_rankingsLinks.master.designer.cs">
+      <DependentUpon>Bschool_rankingsLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\bsnlLinks.master.cs">
+      <DependentUpon>bsnlLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\bsnlLinks.master.designer.cs">
+      <DependentUpon>bsnlLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CAPLinks.master.cs">
+      <DependentUpon>CAPLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CAPLinks.master.designer.cs">
+      <DependentUpon>CAPLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CATLinks.master.cs">
+      <DependentUpon>CATLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CATLinks.master.designer.cs">
+      <DependentUpon>CATLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CBLinks.master.cs">
+      <DependentUpon>CBLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CBLinks.master.designer.cs">
+      <DependentUpon>CBLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CBSELinks.master.cs">
+      <DependentUpon>CBSELinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CBSELinks.master.designer.cs">
+      <DependentUpon>CBSELinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ChemistryLinks.master.cs">
+      <DependentUpon>ChemistryLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ChemistryLinks.master.designer.cs">
+      <DependentUpon>ChemistryLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Chemistry_tutorials_Links.master.cs">
+      <DependentUpon>Chemistry_tutorials_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Chemistry_tutorials_Links.master.designer.cs">
+      <DependentUpon>Chemistry_tutorials_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ComputerLinks.master.cs">
+      <DependentUpon>ComputerLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ComputerLinks.master.designer.cs">
+      <DependentUpon>ComputerLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Computer_Architecture_Links.master.cs">
+      <DependentUpon>Computer_Architecture_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Computer_Architecture_Links.master.designer.cs">
+      <DependentUpon>Computer_Architecture_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\COMPUTER_A_Lectures_8_Links.master.cs">
+      <DependentUpon>COMPUTER_A_Lectures_8_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\COMPUTER_A_Lectures_8_Links.master.designer.cs">
+      <DependentUpon>COMPUTER_A_Lectures_8_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CSALinks.master.cs">
+      <DependentUpon>CSALinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CSALinks.master.designer.cs">
+      <DependentUpon>CSALinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DET_Links.master.cs">
+      <DependentUpon>DET_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DET_Links.master.designer.cs">
+      <DependentUpon>DET_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DiodeLinks.master.cs">
+      <DependentUpon>DiodeLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DiodeLinks.master.designer.cs">
+      <DependentUpon>DiodeLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DRDOLinks.master.cs">
+      <DependentUpon>DRDOLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DRDOLinks.master.designer.cs">
+      <DependentUpon>DRDOLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DSOLinks.master.cs">
+      <DependentUpon>DSOLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DSOLinks.master.designer.cs">
+      <DependentUpon>DSOLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EC2Links.master.cs">
+      <DependentUpon>EC2Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EC2Links.master.designer.cs">
+      <DependentUpon>EC2Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ECILLinks.master.cs">
+      <DependentUpon>ECILLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ECILLinks.master.designer.cs">
+      <DependentUpon>ECILLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ECTUTLinks.master.cs">
+      <DependentUpon>ECTUTLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ECTUTLinks.master.designer.cs">
+      <DependentUpon>ECTUTLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ElectricalLinks.master.cs">
+      <DependentUpon>ElectricalLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ElectricalLinks.master.designer.cs">
+      <DependentUpon>ElectricalLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ElectronicsLinks.master.cs">
+      <DependentUpon>ElectronicsLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ElectronicsLinks.master.designer.cs">
+      <DependentUpon>ElectronicsLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EMLinks.master.cs">
+      <DependentUpon>EMLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EMLinks.master.designer.cs">
+      <DependentUpon>EMLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EngineeringLinks.master.cs">
+      <DependentUpon>EngineeringLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EngineeringLinks.master.designer.cs">
+      <DependentUpon>EngineeringLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Engineering_Bachelor_links.master.cs">
+      <DependentUpon>Engineering_Bachelor_links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Engineering_Bachelor_links.master.designer.cs">
+      <DependentUpon>Engineering_Bachelor_links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ExamsLinks.master.cs">
+      <DependentUpon>ExamsLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ExamsLinks.master.designer.cs">
+      <DependentUpon>ExamsLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ExpertSpeakLinks.master.cs">
+      <DependentUpon>ExpertSpeakLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ExpertSpeakLinks.master.designer.cs">
+      <DependentUpon>ExpertSpeakLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\GAILLinks.master.cs">
+      <DependentUpon>GAILLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\GAILLinks.master.designer.cs">
+      <DependentUpon>GAILLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\GateLinks.master.cs">
+      <DependentUpon>GateLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\GateLinks.master.designer.cs">
+      <DependentUpon>GateLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Government_Jobs_Links.master.cs">
+      <DependentUpon>Government_Jobs_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Government_Jobs_Links.master.designer.cs">
+      <DependentUpon>Government_Jobs_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\gtplinks.master.cs">
+      <DependentUpon>gtplinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\gtplinks.master.designer.cs">
+      <DependentUpon>gtplinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\IBSATLinks.master.cs">
+      <DependentUpon>IBSATLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\IBSATLinks.master.designer.cs">
+      <DependentUpon>IBSATLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\IESLinks.master.cs">
+      <DependentUpon>IESLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\IESLinks.master.designer.cs">
+      <DependentUpon>IESLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\IIA_BangaloreLinks.master.cs">
+      <DependentUpon>IIA_BangaloreLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\IIA_BangaloreLinks.master.designer.cs">
+      <DependentUpon>IIA_BangaloreLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\IndianEduLinks.master.cs">
+      <DependentUpon>IndianEduLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\IndianEduLinks.master.designer.cs">
+      <DependentUpon>IndianEduLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Interviews_Jobs_Links.master.cs">
+      <DependentUpon>Interviews_Jobs_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Interviews_Jobs_Links.master.designer.cs">
+      <DependentUpon>Interviews_Jobs_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\iolLinks.master.cs">
+      <DependentUpon>iolLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\iolLinks.master.designer.cs">
+      <DependentUpon>iolLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\IONICLinks.master.cs">
+      <DependentUpon>IONICLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\IONICLinks.master.designer.cs">
+      <DependentUpon>IONICLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\JMETLinks.master.cs">
+      <DependentUpon>JMETLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\JMETLinks.master.designer.cs">
+      <DependentUpon>JMETLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\jsplLinks.master.cs">
+      <DependentUpon>jsplLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\jsplLinks.master.designer.cs">
+      <DependentUpon>jsplLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\JTOLinks.master.cs">
+      <DependentUpon>JTOLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\JTOLinks.master.designer.cs">
+      <DependentUpon>JTOLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Links_Colleges.master.cs">
+      <DependentUpon>Links_Colleges.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Links_Colleges.master.designer.cs">
+      <DependentUpon>Links_Colleges.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Manual_Testing_Links.master.cs">
+      <DependentUpon>Manual_Testing_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Manual_Testing_Links.master.designer.cs">
+      <DependentUpon>Manual_Testing_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MathsLinks.master.cs">
+      <DependentUpon>MathsLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MathsLinks.master.designer.cs">
+      <DependentUpon>MathsLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MATLinks.master.cs">
+      <DependentUpon>MATLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MATLinks.master.designer.cs">
+      <DependentUpon>MATLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MBALinks.master.cs">
+      <DependentUpon>MBALinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MBALinks.master.designer.cs">
+      <DependentUpon>MBALinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MechanicalLinks.master.cs">
+      <DependentUpon>MechanicalLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MechanicalLinks.master.designer.cs">
+      <DependentUpon>MechanicalLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MedicalLinks.master.cs">
+      <DependentUpon>MedicalLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MedicalLinks.master.designer.cs">
+      <DependentUpon>MedicalLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Memory_System_Links.master.cs">
+      <DependentUpon>Memory_System_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Memory_System_Links.master.designer.cs">
+      <DependentUpon>Memory_System_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MOSFETLinks.master.cs">
+      <DependentUpon>MOSFETLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MOSFETLinks.master.designer.cs">
+      <DependentUpon>MOSFETLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MTechLinks.master.cs">
+      <DependentUpon>MTechLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MTechLinks.master.designer.cs">
+      <DependentUpon>MTechLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MWLinks.master.cs">
+      <DependentUpon>MWLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MWLinks.master.designer.cs">
+      <DependentUpon>MWLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\national_institute_ocean_technologyLinks.master.cs">
+      <DependentUpon>national_institute_ocean_technologyLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\national_institute_ocean_technologyLinks.master.designer.cs">
+      <DependentUpon>national_institute_ocean_technologyLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Networking_Tutorials_Links.master.cs">
+      <DependentUpon>Networking_Tutorials_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Networking_Tutorials_Links.master.designer.cs">
+      <DependentUpon>Networking_Tutorials_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\new_india_assurance_companyLinks.master.cs">
+      <DependentUpon>new_india_assurance_companyLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\new_india_assurance_companyLinks.master.designer.cs">
+      <DependentUpon>new_india_assurance_companyLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\NRSC_ISROLinks.master.cs">
+      <DependentUpon>NRSC_ISROLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\NRSC_ISROLinks.master.designer.cs">
+      <DependentUpon>NRSC_ISROLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\NTSE_NTSSLinks.master.cs">
+      <DependentUpon>NTSE_NTSSLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\NTSE_NTSSLinks.master.designer.cs">
+      <DependentUpon>NTSE_NTSSLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\OCLinks.master.cs">
+      <DependentUpon>OCLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\OCLinks.master.designer.cs">
+      <DependentUpon>OCLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Operating_System_Links.master.cs">
+      <DependentUpon>Operating_System_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Operating_System_Links.master.designer.cs">
+      <DependentUpon>Operating_System_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Performance_Testing_Links.master.cs">
+      <DependentUpon>Performance_Testing_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Performance_Testing_Links.master.designer.cs">
+      <DependentUpon>Performance_Testing_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\PhysicsLinks.master.cs">
+      <DependentUpon>PhysicsLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\PhysicsLinks.master.designer.cs">
+      <DependentUpon>PhysicsLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Reduced_in_struction_set_computers_Links.master.cs">
+      <DependentUpon>Reduced_in_struction_set_computers_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Reduced_in_struction_set_computers_Links.master.designer.cs">
+      <DependentUpon>Reduced_in_struction_set_computers_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\SchoolLinks.master.cs">
+      <DependentUpon>SchoolLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\SchoolLinks.master.designer.cs">
+      <DependentUpon>SchoolLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\SNAPLinks.master.cs">
+      <DependentUpon>SNAPLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\SNAPLinks.master.designer.cs">
+      <DependentUpon>SNAPLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Software_Quality_Control_Assurance_Links.master.cs">
+      <DependentUpon>Software_Quality_Control_Assurance_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Software_Quality_Control_Assurance_Links.master.designer.cs">
+      <DependentUpon>Software_Quality_Control_Assurance_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Some_aspects_of_your_personality_which_affect_your_exam_preparation_link.master.cs">
+      <DependentUpon>Some_aspects_of_your_personality_which_affect_your_exam_preparation_link.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Some_aspects_of_your_personality_which_affect_your_exam_preparation_link.master.designer.cs">
+      <DependentUpon>Some_aspects_of_your_personality_which_affect_your_exam_preparation_link.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Super_Scalar_Processors_Links.master.cs">
+      <DependentUpon>Super_Scalar_Processors_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Super_Scalar_Processors_Links.master.designer.cs">
+      <DependentUpon>Super_Scalar_Processors_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\TDLinks.master.cs">
+      <DependentUpon>TDLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\TDLinks.master.designer.cs">
+      <DependentUpon>TDLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\UniversityLinks.master.cs">
+      <DependentUpon>UniversityLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\UniversityLinks.master.designer.cs">
+      <DependentUpon>UniversityLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Very_Large_Instruction_Word_Links.master.cs">
+      <DependentUpon>Very_Large_Instruction_Word_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Very_Large_Instruction_Word_Links.master.designer.cs">
+      <DependentUpon>Very_Large_Instruction_Word_Links.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\What_do_you_do_if_you_feel_your_preparation_is_not_proper_link.master.cs">
+      <DependentUpon>What_do_you_do_if_you_feel_your_preparation_is_not_proper_link.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\What_do_you_do_if_you_feel_your_preparation_is_not_proper_link.master.designer.cs">
+      <DependentUpon>What_do_you_do_if_you_feel_your_preparation_is_not_proper_link.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\What_do_you_do_to_maintain_concentration_or_improve_concentration_link.master.cs">
+      <DependentUpon>What_do_you_do_to_maintain_concentration_or_improve_concentration_link.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\What_do_you_do_to_maintain_concentration_or_improve_concentration_link.master.designer.cs">
+      <DependentUpon>What_do_you_do_to_maintain_concentration_or_improve_concentration_link.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\What_do_you_do_to_reduce_revision_time_or_second_reading_time_link.master.cs">
+      <DependentUpon>What_do_you_do_to_reduce_revision_time_or_second_reading_time_link.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\What_do_you_do_to_reduce_revision_time_or_second_reading_time_link.master.designer.cs">
+      <DependentUpon>What_do_you_do_to_reduce_revision_time_or_second_reading_time_link.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\What_do_you_feel_you_are_slow_reader_link.master.cs">
+      <DependentUpon>What_do_you_feel_you_are_slow_reader_link.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\What_do_you_feel_you_are_slow_reader_link.master.designer.cs">
+      <DependentUpon>What_do_you_feel_you_are_slow_reader_link.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\What_sources_of_study_material_do_you_follow_link.master.cs">
+      <DependentUpon>What_sources_of_study_material_do_you_follow_link.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\What_sources_of_study_material_do_you_follow_link.master.designer.cs">
+      <DependentUpon>What_sources_of_study_material_do_you_follow_link.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\XATLinks.master.cs">
+      <DependentUpon>XATLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\XATLinks.master.designer.cs">
+      <DependentUpon>XATLinks.master</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Application-date-for-various-MBA-management-institutes.aspx.cs">
+      <DependentUpon>Application-date-for-various-MBA-management-institutes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Application-date-for-various-MBA-management-institutes.aspx.designer.cs">
+      <DependentUpon>Application-date-for-various-MBA-management-institutes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\BSchool-rankings.aspx.cs">
+      <DependentUpon>BSchool-rankings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\BSchool-rankings.aspx.designer.cs">
+      <DependentUpon>BSchool-rankings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Bschool-rankings\AIMA-2007-rankings-Grade-A-plus-Indian-BSchools.aspx.cs">
+      <DependentUpon>AIMA-2007-rankings-Grade-A-plus-Indian-BSchools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Bschool-rankings\AIMA-2007-rankings-Grade-B-plus-Indian-BSchools.aspx.cs">
+      <DependentUpon>AIMA-2007-rankings-Grade-B-plus-Indian-BSchools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Bschool-rankings\AIMA-2007-rankings-Grade-C-plus-Indian-BSchools.aspx.cs">
+      <DependentUpon>AIMA-2007-rankings-Grade-C-plus-Indian-BSchools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Bschool-rankings\AIMA-2007-rankings-Grade-Super-League-Indian-BSchools.aspx.cs">
+      <DependentUpon>AIMA-2007-rankings-Grade-Super-League-Indian-BSchools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Bschool-rankings\Business-Today-Ranking-of-Top-Indian-B-Schools-2007.aspx.cs">
+      <DependentUpon>Business-Today-Ranking-of-Top-Indian-B-Schools-2007.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Bschool-rankings\Indian-B-schools-AIMA-mba-rankings-2006.aspx.cs">
+      <DependentUpon>Indian-B-schools-AIMA-mba-rankings-2006.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Bschool-rankings\Indian-B-schools-AIMA-mba-rankings-2007.aspx.cs">
+      <DependentUpon>Indian-B-schools-AIMA-mba-rankings-2007.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Bschool-rankings\Indian-B-schools-pagalguy-mba-rankings-2009.aspx.cs">
+      <DependentUpon>Indian-B-schools-pagalguy-mba-rankings-2009.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Bschool-rankings\Private-Indian-B-schools-MINT-mba-rankings-2008.aspx.cs">
+      <DependentUpon>Private-Indian-B-schools-MINT-mba-rankings-2008.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Bschool-rankings\Top-Indian-B-schools-By-Salary-mba-rankings-2008.aspx.cs">
+      <DependentUpon>Top-Indian-B-schools-By-Salary-mba-rankings-2008.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Bschool-rankings\Top-Indian-B-schools-outlook-mba-rankings-2007.aspx.cs">
+      <DependentUpon>Top-Indian-B-schools-outlook-mba-rankings-2007.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Bschool-rankings\Top-Indian-B-schools-outlook-mba-rankings-2008.aspx.cs">
+      <DependentUpon>Top-Indian-B-schools-outlook-mba-rankings-2008.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT.aspx.cs">
+      <DependentUpon>CAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT.aspx.designer.cs">
+      <DependentUpon>CAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\Axis-bank-branches-CAT-vouchers.aspx.cs">
+      <DependentUpon>Axis-bank-branches-CAT-vouchers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\Axis-bank-branches-CAT-vouchers.aspx.designer.cs">
+      <DependentUpon>Axis-bank-branches-CAT-vouchers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-2007-analysis.aspx.cs">
+      <DependentUpon>CAT-2007-analysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-2007-analysis.aspx.designer.cs">
+      <DependentUpon>CAT-2007-analysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-2007-paper-key.aspx.cs">
+      <DependentUpon>CAT-2007-paper-key.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-2007-paper-key.aspx.designer.cs">
+      <DependentUpon>CAT-2007-paper-key.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-eligibility.aspx.cs">
+      <DependentUpon>CAT-eligibility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-eligibility.aspx.designer.cs">
+      <DependentUpon>CAT-eligibility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-how-to-apply.aspx.cs">
+      <DependentUpon>CAT-how-to-apply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-how-to-apply.aspx.designer.cs">
+      <DependentUpon>CAT-how-to-apply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-important-dates-exam-centers.aspx.cs">
+      <DependentUpon>CAT-important-dates-exam-centers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-important-dates-exam-centers.aspx.designer.cs">
+      <DependentUpon>CAT-important-dates-exam-centers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-previous-year-papers.aspx.cs">
+      <DependentUpon>CAT-previous-year-papers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-previous-year-papers.aspx.designer.cs">
+      <DependentUpon>CAT-previous-year-papers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-Sample-test-section1.aspx.cs">
+      <DependentUpon>CAT-Sample-test-section1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-Sample-test-section1.aspx.designer.cs">
+      <DependentUpon>CAT-Sample-test-section1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-Sample-test-section2.aspx.cs">
+      <DependentUpon>CAT-Sample-test-section2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-Sample-test-section2.aspx.designer.cs">
+      <DependentUpon>CAT-Sample-test-section2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-Sample-test-section3.aspx.cs">
+      <DependentUpon>CAT-Sample-test-section3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-Sample-test-section3.aspx.designer.cs">
+      <DependentUpon>CAT-Sample-test-section3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-syllabus.aspx.cs">
+      <DependentUpon>CAT-syllabus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\CAT-syllabus.aspx.designer.cs">
+      <DependentUpon>CAT-syllabus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\Institutes-accepting-CAT-score-for-admissions.aspx.cs">
+      <DependentUpon>Institutes-accepting-CAT-score-for-admissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\Institutes-accepting-CAT-score-for-admissions.aspx.designer.cs">
+      <DependentUpon>Institutes-accepting-CAT-score-for-admissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\MBA-admission-process-CAT-IIM.aspx.cs">
+      <DependentUpon>MBA-admission-process-CAT-IIM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\CAT\MBA-admission-process-CAT-IIM.aspx.designer.cs">
+      <DependentUpon>MBA-admission-process-CAT-IIM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Coaching-Institutes-offering-MBA-preparation-classes.aspx.cs">
+      <DependentUpon>Coaching-Institutes-offering-MBA-preparation-classes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Coaching-Institutes-offering-MBA-preparation-classes.aspx.designer.cs">
+      <DependentUpon>Coaching-Institutes-offering-MBA-preparation-classes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Details-about-other-MBA-exams.aspx.cs">
+      <DependentUpon>Details-about-other-MBA-exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Details-about-other-MBA-exams.aspx.designer.cs">
+      <DependentUpon>Details-about-other-MBA-exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Group-Discussion-for-MBA-admissions.aspx.cs">
+      <DependentUpon>Group-Discussion-for-MBA-admissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\Group-Discussion-for-MBA-admissions.aspx.designer.cs">
+      <DependentUpon>Group-Discussion-for-MBA-admissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\IBSAT.aspx.cs">
+      <DependentUpon>IBSAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\IBSAT.aspx.designer.cs">
+      <DependentUpon>IBSAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\IBSAT\About-ICFAI-Business-School-Aptitude-Test-IBSAT.aspx.cs">
+      <DependentUpon>About-ICFAI-Business-School-Aptitude-Test-IBSAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\IBSAT\About-ICFAI-Business-School-Aptitude-Test-IBSAT.aspx.designer.cs">
+      <DependentUpon>About-ICFAI-Business-School-Aptitude-Test-IBSAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\IBSAT\Eligibility-Criteria-for-IBSAT.aspx.cs">
+      <DependentUpon>Eligibility-Criteria-for-IBSAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\IBSAT\Eligibility-Criteria-for-IBSAT.aspx.designer.cs">
+      <DependentUpon>Eligibility-Criteria-for-IBSAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\IBSAT\How-to-apply-for-IBSAT-MBA.aspx.cs">
+      <DependentUpon>How-to-apply-for-IBSAT-MBA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\IBSAT\How-to-apply-for-IBSAT-MBA.aspx.designer.cs">
+      <DependentUpon>How-to-apply-for-IBSAT-MBA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\IBSAT\IBSAT-2008-Test-exam-cities-Centers.aspx.cs">
+      <DependentUpon>IBSAT-2008-Test-exam-cities-Centers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\IBSAT\IBSAT-2008-Test-exam-cities-Centers.aspx.designer.cs">
+      <DependentUpon>IBSAT-2008-Test-exam-cities-Centers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\IBSAT\Important-dates-for-IBSAT-exam.aspx.cs">
+      <DependentUpon>Important-dates-for-IBSAT-exam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\IBSAT\Important-dates-for-IBSAT-exam.aspx.designer.cs">
+      <DependentUpon>Important-dates-for-IBSAT-exam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\JMET.aspx.cs">
+      <DependentUpon>JMET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\JMET.aspx.designer.cs">
+      <DependentUpon>JMET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\JMET\About-JMET-Joint-Management-Entrance-Test.aspx.cs">
+      <DependentUpon>About-JMET-Joint-Management-Entrance-Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\JMET\About-JMET-Joint-Management-Entrance-Test.aspx.designer.cs">
+      <DependentUpon>About-JMET-Joint-Management-Entrance-Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\JMET\CAT-2007-paper-key.aspx.cs">
+      <DependentUpon>CAT-2007-paper-key.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\JMET\Eligibility-for-JMET-affiliated-programs.aspx.cs">
+      <DependentUpon>Eligibility-for-JMET-affiliated-programs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\JMET\Eligibility-for-JMET-affiliated-programs.aspx.designer.cs">
+      <DependentUpon>Eligibility-for-JMET-affiliated-programs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\JMET\JMET-important-dates.aspx.cs">
+      <DependentUpon>JMET-important-dates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\JMET\JMET-important-dates.aspx.designer.cs">
+      <DependentUpon>JMET-important-dates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\JMET\JMET-participating-MBA-institutes.aspx.cs">
+      <DependentUpon>JMET-participating-MBA-institutes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\JMET\JMET-participating-MBA-institutes.aspx.designer.cs">
+      <DependentUpon>JMET-participating-MBA-institutes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MAT.aspx.cs">
+      <DependentUpon>MAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MAT.aspx.designer.cs">
+      <DependentUpon>MAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MAT\About-Management-Aptitude-Test-AIMA-MAT.aspx.cs">
+      <DependentUpon>About-Management-Aptitude-Test-AIMA-MAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MAT\About-Management-Aptitude-Test-AIMA-MAT.aspx.designer.cs">
+      <DependentUpon>About-Management-Aptitude-Test-AIMA-MAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MAT\Exam-cities-test-centers-MAT.aspx.cs">
+      <DependentUpon>Exam-cities-test-centers-MAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MAT\Exam-cities-test-centers-MAT.aspx.designer.cs">
+      <DependentUpon>Exam-cities-test-centers-MAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MAT\Important-Dates-MAT-AIMA.aspx.cs">
+      <DependentUpon>Important-Dates-MAT-AIMA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MAT\Important-Dates-MAT-AIMA.aspx.designer.cs">
+      <DependentUpon>Important-Dates-MAT-AIMA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Bihar.aspx.cs">
+      <DependentUpon>MBA-coaching-classes-Bihar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Bihar.aspx.designer.cs">
+      <DependentUpon>MBA-coaching-classes-Bihar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-GUJARAT.aspx.cs">
+      <DependentUpon>MBA-coaching-classes-GUJARAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-GUJARAT.aspx.designer.cs">
+      <DependentUpon>MBA-coaching-classes-GUJARAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Haryana.aspx.cs">
+      <DependentUpon>MBA-coaching-classes-Haryana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Haryana.aspx.designer.cs">
+      <DependentUpon>MBA-coaching-classes-Haryana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Karnataka.aspx.cs">
+      <DependentUpon>MBA-coaching-classes-Karnataka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Karnataka.aspx.designer.cs">
+      <DependentUpon>MBA-coaching-classes-Karnataka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Maharashtra.aspx.cs">
+      <DependentUpon>MBA-coaching-classes-Maharashtra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Maharashtra.aspx.designer.cs">
+      <DependentUpon>MBA-coaching-classes-Maharashtra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-New-Delhi.aspx.cs">
+      <DependentUpon>MBA-coaching-classes-New-Delhi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-New-Delhi.aspx.designer.cs">
+      <DependentUpon>MBA-coaching-classes-New-Delhi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Orissa.aspx.cs">
+      <DependentUpon>MBA-coaching-classes-Orissa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Orissa.aspx.designer.cs">
+      <DependentUpon>MBA-coaching-classes-Orissa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Punjab.aspx.cs">
+      <DependentUpon>MBA-coaching-classes-Punjab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Punjab.aspx.designer.cs">
+      <DependentUpon>MBA-coaching-classes-Punjab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Rajasthan.aspx.cs">
+      <DependentUpon>MBA-coaching-classes-Rajasthan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Rajasthan.aspx.designer.cs">
+      <DependentUpon>MBA-coaching-classes-Rajasthan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-TAMILNADU.aspx.cs">
+      <DependentUpon>MBA-coaching-classes-TAMILNADU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-TAMILNADU.aspx.designer.cs">
+      <DependentUpon>MBA-coaching-classes-TAMILNADU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Uttar-Pradesh.aspx.cs">
+      <DependentUpon>MBA-coaching-classes-Uttar-Pradesh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-Uttar-Pradesh.aspx.designer.cs">
+      <DependentUpon>MBA-coaching-classes-Uttar-Pradesh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-West-Bengal.aspx.cs">
+      <DependentUpon>MBA-coaching-classes-West-Bengal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-coaching-classes-West-Bengal.aspx.designer.cs">
+      <DependentUpon>MBA-coaching-classes-West-Bengal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-important-date-for-various-entrance-exams.aspx.cs">
+      <DependentUpon>MBA-important-date-for-various-entrance-exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-important-date-for-various-entrance-exams.aspx.designer.cs">
+      <DependentUpon>MBA-important-date-for-various-entrance-exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-in-India.aspx.cs">
+      <DependentUpon>MBA-in-India.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\MBA-in-India.aspx.designer.cs">
+      <DependentUpon>MBA-in-India.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP.aspx.cs">
+      <DependentUpon>SNAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP.aspx.designer.cs">
+      <DependentUpon>SNAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP\How-to-register-for-Symbiosis-National-Aptitude-Test.aspx.cs">
+      <DependentUpon>How-to-register-for-Symbiosis-National-Aptitude-Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP\How-to-register-for-Symbiosis-National-Aptitude-Test.aspx.designer.cs">
+      <DependentUpon>How-to-register-for-Symbiosis-National-Aptitude-Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP\Postgraduate-Institutes-accepting-admission-SNAP.aspx.cs">
+      <DependentUpon>Postgraduate-Institutes-accepting-admission-SNAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP\Postgraduate-Institutes-accepting-admission-SNAP.aspx.designer.cs">
+      <DependentUpon>Postgraduate-Institutes-accepting-admission-SNAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP\SNAP-Admission-requirements.aspx.cs">
+      <DependentUpon>SNAP-Admission-requirements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP\SNAP-Admission-requirements.aspx.designer.cs">
+      <DependentUpon>SNAP-Admission-requirements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP\SNAP-Important-Dates.aspx.cs">
+      <DependentUpon>SNAP-Important-Dates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP\SNAP-Important-Dates.aspx.designer.cs">
+      <DependentUpon>SNAP-Important-Dates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP\SNAP-Overview.aspx.cs">
+      <DependentUpon>SNAP-Overview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP\SNAP-Overview.aspx.designer.cs">
+      <DependentUpon>SNAP-Overview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP\SNAP-test-centers.aspx.cs">
+      <DependentUpon>SNAP-test-centers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP\SNAP-test-centers.aspx.designer.cs">
+      <DependentUpon>SNAP-test-centers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP\SNAP-test-structure.aspx.cs">
+      <DependentUpon>SNAP-test-structure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\SNAP\SNAP-test-structure.aspx.designer.cs">
+      <DependentUpon>SNAP-test-structure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\XAT.aspx.cs">
+      <DependentUpon>XAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\XAT.aspx.designer.cs">
+      <DependentUpon>XAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\XAT\About-Xavier-Admission-Test-XLRI-XAT.aspx.cs">
+      <DependentUpon>About-Xavier-Admission-Test-XLRI-XAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\XAT\About-Xavier-Admission-Test-XLRI-XAT.aspx.designer.cs">
+      <DependentUpon>About-Xavier-Admission-Test-XLRI-XAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\XAT\Exam-cities-test-centers-for-XAT-2009.aspx.cs">
+      <DependentUpon>Exam-cities-test-centers-for-XAT-2009.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\XAT\Exam-cities-test-centers-for-XAT-2009.aspx.designer.cs">
+      <DependentUpon>Exam-cities-test-centers-for-XAT-2009.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\XAT\Institutes-accepting-XAT-score-for-admissions.aspx.cs">
+      <DependentUpon>Institutes-accepting-XAT-score-for-admissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\XAT\Institutes-accepting-XAT-score-for-admissions.aspx.designer.cs">
+      <DependentUpon>Institutes-accepting-XAT-score-for-admissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\XAT\Pattern-structure-of-XAT-2009-exam.aspx.cs">
+      <DependentUpon>Pattern-structure-of-XAT-2009-exam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\XAT\Pattern-structure-of-XAT-2009-exam.aspx.designer.cs">
+      <DependentUpon>Pattern-structure-of-XAT-2009-exam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\XAT\Registration-Important-Dates-for-XAT-2009.aspx.cs">
+      <DependentUpon>Registration-Important-Dates-for-XAT-2009.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MBA\XAT\Registration-Important-Dates-for-XAT-2009.aspx.designer.cs">
+      <DependentUpon>Registration-Important-Dates-for-XAT-2009.aspx</DependentUpon>
+    </Compile>
     <Compile Include="newrssxml.aspx.cs">
       <DependentUpon>newrssxml.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -785,45 +2060,268 @@
     </Compile>
     <Compile Include="NTSS-NTSE\application-form-results-ntse.aspx.cs">
       <DependentUpon>application-form-results-ntse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NTSS-NTSE\application-form-results-ntse.aspx.designer.cs">
       <DependentUpon>application-form-results-ntse.aspx</DependentUpon>
     </Compile>
     <Compile Include="NTSS-NTSE\exam-pattern-syllabus-ntse.aspx.cs">
       <DependentUpon>exam-pattern-syllabus-ntse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NTSS-NTSE\exam-pattern-syllabus-ntse.aspx.designer.cs">
       <DependentUpon>exam-pattern-syllabus-ntse.aspx</DependentUpon>
     </Compile>
     <Compile Include="NTSS-NTSE\Examination-scheme-NTSE-scholarship.aspx.cs">
       <DependentUpon>Examination-scheme-NTSE-scholarship.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NTSS-NTSE\Examination-scheme-NTSE-scholarship.aspx.designer.cs">
       <DependentUpon>Examination-scheme-NTSE-scholarship.aspx</DependentUpon>
     </Compile>
     <Compile Include="NTSS-NTSE\history-evolution-ntse.aspx.cs">
       <DependentUpon>history-evolution-ntse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NTSS-NTSE\history-evolution-ntse.aspx.designer.cs">
       <DependentUpon>history-evolution-ntse.aspx</DependentUpon>
     </Compile>
     <Compile Include="NTSS-NTSE\important-dates-ntse.aspx.cs">
       <DependentUpon>important-dates-ntse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NTSS-NTSE\important-dates-ntse.aspx.designer.cs">
       <DependentUpon>important-dates-ntse.aspx</DependentUpon>
     </Compile>
     <Compile Include="NTSS-NTSE\National-talent-search-examination-scholarship.aspx.cs">
       <DependentUpon>National-talent-search-examination-scholarship.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NTSS-NTSE\National-talent-search-examination-scholarship.aspx.designer.cs">
       <DependentUpon>National-talent-search-examination-scholarship.aspx</DependentUpon>
     </Compile>
     <Compile Include="NTSS-NTSE\scholarship-ntse.aspx.cs">
       <DependentUpon>scholarship-ntse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NTSS-NTSE\scholarship-ntse.aspx.designer.cs">
       <DependentUpon>scholarship-ntse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\Admission-notifications-Engineering-institutes-india-BE-Btech.aspx.cs">
+      <DependentUpon>Admission-notifications-Engineering-institutes-india-BE-Btech.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\Admission-notifications-Engineering-institutes-india-BE-Btech.aspx.designer.cs">
+      <DependentUpon>Admission-notifications-Engineering-institutes-india-BE-Btech.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE.aspx.cs">
+      <DependentUpon>AIEEE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE.aspx.designer.cs">
+      <DependentUpon>AIEEE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-declaration-of-result-Counselling-Admissions.aspx.cs">
+      <DependentUpon>AIEEE-declaration-of-result-Counselling-Admissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-declaration-of-result-Counselling-Admissions.aspx.designer.cs">
+      <DependentUpon>AIEEE-declaration-of-result-Counselling-Admissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-Application-Procedure-Fees.aspx.cs">
+      <DependentUpon>AIEEE-exam-Application-Procedure-Fees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-Application-Procedure-Fees.aspx.designer.cs">
+      <DependentUpon>AIEEE-exam-Application-Procedure-Fees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-eligibility.aspx.cs">
+      <DependentUpon>AIEEE-exam-eligibility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-eligibility.aspx.designer.cs">
+      <DependentUpon>AIEEE-exam-eligibility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-Exam-Structure-paper-marking.aspx.cs">
+      <DependentUpon>AIEEE-Exam-Structure-paper-marking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-Exam-Structure-paper-marking.aspx.designer.cs">
+      <DependentUpon>AIEEE-Exam-Structure-paper-marking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-APTITUDE-BARCH-BPLANNING.aspx.cs">
+      <DependentUpon>AIEEE-exam-syllabus-APTITUDE-BARCH-BPLANNING.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-APTITUDE-BARCH-BPLANNING.aspx.designer.cs">
+      <DependentUpon>AIEEE-exam-syllabus-APTITUDE-BARCH-BPLANNING.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-InOrganic-Chemistry.aspx.cs">
+      <DependentUpon>AIEEE-exam-syllabus-InOrganic-Chemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-InOrganic-Chemistry.aspx.designer.cs">
+      <DependentUpon>AIEEE-exam-syllabus-InOrganic-Chemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-MATHMATICS.aspx.cs">
+      <DependentUpon>AIEEE-exam-syllabus-MATHMATICS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-MATHMATICS.aspx.designer.cs">
+      <DependentUpon>AIEEE-exam-syllabus-MATHMATICS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-Organic-Chemistry.aspx.cs">
+      <DependentUpon>AIEEE-exam-syllabus-Organic-Chemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-Organic-Chemistry.aspx.designer.cs">
+      <DependentUpon>AIEEE-exam-syllabus-Organic-Chemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-Physical-Chemistry.aspx.cs">
+      <DependentUpon>AIEEE-exam-syllabus-Physical-Chemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-Physical-Chemistry.aspx.designer.cs">
+      <DependentUpon>AIEEE-exam-syllabus-Physical-Chemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-Physics.aspx.cs">
+      <DependentUpon>AIEEE-exam-syllabus-Physics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus-Physics.aspx.designer.cs">
+      <DependentUpon>AIEEE-exam-syllabus-Physics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus.aspx.cs">
+      <DependentUpon>AIEEE-exam-syllabus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-exam-syllabus.aspx.designer.cs">
+      <DependentUpon>AIEEE-exam-syllabus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-important-dates-exam-schedule.aspx.cs">
+      <DependentUpon>AIEEE-important-dates-exam-schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-important-dates-exam-schedule.aspx.designer.cs">
+      <DependentUpon>AIEEE-important-dates-exam-schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-online-exam.aspx.cs">
+      <DependentUpon>AIEEE-online-exam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-online-exam.aspx.designer.cs">
+      <DependentUpon>AIEEE-online-exam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-Participating-Institutes-2009.aspx.cs">
+      <DependentUpon>AIEEE-Participating-Institutes-2009.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-Participating-Institutes-2009.aspx.designer.cs">
+      <DependentUpon>AIEEE-Participating-Institutes-2009.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-Participating-Institutes-2010.aspx.cs">
+      <DependentUpon>AIEEE-Participating-Institutes-2010.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-Participating-Institutes-2010.aspx.designer.cs">
+      <DependentUpon>AIEEE-Participating-Institutes-2010.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-Participating-Institutes.aspx.cs">
+      <DependentUpon>AIEEE-Participating-Institutes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-Participating-Institutes.aspx.designer.cs">
+      <DependentUpon>AIEEE-Participating-Institutes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-test-centers-exam-cities.aspx.cs">
+      <DependentUpon>AIEEE-test-centers-exam-cities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\AIEEE-test-centers-exam-cities.aspx.designer.cs">
+      <DependentUpon>AIEEE-test-centers-exam-cities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\Best-strategies-to-Attempt-AIEEE-to-get-high-Score.aspx.cs">
+      <DependentUpon>Best-strategies-to-Attempt-AIEEE-to-get-high-Score.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\Best-strategies-to-Attempt-AIEEE-to-get-high-Score.aspx.designer.cs">
+      <DependentUpon>Best-strategies-to-Attempt-AIEEE-to-get-high-Score.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\chemistry.aspx.cs">
+      <DependentUpon>chemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\chemistry.aspx.designer.cs">
+      <DependentUpon>chemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\maths.aspx.cs">
+      <DependentUpon>maths.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\maths.aspx.designer.cs">
+      <DependentUpon>maths.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\Pattern-of-AIEEE-exam.aspx.cs">
+      <DependentUpon>Pattern-of-AIEEE-exam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\Pattern-of-AIEEE-exam.aspx.designer.cs">
+      <DependentUpon>Pattern-of-AIEEE-exam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\physics.aspx.cs">
+      <DependentUpon>physics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\physics.aspx.designer.cs">
+      <DependentUpon>physics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\Recommended-Books-For-AIEEE-Exam-Preparation.aspx.cs">
+      <DependentUpon>Recommended-Books-For-AIEEE-Exam-Preparation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\AIEEE\Recommended-Books-For-AIEEE-Exam-Preparation.aspx.designer.cs">
+      <DependentUpon>Recommended-Books-For-AIEEE-Exam-Preparation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\BE-BTECH-Admission-Procedure-In-India.aspx.cs">
+      <DependentUpon>BE-BTECH-Admission-Procedure-In-India.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\BE-BTECH-Admission-Procedure-In-India.aspx.designer.cs">
+      <DependentUpon>BE-BTECH-Admission-Procedure-In-India.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\BE-BTECH-All-India-Tests.aspx.cs">
+      <DependentUpon>BE-BTECH-All-India-Tests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\BE-BTECH-All-India-Tests.aspx.designer.cs">
+      <DependentUpon>BE-BTECH-All-India-Tests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\BE-BTECH-In-India.aspx.cs">
+      <DependentUpon>BE-BTECH-In-India.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\BE-BTECH-In-India.aspx.designer.cs">
+      <DependentUpon>BE-BTECH-In-India.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\BE-BTECH-State-Wise-Tests.aspx.cs">
+      <DependentUpon>BE-BTECH-State-Wise-Tests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\BE-BTECH-State-Wise-Tests.aspx.designer.cs">
+      <DependentUpon>BE-BTECH-State-Wise-Tests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\BE-BTECH-Streams-Branches-In-India.aspx.cs">
+      <DependentUpon>BE-BTECH-Streams-Branches-In-India.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\BE-BTECH-Streams-Branches-In-India.aspx.designer.cs">
+      <DependentUpon>BE-BTECH-Streams-Branches-In-India.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\chemistry.aspx.cs">
+      <DependentUpon>chemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\chemistry.aspx.designer.cs">
+      <DependentUpon>chemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\Engineering-Bachelor-Regulatory-AICTE.aspx.cs">
+      <DependentUpon>Engineering-Bachelor-Regulatory-AICTE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\Engineering-Bachelor-Regulatory-AICTE.aspx.designer.cs">
+      <DependentUpon>Engineering-Bachelor-Regulatory-AICTE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\Indian-Institute-Of-Technology.aspx.cs">
+      <DependentUpon>Indian-Institute-Of-Technology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\Indian-Institute-Of-Technology.aspx.designer.cs">
+      <DependentUpon>Indian-Institute-Of-Technology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\maths.aspx.cs">
+      <DependentUpon>maths.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\maths.aspx.designer.cs">
+      <DependentUpon>maths.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\NIT-REC-India-Engineering.aspx.cs">
+      <DependentUpon>NIT-REC-India-Engineering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\NIT-REC-India-Engineering.aspx.designer.cs">
+      <DependentUpon>NIT-REC-India-Engineering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\physics.aspx.cs">
+      <DependentUpon>physics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pre-Engineering\physics.aspx.designer.cs">
+      <DependentUpon>physics.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="registration.aspx.cs">
@@ -997,6 +2495,245 @@
     <Content Include="Master.Master" />
     <Content Include="AdminArticle.master" />
     <Content Include="packages.config" />
+    <None Include="Exams\img_how_to_start_preparing_for_competitive_exams\image1.wmf" />
+    <None Include="Exams\img_how_to_start_preparing_for_competitive_exams\image2.wmf" />
+    <None Include="Exams\img_how_to_start_preparing_for_competitive_exams\image3.wmf" />
+    <None Include="Exams\img_is_coaching_required_for_competitive_exams\image1.wmf" />
+    <None Include="Exams\img_is_coaching_required_for_competitive_exams\image2.wmf" />
+    <None Include="Exams\img_is_coaching_required_for_competitive_exams\image3.wmf" />
+    <Content Include="Masters\aaiLinks.master" />
+    <Content Include="Masters\AIEEELinks.master" />
+    <Content Include="Masters\algorithm_tutorials_Links.master" />
+    <Content Include="Masters\Ano_ExpertSpeakLinks.master" />
+    <Content Include="Masters\Architectures_for_Parallel_Computation_Links.master" />
+    <Content Include="Masters\Automation_Testing_Links.master" />
+    <Content Include="Masters\BHELLinks.master" />
+    <Content Include="Masters\BJTLinks.master" />
+    <Content Include="Masters\brLinks.master" />
+    <Content Include="Masters\Bschool_rankingsLinks.master" />
+    <Content Include="Masters\bsnlLinks.master" />
+    <Content Include="Masters\CAPLinks.master" />
+    <Content Include="Masters\CATLinks.master" />
+    <Content Include="Masters\CBLinks.master" />
+    <Content Include="Masters\CBSELinks.master" />
+    <Content Include="Masters\ChemistryLinks.master" />
+    <Content Include="Masters\Chemistry_tutorials_Links.master" />
+    <Content Include="Masters\ComputerLinks.master" />
+    <Content Include="Masters\Computer_Architecture_Links.master" />
+    <Content Include="Masters\COMPUTER_A_Lectures_8_Links.master" />
+    <Content Include="Masters\CSALinks.master" />
+    <Content Include="Masters\DET_Links.master" />
+    <Content Include="Masters\DiodeLinks.master" />
+    <Content Include="Masters\DRDOLinks.master" />
+    <Content Include="Masters\DSOLinks.master" />
+    <Content Include="Masters\EC2Links.master" />
+    <Content Include="Masters\ECILLinks.master" />
+    <Content Include="Masters\ECTUTLinks.master" />
+    <Content Include="Masters\ElectricalLinks.master" />
+    <Content Include="Masters\ElectronicsLinks.master" />
+    <Content Include="Masters\EMLinks.master" />
+    <Content Include="Masters\EngineeringLinks.master" />
+    <Content Include="Masters\Engineering_Bachelor_links.master" />
+    <Content Include="Masters\ExamsLinks.master" />
+    <Content Include="Masters\ExpertSpeakLinks.master" />
+    <Content Include="Masters\GAILLinks.master" />
+    <Content Include="Masters\GateLinks.master" />
+    <Content Include="Masters\Government_Jobs_Links.master" />
+    <Content Include="Masters\gtplinks.master" />
+    <Content Include="Masters\IBSATLinks.master" />
+    <Content Include="Masters\IESLinks.master" />
+    <Content Include="Masters\IIA_BangaloreLinks.master" />
+    <Content Include="Masters\IndianEduLinks.master" />
+    <Content Include="Masters\Interviews_Jobs_Links.master" />
+    <Content Include="Masters\iolLinks.master" />
+    <Content Include="Masters\IONICLinks.master" />
+    <Content Include="Masters\JMETLinks.master" />
+    <Content Include="Masters\jsplLinks.master" />
+    <Content Include="Masters\JTOLinks.master" />
+    <Content Include="Masters\Links_Colleges.master" />
+    <Content Include="Masters\Manual_Testing_Links.master" />
+    <Content Include="Masters\MathsLinks.master" />
+    <Content Include="Masters\MATLinks.master" />
+    <Content Include="Masters\MBALinks.master" />
+    <Content Include="Masters\MechanicalLinks.master" />
+    <Content Include="Masters\MedicalLinks.master" />
+    <Content Include="Masters\Memory_System_Links.master" />
+    <Content Include="Masters\MOSFETLinks.master" />
+    <Content Include="Masters\MTechLinks.master" />
+    <Content Include="Masters\MWLinks.master" />
+    <Content Include="Masters\national_institute_ocean_technologyLinks.master" />
+    <Content Include="Masters\Networking_Tutorials_Links.master" />
+    <Content Include="Masters\new_india_assurance_companyLinks.master" />
+    <Content Include="Masters\NRSC_ISROLinks.master" />
+    <Content Include="Masters\NTSE_NTSSLinks.master" />
+    <Content Include="Masters\OCLinks.master" />
+    <Content Include="Masters\Operating_System_Links.master" />
+    <Content Include="Masters\Performance_Testing_Links.master" />
+    <Content Include="Masters\PhysicsLinks.master" />
+    <Content Include="Masters\Reduced_in_struction_set_computers_Links.master" />
+    <Content Include="Masters\SchoolLinks.master" />
+    <Content Include="Masters\SNAPLinks.master" />
+    <Content Include="Masters\Software_Quality_Control_Assurance_Links.master" />
+    <Content Include="Masters\Some_aspects_of_your_personality_which_affect_your_exam_preparation_link.master" />
+    <Content Include="Masters\Super_Scalar_Processors_Links.master" />
+    <Content Include="Masters\TDLinks.master" />
+    <Content Include="Masters\UniversityLinks.master" />
+    <Content Include="Masters\Very_Large_Instruction_Word_Links.master" />
+    <Content Include="Masters\What_do_you_do_if_you_feel_your_preparation_is_not_proper_link.master" />
+    <Content Include="Masters\What_do_you_do_to_maintain_concentration_or_improve_concentration_link.master" />
+    <Content Include="Masters\What_do_you_do_to_reduce_revision_time_or_second_reading_time_link.master" />
+    <Content Include="Masters\What_do_you_feel_you_are_slow_reader_link.master" />
+    <Content Include="Masters\What_sources_of_study_material_do_you_follow_link.master" />
+    <Content Include="Masters\XATLinks.master" />
+    <None Include="MBA\IBSAT\img_about-icfai-business-school-aptitude-test-ibsat\image1.wmf" />
+    <None Include="MBA\IBSAT\img_about-icfai-business-school-aptitude-test-ibsat\image2.wmf" />
+    <None Include="MBA\IBSAT\img_about-icfai-business-school-aptitude-test-ibsat\image3.wmf" />
+    <None Include="MBA\IBSAT\img_eligibility-criteria-for-ibsat\image1.wmf" />
+    <None Include="MBA\IBSAT\img_eligibility-criteria-for-ibsat\image2.wmf" />
+    <None Include="MBA\IBSAT\img_eligibility-criteria-for-ibsat\image3.wmf" />
+    <None Include="MBA\IBSAT\img_how-to-apply-for-ibsat-mba\image1.wmf" />
+    <None Include="MBA\IBSAT\img_how-to-apply-for-ibsat-mba\image2.wmf" />
+    <None Include="MBA\IBSAT\img_how-to-apply-for-ibsat-mba\image3.wmf" />
+    <None Include="MBA\IBSAT\img_ibsat-2008-test-exam-cities-centers\image1.wmf" />
+    <None Include="MBA\IBSAT\img_ibsat-2008-test-exam-cities-centers\image2.wmf" />
+    <None Include="MBA\IBSAT\img_ibsat-2008-test-exam-cities-centers\image3.wmf" />
+    <None Include="MBA\IBSAT\img_important-dates-for-ibsat-exam\image1.wmf" />
+    <None Include="MBA\IBSAT\img_important-dates-for-ibsat-exam\image2.wmf" />
+    <None Include="MBA\IBSAT\img_important-dates-for-ibsat-exam\image3.wmf" />
+    <None Include="MBA\img_ibsat\image1.wmf" />
+    <None Include="MBA\img_ibsat\image2.wmf" />
+    <None Include="MBA\img_ibsat\image3.wmf" />
+    <None Include="MBA\img_jmet\image1.wmf" />
+    <None Include="MBA\img_jmet\image2.wmf" />
+    <None Include="MBA\img_jmet\image3.wmf" />
+    <None Include="MBA\img_mat\image1.wmf" />
+    <None Include="MBA\img_mat\image2.wmf" />
+    <None Include="MBA\img_mat\image3.wmf" />
+    <None Include="MBA\img_mat\image4.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-bihar\image2.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-bihar\image3.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-bihar\image4.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-gujarat\image2.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-gujarat\image3.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-gujarat\image4.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-haryana\image2.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-haryana\image3.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-haryana\image4.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-karnataka\image2.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-karnataka\image3.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-karnataka\image4.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-maharashtra\image2.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-maharashtra\image3.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-maharashtra\image4.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-new-delhi\image2.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-new-delhi\image3.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-new-delhi\image4.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-orissa\image2.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-orissa\image3.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-orissa\image4.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-punjab\image2.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-punjab\image3.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-punjab\image4.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-rajasthan\image2.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-rajasthan\image3.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-rajasthan\image4.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-tamilnadu\image2.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-tamilnadu\image3.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-tamilnadu\image4.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-uttar-pradesh\image2.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-uttar-pradesh\image3.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-uttar-pradesh\image4.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-west-bengal\image2.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-west-bengal\image3.wmf" />
+    <None Include="MBA\img_mba-coaching-classes-west-bengal\image4.wmf" />
+    <None Include="MBA\img_snap\image1.wmf" />
+    <None Include="MBA\img_snap\image2.wmf" />
+    <None Include="MBA\img_snap\image3.wmf" />
+    <None Include="MBA\img_xat\image1.wmf" />
+    <None Include="MBA\img_xat\image2.wmf" />
+    <None Include="MBA\img_xat\image3.wmf" />
+    <None Include="MBA\JMET\img_about-jmet-joint-management-entrance-test\image1.wmf" />
+    <None Include="MBA\JMET\img_about-jmet-joint-management-entrance-test\image2.wmf" />
+    <None Include="MBA\JMET\img_about-jmet-joint-management-entrance-test\image3.wmf" />
+    <None Include="MBA\JMET\img_about-jmet-joint-management-entrance-test\image4.wmf" />
+    <None Include="MBA\JMET\img_cat-2007-paper-key\image1.wmf" />
+    <None Include="MBA\JMET\img_cat-2007-paper-key\image2.wmf" />
+    <None Include="MBA\JMET\img_cat-2007-paper-key\image3.wmf" />
+    <None Include="MBA\JMET\img_cat-2007-paper-key\image4.wmf" />
+    <None Include="MBA\JMET\img_eligibility-for-jmet-affiliated-programs\image2.wmf" />
+    <None Include="MBA\JMET\img_eligibility-for-jmet-affiliated-programs\image3.wmf" />
+    <None Include="MBA\JMET\img_eligibility-for-jmet-affiliated-programs\image4.wmf" />
+    <None Include="MBA\JMET\img_jmet-participating-mba-institutes\image1.wmf" />
+    <None Include="MBA\JMET\img_jmet-participating-mba-institutes\image2.wmf" />
+    <None Include="MBA\JMET\img_jmet-participating-mba-institutes\image3.wmf" />
+    <None Include="MBA\MAT\img_about-management-aptitude-test-aima-mat\image1.wmf" />
+    <None Include="MBA\MAT\img_about-management-aptitude-test-aima-mat\image2.wmf" />
+    <None Include="MBA\MAT\img_about-management-aptitude-test-aima-mat\image3.wmf" />
+    <None Include="MBA\MAT\img_exam-cities-test-centers-mat\image1.wmf" />
+    <None Include="MBA\MAT\img_exam-cities-test-centers-mat\image2.wmf" />
+    <None Include="MBA\MAT\img_exam-cities-test-centers-mat\image3.wmf" />
+    <None Include="MBA\MAT\img_important-dates-mat-aima\image1.wmf" />
+    <None Include="MBA\MAT\img_important-dates-mat-aima\image2.wmf" />
+    <None Include="MBA\MAT\img_important-dates-mat-aima\image3.wmf" />
+    <None Include="MBA\MAT\img_institutes-accepting-mat-score\image1.wmf" />
+    <None Include="MBA\MAT\img_institutes-accepting-mat-score\image2.wmf" />
+    <None Include="MBA\MAT\img_institutes-accepting-mat-score\image3.wmf" />
+    <None Include="MBA\SNAP\img_how-to-register-for-symbiosis-national-aptitude-test\image1.wmf" />
+    <None Include="MBA\SNAP\img_how-to-register-for-symbiosis-national-aptitude-test\image2.wmf" />
+    <None Include="MBA\SNAP\img_how-to-register-for-symbiosis-national-aptitude-test\image3.wmf" />
+    <None Include="MBA\SNAP\img_postgraduate-institutes-accepting-admission-snap\image1.wmf" />
+    <None Include="MBA\SNAP\img_postgraduate-institutes-accepting-admission-snap\image2.wmf" />
+    <None Include="MBA\SNAP\img_postgraduate-institutes-accepting-admission-snap\image3.wmf" />
+    <None Include="MBA\SNAP\img_snap-admission-requirements\image1.wmf" />
+    <None Include="MBA\SNAP\img_snap-admission-requirements\image2.wmf" />
+    <None Include="MBA\SNAP\img_snap-admission-requirements\image3.wmf" />
+    <None Include="MBA\SNAP\img_snap-important-dates\image1.wmf" />
+    <None Include="MBA\SNAP\img_snap-important-dates\image2.wmf" />
+    <None Include="MBA\SNAP\img_snap-important-dates\image3.wmf" />
+    <None Include="MBA\SNAP\img_snap-overview\image1.wmf" />
+    <None Include="MBA\SNAP\img_snap-overview\image2.wmf" />
+    <None Include="MBA\SNAP\img_snap-overview\image3.wmf" />
+    <None Include="MBA\SNAP\img_snap-test-centers\image1.wmf" />
+    <None Include="MBA\SNAP\img_snap-test-centers\image2.wmf" />
+    <None Include="MBA\SNAP\img_snap-test-centers\image3.wmf" />
+    <None Include="MBA\SNAP\img_snap-test-structure\image1.wmf" />
+    <None Include="MBA\SNAP\img_snap-test-structure\image2.wmf" />
+    <None Include="MBA\SNAP\img_snap-test-structure\image3.wmf" />
+    <None Include="MBA\XAT\img_about-xavier-admission-test-xlri-xat\image1.wmf" />
+    <None Include="MBA\XAT\img_about-xavier-admission-test-xlri-xat\image2.wmf" />
+    <None Include="MBA\XAT\img_about-xavier-admission-test-xlri-xat\image3.wmf" />
+    <None Include="MBA\XAT\img_exam-cities-test-centers-for-xat-2009\image1.wmf" />
+    <None Include="MBA\XAT\img_exam-cities-test-centers-for-xat-2009\image2.wmf" />
+    <None Include="MBA\XAT\img_exam-cities-test-centers-for-xat-2009\image3.wmf" />
+    <None Include="MBA\XAT\img_institutes-accepting-xat-score-for-admissions\image1.wmf" />
+    <None Include="MBA\XAT\img_institutes-accepting-xat-score-for-admissions\image2.wmf" />
+    <None Include="MBA\XAT\img_institutes-accepting-xat-score-for-admissions\image3.wmf" />
+    <None Include="MBA\XAT\img_pattern-structure-of-xat-2009-exam\image1.wmf" />
+    <None Include="MBA\XAT\img_pattern-structure-of-xat-2009-exam\image2.wmf" />
+    <None Include="MBA\XAT\img_pattern-structure-of-xat-2009-exam\image3.wmf" />
+    <None Include="MBA\XAT\img_registration-important-dates-for-xat-2009\image1.wmf" />
+    <None Include="MBA\XAT\img_registration-important-dates-for-xat-2009\image2.wmf" />
+    <None Include="MBA\XAT\img_registration-important-dates-for-xat-2009\image3.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-application-procedure-fees\image3.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-application-procedure-fees\image4.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-application-procedure-fees\image5.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-aptitude-barch-bplanning\image2.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-aptitude-barch-bplanning\image3.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-inorganic-chemistry\image2.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-inorganic-chemistry\image3.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-mathmatics\image3.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-mathmatics\image4.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-organic-chemistry\image2.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-organic-chemistry\image3.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-physical-chemistry\image2.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-physical-chemistry\image3.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-physics\image2.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-exam-syllabus-physics\image3.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-participating-institutes-2009\image2.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-participating-institutes-2009\image3.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-participating-institutes-2010\image2.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-participating-institutes-2010\image3.wmf" />
+    <None Include="Pre-Engineering\AIEEE\img_aieee-participating-institutes-2010\image4.wmf" />
     <None Include="SampleContent.aspx" />
   </ItemGroup>
   <ItemGroup>
