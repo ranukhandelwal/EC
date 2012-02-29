@@ -6,6 +6,10 @@
 #endregion
 using System;
 using System.Web;
+using System.Web;
+using System.Data;
+using System.Xml;
+using System.Text;
 
 namespace EC.BL
 {
@@ -75,6 +79,24 @@ namespace EC.BL
         //These constant variables are use to flag when fetching database,previewing/viewing,
         //inserting cookie, getting dynamic keywords based on the value passed.
 
+        static constant()
+        {
+            const string PublishAreaXML = "~/XML/PublishArea.xml";
+            int i = 0;
+            XmlDocument doc = new XmlDocument();
+            doc.Load(HttpContext.Current.Server.MapPath(PublishAreaXML));
+            XmlNodeList xNodeList = doc.SelectNodes("PublishArea/child::node()");//Traverse the entire XML nodes.
+            foreach (XmlNode xNode in xNodeList)
+            {
+                //PublishArea = new sPublish { ID = Int32.Parse(xNode.Attributes["ID"].InnerText), Name = xNode.Attributes["name"].InnerText };
+                PublishArea[i].ID = Int32.Parse(xNode.Attributes["ID"].InnerText);
+                PublishArea[i].Name = xNode.Attributes["name"].InnerText;
+                i++;
+            }
+            
+        }
+            
+        //}
         /// <summary>
         /// Domain name
         /// </summary>
@@ -121,13 +143,13 @@ namespace EC.BL
             new sCategory{ID = 3, Name = "UPDATE"}
         };
 
-        public static sPublish[] PublishArea = new sPublish[] {
+        public static sPublish[] PublishArea = new sPublish[500];/* {
             new sPublish{ID = 0, Name = "Default"},
             new sPublish{ID = 1, Name = "GATE"}, 
             new sPublish{ID = 2, Name = "IES"},
             new sPublish{ID = 3, Name = "COLLEGE"},
             new sPublish{ID = 4, Name = "JOBS"}
-        };
+        };*/
 
         public static sState[] JobState = new sState[] {
             new sState{ID = 0, Name = "Choose State"}, 
