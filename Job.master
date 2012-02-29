@@ -1,5 +1,6 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="true"
     CodeBehind="Job.master.cs" Inherits="ExamCrazy.Job" %>
+    <%@MasterType VirtualPath="~/HeaderFooter.master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../css/Jobs.css" rel="stylesheet" type="text/css" runat="server" />
