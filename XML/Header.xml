@@ -8,13 +8,27 @@
   <list name="Home" displayin="__usr__" link="~/User/$$UNAME$$" >
 
   </list>
-  <list name="Engineering" link="#" displayin="__usr__,__ano__">
-    <sub name="ENG" link="#" displayin="__usr__"/>
-    <sub name="AIEEE1" link="#" displayin="__ano__"/>
-    <sub name="AIEEE2" link="#" displayin="__usr__,__ano__"/>
+  <list name="Pre-Engineering" link="~" displayin="__usr__,__ano__">
+    <sub name="Admissions" link="~/Pre-Engineering/Admission-notifications-Engineering-institutes-india-BE-Btech.aspx" displayin="__usr__,__ano__"/>
+    <sub name="Colleges" link="#" displayin="__usr__,__ano__"/>
+    <sub name="AIEEE" link="~/Pre-Engineering/AIEEE.aspx" displayin="__usr__,__ano__"/>
+	<sub name="BE-BTECH India" link="~/Pre-Engineering/BE-BTECH-In-India.aspx" displayin="__usr__,__ano__"/>
+	<sub name="Chemisty Tutorials" link="~/Pre-Engineering/chemistry.aspx" displayin="__usr__,__ano__"/>
+	<sub name="Physics Tutorials" link="~/Pre-Engineering/physics.aspx" displayin="__usr__,__ano__"/>
+	<sub name="Maths Tutorials" link="~/Pre-Engineering/maths.aspx" displayin="__usr__,__ano__"/>
     
   </list>
 
+	<list name="Engineering" link="#" displayin="__usr__,__ano__">
+		<sub name="GATE" link="~/Engineering/Gate.aspx" displayin="__usr__,__ano__"/>
+		<sub name="IES" link="~/Engineering/Ies.aspx" displayin="__usr__,__ano__"/>
+		<sub name="BHEL" link="~/Engineering/Bhel.aspx" displayin="__usr__,__ano__"/>
+		<sub name="DRDO-SET" link="#" displayin="__usr__,__ano__"/>
+		<sub name="Tutorials" link="#" displayin="__usr__,__ano__"/>
+		<sub name="Coaching Institute" link="~/Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs.aspx" displayin="__usr__,__ano__"/>
+		<sub name="Colleges" link="#" displayin="__usr__,__ano__"/>
+
+	</list>
   <list name="MBA" link="#"  displayin="__usr__,__ano__">
     <sub name="AIEEE" link="#" displayin="__usr__"/>
     <sub name="AIEEE1" link="#" displayin="__usr__"/>
