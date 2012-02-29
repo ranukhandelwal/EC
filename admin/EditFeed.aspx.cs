@@ -84,15 +84,18 @@ public partial class EditFeed : BasePageAdmin
     private void GetCheckBoxDisplayInList(string DisplayInString)
     {
         string [] temp = DisplayInString.Split(',');
-        foreach (sPublish publish in constant.PublishArea)
+        FeedRepository feed = new FeedRepository();
+        ExtendedCollection<sPublish> PublishArea = feed.GetPublishList();
+        int i;
+        for (i = 0; i < PublishArea.Count; i++)
         {
-            if ((publish.Name != "") && (publish.Name != null) && (publish.ID.ToString() != "") && (publish.ID != null))
+            if ((PublishArea[i].Name != "") && (PublishArea[i].Name != null) && (PublishArea[i].ID.ToString() != "") && (PublishArea[i].ID != null))
             {
-                CheckBoxDisplayIn.Items.Add(new ListItem(publish.Name.ToString(), publish.ID.ToString()));
+                CheckBoxDisplayIn.Items.Add(new ListItem(PublishArea[i].Name.ToString(), PublishArea[i].ID.ToString()));
                 foreach (string sid in temp)
                 {
                     int id = Int32.Parse(sid);
-                    if (id == publish.ID)
+                    if (id == PublishArea[i].ID)
                     {
                         CheckBoxDisplayIn.Items[id].Selected = true;
                     }
