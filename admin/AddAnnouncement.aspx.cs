@@ -18,7 +18,8 @@ namespace ExamCrazy.admin
             {
                 foreach (sPublish publish in constant.PublishArea)
                 {
-                    CheckBoxDisplayIn.Items.Add(new ListItem(publish.Name.ToString(), publish.ID.ToString()));
+                    if ((publish.Name != "") && (publish.Name != null) && (publish.ID.ToString() != "") && (publish.ID != null))
+                        CheckBoxDisplayIn.Items.Add(new ListItem(publish.Name.ToString(), publish.ID.ToString()));
                 }
             }
 
@@ -29,13 +30,16 @@ namespace ExamCrazy.admin
             string[] temp = DisplayInString.Split(',');
             foreach (sPublish publish in constant.PublishArea)
             {
-                CheckBoxDisplayIn.Items.Add(new ListItem(publish.Name.ToString(), publish.ID.ToString()));
-                foreach (string sid in temp)
+                if ((publish.Name != "") && (publish.Name != null) && (publish.ID.ToString() != "") && (publish.ID != null))
                 {
-                    int id = Int32.Parse(sid);
-                    if (id == publish.ID)
+                    CheckBoxDisplayIn.Items.Add(new ListItem(publish.Name.ToString(), publish.ID.ToString()));
+                    foreach (string sid in temp)
                     {
-                        CheckBoxDisplayIn.Items[id].Selected = true;
+                        int id = Int32.Parse(sid);
+                        if (id == publish.ID)
+                        {
+                            CheckBoxDisplayIn.Items[id].Selected = true;
+                        }
                     }
                 }
             }
