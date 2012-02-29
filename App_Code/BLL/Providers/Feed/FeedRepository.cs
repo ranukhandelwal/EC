@@ -7,6 +7,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
+using System.Xml;
+using System.Text;
 using EC.Model;
 using EC.Common;
 using EC.BL;
@@ -189,5 +191,24 @@ namespace EC.BL
             return list;
         }
 
+        public ExtendedCollection<sPublish> GetPublishList()
+        {
+
+            ExtendedCollection<sPublish> list = new ExtendedCollection<sPublish>();
+
+            const string PublishAreaXML = "~/XML/PublishArea.xml";
+            XmlDocument doc = new XmlDocument();
+            doc.Load(HttpContext.Current.Server.MapPath(PublishAreaXML));
+            XmlNodeList xNodeList = doc.SelectNodes("PublishArea/child::node()");//Traverse the entire XML nodes.
+            foreach (XmlNode xNode in xNodeList)
+            {
+                sPublish publishNode = new sPublish();
+                //PublishArea = new sPublish { ID = Int32.Parse(xNode.Attributes["ID"].InnerText), Name = xNode.Attributes["name"].InnerText };
+                publishNode.ID = Int32.Parse(xNode.Attributes["ID"].InnerText);
+                publishNode.Name = xNode.Attributes["name"].InnerText;
+                list.Add(publishNode);
+            }
+            return list;
+        }
     }
 }
