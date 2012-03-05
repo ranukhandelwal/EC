@@ -1,0 +1,15 @@
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\bin\Debug\DesktopTools.exe
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\bin\Debug\DesktopTools.pdb
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\obj\x86\Debug\ResolveAssemblyReference.cache
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\obj\x86\Debug\DesktopTools.frmCreateASPXs.resources
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\obj\x86\Debug\DesktopTools.frmMain.resources
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\obj\x86\Debug\DesktopTools.Properties.Resources.resources
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\obj\x86\Debug\GenerateResource.read.1.tlog
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\obj\x86\Debug\GenerateResource.write.1.tlog
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\obj\x86\Debug\DesktopTools.exe
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\obj\x86\Debug\DesktopTools.pdb
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\obj\x86\Debug\DesktopTools.frmGenerateHTMLBody.resources
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\bin\Debug\ICSharpCode.SharpZipLib.dll
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\obj\x86\Debug\DesktopTools.csproj.ResolveComReference.cache
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\obj\x86\Debug\DesktopTools.frmPutURLsInExcel.resources
+J:\ExamCrazyOldSite\DesktopTools\DesktopTools\DesktopTools\obj\x86\Debug\DesktopTools.frmCreateMasters.resources
