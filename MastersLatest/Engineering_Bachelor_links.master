@@ -1,0 +1,76 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="Engineering_Bachelor_links.master.cs" Inherits="ExamCrazy.Masters.Engineering_Bachelor_links" %>
+<%@ MasterType VirtualPath="~/HeaderFooter.master" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>B.E./B.Tech Intro</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/pre-engineering/be-btech-in-india.aspx" runat="server" title="Introduction"><li class="active"><span class="icon"></span><span>Introduction</span></li></a>
+                          <a id="A2" href="~/pre-engineering/engineering-bachelor-regulatory-aicte.aspx" runat="server" title="Regulatory Authority"><li class="active"><span class="icon"></span><span>Regulatory Authority</span></li></a>
+                          <a id="A3" href="~/pre-engineering/be-btech-streams-branches-in-india.aspx" runat="server" title="Various Branches for B.E./B.Tech"><li class="active"><span class="icon"></span><span>Various Branches for B.E./B.Tech</span></li></a>
+                          <a id="A4" href="~/pre-engineering/be-btech-admission-procedure-in-india.aspx" runat="server" title="Admission Procedures for B.E./B.Tech"><li class="active"><span class="icon"></span><span>Admission Procedures for B.E./B.Tech</span></li></a>
+                          <a id="A5" href="~/pre-engineering/admission-notifications-engineering-institutes-india-be-btech.aspx" runat="server" title="Admission Notifications for B.E./B.Tech"><li class="active"><span class="icon"></span><span>Admission Notifications for B.E./B.Tech</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub2')">
+                <li class=""><span>Pre Engineering Tests</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A6" href="~/pre-engineering/be-btech-all-india-tests.aspx" runat="server" title="All India Tests"><li class="active"><span class="icon"></span><span>All India Tests</span></li></a>
+                          <a id="A7" href="~/pre-engineering/be-btech-state-wise-tests.aspx" runat="server" title="State Wise Tests"><li class="active"><span class="icon"></span><span>State Wise Tests</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub3')">
+                <li class=""><span>Engineering Colleges</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A8" href="~/colleges/engineering_colleges.aspx" runat="server" title="B.E./B.Tech Colleges"><li class="active"><span class="icon"></span><span>B.E./B.Tech Colleges</span></li></a>
+                          <a id="A9" href="~/pre-engineering/nit-rec-india-engineering.aspx" runat="server" title="NIT's(Formerly REC's)"><li class="active"><span class="icon"></span><span>NIT's(Formerly REC's)</span></li></a>
+                          <a id="A10" href="~/pre-engineering/indian-institute-of-technology.aspx" runat="server" title="Indian Institute of Technology(IIT's)"><li class="active"><span class="icon"></span><span>Indian Institute of Technology(IIT's)</span></li></a>
+                          <a id="A11" href="~/engineering/top-ranking-government-engineering-colleges-in-india.aspx" runat="server" title="Government Engineering College Ranking"><li class="active"><span class="icon"></span><span>Government Engineering College Ranking</span></li></a>
+                          <a id="A12" href="~/engineering/top-ranking-private-engineering-colleges-in-india.aspx" runat="server" title="Private Engineering College Ranking"><li class="active"><span class="icon"></span><span>Private Engineering College Ranking</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

@@ -1,0 +1,89 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="MedicalLinks.master.cs" Inherits="ExamCrazy.Masters.MedicalLinks" %>
+<%@ MasterType VirtualPath="~/HeaderFooter.master" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>UNIVERSITY SYSTEM</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/education-system/india/indian-education-university-stream.aspx" runat="server" title="Introduction & History"><li class="active"><span class="icon"></span><span>Introduction & History</span></li></a>
+                          <a id="A2" href="~/education-system/india/indian-education-tyes-of-universities.aspx" runat="server" title="Types of Indian Universities"><li class="active"><span class="icon"></span><span>Types of Indian Universities</span></li></a>
+                          <a id="A3" href="~/education-system/india/indian-education-types-of-colleges-in-universities.aspx" runat="server" title="Colleges of Indian Universities"><li class="active"><span class="icon"></span><span>Colleges of Indian Universities</span></li></a>
+                          <a id="A4" href="~/education-system/india/professional-colleges-regulatory.aspx" runat="server" title="Regulatory Authority-Higher Education"><li class="active"><span class="icon"></span><span>Regulatory Authority-Higher Education</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub2')">
+                <li class=""><span>ADMISSIONS</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A5" href="~/education-system/india/indian-education-university-college-admissions.aspx" runat="server" title="Admissions in Indian Colleges and Universities"><li class="active"><span class="icon"></span><span>Admissions in Indian Colleges and Universities</span></li></a>
+                          <a id="A6" href="~/education-system/india/indian-education-reservation-quota-system.aspx" runat="server" title="Reservation and Quota System"><li class="active"><span class="icon"></span><span>Reservation and Quota System</span></li></a>
+                          <a id="A7" href="~/education-system/india/indian-education-domicile-requirement.aspx" runat="server" title="Domicile Requirement"><li class="active"><span class="icon"></span><span>Domicile Requirement</span></li></a>
+                          <a id="A8" href="~/admission-notifications.aspx" runat="server" title="Admission Notifications"><li class="active"><span class="icon"></span><span>Admission Notifications</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub3')">
+                <li class=""><span>ENGINEERING</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A9" href="~/pre-engineering/be-btech-in-india.aspx" runat="server" title="B.E./B.Tech Admissions"><li class="active"><span class="icon"></span><span>B.E./B.Tech Admissions</span></li></a>
+                          <a id="A10" href="~/engineering/me-mtech-in-india.aspx" runat="server" title="M.E./M.Tech Admissions"><li class="active"><span class="icon"></span><span>M.E./M.Tech Admissions</span></li></a>
+                          <a id="A11" href="~/colleges/engineering_colleges.aspx" runat="server" title="Engineering Colleges of India"><li class="active"><span class="icon"></span><span>Engineering Colleges of India</span></li></a>
+                          <a id="A12" href="~/engineering/admission-notifications-engineering-institutes-india-be-btech.aspx" runat="server" title="B.E./ B.Tech Admissions Notifications"><li class="active"><span class="icon"></span><span>B.E./ B.Tech Admissions Notifications</span></li></a>
+                          <a id="A13" href="~/engineering/admission-notifications-engineering-institutes-india-me-mtech.aspx" runat="server" title="M.E./ M.Tech Admissions Notifications"><li class="active"><span class="icon"></span><span>M.E./ M.Tech Admissions Notifications</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub4')">
+                <li class=""><span>MANAGEMENT</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub4">
+                    <ul>
+                          <a id="A14" href="~/mba/mba-in-india.aspx" runat="server" title="MBA Admissions"><li class="active"><span class="icon"></span><span>MBA Admissions</span></li></a>
+                          <a id="A15" href="~/colleges/management_colleges.aspx" runat="server" title="MBA Colleges In India"><li class="active"><span class="icon"></span><span>MBA Colleges In India</span></li></a>
+                          <a id="A16" href="~/mba/application-date-for-various-mba-management-institutes.aspx" runat="server" title="MBA Admission Notification"><li class="active"><span class="icon"></span><span>MBA Admission Notification</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

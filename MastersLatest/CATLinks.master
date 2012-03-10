@@ -1,0 +1,89 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="CATLinks.master.cs" Inherits="ExamCrazy.Masters.CATLinks" %>
+<%@ MasterType VirtualPath="~/HeaderFooter.master" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>CAT</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/mba/cat.aspx" runat="server" title="About CAT"><li class="active"><span class="icon"></span><span>About CAT</span></li></a>
+                          <a id="A2" href="~/mba/cat/cat-how-to-apply.aspx" runat="server" title="How to Apply for CAT"><li class="active"><span class="icon"></span><span>How to Apply for CAT</span></li></a>
+                          <a id="A3" href="~/mba/cat/cat-important-dates-exam-centers.aspx" runat="server" title="CAT 2009 Important Dates and Centers"><li class="active"><span class="icon"></span><span>CAT 2009 Important Dates and Centers</span></li></a>
+                          <a id="A4" href="~/mba/cat/axis-bank-branches-cat-vouchers.aspx" runat="server" title="Axis Bank Branches Selling CAT Vouchers"><li class="active"><span class="icon"></span><span>Axis Bank Branches Selling CAT Vouchers</span></li></a>
+                          <a id="A5" href="~/mba/cat/cat-syllabus.aspx" runat="server" title="CAT Syllabus"><li class="active"><span class="icon"></span><span>CAT Syllabus</span></li></a>
+                          <a id="A6" href="~/mba/cat/mba-admission-process-cat-iim.aspx" runat="server" title="MBA Admission Process"><li class="active"><span class="icon"></span><span>MBA Admission Process</span></li></a>
+                          <a id="A7" href="~/mba/cat/cat-eligibility.aspx" runat="server" title="CAT Eligibility"><li class="active"><span class="icon"></span><span>CAT Eligibility</span></li></a>
+                          <a id="A8" href="~/mba/cat/cat-2007-analysis.aspx" runat="server" title="CAT 2007 Analysis "><li class="active"><span class="icon"></span><span>CAT 2007 Analysis </span></li></a>
+                          <a id="A9" href="~/mba/cat/cat-previous-year-papers.aspx" runat="server" title="CAT Sample Papers"><li class="active"><span class="icon"></span><span>CAT Sample Papers</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub2')">
+                <li class=""><span>MBA</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A10" href="~/mba/mba-in-india.aspx" runat="server" title="MBA in India</font>"><li class="active"><span class="icon"></span><span>MBA in India</font></span></li></a>
+                          <a id="A11" href="~/mba/group-discussion-for-mba-admissions.aspx" runat="server" title="GD preparation"><li class="active"><span class="icon"></span><span>GD preparation</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub3')">
+                <li class=""><span>MBA Admissions</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A12" href="~/mba/cat/institutes-accepting-cat-score-for-admissions.aspx" runat="server" title="Non-IIMs using CAT score"><li class="active"><span class="icon"></span><span>Non-IIMs using CAT score</span></li></a>
+                          <a id="A13" href="~/colleges/management_colleges.aspx" runat="server" title="All MBA colleges in India"><li class="active"><span class="icon"></span><span>All MBA colleges in India</span></li></a>
+                          <a id="A14" href="~/mba/bschool-rankings/top-indian-b-schools-outlook-mba-rankings-2008.aspx" runat="server" title="Top-50 Indian BSchools"><li class="active"><span class="icon"></span><span>Top-50 Indian BSchools</span></li></a>
+                          <a id="A15" href="~/mba/coaching-institutes-offering-mba-preparation-classes.aspx" runat="server" title="MBA coaching Institutes"><li class="active"><span class="icon"></span><span>MBA coaching Institutes</span></li></a>
+                          <a id="A16" href="~/mba/application-date-for-various-mba-management-institutes.aspx" runat="server" title="Bschool Application dates India"><li class="active"><span class="icon"></span><span>Bschool Application dates India</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub4')">
+                <li class=""><span>MBA Online Tests</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub4">
+                    <ul>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

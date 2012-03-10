@@ -1,0 +1,116 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="ChemistryLinks.master.cs" Inherits="ExamCrazy.Masters.ChemistryLinks" %>
+<%@ MasterType VirtualPath="~/HeaderFooter.master" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Chemistry Tutorials</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/Pre-Engineering/chemistry/basic-concepts-of-chemistry.aspx" runat="server" title="Chemistry/BASIC-CONCEPTS-OF-CHEMISTRY">Basic Concepts of Chemistry by SS Education, Kota"><li class="active"><span class="icon"></span><span>Chemistry/BASIC-CONCEPTS-OF-CHEMISTRY">Basic Concepts of Chemistry by SS Education, Kota</span></li></a>
+                          <a id="A2" href="~/Pre-Engineering/chemistry/ionic-equilibrium/electrolytes.aspx" runat="server" title="Chemistry/Ionic-Equilibrium/Electrolytes">Ionic Equilibrium Tutorials by SS Education, Kota"><li class="active"><span class="icon"></span><span>Chemistry/Ionic-Equilibrium/Electrolytes">Ionic Equilibrium Tutorials by SS Education, Kota</span></li></a>
+                          <a id="A3" href="~/Pre-Engineering/chemistry/matter-states/introduction.aspx" runat="server" title="Chemistry/matter-states/Introduction">States Of Matter Tutorials by SS Education, Kota"><li class="active"><span class="icon"></span><span>Chemistry/matter-states/Introduction">States Of Matter Tutorials by SS Education, Kota</span></li></a>
+                          <a id="A4" href="~/Pre-Engineering/chemistry/thermodynamics/thermodynamics-basic-terms.aspx" runat="server" title="Chemistry/thermodynamics/Thermodynamics-Basic-Terms">Thermodynamics Concepts in Chemistry by SS Education, Kota"><li class="active"><span class="icon"></span><span>Chemistry/thermodynamics/Thermodynamics-Basic-Terms">Thermodynamics Concepts in Chemistry by SS Education, Kota</span></li></a>
+                          <a id="A5" href="~/Pre-Engineering/chemistry/organic-chemistry/organic-chemistry-basics.aspx" runat="server" title="Chemistry/organic-chemistry/Organic-Chemistry-Basics">Organic Chemistry Concepts by SS Education, Kota"><li class="active"><span class="icon"></span><span>Chemistry/organic-chemistry/Organic-Chemistry-Basics">Organic Chemistry Concepts by SS Education, Kota</span></li></a>
+                          <a id="A6" href="~/Pre-Engineering/chemistry/chemical-bonding/chemical-bonding.aspx" runat="server" title="Chemistry/chemical-bonding/Chemical-Bonding">Chemical Bonding Concepts by SS Education, Kota"><li class="active"><span class="icon"></span><span>Chemistry/chemical-bonding/Chemical-Bonding">Chemical Bonding Concepts by SS Education, Kota</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub2')">
+                <li class=""><span>Other AIEEE/DCE/IIT Tutorials</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A7" href="~/Pre-Engineering/physics.aspx" runat="server" title="physics">Physics Tutorials"><li class="active"><span class="icon"></span><span>physics">Physics Tutorials</span></li></a>
+                          <a id="A8" href="~/Pre-Engineering/maths.aspx" runat="server" title="maths">Maths Tutorials"><li class="active"><span class="icon"></span><span>maths">Maths Tutorials</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub3')">
+                <li class=""><span>AIEEE preparation</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A9" href="~/Pre-Engineering/recommended-books-for-aieee-exam-preparation.aspx" runat="server" title="Recommended-Books-For-AIEEE-Exam-Preparation">Recommened books for AIEEE"><li class="active"><span class="icon"></span><span>Recommended-Books-For-AIEEE-Exam-Preparation">Recommened books for AIEEE</span></li></a>
+                          <a id="A10" href="~/Pre-Engineering/best-strategies-to-attempt-aieee-to-get-high-score.aspx" runat="server" title="Best-strategies-to-Attempt-AIEEE-to-get-high-Score">Strategy to attempt AIEEE"><li class="active"><span class="icon"></span><span>Best-strategies-to-Attempt-AIEEE-to-get-high-Score">Strategy to attempt AIEEE</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub4')">
+                <li class=""><span>AIEEE PRACTICE Tests</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub4">
+                    <ul>
+                          <a id="A11" href="~/ano_utils/user_appearintest2.aspx" runat="server" title="AIEEE Physics Papers"><li class="active"><span class="icon"></span><span>AIEEE Physics Papers</span></li></a>
+                          <a id="A12" href="~/ano_utils/user_appearintest2.aspx" runat="server" title="AIEEE Chemistry Papers"><li class="active"><span class="icon"></span><span>AIEEE Chemistry Papers</span></li></a>
+                          <a id="A13" href="~/ano_utils/user_appearintest2.aspx" runat="server" title="AIEEE Mathematics Papers"><li class="active"><span class="icon"></span><span>AIEEE Mathematics Papers</span></li></a>
+                          <a id="A14" href="~/ano_utils/user_appearintest2.aspx" runat="server" title="Appear in Old AIEEE Papers(2009, 2008, 2007 and more)"><li class="active"><span class="icon"></span><span>Appear in Old AIEEE Papers(2009, 2008, 2007 and more)</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub5')">
+                <li class=""><span>ABOUT AIEEE</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub5">
+                    <ul>
+                          <a id="A15" href="" runat="server" title="">About AIEEE exam"><li class="active"><span class="icon"></span><span>">About AIEEE exam</span></li></a>
+                          <a id="A16" href="~/Pre-Engineering/pattern-of-aieee-exam.aspx" runat="server" title="Pattern-of-AIEEE-exam">AIEEE exam Pattern"><li class="active"><span class="icon"></span><span>Pattern-of-AIEEE-exam">AIEEE exam Pattern</span></li></a>
+                          <a id="A17" href="~/colleges/engineering_colleges.aspx" runat="server" title="BE/Btech Colleges in India"><li class="active"><span class="icon"></span><span>BE/Btech Colleges in India</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub6')">
+                <li class=""><span>AIEEE 2010</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub6">
+                    <ul>
+                          <a id="A18" href="~/Pre-Engineering/aieee-exam-application-procedure-fees.aspx" runat="server" title="AIEEE-exam-Application-Procedure-Fees">Applying for AIEEE"><li class="active"><span class="icon"></span><span>AIEEE-exam-Application-Procedure-Fees">Applying for AIEEE</span></li></a>
+                          <a id="A19" href="~/Pre-Engineering/aieee-exam-eligibility.aspx" runat="server" title="AIEEE-exam-Eligibility">AIEEE 2010 Eligibility "><li class="active"><span class="icon"></span><span>AIEEE-exam-Eligibility">AIEEE 2010 Eligibility </span></li></a>
+                          <a id="A20" href="~/Pre-Engineering/aieee-exam-syllabus.aspx" runat="server" title="AIEEE-exam-syllabus">AIEEE 2010 Syllabus"><li class="active"><span class="icon"></span><span>AIEEE-exam-syllabus">AIEEE 2010 Syllabus</span></li></a>
+                          <a id="A21" href="~/Pre-Engineering/aieee-exam-structure-paper-marking.aspx" runat="server" title="AIEEE-Exam-Structure-paper-marking"><b>AIEEE Structure & marking</b>"><li class="active"><span class="icon"></span><span>AIEEE-Exam-Structure-paper-marking"><b>AIEEE Structure & marking</b></span></li></a>
+                          <a id="A22" href="~/Pre-Engineering/aieee-important-dates-exam-schedule.aspx" runat="server" title="AIEEE-important-dates-exam-schedule">AIEEE 2010 Important dates"><li class="active"><span class="icon"></span><span>AIEEE-important-dates-exam-schedule">AIEEE 2010 Important dates</span></li></a>
+                          <a id="A23" href="~/Pre-Engineering/aieee-test-centers-exam-cities.aspx" runat="server" title="AIEEE-test-centers-exam-cities">Test centers AIEEE 2010 "><li class="active"><span class="icon"></span><span>AIEEE-test-centers-exam-cities">Test centers AIEEE 2010 </span></li></a>
+                          <a id="A24" href="~/Pre-Engineering/aieee-declaration-of-result-counselling-admissions.aspx" runat="server" title="AIEEE-declaration-of-result-Counselling-Admissions">AIEEE Results & admissions"><li class="active"><span class="icon"></span><span>AIEEE-declaration-of-result-Counselling-Admissions">AIEEE Results & admissions</span></li></a>
+                          <a id="A25" href="~/Pre-Engineering/aieee-participating-institutes.aspx" runat="server" title="AIEEE-Participating-Institutes">AIEEE Participating colleges"><li class="active"><span class="icon"></span><span>AIEEE-Participating-Institutes">AIEEE Participating colleges</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

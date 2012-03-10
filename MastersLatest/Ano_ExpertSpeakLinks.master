@@ -1,0 +1,78 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="Ano_ExpertSpeakLinks.master.cs" Inherits="ExamCrazy.Masters.Ano_ExpertSpeakLinks" %>
+<%@ MasterType VirtualPath="~/HeaderFooter.master" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Expert Speak</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/expertspeak.aspx" runat="server" title="AboutExpert Speak"><li class="active"><span class="icon"></span><span>AboutExpert Speak</span></li></a>
+                          <a id="A2" href="~//energy_efficiency_conservation.aspx" runat="server" title="Promoting Energy Efficiency & Conservation<br>By Prof Sunil Kumar, IEC College, Greater Noida"><li class="active"><span class="icon"></span><span>Promoting Energy Efficiency & Conservation<br>By Prof Sunil Kumar, IEC College, Greater Noida</span></li></a>
+                          <a id="A3" href="ExpertSpeak/" runat="server" title="Career In Multimedia & Networking<br>By Dr. DharmBir Singh, Director, NIET Greater Noida"><li class="active"><span class="icon"></span><span>Career In Multimedia & Networking<br>By Dr. DharmBir Singh, Director, NIET Greater Noida</span></li></a>
+                          <a id="A4" href="~/expertspeak/ano_presentingaseminarincollege.aspx" runat="server" title="Presenting a Seminar<br>By Deepa Gupta, Amity University Noida"><li class="active"><span class="icon"></span><span>Presenting a Seminar<br>By Deepa Gupta, Amity University Noida</span></li></a>
+                          <a id="A5" href="~/expertspeak/expert_speak_articles.aspx" runat="server" title="View Complete List of Articles"><li class="active"><span class="icon"></span><span>View Complete List of Articles</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub2')">
+                <li class=""><span>Tutorials by Experts</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A6" href="~/engineering/mathematics/non_linear_programming.aspx" runat="server" title="Non-Linear Programming Optimization Techniques<br>By Prof Alok Bhargava, Maths Deptt, RIET Jaipur"><li class="active"><span class="icon"></span><span>Non-Linear Programming Optimization Techniques<br>By Prof Alok Bhargava, Maths Deptt, RIET Jaipur</span></li></a>
+                          <a id="A7" href="~/engineering/mechanical/machine-design-problems-numericals.aspx" runat="server" title="Machine Design Question Bank<br>By Prof SS Chauhan, IEC College, G. Noida"><li class="active"><span class="icon"></span><span>Machine Design Question Bank<br>By Prof SS Chauhan, IEC College, G. Noida</span></li></a>
+                          <a id="A8" href="~/engineering/electrical/three_phase_induction_motor_solved_examples.aspx" runat="server" title="3-Phase Induction Motor Solved Numericals<br>By Prof Sunil Kumar, IEC College, Greater Noida<br>"><li class="active"><span class="icon"></span><span>3-Phase Induction Motor Solved Numericals<br>By Prof Sunil Kumar, IEC College, Greater Noida<br></span></li></a>
+                          <a id="A9" href="~/expertspeak.aspx" runat="server" title="View Complete List of articles"><li class="active"><span class="icon"></span><span>View Complete List of articles</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub3')">
+                <li class=""><span>Online tests by Experts</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A10" href="~/ano_utils/systemmsg.aspx" runat="server" title="Electrical Engineering test - 1<br>By Prof Sunil Kumar, Electrical Deptt, IEC College, Greater Noida"><li class="active"><span class="icon"></span><span>Electrical Engineering test - 1<br>By Prof Sunil Kumar, Electrical Deptt, IEC College, Greater Noida</span></li></a>
+                          <a id="A11" href="~/ano_utils/systemmsg.aspx" runat="server" title="Machine Design test - 1<br>By Prof S S Chauhan, Mechanical Department, IEC College, Greater Noida"><li class="active"><span class="icon"></span><span>Machine Design test - 1<br>By Prof S S Chauhan, Mechanical Department, IEC College, Greater Noida</span></li></a>
+                          <a id="A12" href="~/ano_utils/systemmsg.aspx" runat="server" title="Signals and Systems test - 1<br>By J P Agarwal, HOD ECE Department GIT, Jaipur"><li class="active"><span class="icon"></span><span>Signals and Systems test - 1<br>By J P Agarwal, HOD ECE Department GIT, Jaipur</span></li></a>
+                          <a id="A13" href="~/ano_utils/systemmsg.aspx" runat="server" title="Life Sciences Test - 1<br>By Sudhanshu Sirohia, Delhi College of Engineering"><li class="active"><span class="icon"></span><span>Life Sciences Test - 1<br>By Sudhanshu Sirohia, Delhi College of Engineering</span></li></a>
+                          <a id="A14" href="~/expertspeak.aspx" runat="server" title="View Complete list of Tests"><li class="active"><span class="icon"></span><span>View Complete list of Tests</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

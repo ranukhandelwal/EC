@@ -1,0 +1,78 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="What_do_you_do_if_you_feel_your_preparation_is_not_proper_link.master.cs" Inherits="ExamCrazy.Masters.What_do_you_do_if_you_feel_your_preparation_is_not_proper_link" %>
+<%@ MasterType VirtualPath="~/HeaderFooter.master" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>GATE TUTOR PROGRAM</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/exam-preparation/gate-tutor/about_gate_tutor_program.aspx" runat="server" title="About Gate Tutor Program."><li class="active"><span class="icon"></span><span>About Gate Tutor Program.</span></li></a>
+                          <a id="A2" href="~/exams.aspx" runat="server" title="GATE TUTOR SUGGESTED METHODS."><li class="active"><span class="icon"></span><span>GATE TUTOR SUGGESTED METHODS.</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub2')">
+                <li class=""><span>GATE TUTOR PROGRAM QUESTIONS</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A3" href="~/exam-preparation/gate-tutor/how-do-you-select-books.aspx" runat="server" title="How do you select books."><li class="active"><span class="icon"></span><span>How do you select books.</span></li></a>
+                          <a id="A4" href="~/exam-preparation/gate-tutor/how-many-hours-you-study-daily.aspx" runat="server" title="How many hours you study daily."><li class="active"><span class="icon"></span><span>How many hours you study daily.</span></li></a>
+                          <a id="A5" href="~/exam-preparation/gate-tutor/how-do-you-prepare-notes.aspx" runat="server" title="How do you prepare notes."><li class="active"><span class="icon"></span><span>How do you prepare notes.</span></li></a>
+                          <a id="A6" href="~/exam-preparation/gate-tutor/do-you-do-group-study.aspx" runat="server" title="Do you do group study."><li class="active"><span class="icon"></span><span>Do you do group study.</span></li></a>
+                          <a id="A7" href="~/exam-preparation/gate-tutor/how-do-you-judge-your-preparation-is-proper-or-not.aspx" runat="server" title="How do you judge your preparation is proper or not."><li class="active"><span class="icon"></span><span>How do you judge your preparation is proper or not.</span></li></a>
+                          <a id="A8" href="~/exam-preparation/gate-tutor/how-do-you-read-book.aspx" runat="server" title="How do you read book."><li class="active"><span class="icon"></span><span>How do you read book.</span></li></a>
+                          <a id="A9" href="~/exam-preparation/gate-tutor/how-do-you-check-if-your-understanding-of-chapter-is-proper-or-not.aspx" runat="server" title="How do you check if your understanding of chapter is proper or not."><li class="active"><span class="icon"></span><span>How do you check if your understanding of chapter is proper or not.</span></li></a>
+                          <a id="A10" href="~/exam-preparation/gate-tutor/how-do-you-plan-to-cover-syllabus.aspx" runat="server" title="How do you plan to cover syllabus."><li class="active"><span class="icon"></span><span>How do you plan to cover syllabus.</span></li></a>
+                          <a id="A11" href="~/exam-preparation/gate-tutor/what-do-you-do-to-reduce-revision-time-or-second-reading-time.aspx" runat="server" title="What do you do to reduce revision time or second reading time."><li class="active"><span class="icon"></span><span>What do you do to reduce revision time or second reading time.</span></li></a>
+                          <a id="A12" href="~/exam-preparation/gate-tutor/what-sources-of-study-material-do-you-follow.aspx" runat="server" title="What sources of study material do you follow."><li class="active"><span class="icon"></span><span>What sources of study material do you follow.</span></li></a>
+                          <a id="A13" href="~/exam-preparation/gate-tutor/how-do-you-attempt-paper-or-exam.aspx" runat="server" title="How do you attempt paper or exam."><li class="active"><span class="icon"></span><span>How do you attempt paper or exam.</span></li></a>
+                          <a id="A14" href="~/exam-preparation/gate-tutor/how-do-you-overcome-exam-phobia.aspx" runat="server" title="How do you overcome exam phobia."><li class="active"><span class="icon"></span><span>How do you overcome exam phobia.</span></li></a>
+                          <a id="A15" href="~/exam-preparation/gate-tutor/do-you-think-you-do-smart-preparation.aspx" runat="server" title="Do you think you do smart preparation."><li class="active"><span class="icon"></span><span>Do you think you do smart preparation.</span></li></a>
+                          <a id="A16" href="~/exam-preparation/gate-tutor/what-do-you-do-to-maintain-concentration-or-improve-concentration.aspx" runat="server" title="What do you do to maintain concentration or improve concentration."><li class="active"><span class="icon"></span><span>What do you do to maintain concentration or improve concentration.</span></li></a>
+                          <a id="A17" href="~/exam-preparation/gate-tutor/what-do-you-feel-you-are-slow-reader.aspx" runat="server" title="What do you feel you are slow reader."><li class="active"><span class="icon"></span><span>What do you feel you are slow reader.</span></li></a>
+                          <a id="A18" href="~/exam-preparation/gate-tutor/as-per-you-what-is-the-role-of-coaching-institutes.aspx" runat="server" title="As per you what is the role of coaching institutes."><li class="active"><span class="icon"></span><span>As per you what is the role of coaching institutes.</span></li></a>
+                          <a id="A19" href="~/exam-preparation/gate-tutor/do-you-use-some-test-series-mock-test-to-check-your-preparation.aspx" runat="server" title="Do you use some test series mock test to check your preparation."><li class="active"><span class="icon"></span><span>Do you use some test series mock test to check your preparation.</span></li></a>
+                          <a id="A20" href="~/exam-preparation/gate-tutor/do-you-discuss-topics-with-friends-to-discuss-how-effective-is-your-preparation.aspx" runat="server" title="Do you discuss topics with friends to discuss how effective is your preparation."><li class="active"><span class="icon"></span><span>Do you discuss topics with friends to discuss how effective is your preparation.</span></li></a>
+                          <a id="A21" href="~/exam-preparation/gate-tutor/what-do-you-do-if-you-feel-your-preparation-is-not-proper.aspx" runat="server" title="What do you do if you feel your preparation is not proper."><li class="active"><span class="icon"></span><span>What do you do if you feel your preparation is not proper.</span></li></a>
+                          <a id="A22" href="~/exam-preparation/gate-tutor/some-aspects-of-your-personality-which-affect-your-exam-preparation.aspx" runat="server" title="Some aspects of your personality which affect your exam preparation."><li class="active"><span class="icon"></span><span>Some aspects of your personality which affect your exam preparation.</span></li></a>
+                          <a id="A23" href="exam-preparation/gate-tutor/" runat="server" title="."><li class="active"><span class="icon"></span><span>.</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

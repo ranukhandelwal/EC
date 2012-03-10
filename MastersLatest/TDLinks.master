@@ -1,0 +1,76 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="TDLinks.master.cs" Inherits="ExamCrazy.Masters.TDLinks" %>
+<%@ MasterType VirtualPath="~/HeaderFooter.master" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Thermodynamics Chemistry Tutorials</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/Pre-Engineering/chemistry/thermodynamics/thermodynamics-basic-terms.aspx" runat="server" title="chemistry/thermodynamics/Thermodynamics-Basic-Terms">Thermodynamics - Basic Terms by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/thermodynamics/Thermodynamics-Basic-Terms">Thermodynamics - Basic Terms by S.S. Education</span></li></a>
+                          <a id="A2" href="~/Pre-Engineering/chemistry/thermodynamics/zeroth-law-of-thermodynamics.aspx" runat="server" title="chemistry/thermodynamics/Zeroth-Law-of-Thermodynamics">Zeroth Law of Thermodynamics by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/thermodynamics/Zeroth-Law-of-Thermodynamics">Zeroth Law of Thermodynamics by S.S. Education</span></li></a>
+                          <a id="A3" href="~/Pre-Engineering/chemistry/thermodynamics/first-law-of-thermodynamics.aspx" runat="server" title="chemistry/thermodynamics/First-Law-of-Thermodynamics">First Law of Thermodynamics by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/thermodynamics/First-Law-of-Thermodynamics">First Law of Thermodynamics by S.S. Education</span></li></a>
+                          <a id="A4" href="~/Pre-Engineering/chemistry/thermodynamics/entropy-and-second-law-of-thermodynamics.aspx" runat="server" title="chemistry/thermodynamics/Entropy-and-Second-Law-of-Thermodynamics">Entropy and Second Law of Thermodynamics by S.S. Education"><li class="active"><span class="icon"></span><span>chemistry/thermodynamics/Entropy-and-Second-Law-of-Thermodynamics">Entropy and Second Law of Thermodynamics by S.S. Education</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub2')">
+                <li class=""><span>OTHER AIEEE/IIT/PRE-ENGINEERING TUTORIALS</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A5" href="~/Pre-Engineering/maths.aspx" runat="server" title="maths">Maths Tutorials for AIEEE IIT Pre Engineering"><li class="active"><span class="icon"></span><span>maths">Maths Tutorials for AIEEE IIT Pre Engineering</span></li></a>
+                          <a id="A6" href="~/Pre-Engineering/physics.aspx" runat="server" title="physics">Physics Tutorials for AIEEE IIT Pre Engineering"><li class="active"><span class="icon"></span><span>physics">Physics Tutorials for AIEEE IIT Pre Engineering</span></li></a>
+                          <a id="A7" href="~/Pre-Engineering/chemistry.aspx" runat="server" title="chemistry">Chemistry Tutorials for AIEEE IIT Pre Engineering"><li class="active"><span class="icon"></span><span>chemistry">Chemistry Tutorials for AIEEE IIT Pre Engineering</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub3')">
+                <li class=""><span>More Engineering Links</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub3">
+                    <ul>
+                          <a id="A8" href="~/Pre-Engineering/engineering/coaching-institutes-engineering-india-for-gate-ies-psus.aspx" runat="server" title="Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs">Directory of coaching Institutes"><li class="active"><span class="icon"></span><span>Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs">Directory of coaching Institutes</span></li></a>
+                          <a id="A9" href="~/Pre-Engineering/engineering/top-ranking-government-engineering-colleges-in-india.aspx" runat="server" title="Engineering/Top-ranking-Government-Engineering-colleges-in-india">Govt engg college rankings"><li class="active"><span class="icon"></span><span>Engineering/Top-ranking-Government-Engineering-colleges-in-india">Govt engg college rankings</span></li></a>
+                          <a id="A10" href="~/Pre-Engineering/engineering/top-ranking-private-engineering-colleges-in-india.aspx" runat="server" title="Engineering/Top-ranking-Private-Engineering-colleges-in-india">Private engg college rankings"><li class="active"><span class="icon"></span><span>Engineering/Top-ranking-Private-Engineering-colleges-in-india">Private engg college rankings</span></li></a>
+                          <a id="A11" href="~/Pre-Engineering/engineering/admission-notifications-engineering-institutes-india-me-mtech.aspx" runat="server" title="Engineering/Admission-notifications-Engineering-institutes-india-ME-Mtech">Admission notifications for Mtech/PhD"><li class="active"><span class="icon"></span><span>Engineering/Admission-notifications-Engineering-institutes-india-ME-Mtech">Admission notifications for Mtech/PhD</span></li></a>
+                          <a id="A12" href="~/Pre-Engineering/colleges/engineering_colleges.aspx" runat="server" title="Colleges/Engineering_Colleges">All Engineering Colleges in India"><li class="active"><span class="icon"></span><span>Colleges/Engineering_Colleges">All Engineering Colleges in India</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

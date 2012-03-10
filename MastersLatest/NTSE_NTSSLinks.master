@@ -1,0 +1,53 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="NTSE_NTSSLinks.master.cs" Inherits="ExamCrazy.Masters.NTSE_NTSSLinks" %>
+<%@ MasterType VirtualPath="~/HeaderFooter.master" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>NTSE/NTSS</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~/ntss-ntse/national-talent-search-examination-scholarship.aspx" runat="server" title="All About National Talent Search Exam"><li class="active"><span class="icon"></span><span>All About National Talent Search Exam</span></li></a>
+                          <a id="A2" href="~/ntss-ntse/history-evolution-ntse.aspx" runat="server" title="History and Evaluation of NTSE"><li class="active"><span class="icon"></span><span>History and Evaluation of NTSE</span></li></a>
+                          <a id="A3" href="~/ntss-ntse/examination-scheme-ntse-scholarship.aspx" runat="server" title="Examination Scheme & Eligibility - NTSE"><li class="active"><span class="icon"></span><span>Examination Scheme & Eligibility - NTSE</span></li></a>
+                          <a id="A4" href="~/ntss-ntse/important-dates-ntse.aspx" runat="server" title="Important Dates - NTSE"><li class="active"><span class="icon"></span><span>Important Dates - NTSE</span></li></a>
+                          <a id="A5" href="~/ntss-ntse/application-form-results-ntse.aspx" runat="server" title="Application form & Results - NTSE"><li class="active"><span class="icon"></span><span>Application form & Results - NTSE</span></li></a>
+                          <a id="A6" href="~/ntss-ntse/exam-pattern-syllabus-ntse.aspx" runat="server" title="Exam Pattern - Syllabus - NTSE"><li class="active"><span class="icon"></span><span>Exam Pattern - Syllabus - NTSE</span></li></a>
+                          <a id="A7" href="~/ntss-ntse/scholarship-ntse.aspx" runat="server" title="Scholarship - NTSE"><li class="active"><span class="icon"></span><span>Scholarship - NTSE</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>

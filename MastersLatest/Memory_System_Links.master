@@ -1,0 +1,78 @@
+<%@ Master Language="C#" MasterPageFile="~/HeaderFooter.Master" AutoEventWireup="True" CodeBehind="Memory_System_Links.master.cs" Inherits="ExamCrazy.Masters.Memory_System_Links" %>
+<%@ MasterType VirtualPath="~/HeaderFooter.master" %>
+<%@ Register TagPrefix="ucl" TagName="login" Src="~/Control/Login.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="AddToBreadCrum" runat="server">
+    <asp:ContentPlaceHolder ID="AddToBreadCrum" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="LeftPanelHolder" runat="server">
+   <h3>Categories</h3>
+   <div class="LeftPanelNavigation">
+        <div id="masterdiv">
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub1')">
+                <li class=""><span>Memory System </span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub1">
+                    <ul>
+                          <a id="A1" href="~//engineering/computer-science/computer-organization-and-architecture/components-of-the-memory-system.aspx" runat="server" title="Components of the Memory System"><li class="active"><span class="icon"></span><span>Components of the Memory System</span></li></a>
+                          <a id="A2" href="~//engineering/computer-science/computer-organization-and-architecture/the-memory-hierarchy.aspx" runat="server" title="The Memory Hierarchy "><li class="active"><span class="icon"></span><span>The Memory Hierarchy </span></li></a>
+                          <a id="A3" href="~//engineering/computer-science/computer-organization-and-architecture/cache-memory.aspx" runat="server" title="Cache Memory "><li class="active"><span class="icon"></span><span>Cache Memory </span></li></a>
+                          <a id="A4" href="~//engineering/computer-science/computer-organization-and-architecture/separate-data-and-instruction-caches.aspx" runat="server" title="Separate Data and Instruction Caches "><li class="active"><span class="icon"></span><span>Separate Data and Instruction Caches </span></li></a>
+                          <a id="A5" href="~//engineering/computer-science/computer-organization-and-architecture/cache-organization.aspx" runat="server" title="Cache Organization "><li class="active"><span class="icon"></span><span>Cache Organization </span></li></a>
+                          <a id="A6" href="~//engineering/computer-science/computer-organization-and-architecture/direct-mapping.aspx" runat="server" title="Direct Mapping "><li class="active"><span class="icon"></span><span>Direct Mapping </span></li></a>
+                          <a id="A7" href="~//engineering/computer-science/computer-organization-and-architecture/set-associative-mapping.aspx" runat="server" title="Set Associative Mapping "><li class="active"><span class="icon"></span><span>Set Associative Mapping </span></li></a>
+                          <a id="A8" href="~//engineering/computer-science/computer-organization-and-architecture/associative-mapping.aspx" runat="server" title="Associative Mapping "><li class="active"><span class="icon"></span><span>Associative Mapping </span></li></a>
+                          <a id="A9" href="~//engineering/computer-science/computer-organization-and-architecture/replacement-algorithms.aspx" runat="server" title="Replacement Algorithms "><li class="active"><span class="icon"></span><span>Replacement Algorithms </span></li></a>
+                          <a id="A10" href="~//engineering/computer-science/computer-organization-and-architecture/write-strategies.aspx" runat="server" title="Write Strategies "><li class="active"><span class="icon"></span><span>Write Strategies </span></li></a>
+                          <a id="A11" href="~//engineering/computer-science/computer-organization-and-architecture/some-cache-architectures.aspx" runat="server" title="Some Cache Architectures "><li class="active"><span class="icon"></span><span>Some Cache Architectures </span></li></a>
+                          <a id="A12" href="~//engineering/computer-science/computer-organization-and-architecture/virtual-memory.aspx" runat="server" title="Virtual memory "><li class="active"><span class="icon"></span><span>Virtual memory </span></li></a>
+                          <a id="A13" href="~//engineering/computer-science/computer-organization-and-architecture/virtual-memory-organization-demand-paging.aspx" runat="server" title="Virtual Memory Organization Demand Paging"><li class="active"><span class="icon"></span><span>Virtual Memory Organization Demand Paging</span></li></a>
+                          <a id="A14" href="~//engineering/computer-science/computer-organization-and-architecture/address-translation.aspx" runat="server" title="Address Translation "><li class="active"><span class="icon"></span><span>Address Translation </span></li></a>
+                          <a id="A15" href="~//engineering/computer-science/computer-organization-and-architecture/the-page-table.aspx" runat="server" title="The Page Table "><li class="active"><span class="icon"></span><span>The Page Table </span></li></a>
+                          <a id="A16" href="~//engineering/computer-science/computer-organization-and-architecture/memory-reference-with-virtual-memory-and-tlb.aspx" runat="server" title="Memory Reference with Virtual Memory and TLB "><li class="active"><span class="icon"></span><span>Memory Reference with Virtual Memory and TLB </span></li></a>
+                          <a id="A17" href="~//engineering/computer-science/computer-organization-and-architecture/page-replacement.aspx" runat="server" title="Page Replacement "><li class="active"><span class="icon"></span><span>Page Replacement </span></li></a>
+                          <a id="A18" href="~//engineering/computer-science/computer-organization-and-architecture/components-of-the-memory-system-summary.aspx" runat="server" title="Summary "><li class="active"><span class="icon"></span><span>Summary </span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+        <ul>
+             <div class="menutitle" onclick="SwitchMenu('sub2')">
+                <li class=""><span>More Engineering Links</span><span class="iconArrow"></span></li>
+                <span class="submenu" id="sub2">
+                    <ul>
+                          <a id="A19" href="~/Pre-Engineering/engineering/coaching-institutes-engineering-india-for-gate-ies-psus.aspx" runat="server" title="Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs">Directory of coaching Institutes"><li class="active"><span class="icon"></span><span>Engineering/Coaching-Institutes-Engineering-india-for-GATE-IES-PSUs">Directory of coaching Institutes</span></li></a>
+                          <a id="A20" href="~/Pre-Engineering/engineering/top-ranking-government-engineering-colleges-in-india.aspx" runat="server" title="Engineering/Top-ranking-Government-Engineering-colleges-in-india">Govt engg college rankings"><li class="active"><span class="icon"></span><span>Engineering/Top-ranking-Government-Engineering-colleges-in-india">Govt engg college rankings</span></li></a>
+                          <a id="A21" href="~/Pre-Engineering/engineering/top-ranking-private-engineering-colleges-in-india.aspx" runat="server" title="Engineering/Top-ranking-Private-Engineering-colleges-in-india">Private engg college rankings"><li class="active"><span class="icon"></span><span>Engineering/Top-ranking-Private-Engineering-colleges-in-india">Private engg college rankings</span></li></a>
+                          <a id="A22" href="~/Pre-Engineering/engineering/admission-notifications-engineering-institutes-india-me-mtech.aspx" runat="server" title="Engineering/Admission-notifications-Engineering-institutes-india-ME-Mtech">Admission notifications for Mtech/PhD"><li class="active"><span class="icon"></span><span>Engineering/Admission-notifications-Engineering-institutes-india-ME-Mtech">Admission notifications for Mtech/PhD</span></li></a>
+                          <a id="A23" href="~/Pre-Engineering/colleges/engineering_colleges.aspx" runat="server" title="Colleges/Engineering_Colleges">All Engineering Colleges in India"><li class="active"><span class="icon"></span><span>Colleges/Engineering_Colleges">All Engineering Colleges in India</span></li></a>
+                   </ul>
+               </span>
+            </div>
+        </ul>
+      </div>
+  </div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img1" src="~/img/left-side-add.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img2" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img3" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+   <div class="leftSideAdd unit"><a href="#" title="add"><img id="Img4" src="~/img/addhre.gif" alt="" title="" runat="server" /></a></div>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="size3of4 unit">
+        <div class="midddlePart"><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></div>
+    </div>
+    <div class=" size1of4 unit">
+        <div class="rightPanel unit">
+            <ucl:login ID="login" runat="server" />
+            <div class="rightAdd unit"><img id="Img5" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img6" src="~/img/add2.gif" alt="" title="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img7" src="~/img/biyani.gif" title="" alt="" runat="server" /></div>
+            <div class="rightAdd unit"><img id="Img8" src="~/img/googleadd.gif" title="" alt="" runat="server" /></div>
+        </div>
+    </div>
+    <div class="addvertiseBig unit">
+        <a href="#" title="add"><img id="Img9" src="~/img/add7.gif" alt="Adds" title="adds" runat="server" /></a>
+    </div>
+</asp:Content>
